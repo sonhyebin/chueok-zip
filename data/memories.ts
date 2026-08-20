@@ -36,6 +36,15 @@ export type MemoryItem = {
    */
   image?: string;
 
+  /**
+   * 실제 자료(licensed-actual) 이미지에만 설정 — 카드 하단에 "자료: …"로 표시되고 원본으로 링크.
+   * recreated / generated-original 이미지에는 넣지 않는다.
+   */
+  credit?: {
+    label: string;
+    url?: string;
+  };
+
   keywords?: string[];
 };
 
@@ -312,7 +321,7 @@ export const MEMORIES: MemoryItem[] = [
   // ───────────────────────── 2005 ─────────────────────────
   {
     id: "2005-music-1",
-    image: "/images/years/2005/2005-music-1.svg",
+    image: "/images/years/2005/music/cyworld-bgm.jpg",
     year: 2005,
     category: "music",
     title: "윤도현 - 사랑했나봐",
@@ -362,7 +371,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-game-1",
-    image: "/images/years/2005/2005-game-1.svg",
+    image: "/images/years/2005/game/pcbang-racing.jpg",
+    credit: {
+      label: "Alex C · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:PC_bang_in_2001.jpg",
+    },
     year: 2005,
     category: "game",
     title: "카트라이더",
@@ -382,7 +395,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-internet-1",
-    image: "/images/years/2005/2005-internet-1.svg",
+    image: "/images/years/2005/internet/cyworld-room.jpg",
     year: 2005,
     category: "internet",
     title: "싸이월드 미니홈피",
@@ -412,7 +425,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-photo-1",
-    image: "/images/years/2005/2005-photo-1.svg",
+    image: "/images/years/2005/photo/uljjang-angle.jpg",
     year: 2005,
     category: "photo",
     title: "얼짱각도 45도",
@@ -452,7 +465,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-food-1",
-    image: "/images/years/2005/2005-food-1.svg",
+    image: "/images/years/2005/food/cup-tteokbokki.jpg",
+    credit: {
+      label: "jetalone · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:Korean.snacks-Tteokbokki-08.jpg",
+    },
     year: 2005,
     category: "food",
     title: "컵떡볶이",

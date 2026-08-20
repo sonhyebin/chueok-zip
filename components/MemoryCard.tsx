@@ -71,6 +71,24 @@ export default function MemoryCard({
           <span className="datestamp">{stampFor(item)}</span>
         </div>
 
+        {item.credit && item.image && (
+          <p className="text-[10.5px] leading-tight text-[#8a99ab] -mt-1.5">
+            자료:{" "}
+            {item.credit.url ? (
+              <a
+                href={item.credit.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                {item.credit.label}
+              </a>
+            ) : (
+              item.credit.label
+            )}
+          </p>
+        )}
+
         <div>
           <h3 className="font-pixel text-[19px] leading-snug">{item.title}</h3>
           {item.subtitle && (
