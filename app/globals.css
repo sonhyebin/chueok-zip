@@ -1,26 +1,316 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 @import "tailwindcss";
 
+/* 픽셀 폰트 셀프호스팅 (CDN 의존 제거) */
+@font-face {
+  font-family: "DungGeunMo";
+  src:
+    url("/fonts/DungGeunMo.woff2") format("woff2"),
+    url("/fonts/DungGeunMo.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Y2K 팔레트 — 2005년을 기억하는 2026년의 색 */
+  --sky-100: #eaf6ff;
+  --sky-200: #cfe9fb;
+  --sky-300: #9ed3f2;
+  --xp-blue: #2f6fce;
+  --xp-blue-deep: #1c4fa3;
+  --xp-blue-light: #7db3e8;
+  --ink: #1d2733;
+  --paper: #ffffff;
+  --pink: #ff6fa5;
+  --pink-deep: #e84d8a;
+  --lime: #a8e05f;
+  --cy-orange: #ff9c00; /* 디카 날짜 스탬프 */
+  --shadow: rgba(29, 39, 51, 0.9);
+
+  --font-pixel: "DungGeunMo", "Pretendard Variable", monospace;
+  --font-body: "Pretendard Variable", -apple-system, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background-color: var(--sky-200);
+  /* 픽셀 그리드 + 하늘 그라데이션 */
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.35) 1px, transparent 1px),
+    linear-gradient(180deg, var(--sky-100) 0%, var(--sky-200) 60%, var(--sky-300) 100%);
+  background-size: 24px 24px, 24px 24px, 100% 100%;
+  /* background-attachment: fixed는 iOS Safari에서 렌더링이 깨져 사용하지 않음 */
+  min-height: 100vh; /* 구형 브라우저 폴백 */
+  min-height: 100dvh;
+}
+
+.font-pixel {
+  font-family: var(--font-pixel);
+}
+
+/* ── XP 스타일 창 프레임 ───────────────────────── */
+.window {
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 var(--shadow);
+  overflow: hidden;
+}
+
+.window-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: linear-gradient(180deg, var(--xp-blue-light) 0%, var(--xp-blue) 45%, var(--xp-blue-deep) 100%);
+  border-bottom: 2px solid var(--ink);
+  color: #fff;
+  font-family: var(--font-pixel);
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.35);
+  user-select: none;
+}
+
+.window-titlebar .win-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 4px;
+}
+
+.win-btn {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--ink);
+  border-radius: 4px;
+  background: linear-gradient(180deg, #fff, #cfe1f7);
+  color: var(--ink);
+  font-size: 10px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-pixel);
+}
+
+.win-btn.close {
+  background: linear-gradient(180deg, #ff9d9d, #f25555);
+  color: #fff;
+}
+
+/* ── 픽셀 버튼 ─────────────────────────────────── */
+.pixel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 20px;
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  font-family: var(--font-pixel);
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 var(--shadow);
+  transition: transform 0.06s ease, box-shadow 0.06s ease;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pixel-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 var(--shadow);
+}
+
+.pixel-btn.primary {
+  background: linear-gradient(180deg, #ff9dc0 0%, var(--pink) 55%, var(--pink-deep) 100%);
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.pixel-btn.secondary {
+  background: linear-gradient(180deg, #ffffff, #e6f0fb);
+  color: var(--ink);
+}
+
+.pixel-btn.blue {
+  background: linear-gradient(180deg, var(--xp-blue-light), var(--xp-blue));
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.pixel-btn:disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+/* ── 입력 필드 ─────────────────────────────────── */
+.pixel-input {
+  width: 100%;
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  background: #fff;
+  padding: 12px 14px;
+  font-family: var(--font-body);
+  font-size: 16px; /* iOS 줌 방지 */
+  box-shadow: inset 3px 3px 0 rgba(29, 39, 51, 0.08);
+  outline: none;
+}
+
+.pixel-input:focus {
+  border-color: var(--xp-blue);
+  box-shadow: inset 3px 3px 0 rgba(47, 111, 206, 0.12), 0 0 0 3px rgba(47, 111, 206, 0.25);
+}
+
+textarea.pixel-input {
+  resize: none;
+  line-height: 1.5;
+}
+
+/* ── 디카 사진 프레임 + 날짜 스탬프 ────────────── */
+.photo-frame {
+  position: relative;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 하얗게 날아간 저화질 감성 */
+  filter: saturate(1.1);
+}
+
+.photo-frame::after {
+  /* 스캔라인 */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.09) 0px,
+    rgba(255, 255, 255, 0.09) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+}
+
+.photo-emoji {
+  font-size: 64px;
+  filter: drop-shadow(2px 3px 0 rgba(0, 0, 0, 0.18));
+}
+
+.datestamp {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  font-family: var(--font-pixel);
+  font-size: 15px;
+  color: var(--cy-orange);
+  text-shadow:
+    0 0 6px rgba(255, 156, 0, 0.8),
+    1px 1px 0 rgba(120, 60, 0, 0.6);
+  letter-spacing: 0.06em;
+  z-index: 1;
+}
+
+/* ── 말풍선 질문 ───────────────────────────────── */
+.speech {
+  position: relative;
+  background: var(--sky-100);
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 14.5px;
+  line-height: 1.5;
+}
+
+.speech::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 22px;
+  width: 12px;
+  height: 12px;
+  background: var(--sky-100);
+  border-left: 2px solid var(--ink);
+  border-top: 2px solid var(--ink);
+  transform: rotate(45deg);
+}
+
+/* ── 기타 장식 ─────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  background: var(--lime);
+  box-shadow: 2px 2px 0 var(--shadow);
+}
+
+.blink {
+  animation: blink 1.2s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.pop-in {
+  animation: popIn 0.35s cubic-bezier(0.2, 1.4, 0.5, 1) both;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.card-appear {
+  animation: cardAppear 0.5s ease both;
+}
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 페이지 공통 폭 */
+.page {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px 16px 48px;
+  /* iPhone 노치/홈바 안전영역 */
+  padding-bottom: calc(48px + env(safe-area-inset-bottom));
+  min-height: 100vh;
+  min-height: 100dvh;
 }
