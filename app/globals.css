@@ -151,8 +151,16 @@ body {
 }
 
 .pixel-btn:disabled {
-  opacity: 0.45;
+  opacity: 0.55;
+  filter: grayscale(0.85);
+  box-shadow: 2px 2px 0 rgba(29, 39, 51, 0.25);
+  cursor: default;
   pointer-events: none;
+}
+
+.pixel-input::placeholder {
+  color: #a8b8c9;
+  opacity: 0.7;
 }
 
 /* ── 입력 필드 ─────────────────────────────────── */

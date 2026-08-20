@@ -63,10 +63,10 @@ function CapsuleInviteInner() {
       <main className="page flex flex-col justify-center gap-5">
         <header className="text-center pop-in">
           <p className="badge">💌 새 쪽지 1통</p>
-          <h1 className="font-pixel text-[24px] mt-3 leading-snug">
-            {nameIga(invite.from)}
+          <h1 className="font-pixel text-[24px] mt-3 leading-snug break-keep">
+            {nameIga(invite.from)} {invite.year}년에서
             <br />
-            {invite.year}년에서 타임캡슐을 보냈어요
+            타임캡슐을 보냈어요
           </h1>
         </header>
 

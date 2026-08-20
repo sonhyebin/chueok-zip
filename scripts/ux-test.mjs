@@ -89,6 +89,10 @@ try {
 
   // STEP 2: 출생연도 입력
   const yearInput = a.getByLabel("출생연도");
+  const ph = await yearInput.getAttribute("placeholder");
+  ph === "예: 1992"
+    ? pass("홈: placeholder '예: 1992' (실제 값으로 오인 방지)")
+    : fail("홈: placeholder 확인", ph);
   const ctaBtn = a.getByRole("button", { name: /내 학창시절로 돌아가기/ });
   (await ctaBtn.isDisabled()) ? pass("홈: 입력 전 CTA 비활성") : fail("홈: 입력 전 CTA가 활성 상태");
   await yearInput.fill("1992");
@@ -112,8 +116,10 @@ try {
   await a.getByRole("link", { name: /2005/ }).click();
   await a.waitForURL("**/year/2005");
   await a.waitForLoadState("networkidle");
-  (await a.getByText("그때 당신은").isVisible()) ? pass("피드: 당시 나이 문구") : fail("피드: 당시 나이 문구 없음");
+  await a.getByText("13살").waitFor({ timeout: 5000 }).catch(() => {});
+  (await a.getByText(/그때 당신은/).isVisible()) ? pass("피드: 당시 나이 문구") : fail("피드: 당시 나이 문구 없음");
   (await a.getByText("13살").isVisible()) ? pass("피드: 13살 계산 정확") : fail("피드: 나이 계산 오류");
+  await a.waitForTimeout(1200); // 카드 등장 애니메이션 완료 후 캡처
   await shot(a, "03-2005-feed-top.png");
 
   // STEP 5: 스크롤 + 카테고리 연속 확인
@@ -122,15 +128,30 @@ try {
   consecutive.length === 0
     ? pass("피드: 동일 카테고리 연속 없음", `${cats.length}개 카드`)
     : fail("피드: 동일 카테고리 연속", consecutive.join(","));
-  await a.evaluate(() => window.scrollTo({ top: document.body.scrollHeight * 0.4 }));
+  await a.evaluate(() => window.scrollTo({ top: document.body.scrollHeight * 0.22 }));
   await a.waitForTimeout(800);
   await shot(a, "04-2005-feed-middle.png");
   const ov2 = await noHorizontalOverflow(a);
   ov2.ok ? pass("피드: 가로 오버플로 없음") : fail("피드: 가로 오버플로", JSON.stringify(ov2));
 
+  // 첫 공유 CTA 위치: 카드 4~5개 경험 후 등장해야 함
+  const cardsBeforeCta = await a.evaluate(() => {
+    const feed = document.querySelectorAll("main > div.flex.flex-col > *");
+    let count = 0;
+    for (const el of feed) {
+      if (el.textContent?.includes("생각나는 친구 있어요?")) return count;
+      if (el.tagName === "ARTICLE") count++;
+    }
+    return -1;
+  });
+  cardsBeforeCta >= 4 && cardsBeforeCta <= 5
+    ? pass("피드: 첫 공유 CTA가 카드 4~5개 뒤 등장", `카드 ${cardsBeforeCta}개 뒤`)
+    : fail("피드: 첫 CTA 위치 이상", `카드 ${cardsBeforeCta}개 뒤`);
+
   // 친구 공유 CTA
   const midCta = a.getByText("생각나는 친구 있어요?").first();
   await midCta.scrollIntoViewIfNeeded();
+  await a.evaluate(() => window.scrollBy(0, -180));
   await a.waitForTimeout(600);
   await shot(a, "05-share-cta.png");
   (await midCta.isVisible()) ? pass("피드: 친구 CTA 노출") : fail("피드: 친구 CTA 미노출");
@@ -186,15 +207,16 @@ try {
 
   // STEP 8: 결과 검증
   (await b.getByText("혜빈 × 수진").isVisible()) ? pass("결과: 제목 '혜빈 × 수진'") : fail("결과: 제목 이상");
-  (await b.getByText("수진이가").count()) > 0 || (await b.getByText("수진이(가)").count()) > 0
-    ? pass("결과: 조사(이/가) 처리")
-    : fail("결과: 조사 처리 확인 불가");
+  (await b.getByText("수진이가").count()) > 0 && (await b.getByText("혜빈이가").count()) > 0
+    ? pass("결과: 조사(이가) 자연스러움", "혜빈이가/수진이가")
+    : fail("결과: 조사 처리 이상");
   (await b.getByText(A_ANSWERS[3]).isVisible()) ? pass("결과: A 답변 표시") : fail("결과: A 답변 누락");
   (await b.getByText(B_ANSWERS[3]).isVisible()) ? pass("결과: B 답변 표시") : fail("결과: B 답변 누락");
   (await b.getByText("타임캡슐이").isVisible()) ? pass("결과: 완성 메시지") : fail("결과: 완성 메시지 없음");
   (await b.getByRole("button", { name: /이 타임캡슐 공유하기/ }).isVisible())
     ? pass("결과: 재공유 CTA")
     : fail("결과: 재공유 CTA 없음");
+  await b.waitForTimeout(2500); // 카드 순차 등장 애니메이션 완료 대기
   await b.screenshot({ path: `${SHOT_DIR}/08-capsule-result.png`, fullPage: true });
   console.log("📸 08-capsule-result.png (fullPage)");
 

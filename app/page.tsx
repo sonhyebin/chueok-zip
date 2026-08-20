@@ -68,7 +68,7 @@ function HomeInner() {
             className="pixel-input text-center font-pixel !text-[28px] tracking-[0.2em]"
             inputMode="numeric"
             pattern="[0-9]*"
-            placeholder="1992"
+            placeholder="예: 1992"
             maxLength={4}
             value={value}
             onChange={(e) => {

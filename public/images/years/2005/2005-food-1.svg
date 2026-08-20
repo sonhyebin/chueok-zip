@@ -9,7 +9,6 @@
   </defs>
   <rect width="800" height="600" fill="url(#g)"/>
   <rect width="800" height="600" fill="url(#scan)"/>
-  <text x="400" y="280" font-size="150" text-anchor="middle" dominant-baseline="middle">🍢</text>
-       <text x="400" y="470" font-size="42" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#1d2733" opacity="0.75">컵떡볶이</text>
-  <text x="400" y="560" font-size="22" text-anchor="middle" font-family="sans-serif" fill="#1d2733" opacity="0.4">임시 이미지 · 실제 사진으로 교체 예정</text>
+  <circle cx="400" cy="300" r="130" fill="rgba(255,255,255,0.35)"/>
+       <text x="400" y="300" font-size="130" text-anchor="middle" dominant-baseline="middle">🍢</text>
 </svg>

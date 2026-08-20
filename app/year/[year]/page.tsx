@@ -56,12 +56,13 @@ export default function YearPage() {
 
   const memories = getMemoriesForYear(year);
   const info = getYearInfo(year);
-  const midpoint = Math.ceil(memories.length / 2);
+  // 강한 추억 4~5개를 경험한 직후 첫 공유 CTA 노출 (피드가 짧으면 중간 지점)
+  const firstCtaAfter = Math.min(5, Math.ceil(memories.length / 2));
 
   const feed: ReactNode[] = [];
   memories.forEach((item, i) => {
     feed.push(<MemoryCard key={item.id} item={item} index={i} />);
-    if (i === midpoint - 1) {
+    if (i === firstCtaAfter - 1) {
       feed.push(<FriendCTA key="mid-cta" year={year} />);
     }
   });
