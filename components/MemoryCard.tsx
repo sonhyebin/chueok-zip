@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CATEGORY_META, type MemoryItem } from "@/data/memories";
+import CommentBox from "@/components/CommentBox";
 
 const PHOTO_BG: Record<string, string> = {
   music: "linear-gradient(135deg, #ffd6e8, #c9b6ff)",
@@ -148,6 +149,8 @@ export default function MemoryCard({
         )}
 
         {item.prompt && <p className="speech">{item.prompt}</p>}
+
+        <CommentBox cardId={item.id} />
       </div>
     </article>
   );
