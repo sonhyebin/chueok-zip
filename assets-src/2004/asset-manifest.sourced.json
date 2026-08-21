@@ -1,0 +1,84 @@
+{
+  "bundle": "추억ZIP 2004 추가 실사 소싱 1차",
+  "createdAt": "2026-08-21",
+  "metadataStripped": true,
+  "webSpec": {
+    "format": "JPEG",
+    "width": 800,
+    "height": 600,
+    "maxFileSizeKb": 100
+  },
+  "assets": [
+    {
+      "id": "motorola-razr-v3",
+      "status": "licensed-candidate",
+      "original": "licensed-actual/originals/motorola-razr-v3-original.jpg",
+      "web": "licensed-actual/web/motorola-razr-v3.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Motorola_Razr_V3.jpg",
+      "license": "Public Domain",
+      "author": "Empoor",
+      "note": "2004-device-1은 가로본능 폰이므로 직접 교체하지 않음"
+    },
+    {
+      "id": "canon-powershot-a400",
+      "status": "licensed-candidate",
+      "original": "licensed-actual/originals/canon-powershot-a400-original.jpg",
+      "web": "licensed-actual/web/canon-powershot-a400.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Canon_PowerShot_A400_front_02.jpg",
+      "license": "Public Domain",
+      "author": "Luis Dantas",
+      "note": "2004년 디카·사진 문화 확장 후보"
+    },
+    {
+      "id": "iriver-h340",
+      "status": "licensed-candidate",
+      "original": "licensed-actual/originals/iriver-h340-original.jpg",
+      "web": "licensed-actual/web/iriver-h340.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:IRiver_H340.jpg",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+      "author": "Silje L. Bakke",
+      "credit": "Photo by Silje L. Bakke, CC BY 2.5, via Wikimedia Commons. Cropped/resized."
+    },
+    {
+      "id": "logitech-quickcam-pro-4000",
+      "status": "hold-duplicate",
+      "original": "licensed-actual/originals/logitech-quickcam-pro-4000-original.jpg",
+      "web": "licensed-actual/web/logitech-quickcam-pro-4000.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Logitech_Quickcam_Pro_4000.jpg",
+      "license": "Public Domain",
+      "author": "Dave Pape",
+      "note": "동일 자료가 2006-photo-2 하두리캠에 사용 중"
+    },
+    {
+      "id": "belinea-crt-monitor",
+      "status": "licensed-candidate-needs-edit",
+      "original": "licensed-actual/originals/belinea-crt-monitor-original.jpg",
+      "web": "licensed-actual/web/belinea-crt-monitor.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Belinea-monitor19crt.jpg",
+      "license": "Public Domain",
+      "author": "Norman Rogers",
+      "note": "적용 전 화면 속 데스크톱 UI를 흐림 또는 중립 화면으로 교체"
+    },
+    {
+      "id": "personal-computer-2003",
+      "status": "reference-only",
+      "original": "reference-only/originals/personal-computer-2003.jpg",
+      "web": "reference-only/web/personal-computer-2003.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Personalcomputer.jpg",
+      "license": "Public Domain",
+      "note": "이미지 내부 영문 라벨 때문에 구도 참고로만 사용"
+    },
+    {
+      "id": "pc-bang-2001",
+      "status": "reference-only",
+      "original": "reference-only/originals/pc-bang-2001.jpg",
+      "web": "reference-only/web/pc-bang-2001.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:PC_bang_in_2001.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "author": "Alex C",
+      "note": "식별 가능한 인물 포함 및 2005 카드와 중복되어 참고 전용"
+    }
+  ]
+}

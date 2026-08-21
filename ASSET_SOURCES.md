@@ -161,3 +161,17 @@
 
 - 샤기컷은 얼굴 미노출 실사가 존재하지 않아 recreated 렌더 유지 (유일한 비실사 카드)
 - 교체 전 렌더 원본은 assets-src/2005/에 그대로 보관 — 즉시 복귀 가능
+
+## 2004년 추가 실사 소싱 풀 (2026-08-21 · 카드 미적용)
+
+> 기존 2004 Priority 5 에셋은 유지한다. 아래 자료는 `assets-src/2004/`에 원본과 800×600 검토본을 보관했으며, 카드 의미가 정확히 맞는 경우에만 `public/`으로 옮겨 적용한다. 상세 상태는 `assets-src/2004/asset-manifest.sourced.json` 참조.
+
+| 자료 | 저작자 · 라이선스 | 상태 | 적용 메모 |
+|---|---|---|---|
+| [Motorola RAZR V3](https://commons.wikimedia.org/wiki/File:Motorola_Razr_V3.jpg) | Empoor · Public Domain | licensed-candidate | 2004년 카메라폰 분위기. 가로본능 폰과는 다른 기종이라 현재 카드 미교체 |
+| [Canon PowerShot A400](https://commons.wikimedia.org/wiki/File:Canon_PowerShot_A400_front_02.jpg) | Luis Dantas · Public Domain | licensed-candidate | 2004년 디카·사진 문화 확장 후보 |
+| [iRiver H340](https://commons.wikimedia.org/wiki/File:IRiver_H340.jpg) | Silje L. Bakke · CC BY 2.5 | licensed-candidate | 사용 시 카드 하단 저작자·라이선스·원본 링크 필수 |
+| [Logitech QuickCam Pro 4000](https://commons.wikimedia.org/wiki/File:Logitech_Quickcam_Pro_4000.jpg) | Dave Pape · Public Domain | hold-duplicate | 동일 자료가 2006 하두리캠 카드에 사용 중이라 중복 회피 |
+| [Belinea CRT monitor](https://commons.wikimedia.org/wiki/File:Belinea-monitor19crt.jpg) | Norman Rogers · Public Domain | needs-edit | 적용 전 화면 속 데스크톱 UI를 흐림 또는 중립 화면으로 교체 |
+| [Personal computer](https://commons.wikimedia.org/wiki/File:Personalcomputer.jpg) | Public Domain | reference-only | 이미지 내부 영문 라벨 때문에 구도 참고로만 사용 |
+| [PC bang in 2001](https://commons.wikimedia.org/wiki/File:PC_bang_in_2001.jpg) | Alex C · CC BY 2.0 | reference-only | 식별 가능한 인물 포함 및 2005 카드와 중복 |
