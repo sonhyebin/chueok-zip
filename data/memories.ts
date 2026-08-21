@@ -333,6 +333,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-music-1",
     image: "/images/years/2005/music/cyworld-bgm.jpg",
+    credit: {
+      label: "Mrs. Gemstone · Flickr · CC BY-SA 2.0",
+      url: "https://www.flickr.com/photos/21893264@N00/2215657406",
+    },
     year: 2005,
     category: "music",
     title: "윤도현 - 사랑했나봐",
@@ -357,6 +361,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-music-3",
     image: "/images/years/2005/music/noraebang-highnote.jpg",
+    credit: {
+      label: "derekGavey · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/45170709@N06/4917447111",
+    },
     year: 2005,
     category: "music",
     title: "버즈 - 겁쟁이",
@@ -367,6 +375,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-drama-1",
     image: "/images/years/2005/drama/livingroom-drama-night.jpg",
+    credit: {
+      label: "Paladin27 · Flickr · CC BY-NC 2.0",
+      url: "https://www.flickr.com/photos/98227537@N00/177469102",
+    },
     year: 2005,
     category: "drama",
     title: "내 이름은 김삼순",
@@ -377,6 +389,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-drama-2",
     image: "/images/years/2005/drama/saturday-variety.jpg",
+    credit: {
+      label: "Tobyotter · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/78428166@N00/6631862399",
+    },
     year: 2005,
     category: "drama",
     title: "무한도전 (무모한 도전)",
@@ -457,6 +473,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-photo-1",
     image: "/images/years/2005/photo/uljjang-angle.jpg",
+    credit: {
+      label: "jpmatth · Flickr · CC BY-NC-ND 2.0",
+      url: "https://www.flickr.com/photos/21893885@N00/5395865",
+    },
     year: 2005,
     category: "photo",
     title: "얼짱각도 45도",
@@ -481,6 +501,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-fashion-1",
     image: "/images/years/2005/fashion/magic-straight.jpg",
+    credit: {
+      label: "Leomedia · Wikimedia Commons · CC0",
+      url: "https://commons.wikimedia.org/wiki/File:Hair_straighteners_(3).JPG",
+    },
     year: 2005,
     category: "fashion",
     title: "매직 스트레이트",

@@ -144,3 +144,20 @@
 | 라이선스 | **CC BY 2.0** — 상업 사용·수정 가능, 표기 필수 |
 | 내용 | 파랑/초록 슬러시 컵 (인물 없음) |
 | 비고 | 미국 촬영이라 컵 스타일이 다름 — 국내 문방구 슬러시 자체 촬영 시 교체 후보 |
+
+## ⚠️ 사용자 저작권 검수 대기 (2026-08-21 일괄 실사 적용분)
+
+> 사용자 지시("지금은 실제 이미지로 올리고 저작권은 내가 따로 검수")에 따라 적용.
+> NC(비상업)·ND(변형금지) 조건이 붙은 항목은 상업 전환 전 반드시 재검토 필요.
+
+| 카드 | 원제/저작자 | 원본 | 라이선스 | 검수 포인트 |
+|---|---|---|---|---|
+| 겁쟁이 (`music/noraebang-highnote.jpg`) | Karaoke Star! · derekGavey | https://www.flickr.com/photos/45170709@N06/4917447111 | CC BY 2.0 | 문제 없음 (표기 완료) |
+| 사랑했나봐 (`music/cyworld-bgm.jpg`) | Home Computer Workstation · Mrs. Gemstone | https://www.flickr.com/photos/21893264@N00/2215657406 | CC BY-SA 2.0 | 가공본 SA 공개로 이행 (PC방과 동일 방식) |
+| 김삼순 (`drama/livingroom-drama-night.jpg`) | Our living room entertainment center · Paladin27 | https://www.flickr.com/photos/98227537@N00/177469102 | **CC BY-NC 2.0** | ⚠️ 비상업 조건 — 유료화/광고 전 교체 또는 허락 필요 |
+| 무한도전 (`drama/saturday-variety.jpg`) | TV Time · Tobyotter | https://www.flickr.com/photos/78428166@N00/6631862399 | CC BY 2.0 | 인물 뒷모습(아동 포함) — 초상권 저위험이나 인지 필요 |
+| 얼짱각도 (`photo/uljjang-angle.jpg`) | Mirrored Self-Portrait (2005) · jpmatth | https://www.flickr.com/photos/21893885@N00/5395865 | **CC BY-NC-ND 2.0** | ⚠️ 비상업+변형금지 — 크롭/톤 조정이 ND에 저촉될 수 있음, 최우선 재검토 |
+| 매직스트레이트 (`fashion/magic-straight.jpg`) | Hair straighteners (3) · Leomedia | https://commons.wikimedia.org/wiki/File:Hair_straighteners_(3).JPG | CC0 | 문제 없음 |
+
+- 샤기컷은 얼굴 미노출 실사가 존재하지 않아 recreated 렌더 유지 (유일한 비실사 카드)
+- 교체 전 렌더 원본은 assets-src/2005/에 그대로 보관 — 즉시 복귀 가능
