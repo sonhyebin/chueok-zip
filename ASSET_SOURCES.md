@@ -475,3 +475,39 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2014-meme-2 | 박보검,아이유도 참여한 2023년 아이스 버킷 챌린지🥶 | YouTube · 최애대백과 | https://www.youtube.com/watch?v=0lcrWK3HkJ8 |
 | 2015-meme-2 | [무도 special] 2014년 토요일 토요일은 가수다 무대영상 모음.zi | YouTube · 올끌 (All of MBClassic) | https://www.youtube.com/watch?v=lqAx6wPGalU |
 | 2016-meme-2 | PPAP 원본 애플펜 파인애플펜 아재 [고화질] | YouTube · Santo El | https://www.youtube.com/watch?v=klpU4pD6RAU |
+
+## ⚠️ 1998~1999 적용 (2026-08-21) — 검수 대기 (2017은 제거됨)
+
+| 카드 | 원제 | 출처 | 원본 |
+|---|---|---|---|
+| 1998-device-1 | Beeper Motorola Bravo Express - CTC Chile  | Jorgebarrios · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3ABeeper_Motorola_Bravo_Express_-_CTC_Chile_-_1.jpg |
+| 1998-drama-1 | 그동안 친구라고 생각했는데 #순풍산부인과 | YouTube · SBS 옛날 예능 - 빽능 | https://www.youtube.com/watch?v=zvy9Q93s5nY |
+| 1998-drama-2 | [빽드] You're fir…아니, 대기발령! │미스터 Q Ep.1-1 | YouTube · SBS 옛날 예능 - 빽능 | https://www.youtube.com/watch?v=kW-3k4a_EgQ |
+| 1998-fashion-1 | Me sitting at National Galleries II_MMIX | andronicusmax · Flickr · CC BY 2.0 | https://www.flickr.com/photos/24258698@N04/3946294052 |
+| 1998-fashion-2 | Bi pride coaster and hair scrunchie | Brainy J · Wikimedia Commons · CC CC0 1.0 | https://commons.wikimedia.org/w/index.php?curid=123631807 |
+| 1998-food-2 | Twestival Montreal Dessert Table | clevercupcakes · Flickr · CC BY 2.0 | https://www.flickr.com/photos/12803689@N02/4465040720 |
+| 1998-food-3 | 600goodice2.jpg | Mindme · Wikimedia Commons · Public domain | https://commons.wikimedia.org/wiki/File%3A600goodice2.jpg |
+| 1998-game-1 | 스타크래프트(1998)-09-프로토스-첫 공격 불길 속으로 더 높은 곳 | YouTube · EOSMYID | https://www.youtube.com/watch?v=g4OrfRPQEQ0 |
+| 1998-internet-1 | Zenith Z-19 Terminal | ajmexico · Flickr · CC BY 2.0 | https://www.flickr.com/photos/15587432@N02/3281139507 |
+| 1998-internet-2 | pc통신연결음 | YouTube · parkilk | https://www.youtube.com/watch?v=6FpciCDeMZU |
+| 1998-music-1 | 젝스키스 - 커플 | YouTube · YouTube | https://www.youtube.com/watch?v=42GaJk4YNLQ |
+| 1998-music-2 | [4K] H.O.T - 열 맞춰! 1999 드림콘서트 4K AI Upscal | YouTube · 하늘지기 OLD KPOP | https://www.youtube.com/watch?v=P-_XW0-Og4A |
+| 1998-music-3 | S.E.S. 'Dreams Come True' MV | YouTube · SMTOWN | https://www.youtube.com/watch?v=8uiR4SrDGZk |
+| 1998-photo-1 | Vivitar Ultra Compact 35mm camera (1912616 | Matthew Paul  Argall f · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AVivitar_Ultra_Compact_35mm_camera_%2819126164350%29.jpg |
+| 1998-photo-2 | 3d exhibition sticker (22) | admin@sinyim.com · Flickr · CC BY-SA 2.0 | https://www.flickr.com/photos/66771632@N08/15133905602 |
+| 1999-device-1 | Motorola StarTAC 6500 Phone.jpg | rfdigitalwpg · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AMotorola_StarTAC_6500_Phone.jpg |
+| 1999-drama-1 | 드라마 학교(1999) #드라마 #ost #kbs #언타이틀 | YouTube · 시간을 걷는 음악 | https://www.youtube.com/watch?v=rqJ1P6jOPe0 |
+| 1999-drama-2 | ✨시청률 52.7%✨김희선-김석훈 주연! 90년대를 휩쓸었던 레전드 로코 명 | YouTube · SBS 옛날 드라마 - 빽드 | https://www.youtube.com/watch?v=qZY7apwAAFQ |
+| 1999-fashion-1 | DSC09800 compress63.jpg | Lusthunter78 · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3ADSC09800_compress63.jpg |
+| 1999-fashion-2 | Haircut! | Elizabeth/Table4Five · Flickr · CC BY 2.0 | https://www.flickr.com/photos/92382806@N00/4783426031 |
+| 1999-food-2 | Five Islands Lobster Co. | Me in ME · Flickr · CC BY 2.0 | https://www.flickr.com/photos/12357841@N02/27274453873 |
+| 1999-game-1 | 20년 전 PC방의 게임 문화 - 스타크래프트 전성기｜크랩 | YouTube · 크랩 KLAB | https://www.youtube.com/watch?v=mTKCJ9SDQDU |
+| 1999-game-2 | 요즘 오락실 대회 | YouTube · 피펨즈FEFEMZ | https://www.youtube.com/watch?v=_Pz_dUkVBcM |
+| 1999-internet-1 | you looking at me | SFB579 Namaste · Flickr · CC BY 2.0 | https://www.flickr.com/photos/50826080@N00/15082145726 |
+| 1999-meme-1 | 전 국민 재입대의 순간 - Y2K, 밀레니엄 버그 | YouTube · 알면 놀람 | https://www.youtube.com/watch?v=jkmTDtHJfjA |
+| 1999-music-1 | god - 어머님께 | YouTube · YouTube | https://www.youtube.com/watch?v=efuVbrNLuAk |
+| 1999-music-2 | [MV] Fin.K.L(핑클) _ 영원한 사랑 | YouTube · 1theK (원더케이) | https://www.youtube.com/watch?v=CRR9Wsqf8Ls |
+| 1999-music-3 | H.O.T. - I Yah, 에이치오티 - 아이야,  Music Camp 1 | YouTube · MBCkpop | https://www.youtube.com/watch?v=cS-ALhCSmfk |
+| 1999-photo-1 | Passport | Tracy Hunter · Flickr · CC BY 2.0 | https://www.flickr.com/photos/11121785@N00/114897123 |
+| 1999-photo-2 | Back of Kodak Flash Single Use Camera (433 | Matthew Paul  Argall f · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3ABack_of_Kodak_Flash_Single_Use_Camera_%2843329081655%29.jpg |
+| 1999-school-1 | Multiple Manga Series | Mageos89 · Flickr · CC BY-NC-SA 2.0 | https://www.flickr.com/photos/36622442@N03/3782552355 |
