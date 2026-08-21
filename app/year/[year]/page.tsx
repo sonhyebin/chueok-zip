@@ -72,10 +72,16 @@ export default function YearPage() {
       <header className="text-center pop-in pt-2">
         <h1 className="font-pixel text-[52px] leading-none">{year}</h1>
         {born ? (
-          <p className="font-pixel text-[17px] mt-2">
-            그때 당신은 <span className="text-[#e84d8a]">{ageInYear(born, year)}살</span>
-            이었어요.
-          </p>
+          ageInYear(born, year) >= 1 ? (
+            <p className="font-pixel text-[17px] mt-2">
+              그때 당신은 <span className="text-[#e84d8a]">{ageInYear(born, year)}살</span>
+              이었어요.
+            </p>
+          ) : (
+            <p className="font-pixel text-[17px] mt-2">
+              당신이 태어나기 전의 이야기예요.
+            </p>
+          )
         ) : (
           <p className="font-pixel text-[17px] mt-2">그 시절로 접속 중…</p>
         )}

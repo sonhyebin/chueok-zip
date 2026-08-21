@@ -45,6 +45,15 @@ export type MemoryItem = {
     url?: string;
   };
 
+  /**
+   * 카드 안에서 곡을 바로 재생할 때 설정 (주로 music 카드).
+   * 연도 대표곡(YEAR_INFO.song)과 동일하게 공식 임베드 플레이어로만 재생한다.
+   */
+  song?: YearSong;
+
+  /** 발매일 — "YYYY.MM.DD" 표기. 카드 부제 아래에 "○○ 발매"로 표시된다. */
+  releaseDate?: string;
+
   keywords?: string[];
 };
 
@@ -369,6 +378,12 @@ export const MEMORIES: MemoryItem[] = [
     category: "music",
     title: "버즈 - 겁쟁이",
     subtitle: "남자들의 노래방 필수곡",
+    releaseDate: "2005.03.03",
+    song: {
+      title: "겁쟁이",
+      artist: "버즈",
+      ...ytSong("GSXvwmamkoU"),
+    },
     memoryStrength: 5,
     prompt: "노래방에서 이 노래 최고음, 끝까지 올라갔어요?",
   },

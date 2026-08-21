@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { CATEGORY_META, type MemoryItem } from "@/data/memories";
 
 const PHOTO_BG: Record<string, string> = {
@@ -33,6 +36,10 @@ export default function MemoryCard({
   index: number;
 }) {
   const meta = CATEGORY_META[item.category];
+  const [playing, setPlaying] = useState(false);
+  const embedSrc = item.song?.embedUrl
+    ? `${item.song.embedUrl}?autoplay=1&playsinline=1&rel=0`
+    : null;
   return (
     <article
       className="window card-appear"
@@ -94,7 +101,47 @@ export default function MemoryCard({
           {item.subtitle && (
             <p className="text-[13.5px] text-[#5a6b80] mt-0.5">{item.subtitle}</p>
           )}
+          {item.releaseDate && (
+            <p className="text-[12px] text-[#7a8ba0] mt-0.5 font-pixel">
+              💿 {item.releaseDate} 발매
+            </p>
+          )}
         </div>
+
+        {item.song &&
+          (embedSrc ? (
+            <button
+              type="button"
+              className={`pixel-btn ${playing ? "secondary" : "blue"} !w-auto self-start !px-4 !py-2 !text-[13px]`}
+              onClick={() => setPlaying((p) => !p)}
+            >
+              {playing ? "■ 정지" : "▶ 노래 듣기"}
+            </button>
+          ) : (
+            <a
+              href={item.song.externalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pixel-btn blue !w-auto self-start !px-4 !py-2 !text-[13px]"
+            >
+              ▶ 들어보기
+            </a>
+          ))}
+
+        {playing && embedSrc && item.song && (
+          <div
+            className="border-2 border-[#1d2733] rounded-lg overflow-hidden"
+            style={{ aspectRatio: "16 / 9", background: "#000" }}
+          >
+            <iframe
+              src={embedSrc}
+              title={`${item.song.artist} - ${item.song.title}`}
+              className="w-full h-full"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        )}
 
         {item.prompt && <p className="speech">{item.prompt}</p>}
       </div>
