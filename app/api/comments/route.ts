@@ -16,6 +16,9 @@ type Comment = {
   text: string;
   ts: number;
   region?: string;
+  /** 블롭 파일명 기반 id (하트 집계 키) */
+  id?: string;
+  hearts?: number;
 };
 
 function prefix(card: string) {
@@ -27,7 +30,16 @@ export async function GET(req: NextRequest) {
   if (!VALID_IDS.has(card)) {
     return NextResponse.json({ error: "unknown card" }, { status: 400 });
   }
-  const { blobs } = await list({ prefix: prefix(card), limit: 1000 });
+  const [{ blobs }, heartsList] = await Promise.all([
+    list({ prefix: prefix(card), limit: 1000 }),
+    list({ prefix: `hearts/${card}/`, limit: 1000 }),
+  ]);
+  // 하트 집계: hearts/<card>/<commentId>/<rand>
+  const heartCount = new Map<string, number>();
+  for (const h of heartsList.blobs) {
+    const cid = h.pathname.split("/")[2];
+    if (cid) heartCount.set(cid, (heartCount.get(cid) ?? 0) + 1);
+  }
   // 파일명이 <ts>-<rand>.json 이므로 최신순 정렬
   blobs.sort((a, b) => (a.pathname < b.pathname ? 1 : -1));
   const slice = blobs.slice(0, MAX_LIST);
@@ -36,13 +48,19 @@ export async function GET(req: NextRequest) {
       slice.map(async (b) => {
         try {
           const r = await fetch(b.url, { cache: "force-cache" });
-          return (await r.json()) as Comment;
+          const c = (await r.json()) as Comment;
+          const id = b.pathname.split("/").pop()!.replace(".json", "");
+          c.id = id;
+          c.hearts = heartCount.get(id) ?? 0;
+          return c;
         } catch {
           return null;
         }
       }),
     )
   ).filter((c): c is Comment => Boolean(c && c.name && c.text));
+  // 하트 많은 순 → 같으면 최신순
+  comments.sort((a, b) => (b.hearts! - a.hearts!) || (b.ts - a.ts));
   return NextResponse.json(
     { count: blobs.length, comments },
     { headers: { "Cache-Control": "no-store" } },
@@ -76,10 +94,18 @@ export async function POST(req: NextRequest) {
     ? (body.region ?? "").trim()
     : undefined;
   const ts = Date.now();
-  const comment: Comment = { name, text, ts, ...(region ? { region } : {}) };
-  const key = `${prefix(card)}${String(ts).padStart(15, "0")}-${Math.random()
+  const cid = `${String(ts).padStart(15, "0")}-${Math.random()
     .toString(36)
-    .slice(2, 8)}.json`;
+    .slice(2, 8)}`;
+  const comment: Comment = {
+    name,
+    text,
+    ts,
+    ...(region ? { region } : {}),
+    id: cid,
+    hearts: 0,
+  };
+  const key = `${prefix(card)}${cid}.json`;
   await put(key, JSON.stringify(comment), {
     access: "public",
     contentType: "application/json",

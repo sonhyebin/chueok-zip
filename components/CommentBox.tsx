@@ -4,7 +4,14 @@ import { useState } from "react";
 import { loadMyName, saveMyName } from "@/lib/age";
 import { REGIONS } from "@/lib/regions";
 
-type Comment = { name: string; text: string; ts: number; region?: string };
+type Comment = {
+  name: string;
+  text: string;
+  ts: number;
+  region?: string;
+  id?: string;
+  hearts?: number;
+};
 
 function fmt(ts: number) {
   const d = new Date(ts);
@@ -21,6 +28,38 @@ export default function CommentBox({ cardId }: { cardId: string }) {
   const [region, setRegion] = useState("");
   const [text, setText] = useState("");
   const [sending, setSending] = useState(false);
+  const [hearted, setHearted] = useState<Set<string>>(new Set());
+
+  function loadHearted() {
+    try {
+      return new Set<string>(
+        JSON.parse(localStorage.getItem("memory.hearts") ?? "[]"),
+      );
+    } catch {
+      return new Set<string>();
+    }
+  }
+
+  async function heart(c: Comment) {
+    if (!c.id || hearted.has(c.id)) return;
+    const next = new Set(hearted).add(c.id);
+    setHearted(next);
+    try {
+      localStorage.setItem("memory.hearts", JSON.stringify([...next]));
+    } catch {}
+    setComments((prev) =>
+      (prev ?? []).map((x) =>
+        x.id === c.id ? { ...x, hearts: (x.hearts ?? 0) + 1 } : x,
+      ),
+    );
+    try {
+      await fetch("/api/hearts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ card: cardId, id: c.id }),
+      });
+    } catch {}
+  }
 
   async function load() {
     setLoading(true);
@@ -40,6 +79,7 @@ export default function CommentBox({ cardId }: { cardId: string }) {
     setOpen(next);
     if (next && comments === null) {
       setName(loadMyName());
+      setHearted(loadHearted());
       try {
         setRegion(localStorage.getItem("memory.region") ?? "");
       } catch {}
@@ -146,19 +186,33 @@ export default function CommentBox({ cardId }: { cardId: string }) {
             <ul className="flex flex-col gap-1.5">
               {comments.map((c, i) => (
                 <li
-                  key={`${c.ts}-${i}`}
+                  key={c.id ?? `${c.ts}-${i}`}
                   className="bg-white border border-[#c9d8ec] rounded-lg px-2.5 py-1.5"
                 >
-                  <span className="font-pixel text-[12.5px] text-[#2f6fce]">
-                    {c.name}
-                    {c.region ? ` (${c.region})` : ""}
-                  </span>
-                  <span className="text-[10.5px] text-[#a3b2c4] ml-1.5">
-                    {fmt(c.ts)}
-                  </span>
-                  <p className="text-[13.5px] leading-snug mt-0.5 break-words">
-                    {c.text}
-                  </p>
+                  <div className="flex items-start gap-2">
+                    <div className="flex-1 min-w-0">
+                      <span className="font-pixel text-[12.5px] text-[#2f6fce]">
+                        {c.name}
+                        {c.region ? ` (${c.region})` : ""}
+                      </span>
+                      <span className="text-[10.5px] text-[#a3b2c4] ml-1.5">
+                        {fmt(c.ts)}
+                      </span>
+                      <p className="text-[13.5px] leading-snug mt-0.5 break-words">
+                        {c.text}
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => heart(c)}
+                      disabled={!c.id || hearted.has(c.id)}
+                      className="shrink-0 font-pixel text-[12px] text-[#e84d8a] px-1.5 py-0.5 disabled:opacity-70"
+                      aria-label="하트"
+                    >
+                      {c.id && hearted.has(c.id) ? "❤️" : "🤍"}{" "}
+                      {c.hearts ?? 0}
+                    </button>
+                  </div>
                 </li>
               ))}
             </ul>
