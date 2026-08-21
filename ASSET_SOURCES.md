@@ -48,6 +48,14 @@
 | `/images/years/2005/internet/cyworld-room.jpg` | recreated — 미니홈피 "감성"만 차용한 완전 오리지널 화면 디자인 (실제 UI·로고·도토리 미사용) | `assets-src/2005/cyworld-room.png` (1600×1200) |
 | `/images/years/2005/music/cyworld-bgm.jpg` | recreated — 오리지널 음악 플레이어 창 디자인 | `assets-src/2005/cyworld-bgm.png` (1600×1200) |
 | `/images/years/2005/photo/uljjang-angle.jpg` | generated-original — 가상 인물 일러스트 (실존 인물 무관) | `assets-src/2005/uljjang-angle.png` (1600×1200) |
+| `/images/years/2005/music/noraebang-book.jpg` | recreated — 노래방 곡번호책·리모컨·탬버린 정물 | `assets-src/2005/noraebang-book.png` |
+| `/images/years/2005/music/noraebang-highnote.jpg` | recreated — 열창 실루엣 (익명) | `assets-src/2005/noraebang-highnote.png` |
+| `/images/years/2005/drama/livingroom-drama-night.jpg` | recreated — 밤 거실 브라운관 시청 (화면은 추상 빛) | `assets-src/2005/livingroom-drama-night.png` |
+| `/images/years/2005/drama/saturday-variety.jpg` | recreated — 낮 거실 예능 시청 (익명 뒷모습) | `assets-src/2005/saturday-variety.png` |
+| `/images/years/2005/game/night-gaming.jpg` | recreated — 밤 키보드·컵라면 (게임 화면 미노출) | `assets-src/2005/night-gaming.png` |
+| `/images/years/2005/fashion/magic-straight.jpg` | recreated — 생머리 뒷모습+고데기 | `assets-src/2005/magic-straight.png` |
+| `/images/years/2005/fashion/shaggy-cut.jpg` | recreated — 미용실 샤기컷 뒷모습+가위 | `assets-src/2005/shaggy-cut.png` |
+| `/images/years/2005/food/blue-slush.jpg` | recreated — 파란 슬러시 돔컵 든 손 | `assets-src/2005/blue-slush.png` |
 
 - 자체 제작 렌더의 소스(장면 정의)는 세션 스크래치에서 제작되었으며 고화질 원본 PNG를 `assets-src/2005/`에 보관한다.
 - 라이선스 원문: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
@@ -75,7 +83,7 @@
 | 제공처 | Wikimedia Commons |
 | 라이선스 | **Public Domain** — 조건 없음 (2026-08-21 원본 페이지 재확인, Copyrighted: False) |
 | 촬영 시점 | 2007 (기기: LG KG800 초콜릿폰, 2005~2006 출시) |
-| 가공 | 세로 원본 → 블러 배경 채움 + 기기 전체 노출(contain), 800×600 |
+| 가공 | 세로 원본 → 블러 배경 채움 + 기기 확대(풀하이트), Verizon 로고 블러 처리, 800×600 |
 | 표기 | 의무 아님 — 투명성 차원에서 "자료: Wikimedia Commons · Public Domain" 표기 |
 | 비고 | 초콜릿폰은 2006년 출시라 "시대 근접 대표 슬라이드폰"으로 사용. 2006년 연도 확장 시 재배치 후보 |
 

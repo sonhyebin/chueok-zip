@@ -331,7 +331,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-music-2",
-    image: "/images/years/2005/2005-music-2.svg",
+    image: "/images/years/2005/music/noraebang-book.jpg",
     year: 2005,
     category: "music",
     title: "SG워너비 - 죄와 벌",
@@ -341,7 +341,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-music-3",
-    image: "/images/years/2005/2005-music-3.svg",
+    image: "/images/years/2005/music/noraebang-highnote.jpg",
     year: 2005,
     category: "music",
     title: "버즈 - 겁쟁이",
@@ -351,7 +351,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-drama-1",
-    image: "/images/years/2005/2005-drama-1.svg",
+    image: "/images/years/2005/drama/livingroom-drama-night.jpg",
     year: 2005,
     category: "drama",
     title: "내 이름은 김삼순",
@@ -361,7 +361,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-drama-2",
-    image: "/images/years/2005/2005-drama-2.svg",
+    image: "/images/years/2005/drama/saturday-variety.jpg",
     year: 2005,
     category: "drama",
     title: "무한도전 (무모한 도전)",
@@ -385,7 +385,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-game-2",
-    image: "/images/years/2005/2005-game-2.svg",
+    image: "/images/years/2005/game/night-gaming.jpg",
     year: 2005,
     category: "game",
     title: "던전앤파이터",
@@ -457,7 +457,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-fashion-1",
-    image: "/images/years/2005/2005-fashion-1.svg",
+    image: "/images/years/2005/fashion/magic-straight.jpg",
     year: 2005,
     category: "fashion",
     title: "매직 스트레이트",
@@ -467,7 +467,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-fashion-2",
-    image: "/images/years/2005/2005-fashion-2.svg",
+    image: "/images/years/2005/fashion/shaggy-cut.jpg",
     year: 2005,
     category: "fashion",
     title: "샤기컷",
@@ -491,7 +491,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-food-2",
-    image: "/images/years/2005/2005-food-2.svg",
+    image: "/images/years/2005/food/blue-slush.jpg",
     year: 2005,
     category: "food",
     title: "슬러시",
