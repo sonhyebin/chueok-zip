@@ -38,7 +38,7 @@ export default function MemoryCard({
   const meta = CATEGORY_META[item.category];
   const [playing, setPlaying] = useState(false);
   const embedSrc = item.song?.embedUrl
-    ? `${item.song.embedUrl}?autoplay=1&playsinline=1&rel=0`
+    ? `${item.song.embedUrl}?autoplay=1&playsinline=1&rel=0${item.song.startSec ? `&start=${item.song.startSec}` : ""}`
     : null;
   return (
     <article
@@ -115,7 +115,11 @@ export default function MemoryCard({
               className={`pixel-btn ${playing ? "secondary" : "blue"} !w-auto self-start !px-4 !py-2 !text-[13px]`}
               onClick={() => setPlaying((p) => !p)}
             >
-              {playing ? "■ 정지" : "▶ 노래 듣기"}
+              {playing
+                ? "■ 정지"
+                : item.category === "music"
+                  ? "▶ 하이라이트 듣기"
+                  : "▶ 그때 영상 보기"}
             </button>
           ) : (
             <a

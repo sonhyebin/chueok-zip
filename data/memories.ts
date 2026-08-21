@@ -105,6 +105,8 @@ export type YearSong = {
   embedUrl?: string;
   /** 원본 음악 서비스 페이지 URL (폴백 / 새 탭 열기) */
   externalUrl: string;
+  /** 하이라이트(사비) 시작 지점 — 초 단위. 재생 시 이 지점부터 시작 */
+  startSec?: number;
 };
 
 export type YearInfo = {
@@ -133,6 +135,7 @@ export const YEAR_INFO: Record<number, YearInfo> = {
       title: "내 여자라니까",
       artist: "이승기",
       ...ytSong("6NqCmI4IyLA"),
+      startSec: 58,
     },
   },
   2005: {
@@ -144,6 +147,7 @@ export const YEAR_INFO: Record<number, YearInfo> = {
       title: "사랑했나봐",
       artist: "윤도현",
       ...ytSong("VwuP95CES70"),
+      startSec: 52,
     },
   },
   2006: {
@@ -155,6 +159,7 @@ export const YEAR_INFO: Record<number, YearInfo> = {
       title: "사랑 안 해",
       artist: "백지영",
       ...ytSong("jN0uXBwKn8w"),
+      startSec: 64,
     },
   },
   2007: {
@@ -164,6 +169,7 @@ export const YEAR_INFO: Record<number, YearInfo> = {
       title: "Tell Me",
       artist: "원더걸스",
       ...ytSong("BlHv3BbBv6A"),
+      startSec: 40,
     },
   },
   2008: {
@@ -173,27 +179,28 @@ export const YEAR_INFO: Record<number, YearInfo> = {
       title: "하루하루",
       artist: "빅뱅",
       ...ytSong("8OAQ6RuYFGE"),
+      startSec: 76,
     },
   },
   2009: {
     year: 2009,
     title: "Gee와 아이폰 상륙의 해",
-    song: { title: "Gee", artist: "소녀시대", ...ytSong("U7mPqycQ0tQ") },
+    song: { title: "Gee", artist: "소녀시대", ...ytSong("U7mPqycQ0tQ"), startSec: 42 },
   },
   2010: {
     year: 2010,
     title: "카카오톡이 태어난 해",
-    song: { title: "Oh!", artist: "소녀시대", ...ytSong("TGbwL8kSpEk") },
+    song: { title: "Oh!", artist: "소녀시대", ...ytSong("TGbwL8kSpEk"), startSec: 40 },
   },
   2011: {
     year: 2011,
     title: "노스페이스와 롤의 해",
-    song: { title: "좋은 날", artist: "아이유", ...ytSong("jeqdYqsrsA0") },
+    song: { title: "좋은 날", artist: "아이유", ...ytSong("jeqdYqsrsA0"), startSec: 60 },
   },
   2012: {
     year: 2012,
     title: "강남스타일과 애니팡의 해",
-    song: { title: "강남스타일", artist: "싸이", ...ytSong("9bZkp7q19f0") },
+    song: { title: "강남스타일", artist: "싸이", ...ytSong("9bZkp7q19f0"), startSec: 71 },
   },
 };
 
@@ -205,10 +212,16 @@ export const MEMORIES: MemoryItem[] = [
   // ───────────────────────── 2004 ─────────────────────────
   {
     id: "2004-music-1",
-    image: "/images/years/2004/music/2004-music-1.jpg",
+    image: "https://i.ytimg.com/vi/0pLa8NyS4Es/hqdefault.jpg",
     credit: {
-      label: "striegel · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File%3ASony_Car_Discman_CD_player_D-830K%2C_front%2C_power_on_%2834979355295%29.jpg",
+      label: "YouTube · STONE MUSIC",
+      url: "https://www.youtube.com/watch?v=0pLa8NyS4Es",
+    },
+    song: {
+      title: "Timeless",
+      artist: "SG워너비",
+      ...ytSong("0pLa8NyS4Es"),
+      startSec: 62,
     },
     year: 2004,
     category: "music",
@@ -220,10 +233,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-music-2",
-    image: "/images/years/2004/music/2004-music-2.jpg",
+    image: "https://i.ytimg.com/vi/6NqCmI4IyLA/hqdefault.jpg",
     credit: {
-      label: "Department of Defense. Ameri · Wikimedia Commons · Public domain",
-      url: "https://commons.wikimedia.org/wiki/File%3AA_member_of_the_stage_crew_makes_adjustments_on_lights_for_the_US_Navy_Band%27s_Silver_Anniversary_Lollipop_Concert_-_DPLA_-_bba9273ee2b50d2a53595243a16342a9.jpeg",
+      label: "YouTube · YouTube",
+      url: "https://www.youtube.com/watch?v=6NqCmI4IyLA",
+    },
+    song: {
+      title: "내 여자라니까",
+      artist: "이승기",
+      ...ytSong("6NqCmI4IyLA"),
+      startSec: 58,
     },
     year: 2004,
     category: "music",
@@ -234,10 +253,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-music-3",
-    image: "/images/years/2004/music/2004-music-3.jpg",
+    image: "https://i.ytimg.com/vi/p1Yy2xcVhc4/hqdefault.jpg",
     credit: {
-      label: "kohlmann.sascha · Flickr · CC BY-SA 2.0",
-      url: "https://www.flickr.com/photos/96323831@N06/10960938633",
+      label: "YouTube · 1theK (원더케이)",
+      url: "https://www.youtube.com/watch?v=p1Yy2xcVhc4",
+    },
+    song: {
+      title: "한 남자",
+      artist: "김종국",
+      ...ytSong("p1Yy2xcVhc4"),
+      startSec: 55,
     },
     year: 2004,
     category: "music",
@@ -248,7 +273,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-drama-1",
-    image: "/images/years/2004/drama/paris-livingroom.jpg",
+    image: "https://i.ytimg.com/vi/RdBoyzmKOVY/hqdefault.jpg",
+    credit: {
+      label: "YouTube · SBS Catch",
+      url: "https://www.youtube.com/watch?v=RdBoyzmKOVY",
+    },
+    song: {
+      title: "파리의 연인",
+      artist: "영상",
+      ...ytSong("RdBoyzmKOVY"),
+    },
     year: 2004,
     category: "drama",
     title: "파리의 연인",
@@ -258,10 +292,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-drama-2",
-    image: "/images/years/2004/drama/2004-drama-2.jpg",
+    image: "https://i.ytimg.com/vi/c6yD7fn6sQU/hqdefault.jpg",
     credit: {
-      label: "Wonderlane · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/71401718@N00/465852851",
+      label: "YouTube · 리즈시절 천개 모으기",
+      url: "https://www.youtube.com/watch?v=c6yD7fn6sQU",
+    },
+    song: {
+      title: "풀하우스",
+      artist: "영상",
+      ...ytSong("c6yD7fn6sQU"),
     },
     year: 2004,
     category: "drama",
@@ -272,10 +311,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-game-1",
-    image: "/images/years/2004/game/2004-game-1.jpg",
+    image: "https://i.ytimg.com/vi/rLQzuLyRv1A/hqdefault.jpg",
     credit: {
-      label: "Alex C · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:People_playing_StarCraft_at_PC_Bang_in_2001.jpg",
+      label: "YouTube · 녹차",
+      url: "https://www.youtube.com/watch?v=rLQzuLyRv1A",
+    },
+    song: {
+      title: "카트라이더",
+      artist: "영상",
+      ...ytSong("rLQzuLyRv1A"),
     },
     year: 2004,
     category: "game",
@@ -286,10 +330,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-game-2",
-    image: "/images/years/2005/game/pcbang-racing.jpg",
+    image: "https://i.ytimg.com/vi/xBCkYwUyfOM/hqdefault.jpg",
     credit: {
-      label: "Alex C · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:PC_bang_in_2001.jpg",
+      label: "YouTube · 브라운테니",
+      url: "https://www.youtube.com/watch?v=xBCkYwUyfOM",
+    },
+    song: {
+      title: "메이플스토리",
+      artist: "영상",
+      ...ytSong("xBCkYwUyfOM"),
     },
     year: 2004,
     category: "game",
@@ -416,10 +465,16 @@ export const MEMORIES: MemoryItem[] = [
   // ───────────────────────── 2005 ─────────────────────────
   {
     id: "2005-music-1",
-    image: "/images/years/2005/music/cyworld-bgm.jpg",
+    image: "https://i.ytimg.com/vi/VwuP95CES70/hqdefault.jpg",
     credit: {
-      label: "Mrs. Gemstone · Flickr · CC BY-SA 2.0",
-      url: "https://www.flickr.com/photos/21893264@N00/2215657406",
+      label: "YouTube · YB",
+      url: "https://www.youtube.com/watch?v=VwuP95CES70",
+    },
+    song: {
+      title: "사랑했나봐",
+      artist: "윤도현",
+      ...ytSong("VwuP95CES70"),
+      startSec: 52,
     },
     year: 2005,
     category: "music",
@@ -430,10 +485,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-music-2",
-    image: "/images/years/2005/music/noraebang-book.jpg",
+    image: "https://i.ytimg.com/vi/yMAzoEHbmzg/hqdefault.jpg",
     credit: {
-      label: "la_minai · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/46348337@N02/5029488840",
+      label: "YouTube · YouTube",
+      url: "https://www.youtube.com/watch?v=yMAzoEHbmzg",
+    },
+    song: {
+      title: "죄와 벌",
+      artist: "SG워너비",
+      ...ytSong("yMAzoEHbmzg"),
+      startSec: 65,
     },
     year: 2005,
     category: "music",
@@ -444,10 +505,10 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-music-3",
-    image: "/images/years/2005/music/noraebang-highnote.jpg",
+    image: "https://i.ytimg.com/vi/GSXvwmamkoU/hqdefault.jpg",
     credit: {
-      label: "derekGavey · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/45170709@N06/4917447111",
+      label: "YouTube · YouTube",
+      url: "https://www.youtube.com/watch?v=GSXvwmamkoU",
     },
     year: 2005,
     category: "music",
@@ -458,16 +519,22 @@ export const MEMORIES: MemoryItem[] = [
       title: "겁쟁이",
       artist: "버즈",
       ...ytSong("GSXvwmamkoU"),
+      startSec: 63,
     },
     memoryStrength: 5,
     prompt: "노래방에서 이 노래 최고음, 끝까지 올라갔어요?",
   },
   {
     id: "2005-drama-1",
-    image: "/images/years/2005/drama/livingroom-drama-night.jpg",
+    image: "https://i.ytimg.com/vi/KSz_d9xO6zs/hqdefault.jpg",
     credit: {
-      label: "Paladin27 · Flickr · CC BY-NC 2.0",
-      url: "https://www.flickr.com/photos/98227537@N00/177469102",
+      label: "YouTube · 키노라이츠",
+      url: "https://www.youtube.com/watch?v=KSz_d9xO6zs",
+    },
+    song: {
+      title: "내 이름은 김삼순",
+      artist: "영상",
+      ...ytSong("KSz_d9xO6zs"),
     },
     year: 2005,
     category: "drama",
@@ -478,10 +545,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-drama-2",
-    image: "/images/years/2005/drama/saturday-variety.jpg",
+    image: "https://i.ytimg.com/vi/bVDffSwooaI/hqdefault.jpg",
     credit: {
-      label: "Tobyotter · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/78428166@N00/6631862399",
+      label: "YouTube · 숏파민",
+      url: "https://www.youtube.com/watch?v=bVDffSwooaI",
+    },
+    song: {
+      title: "무한도전 (무모한 도전)",
+      artist: "영상",
+      ...ytSong("bVDffSwooaI"),
     },
     year: 2005,
     category: "drama",
@@ -492,10 +564,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-game-1",
-    image: "/images/years/2005/game/pcbang-racing.jpg",
+    image: "https://i.ytimg.com/vi/hwyyzDDo7PQ/hqdefault.jpg",
     credit: {
-      label: "Alex C · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:PC_bang_in_2001.jpg",
+      label: "YouTube · 정너굴",
+      url: "https://www.youtube.com/watch?v=hwyyzDDo7PQ",
+    },
+    song: {
+      title: "카트라이더",
+      artist: "영상",
+      ...ytSong("hwyyzDDo7PQ"),
     },
     year: 2005,
     category: "game",
@@ -506,10 +583,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-game-2",
-    image: "/images/years/2005/game/night-gaming.jpg",
+    image: "https://i.ytimg.com/vi/uO2Czz4vlpc/hqdefault.jpg",
     credit: {
-      label: "Hachimaki · Wikimedia Commons · CC BY-SA 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg",
+      label: "YouTube · 단지니",
+      url: "https://www.youtube.com/watch?v=uO2Czz4vlpc",
+    },
+    song: {
+      title: "던전앤파이터",
+      artist: "영상",
+      ...ytSong("uO2Czz4vlpc"),
     },
     year: 2005,
     category: "game",
@@ -644,10 +726,16 @@ export const MEMORIES: MemoryItem[] = [
   // ───────────────────────── 2006 ─────────────────────────
   {
     id: "2006-music-1",
-    image: "/images/years/2006/music/2006-music-1.jpg",
+    image: "https://i.ytimg.com/vi/jN0uXBwKn8w/hqdefault.jpg",
     credit: {
-      label: "themusicianlab · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/142356394@N05/28158933050",
+      label: "YouTube · YouTube",
+      url: "https://www.youtube.com/watch?v=jN0uXBwKn8w",
+    },
+    song: {
+      title: "사랑 안 해",
+      artist: "백지영",
+      ...ytSong("jN0uXBwKn8w"),
+      startSec: 64,
     },
     year: 2006,
     category: "music",
@@ -658,10 +746,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-music-2",
-    image: "/images/years/2006/music/2006-music-2.jpg",
+    image: "https://i.ytimg.com/vi/7lT1Wt41gDs/hqdefault.jpg",
     credit: {
-      label: "hojusaram · Flickr · CC BY-NC-SA 2.0",
-      url: "https://www.flickr.com/photos/7122909@N05/3927766495",
+      label: "YouTube · DanalEntertainment",
+      url: "https://www.youtube.com/watch?v=7lT1Wt41gDs",
+    },
+    song: {
+      title: "내 사람",
+      artist: "SG워너비",
+      ...ytSong("7lT1Wt41gDs"),
+      startSec: 60,
     },
     year: 2006,
     category: "music",
@@ -672,10 +766,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-music-3",
-    image: "/images/years/2006/music/2006-music-3.jpg",
+    image: "https://i.ytimg.com/vi/dDeoLLzpdMA/hqdefault.jpg",
     credit: {
-      label: "The Cleveland Kid · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/21395880@N02/4430896810",
+      label: "YouTube · hitomixxhitomi",
+      url: "https://www.youtube.com/watch?v=dDeoLLzpdMA",
+    },
+    song: {
+      title: "여인의 향기",
+      artist: "씨야",
+      ...ytSong("dDeoLLzpdMA"),
+      startSec: 55,
     },
     year: 2006,
     category: "music",
@@ -686,10 +786,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-drama-1",
-    image: "/images/years/2006/drama/2006-drama-1.jpg",
+    image: "https://i.ytimg.com/vi/J5VziH-0J6k/hqdefault.jpg",
     credit: {
-      label: "Basile Morin · Wikimedia Commons · CC BY-SA 4.0",
-      url: "https://commons.wikimedia.org/wiki/File%3AFinely_painted_wooden_ceiling_of_Jibokjae_Hall_seen_from_below_at_Gyeongbokgung_Palace_in_Seoul.jpg",
+      label: "YouTube · 리즈시절찾기",
+      url: "https://www.youtube.com/watch?v=J5VziH-0J6k",
+    },
+    song: {
+      title: "궁",
+      artist: "영상",
+      ...ytSong("J5VziH-0J6k"),
     },
     year: 2006,
     category: "drama",
@@ -700,10 +805,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-drama-2",
-    image: "/images/years/2006/drama/2006-drama-2.jpg",
+    image: "https://i.ytimg.com/vi/MCzGwhchA58/hqdefault.jpg",
     credit: {
-      label: "Basile Morin · Wikimedia Commons · CC BY-SA 4.0",
-      url: "https://commons.wikimedia.org/wiki/File%3AFront_view_of_Jibokjae_Hall_under_blue_sky_at_Gyeongbokgung_Palace_in_Seoul.jpg",
+      label: "YouTube · 옛드",
+      url: "https://www.youtube.com/watch?v=MCzGwhchA58",
+    },
+    song: {
+      title: "주몽",
+      artist: "영상",
+      ...ytSong("MCzGwhchA58"),
     },
     year: 2006,
     category: "drama",
@@ -714,10 +824,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-game-1",
-    image: "/images/years/2006/game/pcbang-fps.jpg",
+    image: "https://i.ytimg.com/vi/AJdanoQzlmI/hqdefault.jpg",
     credit: {
-      label: "Alex C · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:People_playing_StarCraft_at_PC_Bang_in_2001.jpg",
+      label: "YouTube · 직장인 스나",
+      url: "https://www.youtube.com/watch?v=AJdanoQzlmI",
+    },
+    song: {
+      title: "서든어택",
+      artist: "영상",
+      ...ytSong("AJdanoQzlmI"),
     },
     year: 2006,
     category: "game",
@@ -728,10 +843,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-game-2",
-    image: "/images/years/2006/game/2006-game-2.jpg",
+    image: "https://i.ytimg.com/vi/zI0Vesb0tPQ/hqdefault.jpg",
     credit: {
-      label: "jasoneppink · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/38102495@N00/9226580528",
+      label: "YouTube · 더키TV",
+      url: "https://www.youtube.com/watch?v=zI0Vesb0tPQ",
+    },
+    song: {
+      title: "오디션",
+      artist: "영상",
+      ...ytSong("zI0Vesb0tPQ"),
     },
     year: 2006,
     category: "game",
@@ -870,10 +990,16 @@ export const MEMORIES: MemoryItem[] = [
   // ───────────────────────── 2007 ─────────────────────────
   {
     id: "2007-music-1",
-    image: "/images/years/2007/music/2007-music-1.jpg",
+    image: "https://i.ytimg.com/vi/BlHv3BbBv6A/hqdefault.jpg",
     credit: {
-      label: "siobhanmc · Flickr · CC BY-NC-SA 2.0",
-      url: "https://www.flickr.com/photos/71508971@N00/4037930851",
+      label: "YouTube · YouTube",
+      url: "https://www.youtube.com/watch?v=BlHv3BbBv6A",
+    },
+    song: {
+      title: "Tell Me",
+      artist: "원더걸스",
+      ...ytSong("BlHv3BbBv6A"),
+      startSec: 40,
     },
     year: 2007,
     category: "music",
@@ -884,10 +1010,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-music-2",
-    image: "/images/years/2005/music/noraebang-highnote.jpg",
+    image: "https://i.ytimg.com/vi/2Cv3phvP8Ro/hqdefault.jpg",
     credit: {
-      label: "derekGavey · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/45170709@N06/4917447111",
+      label: "YouTube · YG ENTERTAINMENT",
+      url: "https://www.youtube.com/watch?v=2Cv3phvP8Ro",
+    },
+    song: {
+      title: "거짓말",
+      artist: "빅뱅",
+      ...ytSong("2Cv3phvP8Ro"),
+      startSec: 48,
     },
     year: 2007,
     category: "music",
@@ -898,10 +1030,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-music-3",
-    image: "/images/years/2007/music/2007-music-3.jpg",
+    image: "https://i.ytimg.com/vi/0k2Zzkw_-0I/hqdefault.jpg",
     credit: {
-      label: "Department of Defense. Ameri · Wikimedia Commons · Public domain",
-      url: "https://commons.wikimedia.org/wiki/File%3AA_member_of_the_stage_crew_makes_adjustments_on_lights_for_the_US_Navy_Band%27s_Silver_Anniversary_Lollipop_Concert_-_DPLA_-_bba9273ee2b50d2a53595243a16342a9.jpeg",
+      label: "YouTube · SMTOWN",
+      url: "https://www.youtube.com/watch?v=0k2Zzkw_-0I",
+    },
+    song: {
+      title: "다시 만난 세계",
+      artist: "소녀시대",
+      ...ytSong("0k2Zzkw_-0I"),
+      startSec: 50,
     },
     year: 2007,
     category: "music",
@@ -912,10 +1050,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-drama-1",
-    image: "/images/years/2007/drama/2007-drama-1.jpg",
+    image: "https://i.ytimg.com/vi/-4nBEkZDpdo/hqdefault.jpg",
     credit: {
-      label: "tapecode · Flickr · CC PDM 1.0",
-      url: "https://www.flickr.com/photos/148019735@N08/31813073584",
+      label: "YouTube · TVING 티빙",
+      url: "https://www.youtube.com/watch?v=-4nBEkZDpdo",
+    },
+    song: {
+      title: "커피프린스 1호점",
+      artist: "영상",
+      ...ytSong("-4nBEkZDpdo"),
     },
     year: 2007,
     category: "drama",
@@ -926,10 +1069,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-drama-2",
-    image: "/images/years/2007/drama/2007-drama-2.jpg",
+    image: "https://i.ytimg.com/vi/vgyvy-Jhxjw/hqdefault.jpg",
     credit: {
-      label: "Digi_shot · Flickr · CC BY-NC-ND 2.0",
-      url: "https://www.flickr.com/photos/25828103@N03/4704185948",
+      label: "YouTube · MBCdrama",
+      url: "https://www.youtube.com/watch?v=vgyvy-Jhxjw",
+    },
+    song: {
+      title: "거침없이 하이킥",
+      artist: "영상",
+      ...ytSong("vgyvy-Jhxjw"),
     },
     year: 2007,
     category: "drama",
@@ -940,10 +1088,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-game-1",
-    image: "/images/years/2007/game/2007-game-1.jpg",
+    image: "https://i.ytimg.com/vi/dViSmx48j5M/hqdefault.jpg",
     credit: {
-      label: "Syced · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/wiki/File%3ALAN_party_in_France_in_2003.jpg",
+      label: "YouTube · 위드갓카오스",
+      url: "https://www.youtube.com/watch?v=dViSmx48j5M",
+    },
+    song: {
+      title: "카오스 (워크래프트3)",
+      artist: "영상",
+      ...ytSong("dViSmx48j5M"),
     },
     year: 2007,
     category: "game",
@@ -954,10 +1107,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-game-2",
-    image: "/images/years/2007/game/2007-game-2.jpg",
+    image: "https://i.ytimg.com/vi/tNH53pWx9ck/hqdefault.jpg",
     credit: {
-      label: "comedy_nose · Flickr · CC PDM 1.0",
-      url: "https://www.flickr.com/photos/23408922@N07/9320845849",
+      label: "YouTube · 폭풍",
+      url: "https://www.youtube.com/watch?v=tNH53pWx9ck",
+    },
+    song: {
+      title: "테일즈런너",
+      artist: "영상",
+      ...ytSong("tNH53pWx9ck"),
     },
     year: 2007,
     category: "game",
@@ -1096,10 +1254,16 @@ export const MEMORIES: MemoryItem[] = [
   // ───────────────────────── 2008 ─────────────────────────
   {
     id: "2008-music-1",
-    image: "/images/years/2008/music/2008-music-1.jpg",
+    image: "https://i.ytimg.com/vi/QZBn1e9pr2Q/hqdefault.jpg",
     credit: {
-      label: "MIKI Yoshihito. (#mikiyoshih · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/7940758@N07/8234203575",
+      label: "YouTube · wondergirls",
+      url: "https://www.youtube.com/watch?v=QZBn1e9pr2Q",
+    },
+    song: {
+      title: "Nobody",
+      artist: "원더걸스",
+      ...ytSong("QZBn1e9pr2Q"),
+      startSec: 50,
     },
     year: 2008,
     category: "music",
@@ -1110,10 +1274,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-music-2",
-    image: "/images/years/2008/music/2008-music-2.jpg",
+    image: "https://i.ytimg.com/vi/8OAQ6RuYFGE/hqdefault.jpg",
     credit: {
-      label: "la_minai · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/46348337@N02/5029488788",
+      label: "YouTube · YouTube",
+      url: "https://www.youtube.com/watch?v=8OAQ6RuYFGE",
+    },
+    song: {
+      title: "하루하루",
+      artist: "빅뱅",
+      ...ytSong("8OAQ6RuYFGE"),
+      startSec: 76,
     },
     year: 2008,
     category: "music",
@@ -1124,10 +1294,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-music-3",
-    image: "/images/years/2005/internet/mp3-player.jpg",
+    image: "https://i.ytimg.com/vi/rda0HwrTKeQ/hqdefault.jpg",
     credit: {
-      label: "Graham Stanley · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:IRiver_ifp-890.jpg",
+      label: "YouTube · ENM CJ",
+      url: "https://www.youtube.com/watch?v=rda0HwrTKeQ",
+    },
+    song: {
+      title: "One More Time",
+      artist: "쥬얼리",
+      ...ytSong("rda0HwrTKeQ"),
+      startSec: 45,
     },
     year: 2008,
     category: "music",
@@ -1138,10 +1314,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-drama-1",
-    image: "/images/years/2008/drama/2008-drama-1.jpg",
+    image: "https://i.ytimg.com/vi/U0NBzMEmJgg/hqdefault.jpg",
     credit: {
-      label: "unclibraries_commons · Flickr · CC PDM 1.0",
-      url: "https://www.flickr.com/photos/122654055@N06/23085371702",
+      label: "YouTube · MBCdrama",
+      url: "https://www.youtube.com/watch?v=U0NBzMEmJgg",
+    },
+    song: {
+      title: "베토벤 바이러스",
+      artist: "영상",
+      ...ytSong("U0NBzMEmJgg"),
     },
     year: 2008,
     category: "drama",
@@ -1152,10 +1333,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-drama-2",
-    image: "/images/years/2008/drama/2008-drama-2.jpg",
+    image: "https://i.ytimg.com/vi/blsGbdcwuiQ/hqdefault.jpg",
     credit: {
-      label: "Tela Chhe · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/21042103@N03/4641589345",
+      label: "YouTube · dayniElly",
+      url: "https://www.youtube.com/watch?v=blsGbdcwuiQ",
+    },
+    song: {
+      title: "우리 결혼했어요",
+      artist: "영상",
+      ...ytSong("blsGbdcwuiQ"),
     },
     year: 2008,
     category: "drama",
@@ -1166,10 +1352,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-game-1",
-    image: "/images/years/2005/game/night-gaming.jpg",
+    image: "https://i.ytimg.com/vi/RcFem_CJqlE/hqdefault.jpg",
     credit: {
-      label: "Hachimaki · Wikimedia Commons · CC BY-SA 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg",
+      label: "YouTube · 솔로TV",
+      url: "https://www.youtube.com/watch?v=RcFem_CJqlE",
+    },
+    song: {
+      title: "서든어택",
+      artist: "영상",
+      ...ytSong("RcFem_CJqlE"),
     },
     year: 2008,
     category: "game",
@@ -1180,10 +1371,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-game-2",
-    image: "/images/years/2008/game/2008-game-2.jpg",
+    image: "https://i.ytimg.com/vi/MBkCv2fm3Ag/hqdefault.jpg",
     credit: {
-      label: "Syced · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/wiki/File%3ALAN_party_in_France_in_2003.jpg",
+      label: "YouTube · plaync",
+      url: "https://www.youtube.com/watch?v=MBkCv2fm3Ag",
+    },
+    song: {
+      title: "아이온",
+      artist: "영상",
+      ...ytSong("MBkCv2fm3Ag"),
     },
     year: 2008,
     category: "game",
@@ -1334,10 +1530,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2009-music-1",
-    image: "/images/years/2009/music/2009-music-1.jpg",
+    image: "https://i.ytimg.com/vi/U7mPqycQ0tQ/hqdefault.jpg",
     credit: {
-      label: "shaire productions · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/9822107@N08/4069525639",
+      label: "YouTube · YouTube",
+      url: "https://www.youtube.com/watch?v=U7mPqycQ0tQ",
+    },
+    song: {
+      title: "Gee",
+      artist: "소녀시대",
+      ...ytSong("U7mPqycQ0tQ"),
+      startSec: 42,
     },
     year: 2009,
     category: "music",
@@ -1348,10 +1550,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2009-music-2",
-    image: "/images/years/2009/music/2009-music-2.jpg",
+    image: "https://i.ytimg.com/vi/x6QA3m58DQw/hqdefault.jpg",
     credit: {
-      label: "elyaqim · Flickr · CC BY-SA 2.0",
-      url: "https://www.flickr.com/photos/19364205@N00/16039471776",
+      label: "YouTube · SMTOWN",
+      url: "https://www.youtube.com/watch?v=x6QA3m58DQw",
+    },
+    song: {
+      title: "쏘리 쏘리",
+      artist: "슈퍼주니어",
+      ...ytSong("x6QA3m58DQw"),
+      startSec: 47,
     },
     year: 2009,
     category: "music",
@@ -1362,10 +1570,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2009-music-3",
-    image: "/images/years/2009/music/2009-music-3.jpg",
+    image: "https://i.ytimg.com/vi/4MgAxMO1KD0/hqdefault.jpg",
     credit: {
-      label: "kevin dooley · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/12836528@N00/16137275302",
+      label: "YouTube · YG ENTERTAINMENT",
+      url: "https://www.youtube.com/watch?v=4MgAxMO1KD0",
+    },
+    song: {
+      title: "I Don't Care",
+      artist: "2NE1",
+      ...ytSong("4MgAxMO1KD0"),
+      startSec: 52,
     },
     year: 2009,
     category: "music",
@@ -1376,10 +1590,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2009-drama-1",
-    image: "/images/years/2009/drama/2009-drama-1.jpg",
+    image: "https://i.ytimg.com/vi/_W-v9U8ZmWQ/hqdefault.jpg",
     credit: {
-      label: "kimberlykv · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/87542849@N00/559281413",
+      label: "YouTube · KBS Drama Classic",
+      url: "https://www.youtube.com/watch?v=_W-v9U8ZmWQ",
+    },
+    song: {
+      title: "꽃보다 남자",
+      artist: "영상",
+      ...ytSong("_W-v9U8ZmWQ"),
     },
     year: 2009,
     category: "drama",
@@ -1390,10 +1609,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2009-drama-2",
-    image: "/images/years/2009/drama/2009-drama-2.jpg",
+    image: "https://i.ytimg.com/vi/Gbko_1jrErE/hqdefault.jpg",
     credit: {
-      label: "Abasaa · Wikimedia Commons · Public domain",
-      url: "https://commons.wikimedia.org/wiki/File%3ARoyal_Tomb_of_King_Seok_Talhae.JPG",
+      label: "YouTube · 옛드",
+      url: "https://www.youtube.com/watch?v=Gbko_1jrErE",
+    },
+    song: {
+      title: "선덕여왕",
+      artist: "영상",
+      ...ytSong("Gbko_1jrErE"),
     },
     year: 2009,
     category: "drama",
@@ -1404,10 +1628,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2009-game-1",
-    image: "/images/years/2009/game/2009-game-1.jpg",
+    image: "https://i.ytimg.com/vi/eb5pYaUsnl4/hqdefault.jpg",
     credit: {
-      label: "osman.gucel · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/126089327@N04/14714880858",
+      label: "YouTube · 몰콩 추억탐방",
+      url: "https://www.youtube.com/watch?v=eb5pYaUsnl4",
+    },
+    song: {
+      title: "던전앤파이터 전성기",
+      artist: "영상",
+      ...ytSong("eb5pYaUsnl4"),
     },
     year: 2009,
     category: "game",
@@ -1418,10 +1647,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2009-game-2",
-    image: "/images/years/2009/game/2009-game-2.jpg",
+    image: "https://i.ytimg.com/vi/IS0iKlH35d0/hqdefault.jpg",
     credit: {
-      label: "kevinpoh · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/7679455@N03/13693123383",
+      label: "YouTube · 테스터훈 TesterHoon",
+      url: "https://www.youtube.com/watch?v=IS0iKlH35d0",
+    },
+    song: {
+      title: "버블파이터",
+      artist: "영상",
+      ...ytSong("IS0iKlH35d0"),
     },
     year: 2009,
     category: "game",
@@ -1558,10 +1792,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2010-music-1",
-    image: "/images/years/2010/music/2010-music-1.jpg",
+    image: "https://i.ytimg.com/vi/TGbwL8kSpEk/hqdefault.jpg",
     credit: {
-      label: "DCHNwam · Flickr · CC PDM 1.0",
-      url: "https://www.flickr.com/photos/57179180@N07/53969507902",
+      label: "YouTube · YouTube",
+      url: "https://www.youtube.com/watch?v=TGbwL8kSpEk",
+    },
+    song: {
+      title: "Oh!",
+      artist: "소녀시대",
+      ...ytSong("TGbwL8kSpEk"),
+      startSec: 40,
     },
     year: 2010,
     category: "music",
@@ -1572,10 +1812,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2010-music-2",
-    image: "/images/years/2010/music/2010-music-2.jpg",
+    image: "https://i.ytimg.com/vi/hOREkPq1aVQ/hqdefault.jpg",
     credit: {
-      label: "Fan.D & Dav.C Photgraphy · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/98815931@N07/51363085643",
+      label: "YouTube · 2am",
+      url: "https://www.youtube.com/watch?v=hOREkPq1aVQ",
+    },
+    song: {
+      title: "죽어도 못 보내",
+      artist: "2AM",
+      ...ytSong("hOREkPq1aVQ"),
+      startSec: 55,
     },
     year: 2010,
     category: "music",
@@ -1586,10 +1832,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2010-music-3",
-    image: "/images/years/2010/music/2010-music-3.jpg",
+    image: "https://i.ytimg.com/vi/8TeeJvcBdLA/hqdefault.jpg",
     credit: {
-      label: "simonsmith001 · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/25828730@N00/2545054689",
+      label: "YouTube · missA",
+      url: "https://www.youtube.com/watch?v=8TeeJvcBdLA",
+    },
+    song: {
+      title: "Bad Girl Good Girl",
+      artist: "미쓰에이",
+      ...ytSong("8TeeJvcBdLA"),
+      startSec: 48,
     },
     year: 2010,
     category: "music",
@@ -1600,10 +1852,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2010-drama-1",
-    image: "/images/years/2010/drama/2010-drama-1.jpg",
+    image: "https://i.ytimg.com/vi/79GZ1bv47Rs/hqdefault.jpg",
     credit: {
-      label: "*rboed* · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/92082510@N04/15544617113",
+      label: "YouTube · SBS 옛날 드라마 - 빽드",
+      url: "https://www.youtube.com/watch?v=79GZ1bv47Rs",
+    },
+    song: {
+      title: "시크릿 가든",
+      artist: "영상",
+      ...ytSong("79GZ1bv47Rs"),
     },
     year: 2010,
     category: "drama",
@@ -1614,10 +1871,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2010-drama-2",
-    image: "/images/years/2010/drama/2010-drama-2.jpg",
+    image: "https://i.ytimg.com/vi/XKlY_gx_UbI/hqdefault.jpg",
     credit: {
-      label: "Man vyi · Wikimedia Commons · Public domain",
-      url: "https://commons.wikimedia.org/wiki/File%3ACabbage_loaves_pelle_Fa%C3%AEs%27sie_d%27Cidre_2007.jpg",
+      label: "YouTube · KBS Drama Classic",
+      url: "https://www.youtube.com/watch?v=XKlY_gx_UbI",
+    },
+    song: {
+      title: "제빵왕 김탁구",
+      artist: "영상",
+      ...ytSong("XKlY_gx_UbI"),
     },
     year: 2010,
     category: "drama",
@@ -1628,10 +1890,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2010-game-1",
-    image: "/images/years/2005/game/night-gaming.jpg",
+    image: "https://i.ytimg.com/vi/HOfUlleobEw/hqdefault.jpg",
     credit: {
-      label: "Hachimaki · Wikimedia Commons · CC BY-SA 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg",
+      label: "YouTube · 스투캠페인",
+      url: "https://www.youtube.com/watch?v=HOfUlleobEw",
+    },
+    song: {
+      title: "스타크래프트 2",
+      artist: "영상",
+      ...ytSong("HOfUlleobEw"),
     },
     year: 2010,
     category: "game",
@@ -1642,10 +1909,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2010-game-2",
-    image: "/images/years/2005/game/night-gaming.jpg",
+    image: "https://i.ytimg.com/vi/KbzXB_JDh34/hqdefault.jpg",
     credit: {
-      label: "Hachimaki · Wikimedia Commons · CC BY-SA 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg",
+      label: "YouTube · 서든어택",
+      url: "https://www.youtube.com/watch?v=KbzXB_JDh34",
+    },
+    song: {
+      title: "서든어택 전성기 지속",
+      artist: "영상",
+      ...ytSong("KbzXB_JDh34"),
     },
     year: 2010,
     category: "game",
@@ -1782,10 +2054,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2011-music-1",
-    image: "/images/years/2011/music/2011-music-1.jpg",
+    image: "https://i.ytimg.com/vi/jeqdYqsrsA0/hqdefault.jpg",
     credit: {
-      label: "Chris Breikss · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/70116881@N00/6733458411",
+      label: "YouTube · YouTube",
+      url: "https://www.youtube.com/watch?v=jeqdYqsrsA0",
+    },
+    song: {
+      title: "좋은 날",
+      artist: "아이유",
+      ...ytSong("jeqdYqsrsA0"),
+      startSec: 60,
     },
     year: 2011,
     category: "music",
@@ -1796,10 +2074,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2011-music-2",
-    image: "/images/years/2011/music/2011-music-2.jpg",
+    image: "https://i.ytimg.com/vi/afwK0Mv0IsY/hqdefault.jpg",
     credit: {
-      label: "marfis75 · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/45409431@N00/4949472820",
+      label: "YouTube · 1theK (원더케이)",
+      url: "https://www.youtube.com/watch?v=afwK0Mv0IsY",
+    },
+    song: {
+      title: "Roly Poly",
+      artist: "티아라",
+      ...ytSong("afwK0Mv0IsY"),
+      startSec: 55,
     },
     year: 2011,
     category: "music",
@@ -1810,10 +2094,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2011-music-3",
-    image: "/images/years/2011/music/2011-music-3.jpg",
+    image: "https://i.ytimg.com/vi/8d5QEWdHchk/hqdefault.jpg",
     credit: {
-      label: "Photo Cindy · Flickr · CC CC0 1.0",
-      url: "https://www.flickr.com/photos/13631562@N00/4946114680",
+      label: "YouTube · BIGBANG",
+      url: "https://www.youtube.com/watch?v=8d5QEWdHchk",
+    },
+    song: {
+      title: "Tonight",
+      artist: "빅뱅",
+      ...ytSong("8d5QEWdHchk"),
+      startSec: 50,
     },
     year: 2011,
     category: "music",
@@ -1824,10 +2114,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2011-drama-1",
-    image: "/images/years/2011/drama/2011-drama-1.jpg",
+    image: "https://i.ytimg.com/vi/hv0-Xzv436E/hqdefault.jpg",
     credit: {
-      label: "dave_mcmt · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/30512529@N00/187427874",
+      label: "YouTube · christmasj134",
+      url: "https://www.youtube.com/watch?v=hv0-Xzv436E",
+    },
+    song: {
+      title: "드림하이",
+      artist: "영상",
+      ...ytSong("hv0-Xzv436E"),
     },
     year: 2011,
     category: "drama",
@@ -1838,10 +2133,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2011-drama-2",
-    image: "/images/years/2011/drama/2011-drama-2.jpg",
+    image: "https://i.ytimg.com/vi/K5TrkheTjdI/hqdefault.jpg",
     credit: {
-      label: "Original: mauveine.kimEdited · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/wiki/File%3ACyberpunk_Seoul_View.jpg",
+      label: "YouTube · TimeStory",
+      url: "https://www.youtube.com/watch?v=K5TrkheTjdI",
+    },
+    song: {
+      title: "시티헌터",
+      artist: "영상",
+      ...ytSong("K5TrkheTjdI"),
     },
     year: 2011,
     category: "drama",
@@ -1852,10 +2152,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2011-game-1",
-    image: "/images/years/2005/game/night-gaming.jpg",
+    image: "https://i.ytimg.com/vi/G5WUsX7ulq8/hqdefault.jpg",
     credit: {
-      label: "Hachimaki · Wikimedia Commons · CC BY-SA 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg",
+      label: "YouTube · 딜리트",
+      url: "https://www.youtube.com/watch?v=G5WUsX7ulq8",
+    },
+    song: {
+      title: "리그 오브 레전드 상륙",
+      artist: "영상",
+      ...ytSong("G5WUsX7ulq8"),
     },
     year: 2011,
     category: "game",
@@ -1866,10 +2171,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2011-game-2",
-    image: "/images/years/2005/game/night-gaming.jpg",
+    image: "https://i.ytimg.com/vi/6fG89nvzuhc/hqdefault.jpg",
     credit: {
-      label: "Hachimaki · Wikimedia Commons · CC BY-SA 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg",
+      label: "YouTube · TERA2011OPEN",
+      url: "https://www.youtube.com/watch?v=6fG89nvzuhc",
+    },
+    song: {
+      title: "테라",
+      artist: "영상",
+      ...ytSong("6fG89nvzuhc"),
     },
     year: 2011,
     category: "game",
@@ -2006,10 +2316,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2012-music-1",
-    image: "/images/years/2012/music/2012-music-1.jpg",
+    image: "https://i.ytimg.com/vi/9bZkp7q19f0/hqdefault.jpg",
     credit: {
-      label: "No machine-readable author p · Wikimedia Commons · Public domain",
-      url: "https://commons.wikimedia.org/wiki/File%3AA_street_in_Gangnam_residential_area%2C_Seoul.jpg",
+      label: "YouTube · YouTube",
+      url: "https://www.youtube.com/watch?v=9bZkp7q19f0",
+    },
+    song: {
+      title: "강남스타일",
+      artist: "싸이",
+      ...ytSong("9bZkp7q19f0"),
+      startSec: 71,
     },
     year: 2012,
     category: "music",
@@ -2020,10 +2336,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2012-music-2",
-    image: "/images/years/2012/music/2012-music-2.jpg",
+    image: "https://i.ytimg.com/vi/tXV7dfvSefo/hqdefault.jpg",
     credit: {
-      label: "HunkinElvis · Wikimedia Commons · Public domain",
-      url: "https://commons.wikimedia.org/wiki/File%3AS_cherry_blossoms.jpg",
+      label: "YouTube · STONE MUSIC",
+      url: "https://www.youtube.com/watch?v=tXV7dfvSefo",
+    },
+    song: {
+      title: "벚꽃엔딩",
+      artist: "버스커버스커",
+      ...ytSong("tXV7dfvSefo"),
+      startSec: 61,
     },
     year: 2012,
     category: "music",
@@ -2034,10 +2356,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2012-music-3",
-    image: "/images/years/2012/music/2012-music-3.jpg",
+    image: "https://i.ytimg.com/vi/AAbokV76tkU/hqdefault.jpg",
     credit: {
-      label: "Ruth and Dave · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/95142644@N00/2711930011",
+      label: "YouTube · BIGBANG",
+      url: "https://www.youtube.com/watch?v=AAbokV76tkU",
+    },
+    song: {
+      title: "Fantastic Baby",
+      artist: "빅뱅",
+      ...ytSong("AAbokV76tkU"),
+      startSec: 45,
     },
     year: 2012,
     category: "music",
@@ -2048,10 +2376,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2012-drama-1",
-    image: "/images/years/2012/drama/2012-drama-1.jpg",
+    image: "https://i.ytimg.com/vi/RKebF62iMig/hqdefault.jpg",
     credit: {
-      label: "Fraser Mummery · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/73014677@N05/9559789651",
+      label: "YouTube · 옛드",
+      url: "https://www.youtube.com/watch?v=RKebF62iMig",
+    },
+    song: {
+      title: "해를 품은 달",
+      artist: "영상",
+      ...ytSong("RKebF62iMig"),
     },
     year: 2012,
     category: "drama",
@@ -2062,10 +2395,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2012-drama-2",
-    image: "/images/years/2012/drama/2012-drama-2.jpg",
+    image: "https://i.ytimg.com/vi/-8Fz9KwJNto/hqdefault.jpg",
     credit: {
-      label: "Chris Breikss · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/70116881@N00/6733458411",
+      label: "YouTube · tvN D ENT",
+      url: "https://www.youtube.com/watch?v=-8Fz9KwJNto",
+    },
+    song: {
+      title: "응답하라 1997",
+      artist: "영상",
+      ...ytSong("-8Fz9KwJNto"),
     },
     year: 2012,
     category: "drama",
@@ -2076,10 +2414,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2012-game-1",
-    image: "/images/years/2012/game/2012-game-1.jpg",
+    image: "https://i.ytimg.com/vi/-hutGfXqYWc/hqdefault.jpg",
     credit: {
-      label: "Monica's Dad · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/22077905@N00/2813812521",
+      label: "YouTube · 롤카카",
+      url: "https://www.youtube.com/watch?v=-hutGfXqYWc",
+    },
+    song: {
+      title: "LoL PC방 점령",
+      artist: "영상",
+      ...ytSong("-hutGfXqYWc"),
     },
     year: 2012,
     category: "game",
@@ -2090,10 +2433,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2012-game-2",
-    image: "/images/years/2012/game/2012-game-2.jpg",
+    image: "https://i.ytimg.com/vi/2R3gnP4HN7U/hqdefault.jpg",
     credit: {
-      label: "Linh H. Nguyen · Flickr · CC BY-NC-ND 2.0",
-      url: "https://www.flickr.com/photos/22439010@N04/7881151510",
+      label: "YouTube · 가염",
+      url: "https://www.youtube.com/watch?v=2R3gnP4HN7U",
+    },
+    song: {
+      title: "애니팡",
+      artist: "영상",
+      ...ytSong("2R3gnP4HN7U"),
     },
     year: 2012,
     category: "game",

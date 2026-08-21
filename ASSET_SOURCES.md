@@ -295,3 +295,11 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2012-music-3 | Flaming Lips confetti | Ruth and Dave · Flickr · CC BY 2.0 | https://www.flickr.com/photos/95142644@N00/2711930011 |
 | 2012-photo-1 | Selfie Mirror in the Bathroom at DFJ for visi | jurvetson · Flickr · CC BY 2.0 | https://www.flickr.com/photos/44124348109@N01/25739119490 |
 | 2012-photo-2 | Polaroid photos | virgirm · Flickr · CC BY 2.0 | https://www.flickr.com/photos/29445906@N00/3787704589 |
+
+## 음악·드라마·게임 카드의 YouTube 썸네일 방식 (2026-08-21)
+
+- 음악(27)·드라마(18)·게임(18) 카드는 **공식 YouTube 영상의 썸네일(i.ytimg.com)**을 카드 이미지로 사용하고,
+  ▶ 버튼을 누르면 해당 영상이 공식 임베드 플레이어로 재생된다 (썸네일+임베드 결합 — 표준 lite-embed 패턴).
+- 드라마는 방송사 공식 채널(SBS 빽드, KBS Drama Classic, MBC 옛드 등) 클립을 우선 선택.
+- 음악 카드와 연도 BGM은 `startSec`으로 **하이라이트(사비) 지점부터 재생**.
+- 원본 링크는 각 카드 credit("YouTube · 채널명")에 연결. 채널이 공식이 아닌 일부 게임/음악 영상은 교체 후보.

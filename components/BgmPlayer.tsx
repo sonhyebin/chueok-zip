@@ -16,8 +16,9 @@ export default function BgmPlayer({ song }: { song: YearSong }) {
   const [playing, setPlaying] = useState(false);
 
   const canEmbed = Boolean(song.embedUrl);
+  const startParam = song.startSec ? `&start=${song.startSec}` : "";
   const embedSrc = canEmbed
-    ? `${song.embedUrl}?autoplay=1&playsinline=1&rel=0`
+    ? `${song.embedUrl}?autoplay=1&playsinline=1&rel=0${startParam}`
     : null;
 
   return (
