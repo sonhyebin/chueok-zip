@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import MemoryCard from "@/components/MemoryCard";
 import BgmPlayer from "@/components/BgmPlayer";
+import OnlineBadge from "@/components/OnlineBadge";
 import { getMemoriesForYear, getYearInfo, AVAILABLE_YEARS } from "@/data/memories";
 import { ageInYear, loadBornYear } from "@/lib/age";
 
@@ -93,6 +94,9 @@ export default function YearPage() {
         <p className="text-[12.5px] text-[#7a8ba0] mt-1">
           ▼ 아래로 내리면서 천천히 기억해보세요
         </p>
+        <div className="mt-1.5">
+          <OnlineBadge />
+        </div>
       </header>
 
       {info?.song && (

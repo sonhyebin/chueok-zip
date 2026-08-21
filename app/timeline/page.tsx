@@ -4,6 +4,7 @@ import { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import Window from "@/components/Window";
+import OnlineBadge from "@/components/OnlineBadge";
 import { AVAILABLE_YEARS, FEATURED_YEAR } from "@/data/memories";
 import {
   ageInYear,
@@ -49,6 +50,9 @@ function TimelineInner() {
           <br />
           돌아가볼까요?
         </h1>
+        <div className="mt-2">
+          <OnlineBadge />
+        </div>
       </header>
 
       <Window title="타임라인.exe" className="pop-in">

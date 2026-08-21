@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import { loadMyName, saveMyName } from "@/lib/age";
+import { REGIONS } from "@/lib/regions";
 
-type Comment = { name: string; text: string; ts: number };
+type Comment = { name: string; text: string; ts: number; region?: string };
 
 function fmt(ts: number) {
   const d = new Date(ts);
@@ -17,6 +18,7 @@ export default function CommentBox({ cardId }: { cardId: string }) {
   const [comments, setComments] = useState<Comment[] | null>(null);
   const [count, setCount] = useState<number | null>(null);
   const [name, setName] = useState("");
+  const [region, setRegion] = useState("");
   const [text, setText] = useState("");
   const [sending, setSending] = useState(false);
 
@@ -38,6 +40,9 @@ export default function CommentBox({ cardId }: { cardId: string }) {
     setOpen(next);
     if (next && comments === null) {
       setName(loadMyName());
+      try {
+        setRegion(localStorage.getItem("memory.region") ?? "");
+      } catch {}
       load();
     }
   }
@@ -49,10 +54,13 @@ export default function CommentBox({ cardId }: { cardId: string }) {
     setSending(true);
     saveMyName(n);
     try {
+      localStorage.setItem("memory.region", region);
+    } catch {}
+    try {
       const r = await fetch("/api/comments", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ card: cardId, name: n, text: t }),
+        body: JSON.stringify({ card: cardId, name: n, text: t, region }),
       });
       const d = await r.json();
       if (d.ok && d.comment) {
@@ -85,12 +93,25 @@ export default function CommentBox({ cardId }: { cardId: string }) {
           >
             <div className="flex gap-1.5">
               <input
-                className="pixel-input !py-2 !text-[14px] !w-[92px] shrink-0"
+                className="pixel-input !py-2 !text-[14px] !w-[80px] shrink-0"
                 placeholder="이름"
                 maxLength={12}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
+              <select
+                className="pixel-input !py-2 !text-[13px] !w-[76px] shrink-0 !px-1.5"
+                value={region}
+                onChange={(e) => setRegion(e.target.value)}
+                aria-label="지역"
+              >
+                <option value="">지역</option>
+                {REGIONS.map((r) => (
+                  <option key={r} value={r}>
+                    {r}
+                  </option>
+                ))}
+              </select>
               <input
                 className="pixel-input !py-2 !text-[14px] flex-1 min-w-0"
                 placeholder="이 추억에 한마디..."
@@ -130,6 +151,7 @@ export default function CommentBox({ cardId }: { cardId: string }) {
                 >
                   <span className="font-pixel text-[12.5px] text-[#2f6fce]">
                     {c.name}
+                    {c.region ? ` (${c.region})` : ""}
                   </span>
                   <span className="text-[10.5px] text-[#a3b2c4] ml-1.5">
                     {fmt(c.ts)}

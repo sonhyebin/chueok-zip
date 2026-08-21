@@ -356,7 +356,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-game-1",
-    image: "/images/years/2004/game/kartrider.jpg",
+    image: "https://i.ytimg.com/vi/rLQzuLyRv1A/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 녹차",
+      url: "https://www.youtube.com/watch?v=rLQzuLyRv1A",
+    },
     song: {
       title: "카트라이더",
       artist: "영상",

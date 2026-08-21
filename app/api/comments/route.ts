@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { list, put } from "@vercel/blob";
 import { MEMORIES } from "@/data/memories";
+import { REGIONS } from "@/lib/regions";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -8,10 +9,13 @@ export const dynamic = "force-dynamic";
 const VALID_IDS = new Set(MEMORIES.map((m) => m.id));
 const MAX_LIST = 100;
 
+const REGION_SET = new Set<string>(REGIONS);
+
 type Comment = {
   name: string;
   text: string;
   ts: number;
+  region?: string;
 };
 
 function prefix(card: string) {
@@ -46,7 +50,13 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest) {
-  let body: { card?: string; name?: string; text?: string; website?: string };
+  let body: {
+    card?: string;
+    name?: string;
+    text?: string;
+    region?: string;
+    website?: string;
+  };
   try {
     body = await req.json();
   } catch {
@@ -62,8 +72,11 @@ export async function POST(req: NextRequest) {
   if (!VALID_IDS.has(card) || name.length < 1 || text.length < 1) {
     return NextResponse.json({ error: "invalid" }, { status: 400 });
   }
+  const region = REGION_SET.has((body.region ?? "").trim())
+    ? (body.region ?? "").trim()
+    : undefined;
   const ts = Date.now();
-  const comment: Comment = { name, text, ts };
+  const comment: Comment = { name, text, ts, ...(region ? { region } : {}) };
   const key = `${prefix(card)}${String(ts).padStart(15, "0")}-${Math.random()
     .toString(36)
     .slice(2, 8)}.json`;
