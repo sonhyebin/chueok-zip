@@ -140,6 +140,8 @@ export const YEAR_INFO: Record<number, YearInfo> = {
   2006: {
     year: 2006,
     title: "네이트온과 서든어택의 해",
+    description: "네이트온 로그인 소리에 심장 뛰고, PC방에선 서든어택뿐이던 해",
+    image: "/images/years/2006/cover.svg",
     song: {
       title: "사랑 안 해",
       artist: "백지영",
@@ -341,6 +343,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-music-2",
     image: "/images/years/2005/music/noraebang-book.jpg",
+    credit: {
+      label: "la_minai · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/46348337@N02/5029488840",
+    },
     year: 2005,
     category: "music",
     title: "SG워너비 - 죄와 벌",
@@ -395,6 +401,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-game-2",
     image: "/images/years/2005/game/night-gaming.jpg",
+    credit: {
+      label: "Hachimaki · Wikimedia Commons · CC BY-SA 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg",
+    },
     year: 2005,
     category: "game",
     title: "던전앤파이터",
@@ -405,6 +415,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-internet-1",
     image: "/images/years/2005/internet/cyworld-room.jpg",
+    credit: {
+      label: "Wikimedia Commons · Public Domain (2005)",
+      url: "https://commons.wikimedia.org/wiki/File:Seoul-Cyworld_control_room.jpg",
+    },
     year: 2005,
     category: "internet",
     title: "싸이월드 미니홈피",
@@ -501,6 +515,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-food-2",
     image: "/images/years/2005/food/blue-slush.jpg",
+    credit: {
+      label: "Chris Yarzab · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/10957255@N08/4765230501",
+    },
     year: 2005,
     category: "food",
     title: "슬러시",
@@ -557,6 +575,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-game-1",
+    image: "/images/years/2006/game/pcbang-fps.jpg",
+    credit: {
+      label: "Alex C · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:People_playing_StarCraft_at_PC_Bang_in_2001.jpg",
+    },
     year: 2006,
     category: "game",
     title: "서든어택",
@@ -593,6 +616,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-device-1",
+    image: "/images/years/2006/device/chocolate-phone.jpg",
+    credit: {
+      label: "Petar Milošević · Wikimedia Commons · CC BY 4.0",
+      url: "https://commons.wikimedia.org/wiki/File:LG_KG800.jpg",
+    },
     year: 2006,
     category: "device",
     title: "초콜릿폰",
@@ -611,6 +639,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-photo-2",
+    image: "/images/years/2006/photo/haduri-webcam.jpg",
+    credit: {
+      label: "Dave Pape · Wikimedia Commons · Public Domain",
+      url: "https://commons.wikimedia.org/wiki/File:Logitech_Quickcam_Pro_4000.jpg",
+    },
     year: 2006,
     category: "photo",
     title: "하두리캠",
