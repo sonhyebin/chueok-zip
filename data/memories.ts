@@ -185,6 +185,11 @@ export const MEMORIES: MemoryItem[] = [
   // ───────────────────────── 2004 ─────────────────────────
   {
     id: "2004-music-1",
+    image: "/images/years/2004/music/2004-music-1.jpg",
+    credit: {
+      label: "striegel · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File%3ASony_Car_Discman_CD_player_D-830K%2C_front%2C_power_on_%2834979355295%29.jpg",
+    },
     year: 2004,
     category: "music",
     title: "SG워너비 - Timeless",
@@ -195,6 +200,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-music-2",
+    image: "/images/years/2004/music/2004-music-2.jpg",
+    credit: {
+      label: "Department of Defense. Ameri · Wikimedia Commons · Public domain",
+      url: "https://commons.wikimedia.org/wiki/File%3AA_member_of_the_stage_crew_makes_adjustments_on_lights_for_the_US_Navy_Band%27s_Silver_Anniversary_Lollipop_Concert_-_DPLA_-_bba9273ee2b50d2a53595243a16342a9.jpeg",
+    },
     year: 2004,
     category: "music",
     title: "이승기 - 내 여자라니까",
@@ -204,6 +214,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-music-3",
+    image: "/images/years/2004/music/2004-music-3.jpg",
+    credit: {
+      label: "kohlmann.sascha · Flickr · CC BY-SA 2.0",
+      url: "https://www.flickr.com/photos/96323831@N06/10960938633",
+    },
     year: 2004,
     category: "music",
     title: "김종국 - 한 남자",
@@ -223,6 +238,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-drama-2",
+    image: "/images/years/2004/drama/2004-drama-2.jpg",
+    credit: {
+      label: "Wonderlane · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/71401718@N00/465852851",
+    },
     year: 2004,
     category: "drama",
     title: "풀하우스",
@@ -232,6 +252,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-game-1",
+    image: "/images/years/2004/game/2004-game-1.jpg",
+    credit: {
+      label: "Alex C · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:People_playing_StarCraft_at_PC_Bang_in_2001.jpg",
+    },
     year: 2004,
     category: "game",
     title: "카트라이더",
@@ -241,6 +266,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-game-2",
+    image: "/images/years/2005/game/pcbang-racing.jpg",
+    credit: {
+      label: "Alex C · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:PC_bang_in_2001.jpg",
+    },
     year: 2004,
     category: "game",
     title: "메이플스토리",
@@ -294,6 +324,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-photo-2",
+    image: "/images/years/2004/photo/2004-photo-2.jpg",
+    credit: {
+      label: "Alessandro Grussu · Flickr · CC BY-NC-SA 2.0",
+      url: "https://www.flickr.com/photos/36553196@N08/4584895568",
+    },
     year: 2004,
     category: "photo",
     title: "얼짱 문화",
@@ -303,6 +338,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-fashion-1",
+    image: "/images/years/2004/fashion/2004-fashion-1.jpg",
+    credit: {
+      label: "Gareth1953 All Right Now · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/40837632@N05/6602334993",
+    },
     year: 2004,
     category: "fashion",
     title: "트레이닝복 등교",
@@ -312,6 +352,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-fashion-2",
+    image: "/images/years/2004/fashion/2004-fashion-2.jpg",
+    credit: {
+      label: "Annie Mole · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/21309047@N00/120408248",
+    },
     year: 2004,
     category: "fashion",
     title: "어그부츠",
@@ -321,6 +366,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-food-1",
+    image: "/images/years/2004/food/2004-food-1.jpg",
+    credit: {
+      label: "Kolforn · Wikimedia Commons · CC BY-SA 4.0",
+      url: "https://commons.wikimedia.org/wiki/File%3A-2022-01-14_Instant_noodles_%26_paster_packets%2C_Morrisons%2C_Cromer.JPG",
+    },
     year: 2004,
     category: "food",
     title: "뿌셔뿌셔",
@@ -330,6 +380,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-food-2",
+    image: "/images/years/2004/food/2004-food-2.jpg",
+    credit: {
+      label: "Guilhem Vellut from Paris, F · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File%3APork_cutlet%2C_Tonkatsu_Menu%2C_Tonkatsu_Tombo%2C_Paris_6_December_2016_001.jpg",
+    },
     year: 2004,
     category: "food",
     title: "피카츄 돈까스",
@@ -569,6 +624,11 @@ export const MEMORIES: MemoryItem[] = [
   // ───────────────────────── 2006 ─────────────────────────
   {
     id: "2006-music-1",
+    image: "/images/years/2006/music/2006-music-1.jpg",
+    credit: {
+      label: "themusicianlab · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/142356394@N05/28158933050",
+    },
     year: 2006,
     category: "music",
     title: "백지영 - 사랑 안 해",
@@ -578,6 +638,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-music-2",
+    image: "/images/years/2006/music/2006-music-2.jpg",
+    credit: {
+      label: "hojusaram · Flickr · CC BY-NC-SA 2.0",
+      url: "https://www.flickr.com/photos/7122909@N05/3927766495",
+    },
     year: 2006,
     category: "music",
     title: "SG워너비 - 내 사람",
@@ -587,6 +652,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-music-3",
+    image: "/images/years/2006/music/2006-music-3.jpg",
+    credit: {
+      label: "The Cleveland Kid · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/21395880@N02/4430896810",
+    },
     year: 2006,
     category: "music",
     title: "씨야 - 여인의 향기",
@@ -596,6 +666,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-drama-1",
+    image: "/images/years/2006/drama/2006-drama-1.jpg",
+    credit: {
+      label: "Basile Morin · Wikimedia Commons · CC BY-SA 4.0",
+      url: "https://commons.wikimedia.org/wiki/File%3AFinely_painted_wooden_ceiling_of_Jibokjae_Hall_seen_from_below_at_Gyeongbokgung_Palace_in_Seoul.jpg",
+    },
     year: 2006,
     category: "drama",
     title: "궁",
@@ -605,6 +680,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-drama-2",
+    image: "/images/years/2006/drama/2006-drama-2.jpg",
+    credit: {
+      label: "Basile Morin · Wikimedia Commons · CC BY-SA 4.0",
+      url: "https://commons.wikimedia.org/wiki/File%3AFront_view_of_Jibokjae_Hall_under_blue_sky_at_Gyeongbokgung_Palace_in_Seoul.jpg",
+    },
     year: 2006,
     category: "drama",
     title: "주몽",
@@ -628,6 +708,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-game-2",
+    image: "/images/years/2006/game/2006-game-2.jpg",
+    credit: {
+      label: "jasoneppink · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/38102495@N00/9226580528",
+    },
     year: 2006,
     category: "game",
     title: "오디션",
@@ -637,6 +722,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-internet-1",
+    image: "/images/years/2005/music/cyworld-bgm.jpg",
+    credit: {
+      label: "Mrs. Gemstone · Flickr · CC BY-SA 2.0",
+      url: "https://www.flickr.com/photos/21893264@N00/2215657406",
+    },
     year: 2006,
     category: "internet",
     title: "네이트온",
@@ -646,6 +736,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-internet-2",
+    image: "/images/years/2006/internet/2006-internet-2.jpg",
+    credit: {
+      label: "Free Photo Fun · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File%3ACanon_XL-1_3_CCD_Digital_Video_Camcorder_PAL_Mini_DV.jpg",
+    },
     year: 2006,
     category: "internet",
     title: "UCC 열풍",
@@ -669,6 +764,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-photo-1",
+    image: "/images/years/2006/photo/2006-photo-1.jpg",
+    credit: {
+      label: "Raimond Spekking · Wikimedia Commons · CC BY-SA 4.0",
+      url: "https://commons.wikimedia.org/wiki/File%3AMotorola_RAZR_V3-4899.jpg",
+    },
     year: 2006,
     category: "photo",
     title: "폰카 셀카",
@@ -692,6 +792,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-fashion-1",
+    image: "/images/years/2006/fashion/2006-fashion-1.jpg",
+    credit: {
+      label: "Jamie · Wikimedia Commons · CC BY-SA 2.0",
+      url: "https://commons.wikimedia.org/wiki/File%3AFox_Print_Ruffle_Sleeve_Top%2C_High_Waisted_Skinny_Jeans%2C_and_Brown_Clogs_%2817880335784%29.jpg",
+    },
     year: 2006,
     category: "fashion",
     title: "스키니진",
@@ -701,6 +806,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-fashion-2",
+    image: "/images/years/2006/fashion/2006-fashion-2.jpg",
+    credit: {
+      label: "Ian Sane · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/31246066@N04/4252587897",
+    },
     year: 2006,
     category: "fashion",
     title: "롱티 + 레깅스",
@@ -710,6 +820,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-food-1",
+    image: "/images/years/2006/food/2006-food-1.jpg",
+    credit: {
+      label: "terren in Virginia · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/8136496@N05/2098283991",
+    },
     year: 2006,
     category: "food",
     title: "마이쮸",
@@ -719,6 +834,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-food-2",
+    image: "/images/years/2006/food/2006-food-2.jpg",
+    credit: {
+      label: "Adam Wood · Wikimedia Commons · CC BY-SA 2.0",
+      url: "https://commons.wikimedia.org/wiki/File%3AComfits.jpg",
+    },
     year: 2006,
     category: "food",
     title: "아이셔",
@@ -730,6 +850,11 @@ export const MEMORIES: MemoryItem[] = [
   // ───────────────────────── 2007 ─────────────────────────
   {
     id: "2007-music-1",
+    image: "/images/years/2007/music/2007-music-1.jpg",
+    credit: {
+      label: "siobhanmc · Flickr · CC BY-NC-SA 2.0",
+      url: "https://www.flickr.com/photos/71508971@N00/4037930851",
+    },
     year: 2007,
     category: "music",
     title: "원더걸스 - Tell Me",
@@ -739,6 +864,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-music-2",
+    image: "/images/years/2005/music/noraebang-highnote.jpg",
+    credit: {
+      label: "derekGavey · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/45170709@N06/4917447111",
+    },
     year: 2007,
     category: "music",
     title: "빅뱅 - 거짓말",
@@ -748,6 +878,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-music-3",
+    image: "/images/years/2007/music/2007-music-3.jpg",
+    credit: {
+      label: "Department of Defense. Ameri · Wikimedia Commons · Public domain",
+      url: "https://commons.wikimedia.org/wiki/File%3AA_member_of_the_stage_crew_makes_adjustments_on_lights_for_the_US_Navy_Band%27s_Silver_Anniversary_Lollipop_Concert_-_DPLA_-_bba9273ee2b50d2a53595243a16342a9.jpeg",
+    },
     year: 2007,
     category: "music",
     title: "소녀시대 - 다시 만난 세계",
@@ -757,6 +892,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-drama-1",
+    image: "/images/years/2007/drama/2007-drama-1.jpg",
+    credit: {
+      label: "tapecode · Flickr · CC PDM 1.0",
+      url: "https://www.flickr.com/photos/148019735@N08/31813073584",
+    },
     year: 2007,
     category: "drama",
     title: "커피프린스 1호점",
@@ -766,6 +906,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-drama-2",
+    image: "/images/years/2007/drama/2007-drama-2.jpg",
+    credit: {
+      label: "Digi_shot · Flickr · CC BY-NC-ND 2.0",
+      url: "https://www.flickr.com/photos/25828103@N03/4704185948",
+    },
     year: 2007,
     category: "drama",
     title: "거침없이 하이킥",
@@ -775,6 +920,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-game-1",
+    image: "/images/years/2007/game/2007-game-1.jpg",
+    credit: {
+      label: "Syced · Wikimedia Commons · CC0",
+      url: "https://commons.wikimedia.org/wiki/File%3ALAN_party_in_France_in_2003.jpg",
+    },
     year: 2007,
     category: "game",
     title: "카오스 (워크래프트3)",
@@ -784,6 +934,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-game-2",
+    image: "/images/years/2007/game/2007-game-2.jpg",
+    credit: {
+      label: "comedy_nose · Flickr · CC PDM 1.0",
+      url: "https://www.flickr.com/photos/23408922@N07/9320845849",
+    },
     year: 2007,
     category: "game",
     title: "테일즈런너",
@@ -793,6 +948,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-internet-1",
+    image: "/images/years/2007/internet/2007-internet-1.jpg",
+    credit: {
+      label: "DarlingJack · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/92584549@N08/33104968363",
+    },
     year: 2007,
     category: "internet",
     title: "싸이월드 일촌평",
@@ -802,6 +962,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-internet-2",
+    image: "/images/years/2007/internet/2007-internet-2.jpg",
+    credit: {
+      label: "Enokson · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/47823583@N03/5537660712",
+    },
     year: 2007,
     category: "internet",
     title: "인터넷 소설",
@@ -811,6 +976,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-device-1",
+    image: "/images/years/2007/device/2007-device-1.jpg",
+    credit: {
+      label: "Horst · Wikimedia Commons · CC BY 3.0",
+      url: "https://commons.wikimedia.org/wiki/File%3ALG_KE970_1.jpg",
+    },
     year: 2007,
     category: "device",
     title: "샤인폰 / DMB폰",
@@ -820,6 +990,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-photo-1",
+    image: "/images/years/2007/photo/2007-photo-1.jpg",
+    credit: {
+      label: "Alessandro Grussu · Flickr · CC BY-NC-SA 2.0",
+      url: "https://www.flickr.com/photos/36553196@N08/4584895568",
+    },
     year: 2007,
     category: "photo",
     title: "미니홈피 사진첩",
@@ -829,6 +1004,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-photo-2",
+    image: "/images/years/2007/photo/2007-photo-2.jpg",
+    credit: {
+      label: "Zach Dischner · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/35557234@N07/7352752372",
+    },
     year: 2007,
     category: "photo",
     title: "팔 뻗어 단체샷",
@@ -838,6 +1018,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-fashion-1",
+    image: "/images/years/2007/fashion/2007-fashion-1.jpg",
+    credit: {
+      label: "Lesekreis · Wikimedia Commons · CC0",
+      url: "https://commons.wikimedia.org/wiki/File%3AConverse_red.JPG",
+    },
     year: 2007,
     category: "fashion",
     title: "하이탑 운동화",
@@ -847,6 +1032,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-fashion-2",
+    image: "/images/years/2007/fashion/2007-fashion-2.jpg",
+    credit: {
+      label: "ben pollard · Flickr · CC BY-SA 2.0",
+      url: "https://www.flickr.com/photos/13023474@N06/2375909368",
+    },
     year: 2007,
     category: "fashion",
     title: "커플 후드티",
@@ -856,6 +1046,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-food-1",
+    image: "/images/years/2007/food/2007-food-1.jpg",
+    credit: {
+      label: "Missvain · Wikimedia Commons · CC BY 4.0",
+      url: "https://commons.wikimedia.org/wiki/File%3APizzaLeah_-_2021-10-23_-_Sarah_Stierch_07.jpg",
+    },
     year: 2007,
     category: "food",
     title: "피자스쿨",
@@ -865,6 +1060,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-food-2",
+    image: "/images/years/2007/food/2007-food-2.jpg",
+    credit: {
+      label: "Hyeon-Jeong Suk · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File%3ATwigim-soboro.jpg",
+    },
     year: 2007,
     category: "food",
     title: "매점 소보로빵",
@@ -876,6 +1076,11 @@ export const MEMORIES: MemoryItem[] = [
   // ───────────────────────── 2008 ─────────────────────────
   {
     id: "2008-music-1",
+    image: "/images/years/2008/music/2008-music-1.jpg",
+    credit: {
+      label: "MIKI Yoshihito. (#mikiyoshih · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/7940758@N07/8234203575",
+    },
     year: 2008,
     category: "music",
     title: "원더걸스 - Nobody",
@@ -885,6 +1090,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-music-2",
+    image: "/images/years/2008/music/2008-music-2.jpg",
+    credit: {
+      label: "la_minai · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/46348337@N02/5029488788",
+    },
     year: 2008,
     category: "music",
     title: "빅뱅 - 하루하루",
@@ -894,6 +1104,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-music-3",
+    image: "/images/years/2005/internet/mp3-player.jpg",
+    credit: {
+      label: "Graham Stanley · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:IRiver_ifp-890.jpg",
+    },
     year: 2008,
     category: "music",
     title: "쥬얼리 - One More Time",
@@ -903,6 +1118,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-drama-1",
+    image: "/images/years/2008/drama/2008-drama-1.jpg",
+    credit: {
+      label: "unclibraries_commons · Flickr · CC PDM 1.0",
+      url: "https://www.flickr.com/photos/122654055@N06/23085371702",
+    },
     year: 2008,
     category: "drama",
     title: "베토벤 바이러스",
@@ -912,6 +1132,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-drama-2",
+    image: "/images/years/2008/drama/2008-drama-2.jpg",
+    credit: {
+      label: "Tela Chhe · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/21042103@N03/4641589345",
+    },
     year: 2008,
     category: "drama",
     title: "우리 결혼했어요",
@@ -921,6 +1146,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-game-1",
+    image: "/images/years/2005/game/night-gaming.jpg",
+    credit: {
+      label: "Hachimaki · Wikimedia Commons · CC BY-SA 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg",
+    },
     year: 2008,
     category: "game",
     title: "서든어택",
@@ -930,6 +1160,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-game-2",
+    image: "/images/years/2008/game/2008-game-2.jpg",
+    credit: {
+      label: "Syced · Wikimedia Commons · CC0",
+      url: "https://commons.wikimedia.org/wiki/File%3ALAN_party_in_France_in_2003.jpg",
+    },
     year: 2008,
     category: "game",
     title: "아이온",
@@ -939,6 +1174,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-internet-1",
+    image: "/images/years/2008/internet/2008-internet-1.jpg",
+    credit: {
+      label: "DJ Philly GEE · Flickr · CC BY-SA 2.0",
+      url: "https://www.flickr.com/photos/11403548@N00/3499787511",
+    },
     year: 2008,
     category: "internet",
     title: "빠삐놈 리믹스",
@@ -948,6 +1188,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-internet-2",
+    image: "/images/years/2008/internet/2008-internet-2.jpg",
+    credit: {
+      label: "BinaryApe · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/93001633@N00/3392827295",
+    },
     year: 2008,
     category: "internet",
     title: "네이트 판",
@@ -957,6 +1202,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-device-1",
+    image: "/images/years/2008/device/2008-device-1.jpg",
+    credit: {
+      label: "Ha98574 · Wikimedia Commons · CC BY-SA 3.0",
+      url: "https://commons.wikimedia.org/wiki/File:Anycall_Yuna%27s_Haptic.jpg",
+    },
     year: 2008,
     category: "device",
     title: "햅틱폰",
@@ -966,6 +1216,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-device-2",
+    image: "/images/years/2008/device/2008-device-2.jpg",
+    credit: {
+      label: "jaqian from Dublin, Ireland · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File%3AA2_%26_Zen_%28307730569%29.jpg",
+    },
     year: 2008,
     category: "device",
     title: "PMP + 인강",
@@ -975,6 +1230,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-photo-1",
+    image: "/images/years/2005/photo/uljjang-angle.jpg",
+    credit: {
+      label: "jpmatth · Flickr · CC BY-NC-ND 2.0",
+      url: "https://www.flickr.com/photos/21893885@N00/5395865",
+    },
     year: 2008,
     category: "photo",
     title: "폰카 거울샷",
@@ -984,6 +1244,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-photo-2",
+    image: "/images/years/2008/photo/2008-photo-2.jpg",
+    credit: {
+      label: "kevin dooley · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/12836528@N00/4871809930",
+    },
     year: 2008,
     category: "photo",
     title: "싸이월드 감성 사진",
@@ -993,6 +1258,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-fashion-1",
+    image: "/images/years/2008/fashion/2008-fashion-1.jpg",
+    credit: {
+      label: "petitepanoply · Flickr · CC BY-SA 2.0",
+      url: "https://www.flickr.com/photos/63405864@N04/15259659244",
+    },
     year: 2008,
     category: "fashion",
     title: "체크셔츠",
@@ -1002,6 +1272,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-fashion-2",
+    image: "/images/years/2008/fashion/2008-fashion-2.jpg",
+    credit: {
+      label: "Piercetheorganist at English · Wikimedia Commons · Public domain",
+      url: "https://commons.wikimedia.org/wiki/File%3AHorn-rimmed_Rayban_glasses.JPG",
+    },
     year: 2008,
     category: "fashion",
     title: "뿔테안경",
@@ -1011,6 +1286,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-food-1",
+    image: "/images/years/2008/food/2008-food-1.jpg",
+    credit: {
+      label: "Ruth Hartnup from Vancouver, · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File%3ACucumber%2C_elderflower_and_mint_ice_pop_from_Nicepops_%2818159920902%29.jpg",
+    },
     year: 2008,
     category: "food",
     title: "빠삐코",
@@ -1020,6 +1300,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-food-2",
+    image: "/images/years/2008/food/2008-food-2.jpg",
+    credit: {
+      label: "changupn · Wikimedia Commons · CC0",
+      url: "https://commons.wikimedia.org/wiki/File%3AGimbap_%28pixabay%29.jpg",
+    },
     year: 2008,
     category: "food",
     title: "김밥천국",
