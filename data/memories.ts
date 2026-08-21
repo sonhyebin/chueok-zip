@@ -202,6 +202,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-drama-1",
+    image: "/images/years/2004/drama/paris-livingroom.jpg",
     year: 2004,
     category: "drama",
     title: "파리의 연인",
@@ -238,6 +239,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-internet-1",
+    image: "/images/years/2004/internet/buddybuddy-messenger.jpg",
     year: 2004,
     category: "internet",
     title: "버디버디",
@@ -247,6 +249,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-internet-2",
+    image: "/images/years/2004/internet/dotori-acorns.jpg",
+    credit: {
+      label: "David Hill · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:Acorns_small_to_large.jpg",
+    },
     year: 2004,
     category: "internet",
     title: "싸이월드 도토리",
@@ -256,6 +263,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-device-1",
+    image: "/images/years/2004/device/garobon-phone.jpg",
     year: 2004,
     category: "device",
     title: "가로본능 폰",
@@ -265,6 +273,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-photo-1",
+    image: "/images/years/2004/photo/sticker-photo.jpg",
     year: 2004,
     category: "photo",
     title: "스티커사진",
