@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <defs>
+    <radialGradient id="bg" cx="46%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#413d36"/>
+      <stop offset="60%" stop-color="#2b2823"/>
+      <stop offset="100%" stop-color="#181614"/>
+    </radialGradient>
+    <linearGradient id="phoneBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8e6e0"/>
+      <stop offset="45%" stop-color="#c9c6bd"/>
+      <stop offset="100%" stop-color="#8f8c83"/>
+    </linearGradient>
+    <linearGradient id="phoneLower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b9b6ad"/>
+      <stop offset="100%" stop-color="#77746c"/>
+    </linearGradient>
+    <radialGradient id="lcd" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#dff3ff"/>
+      <stop offset="55%" stop-color="#9fd4f2"/>
+      <stop offset="100%" stop-color="#5a9cc9"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8b48c"/>
+      <stop offset="100%" stop-color="#b97e57"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="soft2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="30"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.5  0 0 0 0 0.46  0 0 0 0 0.4  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+
+  <!-- desk edge, book corner (수업시간 느낌) -->
+  <rect x="0" y="860" width="1600" height="340" fill="#3a2c1d"/>
+  <g transform="translate(1120,880) rotate(-7)">
+    <rect width="420" height="260" rx="6" fill="#e7dfc8"/>
+    <rect x="0" y="0" width="420" height="18" fill="#cfc3a4"/>
+    <rect x="26" y="46" width="330" height="10" rx="5" fill="#b8ac8c" opacity="0.8"/>
+    <rect x="26" y="70" width="360" height="10" rx="5" fill="#b8ac8c" opacity="0.6"/>
+    <rect x="26" y="94" width="300" height="10" rx="5" fill="#b8ac8c" opacity="0.7"/>
+    <rect x="26" y="118" width="345" height="10" rx="5" fill="#b8ac8c" opacity="0.5"/>
+  </g>
+
+  <!-- glow from lcd -->
+  <ellipse cx="700" cy="560" rx="480" ry="360" fill="#9fd4f2" opacity="0.10" filter="url(#soft2)"/>
+
+  <!-- hand holding phone -->
+  <g transform="translate(430,320) rotate(-4)">
+    <!-- wrist/palm -->
+    <path d="M180 640 q-120 40 -150 180 q-10 90 60 120 l340 0 q60 -40 40 -140 l-40 -240 z" fill="url(#skin)"/>
+    <!-- phone: horizontal-rotated screen over keypad body -->
+    <g transform="translate(60,120)">
+      <!-- lower body (keypad, vertical) -->
+      <rect x="120" y="120" width="300" height="520" rx="34" fill="url(#phoneLower)"/>
+      <!-- keypad -->
+      <g fill="#8b887f" stroke="#6e6b63" stroke-width="2">
+        <rect x="150" y="330" width="72" height="52" rx="12"/><rect x="234" y="330" width="72" height="52" rx="12"/><rect x="318" y="330" width="72" height="52" rx="12"/>
+        <rect x="150" y="392" width="72" height="52" rx="12"/><rect x="234" y="392" width="72" height="52" rx="12"/><rect x="318" y="392" width="72" height="52" rx="12"/>
+        <rect x="150" y="454" width="72" height="52" rx="12"/><rect x="234" y="454" width="72" height="52" rx="12"/><rect x="318" y="454" width="72" height="52" rx="12"/>
+        <rect x="150" y="516" width="72" height="52" rx="12"/><rect x="234" y="516" width="72" height="52" rx="12"/><rect x="318" y="516" width="72" height="52" rx="12"/>
+      </g>
+      <!-- nav cluster -->
+      <circle cx="270" cy="270" r="44" fill="#a8a59b" stroke="#6e6b63" stroke-width="3"/>
+      <circle cx="270" cy="270" r="18" fill="#c9c6bd"/>
+      <rect x="150" y="240" width="70" height="34" rx="10" fill="#8b887f"/>
+      <rect x="320" y="240" width="70" height="34" rx="10" fill="#8b887f"/>
+      <!-- ROTATED screen block (가로 회전 상태) -->
+      <g transform="translate(270,120) rotate(-90)">
+        <rect x="-90" y="-210" width="180" height="420" rx="26" fill="url(#phoneBody)"/>
+        <rect x="-90" y="-210" width="180" height="420" rx="26" fill="none" stroke="#75726a" stroke-width="4"/>
+        <!-- LCD (landscape from viewer's angle) -->
+        <rect x="-68" y="-180" width="136" height="330" rx="10" fill="#1d2a33"/>
+        <rect x="-60" y="-170" width="120" height="310" rx="6" fill="url(#lcd)"/>
+        <!-- abstract video playing on screen -->
+        <g transform="rotate(90)">
+          <path d="M-26 -34 l60 34 l-60 34 z" fill="#ffffff" opacity="0.95"/>
+          <rect x="-120" y="52" width="240" height="8" rx="4" fill="#ffffff" opacity="0.45"/>
+          <rect x="-120" y="52" width="90" height="8" rx="4" fill="#ffffff" opacity="0.9"/>
+        </g>
+      </g>
+      <!-- hinge -->
+      <circle cx="270" cy="122" r="20" fill="#77746c" stroke="#5c5a53" stroke-width="3"/>
+    </g>
+    <!-- thumb over keypad -->
+    <ellipse cx="235" cy="560" rx="48" ry="115" transform="rotate(26 235 560)" fill="url(#skin)"/>
+    <ellipse cx="262" cy="472" rx="30" ry="38" transform="rotate(26 262 472)" fill="#e8b48c"/>
+    <!-- fingers wrapping right edge -->
+    <path d="M480 300 q70 -6 66 60 q-4 56 -60 56 l-40 -8 z" fill="url(#skin)"/>
+    <path d="M486 430 q74 -4 68 62 q-6 54 -62 52 l-40 -10 z" fill="url(#skin)"/>
+    <path d="M480 556 q66 0 60 58 q-6 48 -56 46 l-36 -12 z" fill="url(#skin)"/>
+  </g>
+
+  <!-- light cast from screen onto hand -->
+  <ellipse cx="620" cy="520" rx="220" ry="180" fill="#bfe6ff" opacity="0.10" filter="url(#soft2)"/>
+
+  <radialGradient id="vig" cx="48%" cy="44%" r="75%">
+    <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.32"/>
+  </radialGradient>
+  <rect width="1600" height="1200" fill="url(#vig)"/>
+  <rect width="1600" height="1200" filter="url(#grain)" opacity="0.3"/>
+</svg>
