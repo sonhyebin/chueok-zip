@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { YearSong } from "@/data/memories";
+import { announcePlay, onPlay } from "@/lib/playerBus";
 
 /**
  * 미니홈피 BGM / 2000년대 MP3 플레이어 감성의 작은 음악 영역.
@@ -14,6 +15,14 @@ import type { YearSong } from "@/data/memories";
  */
 export default function BgmPlayer({ song }: { song: YearSong }) {
   const [playing, setPlaying] = useState(false);
+  const busId = `bgm:${song.title}`;
+
+  // 다른 플레이어 재생 시 자동 정지 (오디오 겹침 방지)
+  useEffect(() => {
+    return onPlay((id) => {
+      if (id !== busId) setPlaying(false);
+    });
+  }, [busId]);
 
   const canEmbed = Boolean(song.embedUrl);
   const startParam = song.startSec ? `&start=${song.startSec}` : "";
@@ -61,7 +70,12 @@ export default function BgmPlayer({ song }: { song: YearSong }) {
           <button
             type="button"
             className={`pixel-btn ${playing ? "secondary" : "blue"} !w-auto !px-4 !py-2.5 !text-[14px] shrink-0`}
-            onClick={() => setPlaying((p) => !p)}
+            onClick={() =>
+              setPlaying((p) => {
+                if (!p) announcePlay(busId);
+                return !p;
+              })
+            }
           >
             {playing ? "■ 정지" : "▶ 재생"}
           </button>

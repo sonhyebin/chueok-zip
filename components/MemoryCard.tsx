@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CATEGORY_META, type MemoryItem } from "@/data/memories";
 import CommentBox from "@/components/CommentBox";
+import { announcePlay, onPlay } from "@/lib/playerBus";
 
 const PHOTO_BG: Record<string, string> = {
   music: "linear-gradient(135deg, #ffd6e8, #c9b6ff)",
@@ -38,6 +39,13 @@ export default function MemoryCard({
 }) {
   const meta = CATEGORY_META[item.category];
   const [playing, setPlaying] = useState(false);
+
+  // 다른 플레이어가 재생을 시작하면 이 카드는 정지 (오디오 겹침 방지)
+  useEffect(() => {
+    return onPlay((id) => {
+      if (id !== item.id) setPlaying(false);
+    });
+  }, [item.id]);
   const embedSrc = item.song?.embedUrl
     ? `${item.song.embedUrl}?autoplay=1&playsinline=1&rel=0${item.song.startSec ? `&start=${item.song.startSec}` : ""}`
     : null;
@@ -114,7 +122,12 @@ export default function MemoryCard({
             <button
               type="button"
               className={`pixel-btn ${playing ? "secondary" : "blue"} !w-auto self-start !px-4 !py-2 !text-[13px]`}
-              onClick={() => setPlaying((p) => !p)}
+              onClick={() =>
+                setPlaying((p) => {
+                  if (!p) announcePlay(item.id);
+                  return !p;
+                })
+              }
             >
               {playing
                 ? "■ 정지"
