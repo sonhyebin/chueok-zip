@@ -226,3 +226,72 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2008-music-3 | REUSE(교체대상) | Graham Stanley · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:IRiver_ifp-890.jpg |
 | 2008-photo-1 | REUSE(교체대상) | jpmatth · Flickr · CC BY-NC-ND 2.0 | https://www.flickr.com/photos/21893885@N00/5395865 |
 | 2008-photo-2 | Flickr - 100 trillion sunset photos! | kevin dooley · Flickr · CC BY 2.0 | https://www.flickr.com/photos/12836528@N00/4871809930 |
+
+## ⚠️ 2009~2012 일괄 실사 적용 (2026-08-21) — 사용자 저작권 검수 대기
+
+| 카드 | 원제 | 출처 표기 | 원본 |
+|---|---|---|---|
+| 2009-device-1 | IPhone 3G or 3GS digital render.png | JoBot164 · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3AIPhone_3G_or_3GS_digital_render.png |
+| 2009-drama-1 | Red Velvet Wedding Cake | kimberlykv · Flickr · CC BY 2.0 | https://www.flickr.com/photos/87542849@N00/559281413 |
+| 2009-drama-2 | Royal Tomb of King Seok Talhae.JPG | Abasaa · Wikimedia Commons · Public domain | https://commons.wikimedia.org/wiki/File%3ARoyal_Tomb_of_King_Seok_Talhae.JPG |
+| 2009-fashion-1 | #purple #white #orchid #ny #PlantingFields #L | julianomarp · Flickr · CC BY 2.0 | https://www.flickr.com/photos/61024468@N00/13189890843 |
+| 2009-fashion-2 | Tidepools 1976 | catherinetodd2 · Flickr · CC BY-NC 2.0 | https://www.flickr.com/photos/94737677@N00/2650305354 |
+| 2009-food-1 | 2020-03-11 12.23.44 분식집.jpg | MatthieuRicard · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3A2020-03-11_12.23.44_%EB%B6%84%EC%8B%9D%EC%A7%91.jpg |
+| 2009-food-2 | Bubble tea six languages.jpg | Hippietrail · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3ABubble_tea_six_languages.jpg |
+| 2009-game-1 | Razer BlackWidow Ultimate 2014 Elite Mechanic | osman.gucel · Flickr · CC BY 2.0 | https://www.flickr.com/photos/126089327@N04/14714880858 |
+| 2009-game-2 | Putrajaya International Hot Air Balloon Fiest | kevinpoh · Flickr · CC BY 2.0 | https://www.flickr.com/photos/7679455@N03/13693123383 |
+| 2009-internet-1 | Search Direct-Trending News | Yahoo Inc · Flickr · CC BY 2.0 | https://www.flickr.com/photos/99527366@N00/5553903564 |
+| 2009-internet-2 | My Home Office (2016) | Ted Mielczarek · Flickr · CC CC0 1.0 | https://www.flickr.com/photos/49243838@N00/27821109783 |
+| 2009-music-1 | Blue Concert Lights | shaire productions · Flickr · CC BY 2.0 | https://www.flickr.com/photos/9822107@N08/4069525639 |
+| 2009-music-2 | DSCN0279 | elyaqim · Flickr · CC BY-SA 2.0 | https://www.flickr.com/photos/19364205@N00/16039471776 |
+| 2009-music-3 | Monterrey graffiti | kevin dooley · Flickr · CC BY 2.0 | https://www.flickr.com/photos/12836528@N00/16137275302 |
+| 2009-photo-1 | Loxton Pizza Bar (4097988659).jpg | Dwayne Madden from Berri, Au · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3ALoxton_Pizza_Bar_%284097988659%29.jpg |
+| 2009-photo-2 | Old photograph | Smabs Sputzer (1956-2017) · Flickr · CC BY 2.0 | https://www.flickr.com/photos/10413717@N08/5196415676 |
+| 2010-device-1 | 20240419 삼성 갤럭시 S24 울트라.jpg | Striker9498 · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3A20240419_%EC%82%BC%EC%84%B1_%EA%B0%A4%EB%9F%AD%EC%8B%9C_S24_%EC%9A%B8%ED%8A%B8%EB%9D%BC.jpg |
+| 2010-drama-1 | Chandelier at Schlosshotel Lerbach | *rboed* · Flickr · CC BY 2.0 | https://www.flickr.com/photos/92082510@N04/15544617113 |
+| 2010-drama-2 | Cabbage loaves pelle Faîs'sie d'Cidre 2007.jp | Man vyi · Wikimedia Commons · Public domain | https://commons.wikimedia.org/wiki/File%3ACabbage_loaves_pelle_Fa%C3%AEs%27sie_d%27Cidre_2007.jpg |
+| 2010-fashion-1 | Melbourne Winter Fashion - four black puffer  | avlxyz · Flickr · CC BY-NC 2.0 | https://www.flickr.com/photos/10559879@N00/48413657847 |
+| 2010-fashion-2 | Denim | Menswear Market · Flickr · CC BY 2.0 | https://www.flickr.com/photos/85546319@N04/9164966607 |
+| 2010-food-1 | A stacked chocolate waffle topped with a scoo | Manjil Aryal · Flickr · CC CC0 1.0 | https://wordpress.org/photos/photo/2636a11d70/ |
+| 2010-food-2 | Dark Chocolate Ice-cream | MaltaGirl · Flickr · CC BY 2.0 | https://www.flickr.com/photos/21749115@N00/4892259470 |
+| 2010-game-1 | REUSE(교체대상) | Hachimaki · Wikimedia Commons · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg |
+| 2010-game-2 | REUSE(교체대상) | Hachimaki · Wikimedia Commons · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg |
+| 2010-internet-1 | New York girls love their smartphones | Ed Yourdon · Flickr · CC BY-NC-SA 2.0 | https://www.flickr.com/photos/72098626@N00/17569715766 |
+| 2010-internet-2 | Analysis background business - Credit to http | homegets.com · Flickr · CC BY 2.0 | https://www.flickr.com/photos/141436406@N04/29342747487 |
+| 2010-music-1 | Duane Hanson - Cheerleader (Pom-pom girl) b | DCHNwam · Flickr · CC PDM 1.0 | https://www.flickr.com/photos/57179180@N07/53969507902 |
+| 2010-music-2 | Night cold | Fan.D & Dav.C Photgraphy · Flickr · CC BY 2.0 | https://www.flickr.com/photos/98815931@N07/51363085643 |
+| 2010-music-3 | The Cure 01 | simonsmith001 · Flickr · CC BY 2.0 | https://www.flickr.com/photos/25828730@N00/2545054689 |
+| 2010-photo-1 | T◦H◦E - - T◦R◦I◦N◦N◦A◦C◦L◦E - - J◦U◦M◦P | Karl.Chester · Flickr · CC BY-NC-SA 2.0 | https://www.flickr.com/photos/43702833@N03/26845272652 |
+| 2010-photo-2 | Pentax 'Ten Lens Shootout' 50mm Test - Wide O | digital<>analog · Flickr · CC BY 2.0 | https://www.flickr.com/photos/30135793@N05/5388269877 |
+| 2011-device-1 | Samsung Galaxy S II - Front.jpg | Beamish4 · Wikimedia Commons · CC BY 4.0 | https://commons.wikimedia.org/wiki/File%3ASamsung_Galaxy_S_II_-_Front.jpg |
+| 2011-drama-1 | Custer County District High School, Miles Cit | dave_mcmt · Flickr · CC BY 2.0 | https://www.flickr.com/photos/30512529@N00/187427874 |
+| 2011-drama-2 | Cyberpunk Seoul View.jpg | Original: mauveine.kimEdited · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3ACyberpunk_Seoul_View.jpg |
+| 2011-fashion-1 | Fritz on the summit climb | simonov · Flickr · CC BY-SA 2.0 | https://www.flickr.com/photos/26209464@N00/3629215534 |
+| 2011-fashion-2 | I am a huge fan of comfortable shoes. After a | Nicole Beauchamp · Flickr · CC BY 2.0 | https://www.flickr.com/photos/48932385@N07/17131566946 |
+| 2011-food-1 | Black Sesame Bun | Hamburger Helper · Flickr · CC BY-NC-ND 2.0 | https://www.flickr.com/photos/52042499@N00/5100102416 |
+| 2011-food-2 | Korean shaved ice-Patbingsu-10B.jpg | by magicinprogress at Flickr · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AKorean_shaved_ice-Patbingsu-10B.jpg |
+| 2011-game-1 | REUSE(교체대상) | Hachimaki · Wikimedia Commons · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg |
+| 2011-game-2 | REUSE(교체대상) | Hachimaki · Wikimedia Commons · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg |
+| 2011-internet-1 | * Rabbit For Japanese Swap and Cute Stickers  | ♥ KawaiiCloud ♥ · Flickr · CC BY-NC 2.0 | https://www.flickr.com/photos/43056779@N00/288540402 |
+| 2011-internet-2 | Listen | Johan Larsson · Flickr · CC BY 2.0 | https://www.flickr.com/photos/38305415@N00/4368595436 |
+| 2011-music-1 | Best iPhone Case Ever - 80s Cassette Tape | Chris Breikss · Flickr · CC BY 2.0 | https://www.flickr.com/photos/70116881@N00/6733458411 |
+| 2011-music-2 | Folklore 010: bling-bling | marfis75 · Flickr · CC BY 2.0 | https://www.flickr.com/photos/45409431@N00/4949472820 |
+| 2011-music-3 | Microphone | Photo Cindy · Flickr · CC CC0 1.0 | https://www.flickr.com/photos/13631562@N00/4946114680 |
+| 2011-photo-1 | old stroller | mielel · Flickr · CC BY 2.0 | https://www.flickr.com/photos/133884572@N08/19535458080 |
+| 2011-photo-2 | TLV #10 | Thomas Leuthard · Flickr · CC BY 2.0 | https://www.flickr.com/photos/41346951@N05/11650572156 |
+| 2012-device-1 | Samsung Galaxy S III.png | GadgetsGuy · Wikimedia Commons · CC BY 3.0 | https://commons.wikimedia.org/wiki/File%3ASamsung_Galaxy_S_III.png |
+| 2012-drama-1 | Blue Moon | Fraser Mummery · Flickr · CC BY 2.0 | https://www.flickr.com/photos/73014677@N05/9559789651 |
+| 2012-drama-2 | Best iPhone Case Ever - 80s Cassette Tape | Chris Breikss · Flickr · CC BY 2.0 | https://www.flickr.com/photos/70116881@N00/6733458411 |
+| 2012-fashion-1 | Baseball Caps | Menswear Market · Flickr · CC BY 2.0 | https://www.flickr.com/photos/85546319@N04/8442851109 |
+| 2012-fashion-2 | DIY Parka Jacket Update www.apairandasparediy | apairandaspare · Flickr · CC BY 2.0 | https://www.flickr.com/photos/66755335@N05/15289354718 |
+| 2012-food-1 | Buldak Ramen 20210114 001.jpg | Mobius6 · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3ABuldak_Ramen_20210114_001.jpg |
+| 2012-food-2 | Schneeball-Gebaeck-Rothenburg-odT.jpg | Sonja1982 · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3ASchneeball-Gebaeck-Rothenburg-odT.jpg |
+| 2012-game-1 | IMG_8868 | Monica's Dad · Flickr · CC BY 2.0 | https://www.flickr.com/photos/22077905@N00/2813812521 |
+| 2012-game-2 | Living on the edge (Explored) | Linh H. Nguyen · Flickr · CC BY-NC-ND 2.0 | https://www.flickr.com/photos/22439010@N04/7881151510 |
+| 2012-internet-1 | Woman taking photo of bread and wine on her s | Artem Beliaikin · Flickr · CC CC0 1.0 | https://www.flickr.com/photos/157635012@N07/31299887987 |
+| 2012-internet-2 | Half-Lit Dragon | EX22218 - ON/OFF · Flickr · CC BY-NC-ND 2.0 | https://www.flickr.com/photos/91593630@N08/27898421096 |
+| 2012-music-1 | A street in Gangnam residential area, Seoul.j | No machine-readable author p · Wikimedia Commons · Public domain | https://commons.wikimedia.org/wiki/File%3AA_street_in_Gangnam_residential_area%2C_Seoul.jpg |
+| 2012-music-2 | S cherry blossoms.jpg | HunkinElvis · Wikimedia Commons · Public domain | https://commons.wikimedia.org/wiki/File%3AS_cherry_blossoms.jpg |
+| 2012-music-3 | Flaming Lips confetti | Ruth and Dave · Flickr · CC BY 2.0 | https://www.flickr.com/photos/95142644@N00/2711930011 |
+| 2012-photo-1 | Selfie Mirror in the Bathroom at DFJ for visi | jurvetson · Flickr · CC BY 2.0 | https://www.flickr.com/photos/44124348109@N01/25739119490 |
+| 2012-photo-2 | Polaroid photos | virgirm · Flickr · CC BY 2.0 | https://www.flickr.com/photos/29445906@N00/3787704589 |
