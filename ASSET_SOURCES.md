@@ -168,6 +168,7 @@
 
 | 카드 | 원제 | 출처 표기 | 원본 |
 |---|---|---|---|
+| 2004-device-2 | Samsung SGH-E720 closed | MGS · Wikimedia Commons · CC BY 2.5 | https://commons.wikimedia.org/wiki/File:Samsung_SGH-E720_closed.JPG |
 | 2004-drama-2 | Peggy's Zen living room makeover, white sofa, | Wonderlane · Flickr · CC BY 2.0 | https://www.flickr.com/photos/71401718@N00/465852851 |
 | 2004-fashion-1 | Trafalgar Square - May 2007 - Candid Couple - | Gareth1953 All Right Now · Flickr · CC BY 2.0 | https://www.flickr.com/photos/40837632@N05/6602334993 |
 | 2004-fashion-2 | Furry Bobbly Uggs | Annie Mole · Flickr · CC BY 2.0 | https://www.flickr.com/photos/21309047@N00/120408248 |
@@ -457,3 +458,20 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2017-photo-1 | New Head: From Above! | LloydyWeb · Flickr · CC BY-NC-SA 2.0 | https://www.flickr.com/photos/89272324@N00/133244457 |
 | 2017-photo-2 | Course Four - King Salmon - The Reserve - Sco | Al_HikesAZ · Flickr · CC BY-NC 2.0 | https://www.flickr.com/photos/7202153@N03/54131131263 |
 | 2017-school-1 | Close-up of a woman's hand while stretching o | Ivan Radic · Flickr · CC BY 2.0 | https://www.flickr.com/photos/26344495@N05/49504589953 |
+
+## ⚠️ 놀이·스타일·바이럴 영상 카드 적용 (2026-08-21) — 검수 대기
+
+| 카드 | 원제 | 출처 | 원본 |
+|---|---|---|---|
+| 2000-fashion-3 | Children With Backpacks | Sarvodaya Sri Lanka · Flickr · CC BY 2.0 | https://www.flickr.com/photos/49268158@N00/4286495 |
+| 2001-school-2 | 공포의 쿵쿵따 #1 [강호동 애교에 충격받은 유재석] | YouTube · KBS Entertain: 깔깔티비 | https://www.youtube.com/watch?v=qRbGo23HyNE |
+| 2002-school-2 | 유희왕 듀얼몬스터즈 1기 오프닝 | YouTube · 유희왕 | https://www.youtube.com/watch?v=GM3eisuIEEA |
+| 2006-meme-2 | [해닭]백지영 - 사랑안해 UCC | YouTube · youtube오름 | https://www.youtube.com/watch?v=ZdjNnYnY2_M |
+| 2007-meme-2 | 2007년을 살아보셨나요  #원더걸스 #텔미 | YouTube · 옥탑청년 | https://www.youtube.com/watch?v=n_p8r5T8DFI |
+| 2008-school-2 | Seoul Subway Line 2 (Seoul Metro 2000 Seri | InSapphoWeTrust · Flickr · CC BY-SA 2.0 | https://www.flickr.com/photos/56619626@N05/5460197485 |
+| 2010-meme-2 | [Superstar K2] Huh Gak, Run Through the Sk | YouTube · Mnet K-POP | https://www.youtube.com/watch?v=em0FQxn7bzo |
+| 2011-meme-2 | 1R(3) #21, Yim Jae-beum : You, 임재범 : 여러분 I | YouTube · MBCkpop | https://www.youtube.com/watch?v=mbq4II_EOvE |
+| 2012-meme-2 | 강남스타일 - 선생님 버전 #싸이 #psy #gangnamstyle #웃교수 | YouTube · 웃교수 | https://www.youtube.com/watch?v=Q2utigFsdws |
+| 2014-meme-2 | 박보검,아이유도 참여한 2023년 아이스 버킷 챌린지🥶 | YouTube · 최애대백과 | https://www.youtube.com/watch?v=0lcrWK3HkJ8 |
+| 2015-meme-2 | [무도 special] 2014년 토요일 토요일은 가수다 무대영상 모음.zi | YouTube · 올끌 (All of MBClassic) | https://www.youtube.com/watch?v=lqAx6wPGalU |
+| 2016-meme-2 | PPAP 원본 애플펜 파인애플펜 아재 [고화질] | YouTube · Santo El | https://www.youtube.com/watch?v=klpU4pD6RAU |
