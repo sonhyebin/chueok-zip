@@ -99,3 +99,48 @@
 | 촬영 시점 | 2006 (기기: 2003년 출시 은색 컴팩트 디카) |
 | 가공 | 800×600 리사이즈, 톤/그레인 통일 |
 | 표기 | 의무 아님 — 투명성 차원에서 표기 |
+
+### 6. 노래방 내부 (2005-music-2 · `/images/years/2005/music/noraebang-book.jpg`)
+
+| 항목 | 내용 |
+|---|---|
+| 원제 | Noraebang II |
+| 원본 페이지 | https://www.flickr.com/photos/46348337@N02/5029488840 |
+| 저작자 | la_minai (Flickr) |
+| 라이선스 | **CC BY 2.0** (Openverse/Flickr 확인 2026-08-21) — 상업 사용·수정 가능, 표기 필수 |
+| 내용 | 한국 노래방 방 내부 — 곡번호책 고르는 사람들(후면), 가사 화면 |
+| 비고 | 인물은 뒷모습 위주, 화면 속 가사 UI는 부수적 노출. 문제 제기 시 기존 recreated 렌더로 즉시 복귀 가능 |
+
+### 7. PC방 2006 (2005-game-2 · `/images/years/2005/game/night-gaming.jpg`)
+
+| 항목 | 내용 |
+|---|---|
+| 원제 | Korean.culture-PC.bang-01 |
+| 원본 페이지 | https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg |
+| 저작자 | Hachimaki |
+| 라이선스 | **CC BY-SA 2.0** — 상업 사용 가능, 표기 필수, **가공본 동일 라이선스 공유 의무** |
+| SA 준수 | 본 서비스에 사용된 가공본(크롭·리사이즈·톤 조정)은 **CC BY-SA 2.0으로 공개**함 (이 저장소가 공개 저장소이므로 공유 의무 이행) |
+| 촬영 시점 | 2006-05 (실제 한국 PC방) |
+| 비고 | 좌측 인물 측면은 크롭으로 최소화. 유일한 BY-SA 사용 건 — 사용자 지시("실제 이미지로")에 따라 예외 적용 |
+
+### 8. 싸이월드 관제실 (2005-internet-1 · `/images/years/2005/internet/cyworld-room.jpg`)
+
+| 항목 | 내용 |
+|---|---|
+| 원제 | Seoul-Cyworld control room |
+| 원본 페이지 | https://commons.wikimedia.org/wiki/File:Seoul-Cyworld_control_room.jpg |
+| 저작자 | User:Eloquence (퍼블릭 도메인 공개 선언) |
+| 라이선스 | **Public Domain** |
+| 촬영 시점 | 2005-06 — 전성기 싸이월드의 실제 운영 현장 |
+| 비고 | 우측 근접 인물은 크롭 아웃, 나머지는 후면/원거리. 미니홈피 화면 자체는 저작권상 사용 불가라 "그 시절 싸이월드의 실제 현장"으로 대체 |
+
+### 9. 슬러시 (2005-food-2 · `/images/years/2005/food/blue-slush.jpg`)
+
+| 항목 | 내용 |
+|---|---|
+| 원제 | Slushie Brain Freeze |
+| 원본 페이지 | https://www.flickr.com/photos/10957255@N08/4765230501 |
+| 저작자 | Chris Yarzab (Flickr) |
+| 라이선스 | **CC BY 2.0** — 상업 사용·수정 가능, 표기 필수 |
+| 내용 | 파랑/초록 슬러시 컵 (인물 없음) |
+| 비고 | 미국 촬영이라 컵 스타일이 다름 — 국내 문방구 슬러시 자체 촬영 시 교체 후보 |
