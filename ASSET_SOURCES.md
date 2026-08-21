@@ -51,3 +51,43 @@
 
 - 자체 제작 렌더의 소스(장면 정의)는 세션 스크래치에서 제작되었으며 고화질 원본 PNG를 `assets-src/2005/`에 보관한다.
 - 라이선스 원문: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+
+### 3. MP3 플레이어 (2005-internet-2 · `/images/years/2005/internet/mp3-player.jpg`)
+
+| 항목 | 내용 |
+|---|---|
+| 원제 | IRiver ifp-890 |
+| 원본 페이지 | https://commons.wikimedia.org/wiki/File:IRiver_ifp-890.jpg |
+| 저작자 | Graham Stanley |
+| 제공처 | Wikimedia Commons (Flickr 경유) |
+| 라이선스 | **CC BY 2.0** — 상업적 사용·수정 가능, 저작자 표기 필수 (2026-08-21 원본 페이지 재확인) |
+| 촬영 시점 | 2003-01 (프리즘형 아이리버 실물) |
+| 가공 | 800×600 리사이즈, 톤/그레인 통일 |
+| 표기 | 카드 하단 "자료: Graham Stanley · Wikimedia Commons · CC BY 2.0" + 원본 링크 |
+
+### 4. 슬라이드폰 (2005-device-1 · `/images/years/2005/device/slide-phone.jpg`)
+
+| 항목 | 내용 |
+|---|---|
+| 원제 | LG Chocolate Phone Open |
+| 원본 페이지 | https://commons.wikimedia.org/wiki/File:LG_Chocolate_Phone_Open.jpg |
+| 저작자 | The Random Editor (퍼블릭 도메인 공개 선언) |
+| 제공처 | Wikimedia Commons |
+| 라이선스 | **Public Domain** — 조건 없음 (2026-08-21 원본 페이지 재확인, Copyrighted: False) |
+| 촬영 시점 | 2007 (기기: LG KG800 초콜릿폰, 2005~2006 출시) |
+| 가공 | 세로 원본 → 블러 배경 채움 + 기기 전체 노출(contain), 800×600 |
+| 표기 | 의무 아님 — 투명성 차원에서 "자료: Wikimedia Commons · Public Domain" 표기 |
+| 비고 | 초콜릿폰은 2006년 출시라 "시대 근접 대표 슬라이드폰"으로 사용. 2006년 연도 확장 시 재배치 후보 |
+
+### 5. 디카 (2005-photo-2 · `/images/years/2005/photo/digicam-snap.jpg`)
+
+| 항목 | 내용 |
+|---|---|
+| 원제 | Canon Digital IXUS 400 front |
+| 원본 페이지 | https://commons.wikimedia.org/wiki/File:Canon_Digital_IXUS_400_front.jpg |
+| 저작자 | David Gerard (파일 EXIF 코멘트에 "Public Domain … may be used by anyone for any purpose" 명시 확인) |
+| 제공처 | Wikimedia Commons |
+| 라이선스 | **Public Domain** — 조건 없음 (2026-08-21 재확인) |
+| 촬영 시점 | 2006 (기기: 2003년 출시 은색 컴팩트 디카) |
+| 가공 | 800×600 리사이즈, 톤/그레인 통일 |
+| 표기 | 의무 아님 — 투명성 차원에서 표기 |

@@ -131,8 +131,8 @@
 ### 9. 2005-internet-2 / MP3 플레이어
 
 - category: internet · memoryStrength: 4
-- recommended_asset_type: **generated-original (MVP)** → 반응 확인 후 actual(자체 촬영)로 업그레이드
-- why: MVP에서는 실물 구매·촬영보다 2005년 카드 전체의 비주얼 톤을 빠르게 검증하는 것이 우선. 무브랜드 프리즘형 MP3는 생성으로 충분히 재현 가능. 실물감이 아쉬우면 이후 중고 실물 직접 촬영(라이선스 완전 클린)으로 교체.
+- recommended_asset_type: **licensed-actual** ✅ 적용 완료 → `/images/years/2005/internet/mp3-player.jpg` (iriver iFP-890, Graham Stanley, CC BY 2.0 — 출처 표기)
+- why(기존 기록): MVP에서는 실물 구매·촬영보다 2005년 카드 전체의 비주얼 톤을 빠르게 검증하는 것이 우선. 무브랜드 프리즘형 MP3는 생성으로 충분히 재현 가능. 실물감이 아쉬우면 이후 중고 실물 직접 촬영(라이선스 완전 클린)으로 교체.
 - visual_direction: 손바닥 위 프리즘형 MP3 + 줄 감긴 번들 이어폰, 교복 소매 살짝, 자연광
 - what_should_be_visible: 기기 실루엣과 작은 액정, 이어폰 줄
 - crop_recommendation: 손+기기 클로즈업, 우하단 여백
@@ -145,8 +145,8 @@
 ### 10. 2005-device-1 / 슬라이드폰
 
 - category: device · memoryStrength: 4
-- recommended_asset_type: **generated-original** (실물 직접 촬영 가능하면 actual 승격)
-- why: 특정 모델 재현보다 "스르륵 올리는 손맛"이 기억 포인트. 무브랜드 슬라이드폰을 쥔 손이면 충분하고 리스크 없음.
+- recommended_asset_type: **licensed-actual** ✅ 적용 완료 → `/images/years/2005/device/slide-phone.jpg` (LG 초콜릿폰 KG800, Public Domain — 2006 출시 기기로 시대 근접 사용)
+- why(기존 기록): 특정 모델 재현보다 "스르륵 올리는 손맛"이 기억 포인트. 무브랜드 슬라이드폰을 쥔 손이면 충분하고 리스크 없음.
 - visual_direction: 책상 아래에서 슬라이드를 반쯤 올린 폰을 쥔 손, 작은 컬러 액정의 빛, 수업 시간의 긴장감 (교과서 모서리)
 - what_should_be_visible: 슬라이드가 열린 형태, 엄지 손가락, 폴더폰 시대의 두께감
 - crop_recommendation: 손+폰 클로즈업, 어두운 배경
@@ -169,7 +169,7 @@
 ### 12. 2005-photo-2 / 디카 날짜 스탬프
 
 - category: photo · memoryStrength: 4
-- recommended_asset_type: **generated-original**
+- recommended_asset_type: **licensed-actual** ✅ 적용 완료 → `/images/years/2005/photo/digicam-snap.jpg` (Canon IXUS 400, Public Domain)
 - why: "하얗게 날아간 저화질 사진" 질감 자체가 콘텐츠. 생성으로 완벽 재현 가능.
 - visual_direction: 2005년 컴팩트 디카로 찍은 듯한 일상 스냅 — 노을 진 골목, 과노출, 손떨림 블러, 채도 약간 뜬 색감
 - what_should_be_visible: 저화질 노이즈, 플래시 비네팅, 일상 골목/교실 풍경

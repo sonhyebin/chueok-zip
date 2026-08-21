@@ -405,7 +405,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-internet-2",
-    image: "/images/years/2005/2005-internet-2.svg",
+    image: "/images/years/2005/internet/mp3-player.jpg",
+    credit: {
+      label: "Graham Stanley · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:IRiver_ifp-890.jpg",
+    },
     year: 2005,
     category: "internet",
     title: "MP3 플레이어",
@@ -415,7 +419,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-device-1",
-    image: "/images/years/2005/2005-device-1.svg",
+    image: "/images/years/2005/device/slide-phone.jpg",
+    credit: {
+      label: "Wikimedia Commons · Public Domain",
+      url: "https://commons.wikimedia.org/wiki/File:LG_Chocolate_Phone_Open.jpg",
+    },
     year: 2005,
     category: "device",
     title: "슬라이드폰",
@@ -435,7 +443,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-photo-2",
-    image: "/images/years/2005/2005-photo-2.svg",
+    image: "/images/years/2005/photo/digicam-snap.jpg",
+    credit: {
+      label: "David Gerard · Wikimedia Commons · Public Domain",
+      url: "https://commons.wikimedia.org/wiki/File:Canon_Digital_IXUS_400_front.jpg",
+    },
     year: 2005,
     category: "photo",
     title: "디카 날짜 스탬프",
