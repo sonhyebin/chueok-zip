@@ -5,6 +5,10 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import Window from "@/components/Window";
 import CapsuleForm from "@/components/CapsuleForm";
+import {
+  CAPSULE_QUESTIONS,
+  LEGACY_CAPSULE_QUESTIONS,
+} from "@/data/capsuleQuestions";
 import { decodeInvite, encodeCapsule, type CapsuleInvite } from "@/lib/capsule";
 import { loadMyName, saveMyName } from "@/lib/age";
 import { nameIga } from "@/lib/josa";
@@ -49,7 +53,7 @@ function CapsuleInviteInner() {
     if (!invite) return;
     saveMyName(name);
     const d = encodeCapsule({
-      v: 1,
+      v: invite.v,
       kind: "result",
       year: invite.year,
       a: { name: invite.from, answers: invite.answers },
@@ -96,6 +100,9 @@ function CapsuleInviteInner() {
     );
   }
 
+  const questions =
+    invite.v === 1 ? LEGACY_CAPSULE_QUESTIONS : CAPSULE_QUESTIONS;
+
   return (
     <main className="page flex flex-col gap-5">
       <header className="text-center pop-in pt-2">
@@ -113,6 +120,7 @@ function CapsuleInviteInner() {
           initialName={initialName}
           nameLabel="친구가 알아볼 내 이름"
           submitLabel="🔓 타임캡슐 열기"
+          questions={questions}
           onSubmit={handleSubmit}
         />
       </Window>

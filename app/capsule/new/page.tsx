@@ -37,7 +37,7 @@ function CapsuleNewInner() {
   function handleSubmit(name: string, answers: string[]) {
     saveMyName(name);
     setFromName(name);
-    const d = encodeCapsule({ v: 1, kind: "invite", year, from: name, answers });
+    const d = encodeCapsule({ v: 2, kind: "invite", year, from: name, answers });
     setInviteUrl(`${window.location.origin}/capsule?d=${d}`);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }

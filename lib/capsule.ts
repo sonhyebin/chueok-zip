@@ -4,8 +4,10 @@
  * API 호출(생성 → id 반환)로 교체하면 된다.
  */
 
+export type CapsuleVersion = 1 | 2;
+
 export type CapsuleInvite = {
-  v: 1;
+  v: CapsuleVersion;
   kind: "invite";
   year: number;
   from: string;
@@ -13,7 +15,7 @@ export type CapsuleInvite = {
 };
 
 export type CapsuleResult = {
-  v: 1;
+  v: CapsuleVersion;
   kind: "result";
   year: number;
   a: { name: string; answers: string[] };
@@ -42,7 +44,11 @@ export function encodeCapsule(data: CapsuleInvite | CapsuleResult): string {
 export function decodeInvite(d: string): CapsuleInvite | null {
   try {
     const obj = JSON.parse(fromBase64Url(d));
-    if (obj?.v === 1 && obj?.kind === "invite" && Array.isArray(obj.answers)) {
+    if (
+      (obj?.v === 1 || obj?.v === 2) &&
+      obj?.kind === "invite" &&
+      Array.isArray(obj.answers)
+    ) {
       return obj as CapsuleInvite;
     }
     return null;
@@ -54,7 +60,12 @@ export function decodeInvite(d: string): CapsuleInvite | null {
 export function decodeResult(d: string): CapsuleResult | null {
   try {
     const obj = JSON.parse(fromBase64Url(d));
-    if (obj?.v === 1 && obj?.kind === "result" && obj.a && obj.b) {
+    if (
+      (obj?.v === 1 || obj?.v === 2) &&
+      obj?.kind === "result" &&
+      obj.a &&
+      obj.b
+    ) {
       return obj as CapsuleResult;
     }
     return null;

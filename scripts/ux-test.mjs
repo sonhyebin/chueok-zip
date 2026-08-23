@@ -53,18 +53,18 @@ async function noHorizontalOverflow(page) {
 }
 
 const A_ANSWERS = [
-  "중학교 1학년 때 같은 반",
-  "학교 앞 떡볶이집",
-  "SG워너비 노래 전부 다",
   "말이 별로 없는 애인 줄 알았음",
-  "그때 사진 좀 많이 찍어둘걸",
+  "조용한 줄 알았는데 완전 반대였음",
+  "쉬는 시간마다 매점까지 전력 질주하기",
+  "수업 시간에 웃음 참다가 같이 쫓겨난 날",
+  "하교하자마자 학교 앞 떡볶이집 가기",
 ];
 const B_ANSWERS = [
-  "중1 때 짝꿍으로 만났지",
-  "문방구 앞 오락기",
-  "버즈 겁쟁이 맨날 불렀잖아",
-  "처음엔 좀 무서워 보였는데 완전 반대였음",
-  "우리 그때처럼 자주 보자",
+  "처음엔 좀 무서워 보였음",
+  "알고 보니 제일 웃긴 애였음",
+  "문방구 앞 오락기에서 기록 깨기",
+  "체육대회 날 둘이 반대로 뛰었던 사건",
+  "문방구부터 들러서 오락 한 판 하기",
 ];
 
 const results = [];
@@ -104,13 +104,12 @@ try {
   // STEP 3: 타임라인
   await a.waitForLoadState("networkidle");
   await shot(a, "02-timeline-1992.png");
-  const y2003 = await a.getByText("2003", { exact: true }).count();
-  const y2010 = await a.getByText("2010", { exact: true }).count();
-  y2003 > 0 && y2010 > 0
-    ? pass("타임라인: 1992년생 → 2003~2010 표시")
-    : fail("타임라인: 연도 범위 이상", `2003:${y2003} 2010:${y2010}`);
+  const y1998 = await a.getByText("1998", { exact: true }).count();
+  const y2016 = await a.getByText("2016", { exact: true }).count();
+  y1998 > 0 && y2016 > 0
+    ? pass("타임라인: 1998~2016 전체 연도 표시")
+    : fail("타임라인: 연도 범위 이상", `1998:${y1998} 2016:${y2016}`);
   (await a.getByText("★ 추천").isVisible()) ? pass("타임라인: 2005 추천 배지") : fail("타임라인: 추천 배지 없음");
-  (await a.getByText("준비중").count()) > 0 ? pass("타임라인: 준비중 연도 구분") : fail("타임라인: 준비중 표시 없음");
 
   // STEP 4: 2005 피드 진입
   await a.getByRole("link", { name: /2005/ }).click();
@@ -159,6 +158,12 @@ try {
   // STEP 6: A가 타임캡슐 작성
   await a.getByRole("link", { name: /그 친구에게 보내기/ }).first().click();
   await a.waitForURL("**/capsule/new**");
+  (await a.getByText("처음 봤을 때 솔직히 무슨 생각했어?").isVisible())
+    ? pass("캡슐(A): 새 첫인상 질문 노출")
+    : fail("캡슐(A): 새 첫인상 질문 미노출");
+  (await a.getByText("딱 하루 그때로 돌아간다면, 우리 뭐부터 할까?").isVisible())
+    ? pass("캡슐(A): 새 마지막 질문 노출")
+    : fail("캡슐(A): 새 마지막 질문 미노출");
   await a.getByPlaceholder("예: 혜빈").fill("혜빈");
   const taA = a.locator("textarea");
   for (let i = 0; i < A_ANSWERS.length; i++) await taA.nth(i).fill(A_ANSWERS[i]);
@@ -206,7 +211,10 @@ try {
   pass("캡슐(B): 결과 페이지 도달", b.url().slice(0, 70) + "…");
 
   // STEP 8: 결과 검증
-  (await b.getByText("혜빈 × 수진").isVisible()) ? pass("결과: 제목 '혜빈 × 수진'") : fail("결과: 제목 이상");
+  const resultTitle = await b.locator("h1").innerText();
+  resultTitle.includes("혜빈 × 수진")
+    ? pass("결과: 제목 '혜빈 × 수진'")
+    : fail("결과: 제목 이상", resultTitle.replaceAll("\n", " "));
   (await b.getByText("수진이가").count()) > 0 && (await b.getByText("혜빈이가").count()) > 0
     ? pass("결과: 조사(이가) 자연스러움", "혜빈이가/수진이가")
     : fail("결과: 조사 처리 이상");

@@ -6,7 +6,10 @@ import { useSearchParams } from "next/navigation";
 import ShareButton from "@/components/ShareButton";
 import BgmPlayer from "@/components/BgmPlayer";
 import { getYearInfo } from "@/data/memories";
-import { CAPSULE_QUESTIONS } from "@/data/capsuleQuestions";
+import {
+  CAPSULE_QUESTIONS,
+  LEGACY_CAPSULE_QUESTIONS,
+} from "@/data/capsuleQuestions";
 import { decodeResult, type CapsuleResult } from "@/lib/capsule";
 import { fillLabel } from "@/lib/josa";
 
@@ -51,6 +54,8 @@ function CapsuleResultInner() {
 
   const { year, a, b } = result;
   const info = getYearInfo(year);
+  const questions =
+    result.v === 1 ? LEGACY_CAPSULE_QUESTIONS : CAPSULE_QUESTIONS;
   const shareText = `우리 ${year} 타임캡슐 완성됐다ㅋㅋ\n네 답이랑 내 답이랑 같이 들어있음. 이거 봐봐`;
 
   return (
@@ -100,7 +105,7 @@ function CapsuleResultInner() {
         </div>
       )}
 
-      {CAPSULE_QUESTIONS.map((q, i) => (
+      {questions.map((q, i) => (
         <article
           key={q.id}
           className="window card-appear"

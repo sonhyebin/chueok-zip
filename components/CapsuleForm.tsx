@@ -1,26 +1,31 @@
 "use client";
 
 import { useState } from "react";
-import { CAPSULE_QUESTIONS } from "@/data/capsuleQuestions";
+import {
+  CAPSULE_QUESTIONS,
+  type CapsuleQuestion,
+} from "@/data/capsuleQuestions";
 
 export default function CapsuleForm({
   initialName,
   nameLabel,
   submitLabel,
+  questions = CAPSULE_QUESTIONS,
   onSubmit,
 }: {
   initialName: string;
   nameLabel: string;
   submitLabel: string;
+  questions?: CapsuleQuestion[];
   onSubmit: (name: string, answers: string[]) => void;
 }) {
   const [name, setName] = useState(initialName);
   const [answers, setAnswers] = useState<string[]>(
-    Array(CAPSULE_QUESTIONS.length).fill(""),
+    Array(questions.length).fill(""),
   );
 
   const filled = answers.filter((a) => a.trim().length > 0).length;
-  const ready = name.trim().length > 0 && filled === CAPSULE_QUESTIONS.length;
+  const ready = name.trim().length > 0 && filled === questions.length;
 
   function setAnswer(i: number, value: string) {
     setAnswers((prev) => prev.map((a, j) => (j === i ? value : a)));
@@ -46,7 +51,7 @@ export default function CapsuleForm({
         />
       </label>
 
-      {CAPSULE_QUESTIONS.map((q, i) => (
+      {questions.map((q, i) => (
         <label key={q.id} className="flex flex-col gap-1.5">
           <span className="font-pixel text-[15px]">
             {q.emoji} Q{i + 1}. {q.text}
@@ -63,7 +68,7 @@ export default function CapsuleForm({
       ))}
 
       <p className="text-center text-[13px] text-[#5a6b80] font-pixel">
-        {filled}/{CAPSULE_QUESTIONS.length} 답변 완료
+        {filled}/{questions.length} 답변 완료
       </p>
 
       <button type="submit" className="pixel-btn primary" disabled={!ready}>
