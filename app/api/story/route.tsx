@@ -24,7 +24,11 @@ export async function GET(req: NextRequest) {
   }
 
   const id = query.get("c") ?? "";
-  const record = id ? await getCapsuleRecord(id) : null;
+  let record = id ? await getCapsuleRecord(id) : null;
+  for (let attempt = 0; id && record?.kind === "invite" && attempt < 8; attempt++) {
+    await new Promise((resolve) => setTimeout(resolve, 400));
+    record = await getCapsuleRecord(id);
+  }
   if (record?.kind === "result") {
     return renderStoryImage({
       badge: `${record.year}년 타임캡슐`,

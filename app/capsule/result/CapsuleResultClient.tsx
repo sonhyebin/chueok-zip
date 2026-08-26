@@ -10,7 +10,11 @@ import {
   CAPSULE_QUESTIONS,
   LEGACY_CAPSULE_QUESTIONS,
 } from "@/data/capsuleQuestions";
-import type { CapsuleRecord, CapsuleResult } from "@/lib/capsule";
+import {
+  isCapsuleRecord,
+  type CapsuleRecord,
+  type CapsuleResult,
+} from "@/lib/capsule";
 import { decryptCapsule, getCapsuleKeyFromHash } from "@/lib/capsuleCrypto";
 import { fillLabel } from "@/lib/josa";
 import { trackEvent } from "@/lib/analytics";
@@ -40,32 +44,55 @@ export default function CapsuleResultClient({
   useEffect(() => {
     setResultUrl(window.location.href);
     if (legacyResult) return;
-    if (!record || record.kind !== "result" || !capsuleId) {
+    if (!record || !capsuleId) {
       setInvalid(true);
       return;
     }
+    const initialRecord = record;
     const key = getCapsuleKeyFromHash();
     if (!key) {
       setInvalid(true);
       return;
     }
 
+    const controller = new AbortController();
     let active = true;
-    void decryptCapsule(record.cipher, key).then((value) => {
-      if (!active) return;
-      if (
-        value?.kind === "result" &&
-        value.year === record.year &&
-        value.a.name === record.aName &&
-        value.b.name === record.bName
-      ) {
-        setResult(value);
-      } else {
-        setInvalid(true);
+
+    async function resolveResult() {
+      let candidate: CapsuleRecord = initialRecord;
+      for (let attempt = 0; attempt < 10 && active; attempt++) {
+        if (candidate.kind === "result") {
+          const value = await decryptCapsule(candidate.cipher, key);
+          if (
+            value?.kind === "result" &&
+            value.year === candidate.year &&
+            value.a.name === candidate.aName &&
+            value.b.name === candidate.bName
+          ) {
+            setResult(value);
+            return;
+          }
+        }
+
+        await new Promise((resolve) => window.setTimeout(resolve, 500));
+        try {
+          const response = await fetch(`/api/capsules/${capsuleId}`, {
+            cache: "no-store",
+            signal: controller.signal,
+          });
+          const latest: unknown = response.ok ? await response.json() : null;
+          if (isCapsuleRecord(latest)) candidate = latest;
+        } catch {
+          if (controller.signal.aborted) return;
+        }
       }
-    });
+      if (active) setInvalid(true);
+    }
+
+    void resolveResult();
     return () => {
       active = false;
+      controller.abort();
     };
   }, [capsuleId, legacyResult, record]);
 
@@ -82,7 +109,13 @@ export default function CapsuleResultClient({
     );
   }
 
-  if (!result) return null;
+  if (!result) {
+    return (
+      <main className="page flex flex-col justify-center gap-4 text-center">
+        <p className="font-pixel text-[20px]">📦 타임캡슐 여는 중...</p>
+      </main>
+    );
+  }
 
   const { year, a, b } = result;
   const info = getYearInfo(year);

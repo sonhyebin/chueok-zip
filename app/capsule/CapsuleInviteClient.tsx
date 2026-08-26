@@ -11,6 +11,7 @@ import {
 } from "@/data/capsuleQuestions";
 import {
   encodeCapsule,
+  isCapsuleRecord,
   type CapsuleInvite,
   type CapsuleRecord,
   type CapsuleResult,
@@ -59,25 +60,35 @@ export default function CapsuleInviteClient({
       return;
     }
     setCapsuleKey(key);
-    if (record.kind === "result") {
-      router.replace(`/capsule/result?c=${capsuleId}#k=${encodeURIComponent(key)}`);
-      return;
-    }
-
     let active = true;
-    void decryptCapsule(record.cipher, key).then((value) => {
+    void (async () => {
+      let latest = record;
+      try {
+        const response = await fetch(`/api/capsules/${capsuleId}`, {
+          cache: "no-store",
+        });
+        const value: unknown = response.ok ? await response.json() : null;
+        if (isCapsuleRecord(value)) latest = value;
+      } catch {}
+      if (!active) return;
+      if (latest.kind === "result") {
+        router.replace(`/capsule/result?c=${capsuleId}#k=${encodeURIComponent(key)}`);
+        return;
+      }
+
+      const value = await decryptCapsule(latest.cipher, key);
       if (!active) return;
       if (
         value?.kind === "invite" &&
-        value.year === record.year &&
-        value.from === record.fromName
+        value.year === latest.year &&
+        value.from === latest.fromName
       ) {
         setInvite(value);
         trackEvent("invite_open", { year: value.year, version: "short" });
       } else {
         setInvalid(true);
       }
-    });
+    })();
     return () => {
       active = false;
     };
@@ -98,7 +109,13 @@ export default function CapsuleInviteClient({
     );
   }
 
-  if (!invite) return null;
+  if (!invite) {
+    return (
+      <main className="page flex flex-col justify-center gap-4 text-center">
+        <p className="font-pixel text-[20px]">💌 타임캡슐 불러오는 중...</p>
+      </main>
+    );
+  }
 
   async function handleSubmit(name: string, answers: string[]) {
     if (!invite) return;

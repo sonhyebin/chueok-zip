@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { put } from "@vercel/blob";
 import { AVAILABLE_YEARS } from "@/data/memories";
 import { isCapsuleRecord, type CapsuleRecord } from "@/lib/capsule";
-import { capsulePath } from "@/lib/capsuleStore";
+import { capsuleInvitePath } from "@/lib/capsuleStore";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -26,11 +26,15 @@ export async function POST(req: NextRequest) {
 
   const id = randomBytes(9).toString("base64url");
   const record: CapsuleRecord = { ...value, createdAt: Date.now() };
-  await put(capsulePath(id), JSON.stringify(record), {
-    access: "public",
-    contentType: "application/json",
-    addRandomSuffix: false,
-  });
+  try {
+    await put(capsuleInvitePath(id), JSON.stringify(record), {
+      access: "public",
+      contentType: "application/json",
+      addRandomSuffix: false,
+    });
+  } catch {
+    return NextResponse.json({ error: "storage unavailable" }, { status: 503 });
+  }
 
   return NextResponse.json({ id });
 }

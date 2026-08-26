@@ -1,13 +1,31 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createHash, timingSafeEqual } from "node:crypto";
-import { get, put } from "@vercel/blob";
+import { put } from "@vercel/blob";
 import { isCapsuleRecord, type CapsuleRecord } from "@/lib/capsule";
-import { CAPSULE_ID, capsulePath } from "@/lib/capsuleStore";
+import {
+  CAPSULE_ID,
+  capsuleResultPath,
+  getCapsuleRecord,
+} from "@/lib/capsuleStore";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 type RouteContext = { params: Promise<{ id: string }> };
+
+export async function GET(_req: NextRequest, { params }: RouteContext) {
+  const { id } = await params;
+  if (!CAPSULE_ID.test(id)) {
+    return NextResponse.json({ error: "invalid id" }, { status: 400 });
+  }
+  const record = await getCapsuleRecord(id);
+  if (!record) {
+    return NextResponse.json({ error: "not found" }, { status: 404 });
+  }
+  return NextResponse.json(record, {
+    headers: { "Cache-Control": "no-store" },
+  });
+}
 
 export async function PATCH(req: NextRequest, { params }: RouteContext) {
   const { id } = await params;
@@ -30,15 +48,11 @@ export async function PATCH(req: NextRequest, { params }: RouteContext) {
     return NextResponse.json({ error: "invalid proof" }, { status: 403 });
   }
 
-  const currentBlob = await get(capsulePath(id), {
-    access: "public",
-    useCache: false,
-  });
-  if (!currentBlob || currentBlob.statusCode !== 200) {
+  const currentValue = await getCapsuleRecord(id);
+  if (!currentValue) {
     return NextResponse.json({ error: "not found" }, { status: 404 });
   }
-  const currentValue: unknown = await new Response(currentBlob.stream).json();
-  if (!isCapsuleRecord(currentValue) || currentValue.kind !== "invite") {
+  if (currentValue.kind !== "invite") {
     return NextResponse.json({ error: "already completed" }, { status: 409 });
   }
 
@@ -63,12 +77,15 @@ export async function PATCH(req: NextRequest, { params }: RouteContext) {
     return NextResponse.json({ error: "capsule mismatch" }, { status: 400 });
   }
 
-  await put(capsulePath(id), JSON.stringify(next), {
-    access: "public",
-    contentType: "application/json",
-    addRandomSuffix: false,
-    ifMatch: currentBlob.blob.etag,
-  });
+  try {
+    await put(capsuleResultPath(id), JSON.stringify(next), {
+      access: "public",
+      contentType: "application/json",
+      addRandomSuffix: false,
+    });
+  } catch {
+    return NextResponse.json({ error: "already completed" }, { status: 409 });
+  }
 
   return NextResponse.json({ id });
 }
