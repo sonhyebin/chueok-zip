@@ -1,23 +1,40 @@
 "use client";
 
 import { useState } from "react";
+import { trackEvent, type ViralEvent } from "@/lib/analytics";
 import { shareOrCopy } from "@/lib/share";
 
 export default function ShareButton({
   label,
+  title,
   text,
   url,
   variant = "primary",
+  compact = false,
+  eventName,
+  eventProperties,
 }: {
   label: string;
+  title?: string;
   text: string;
   url: string;
   variant?: "primary" | "secondary" | "blue";
+  compact?: boolean;
+  eventName?: ViralEvent;
+  eventProperties?: Record<string, string | number>;
 }) {
   const [status, setStatus] = useState<"idle" | "copied" | "failed">("idle");
+  const [failedUrl, setFailedUrl] = useState(url);
 
   async function handleShare() {
-    const outcome = await shareOrCopy({ text, url });
+    const resolvedUrl = url
+      ? new URL(url, window.location.origin).href
+      : window.location.href;
+    setFailedUrl(resolvedUrl);
+    const outcome = await shareOrCopy({ title, text, url: resolvedUrl });
+    if ((outcome === "shared" || outcome === "copied") && eventName) {
+      trackEvent(eventName, { ...eventProperties, outcome });
+    }
     if (outcome === "copied") {
       setStatus("copied");
       setTimeout(() => setStatus("idle"), 2500);
@@ -32,7 +49,7 @@ export default function ShareButton({
     <div className="flex flex-col gap-2">
       <button
         type="button"
-        className={`pixel-btn ${variant}`}
+        className={`pixel-btn ${variant}${compact ? " compact" : ""}`}
         onClick={handleShare}
       >
         {status === "copied" ? "📋 링크 복사 완료!" : label}
@@ -45,7 +62,7 @@ export default function ShareButton({
           <input
             className="pixel-input !text-[13px] text-center"
             readOnly
-            value={url}
+            value={failedUrl}
             onFocus={(e) => e.currentTarget.select()}
           />
         </div>

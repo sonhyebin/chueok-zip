@@ -17,12 +17,13 @@ export default function CapsuleForm({
   nameLabel: string;
   submitLabel: string;
   questions?: CapsuleQuestion[];
-  onSubmit: (name: string, answers: string[]) => void;
+  onSubmit: (name: string, answers: string[]) => void | Promise<void>;
 }) {
   const [name, setName] = useState(initialName);
   const [answers, setAnswers] = useState<string[]>(
     Array(questions.length).fill(""),
   );
+  const [submitting, setSubmitting] = useState(false);
 
   const filled = answers.filter((a) => a.trim().length > 0).length;
   const ready = name.trim().length > 0 && filled === questions.length;
@@ -34,9 +35,15 @@ export default function CapsuleForm({
   return (
     <form
       className="flex flex-col gap-4"
-      onSubmit={(e) => {
+      onSubmit={async (e) => {
         e.preventDefault();
-        if (ready) onSubmit(name.trim(), answers.map((a) => a.trim()));
+        if (!ready || submitting) return;
+        setSubmitting(true);
+        try {
+          await onSubmit(name.trim(), answers.map((a) => a.trim()));
+        } finally {
+          setSubmitting(false);
+        }
       }}
     >
       <label className="flex flex-col gap-1.5">
@@ -71,8 +78,12 @@ export default function CapsuleForm({
         {filled}/{questions.length} 답변 완료
       </p>
 
-      <button type="submit" className="pixel-btn primary" disabled={!ready}>
-        {submitLabel}
+      <button
+        type="submit"
+        className="pixel-btn primary"
+        disabled={!ready || submitting}
+      >
+        {submitting ? "저장하는 중..." : submitLabel}
       </button>
     </form>
   );

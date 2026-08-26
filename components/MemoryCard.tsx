@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { CATEGORY_META, type MemoryItem } from "@/data/memories";
 import CommentBox from "@/components/CommentBox";
+import ShareButton from "@/components/ShareButton";
 import { announcePlay, onPlay } from "@/lib/playerBus";
 
 const PHOTO_BG: Record<string, string> = {
@@ -51,7 +52,8 @@ export default function MemoryCard({
     : null;
   return (
     <article
-      className="window card-appear"
+      id={`memory-${item.id}`}
+      className="window memory-card card-appear scroll-mt-4"
       style={{ animationDelay: `${Math.min(index, 6) * 60}ms` }}
     >
       <div className="window-titlebar">
@@ -162,6 +164,16 @@ export default function MemoryCard({
         )}
 
         {item.prompt && <p className="speech">{item.prompt}</p>}
+
+        <ShareButton
+          label="🔗 이거 기억나?"
+          text={`야 이거 기억나?\n${item.year}년 ${item.title} 보자마자 너 생각남ㅋㅋ`}
+          url={`/year/${item.year}?memory=${item.id}#memory-${item.id}`}
+          variant="secondary"
+          compact
+          eventName="memory_share"
+          eventProperties={{ year: item.year, card: item.id }}
+        />
 
         <CommentBox cardId={item.id} />
       </div>

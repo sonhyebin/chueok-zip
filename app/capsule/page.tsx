@@ -1,137 +1,62 @@
-"use client";
+import type { Metadata } from "next";
+import { decodeInvite } from "@/lib/capsule";
+import { getCapsuleRecord } from "@/lib/capsuleStore";
+import CapsuleInviteClient from "@/app/capsule/CapsuleInviteClient";
 
-import { Suspense, useEffect, useState } from "react";
-import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
-import Window from "@/components/Window";
-import CapsuleForm from "@/components/CapsuleForm";
-import {
-  CAPSULE_QUESTIONS,
-  LEGACY_CAPSULE_QUESTIONS,
-} from "@/data/capsuleQuestions";
-import { decodeInvite, encodeCapsule, type CapsuleInvite } from "@/lib/capsule";
-import { loadMyName, saveMyName } from "@/lib/age";
-import { nameIga } from "@/lib/josa";
+type CapsulePageProps = {
+  searchParams: Promise<{
+    c?: string | string[];
+    d?: string | string[];
+  }>;
+};
 
-function CapsuleInviteInner() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const [invite, setInvite] = useState<CapsuleInvite | null>(null);
-  const [invalid, setInvalid] = useState(false);
-  const [started, setStarted] = useState(false);
-  const [initialName, setInitialName] = useState("");
-
-  useEffect(() => {
-    const d = searchParams.get("d");
-    const decoded = d ? decodeInvite(d) : null;
-    if (decoded) {
-      setInvite(decoded);
-    } else {
-      setInvalid(true);
-    }
-    setInitialName(loadMyName());
-  }, [searchParams]);
-
-  if (invalid) {
-    return (
-      <main className="page flex flex-col justify-center gap-4 text-center">
-        <p className="font-pixel text-[20px]">
-          링크가 잘못됐어요 😢
-          <br />
-          친구에게 다시 받아보세요
-        </p>
-        <Link href="/" className="pixel-btn secondary">
-          내 학창시절 보러가기
-        </Link>
-      </main>
-    );
-  }
-
-  if (!invite) return null;
-
-  function handleSubmit(name: string, answers: string[]) {
-    if (!invite) return;
-    saveMyName(name);
-    const d = encodeCapsule({
-      v: invite.v,
-      kind: "result",
-      year: invite.year,
-      a: { name: invite.from, answers: invite.answers },
-      b: { name, answers },
-    });
-    router.push(`/capsule/result?d=${d}`);
-  }
-
-  if (!started) {
-    return (
-      <main className="page flex flex-col justify-center gap-5">
-        <header className="text-center pop-in">
-          <p className="badge">💌 새 쪽지 1통</p>
-          <h1 className="font-pixel text-[24px] mt-3 leading-snug break-keep">
-            {nameIga(invite.from)} {invite.year}년에서
-            <br />
-            타임캡슐을 보냈어요
-          </h1>
-        </header>
-
-        <Window title="타임캡슐.exe" className="pop-in">
-          <div className="flex flex-col gap-3 text-center">
-            <p className="font-pixel text-[20px]">우리 그때 어땠지?</p>
-            <p className="text-[13.5px] text-[#5a6b80] leading-relaxed">
-              {invite.from}님은 이미 5개의 질문에 답했어요.
-              <br />
-              <b>당신이 답을 다 쓰기 전까지는 볼 수 없어요.</b>
-              <br />
-              둘 다 완료하면 두 사람의 {invite.year} 타임캡슐이 완성돼요.
-            </p>
-            <button
-              type="button"
-              className="pixel-btn primary"
-              onClick={() => setStarted(true)}
-            >
-              ✏️ 나도 답하러 가기
-            </button>
-            <Link href={`/year/${invite.year}`} className="pixel-btn secondary">
-              먼저 {invite.year}년 추억 구경하기
-            </Link>
-          </div>
-        </Window>
-      </main>
-    );
-  }
-
-  const questions =
-    invite.v === 1 ? LEGACY_CAPSULE_QUESTIONS : CAPSULE_QUESTIONS;
-
-  return (
-    <main className="page flex flex-col gap-5">
-      <header className="text-center pop-in pt-2">
-        <p className="badge">🕰️ {invite.year}년 타임캡슐</p>
-        <h1 className="font-pixel text-[24px] mt-3 leading-snug">
-          {invite.from} × 나의 기억
-        </h1>
-        <p className="text-[13.5px] text-[#5a6b80] mt-1.5">
-          다 쓰면 {invite.from}님의 답과 나란히 공개돼요.
-        </p>
-      </header>
-
-      <Window title="타임캡슐.exe — 네 차례" className="pop-in">
-        <CapsuleForm
-          initialName={initialName}
-          nameLabel="친구가 알아볼 내 이름"
-          submitLabel="🔓 타임캡슐 열기"
-          questions={questions}
-          onSubmit={handleSubmit}
-        />
-      </Window>
-    </main>
-  );
+function first(value: string | string[] | undefined): string {
+  return Array.isArray(value) ? (value[0] ?? "") : (value ?? "");
 }
 
-export default function CapsuleInvitePage() {
+export async function generateMetadata({
+  searchParams,
+}: CapsulePageProps): Promise<Metadata> {
+  const query = await searchParams;
+  const id = first(query.c);
+  const record = id ? await getCapsuleRecord(id) : null;
+  const legacy = !record ? decodeInvite(first(query.d)) : null;
+  const year = record?.year ?? legacy?.year;
+  const from = record?.fromName ?? record?.aName ?? legacy?.from;
+
+  if (!year || !from) {
+    return { title: "타임캡슐 초대 | 추억.zip", robots: { index: false } };
+  }
+  const completed = record?.kind === "result";
+  const title = completed
+    ? `${record.aName} × ${record.bName}의 ${year} 타임캡슐`
+    : `${from}님이 ${year}년에서 보낸 타임캡슐`;
+  const description = completed
+    ? "첫인상부터 지금도 웃긴 사건까지, 두 사람이 기억한 그때를 나란히 열어보세요."
+    : `${from}님은 이미 답했어요. 내가 답해야 서로의 첫인상과 추억이 열려요.`;
+  const image = completed
+    ? `/api/og?type=result&year=${year}&a=${encodeURIComponent(record.aName ?? "")}&b=${encodeURIComponent(record.bName ?? "")}`
+    : `/api/og?type=invite&year=${year}&from=${encodeURIComponent(from)}`;
+  return {
+    title,
+    description,
+    robots: { index: false, follow: false },
+    openGraph: { title, description, images: [image] },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
+  };
+}
+
+export default async function CapsulePage({ searchParams }: CapsulePageProps) {
+  const query = await searchParams;
+  const id = first(query.c);
+  const record = id ? await getCapsuleRecord(id) : null;
+  const legacyInvite = !id ? decodeInvite(first(query.d)) : null;
+
   return (
-    <Suspense>
-      <CapsuleInviteInner />
-    </Suspense>
+    <CapsuleInviteClient
+      capsuleId={id}
+      record={record}
+      legacyInvite={legacyInvite}
+    />
   );
 }

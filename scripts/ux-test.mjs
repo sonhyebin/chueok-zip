@@ -31,6 +31,9 @@ function watch(page, label) {
     issues.pageErrors.push({ label, text: String(err).slice(0, 300) });
   });
   page.on("requestfailed", (req) => {
+    if (req.failure()?.errorText === "net::ERR_ABORTED" && req.url().includes("_rsc=")) {
+      return; // Next.js가 사용하지 않은 선행 RSC 요청을 취소한 정상 동작
+    }
     issues.network.push({ label, kind: "failed", url: req.url().slice(0, 200), err: req.failure()?.errorText });
   });
   page.on("response", (res) => {
@@ -110,6 +113,12 @@ try {
     ? pass("타임라인: 1998~2016 전체 연도 표시")
     : fail("타임라인: 연도 범위 이상", `1998:${y1998} 2016:${y2016}`);
   (await a.getByText("★ 추천").isVisible()) ? pass("타임라인: 2005 추천 배지") : fail("타임라인: 추천 배지 없음");
+  (await a.getByText("내 학창시절.zip").isVisible())
+    ? pass("타임라인: 단독 공유 카드 노출")
+    : fail("타임라인: 단독 공유 카드 없음");
+  (await a.getByRole("button", { name: /친구에게 내 학창시절 보내기/ }).isVisible())
+    ? pass("타임라인: 친구 공유 CTA")
+    : fail("타임라인: 친구 공유 CTA 없음");
 
   // STEP 4: 2005 피드 진입
   await a.getByRole("link", { name: /2005/ }).click();
@@ -132,6 +141,9 @@ try {
   await shot(a, "04-2005-feed-middle.png");
   const ov2 = await noHorizontalOverflow(a);
   ov2.ok ? pass("피드: 가로 오버플로 없음") : fail("피드: 가로 오버플로", JSON.stringify(ov2));
+  (await a.getByRole("button", { name: /이거 기억나/ }).first().isVisible())
+    ? pass("피드: 추억 카드 단위 공유 버튼")
+    : fail("피드: 카드 공유 버튼 없음");
 
   // 첫 공유 CTA 위치: 카드 4~5개 경험 후 등장해야 함
   const cardsBeforeCta = await a.evaluate(() => {
@@ -184,9 +196,28 @@ try {
     ? pass("캡슐(A): 링크 복사 폴백 동작", inviteUrl.slice(0, 60) + "…")
     : fail("캡슐(A): 클립보드에 링크 없음", clip.slice(0, 80));
   issues.notes.push(`초대 URL 길이: ${inviteUrl?.length ?? "N/A"}자`);
+  inviteUrl?.includes("?c=") && inviteUrl.includes("#k=")
+    ? pass("캡슐(A): 짧은 ID + fragment 암호키 링크")
+    : fail("캡슐(A): 새 링크 형식 아님", inviteUrl ?? "");
+  (inviteUrl?.length ?? 9999) < 220
+    ? pass("캡슐(A): 공유 링크 220자 미만", `${inviteUrl?.length}자`)
+    : fail("캡슐(A): 공유 링크가 너무 김", `${inviteUrl?.length}자`);
+  inviteUrl?.includes(encodeURIComponent(A_ANSWERS[0]))
+    ? fail("캡슐(A): 답변이 URL에 노출됨")
+    : pass("캡슐(A): 답변 원문 URL 비노출");
   (await a.getByText("링크 복사 완료").isVisible().catch(() => false))
     ? pass("캡슐(A): 복사 완료 피드백 표시")
     : fail("캡슐(A): 복사 피드백 없음");
+
+  const wrongKeyContext = await browser.newContext({ ...iphone });
+  const wrongKeyPage = await wrongKeyContext.newPage();
+  await wrongKeyPage.goto(inviteUrl.replace(/#k=.*/, `#k=${"A".repeat(43)}`), {
+    waitUntil: "networkidle",
+  });
+  (await wrongKeyPage.getByText(/암호키가 빠졌어요/).isVisible())
+    ? pass("캡슐(A): 잘못된 암호키로 답변 복호화 차단")
+    : fail("캡슐(A): 잘못된 암호키 차단 실패");
+  await wrongKeyContext.close();
 
   // ─────────── 사용자 B (수진) — 새 컨텍스트 (localStorage 격리) ───────────
   const ctxB = await browser.newContext({ ...iphone });
@@ -195,12 +226,16 @@ try {
 
   await b.goto(inviteUrl, { waitUntil: "networkidle" });
   await shot(b, "06-capsule-invite.png");
+  const inviteOgTitle = await b.locator('meta[property="og:title"]').getAttribute("content");
+  inviteOgTitle?.includes("혜빈") && inviteOgTitle.includes("2005")
+    ? pass("캡슐(B): 개인화된 초대 OG 제목", inviteOgTitle)
+    : fail("캡슐(B): 초대 OG 제목", inviteOgTitle ?? "없음");
   (await b.getByText("타임캡슐을 보냈어요").isVisible()) ? pass("캡슐(B): 초대 랜딩 문구") : fail("캡슐(B): 랜딩 문구 없음");
   (await b.getByText("볼 수 없어요").isVisible()) ? pass("캡슐(B): 답변 숨김 안내") : fail("캡슐(B): 숨김 안내 없음");
   const leaked = await b.getByText(A_ANSWERS[0]).count();
   leaked === 0 ? pass("캡슐(B): A 답변 화면 비노출") : fail("캡슐(B): A 답변이 미리 노출됨!");
 
-  await b.getByRole("button", { name: /나도 답하러 가기/ }).click();
+  await b.getByRole("button", { name: /나도 답하고 혜빈의 답 보기/ }).click();
   await b.getByPlaceholder("예: 혜빈").fill("수진");
   const taB = b.locator("textarea");
   for (let i = 0; i < B_ANSWERS.length; i++) await taB.nth(i).fill(B_ANSWERS[i]);
@@ -221,12 +256,34 @@ try {
   (await b.getByText(A_ANSWERS[3]).isVisible()) ? pass("결과: A 답변 표시") : fail("결과: A 답변 누락");
   (await b.getByText(B_ANSWERS[3]).isVisible()) ? pass("결과: B 답변 표시") : fail("결과: B 답변 누락");
   (await b.getByText("타임캡슐이").isVisible()) ? pass("결과: 완성 메시지") : fail("결과: 완성 메시지 없음");
-  (await b.getByRole("button", { name: /이 타임캡슐 공유하기/ }).isVisible())
-    ? pass("결과: 재공유 CTA")
-    : fail("결과: 재공유 CTA 없음");
+  (await b.getByRole("button", { name: /혜빈에게 결과 보내기/ }).isVisible())
+    ? pass("결과: 원래 친구에게 보내기 CTA")
+    : fail("결과: 원래 친구에게 보내기 CTA 없음");
+  (await b.getByRole("link", { name: /다른 친구와 2005년 열어보기/ }).isVisible())
+    ? pass("결과: 연쇄 타임캡슐 CTA")
+    : fail("결과: 연쇄 타임캡슐 CTA 없음");
+  (await b.getByRole("button", { name: /스토리 이미지 만들기/ }).isVisible())
+    ? pass("결과: 스토리 이미지 CTA")
+    : fail("결과: 스토리 이미지 CTA 없음");
+  const resultOgTitle = await b.locator('meta[property="og:title"]').getAttribute("content");
+  resultOgTitle?.includes("혜빈 × 수진")
+    ? pass("결과: 개인화된 OG 제목", resultOgTitle)
+    : fail("결과: OG 제목", resultOgTitle ?? "없음");
+  const capsuleId = new URL(b.url()).searchParams.get("c");
+  const storyResponse = await b.request.get(`${BASE}/api/story?c=${capsuleId}`);
+  storyResponse.ok() && storyResponse.headers()["content-type"]?.includes("image/png")
+    ? pass("결과: 1080×1920 스토리 이미지 생성 API")
+    : fail("결과: 스토리 이미지 생성 실패", `${storyResponse.status()}`);
   await b.waitForTimeout(2500); // 카드 순차 등장 애니메이션 완료 대기
   await b.screenshot({ path: `${SHOT_DIR}/08-capsule-result.png`, fullPage: true });
   console.log("📸 08-capsule-result.png (fullPage)");
+
+  // A가 원래 초대 링크를 다시 열어도 완성된 결과로 이동해야 함
+  await a.goto(inviteUrl, { waitUntil: "networkidle" });
+  await a.waitForURL("**/capsule/result**");
+  (await a.getByRole("heading", { name: /혜빈 × 수진/ }).isVisible())
+    ? pass("캡슐(A): 기존 초대 링크로 완성 결과 재방문")
+    : fail("캡슐(A): 기존 초대 링크에서 결과 미노출");
 
   // STEP 9: /?born=1992 직접 진입 (신규 컨텍스트)
   const ctxC = await browser.newContext({ ...iphone });

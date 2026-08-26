@@ -158,6 +158,30 @@ body {
   pointer-events: none;
 }
 
+.pixel-btn.compact {
+  width: auto;
+  align-self: flex-start;
+  padding: 9px 13px;
+  font-size: 13px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 0 var(--shadow);
+}
+
+.memory-card:target {
+  outline: 5px solid var(--pink);
+  outline-offset: 4px;
+  animation: targetPulse 0.8s ease both;
+}
+
+@keyframes targetPulse {
+  from {
+    transform: scale(0.98);
+  }
+  to {
+    transform: none;
+  }
+}
+
 .pixel-input::placeholder {
   color: #a8b8c9;
   opacity: 0.7;

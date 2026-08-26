@@ -1,4 +1,4 @@
-export type ShareOutcome = "shared" | "copied" | "failed";
+export type ShareOutcome = "shared" | "copied" | "canceled" | "failed";
 
 /** 구형/인앱 브라우저용 클립보드 폴백 (execCommand) */
 function legacyCopy(value: string): boolean {
@@ -24,19 +24,20 @@ function legacyCopy(value: string): boolean {
  * 클립보드 복사(async API → execCommand 순)로 폴백.
  */
 export async function shareOrCopy(opts: {
+  title?: string;
   text: string;
   url: string;
 }): Promise<ShareOutcome> {
-  const { text, url } = opts;
+  const { title, text, url } = opts;
   const payload = `${text}\n${url}`;
 
   if (typeof navigator !== "undefined" && navigator.share) {
     try {
-      await navigator.share({ text, url });
+      await navigator.share({ title, text, url });
       return "shared";
     } catch (e) {
       if (e instanceof DOMException && e.name === "AbortError") {
-        return "failed"; // 사용자가 공유 시트를 닫음
+        return "canceled";
       }
       // 그 외 오류는 클립보드 폴백
     }
