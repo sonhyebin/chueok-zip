@@ -1,0 +1,152 @@
+"use client";
+
+import { useRef, useState } from "react";
+import Link from "next/link";
+import Window from "@/components/Window";
+import { MEMORIES } from "@/data/memories";
+import { ageInYear } from "@/lib/age";
+
+/**
+ * "너네 어떤 핸드폰 썼어?" — 연도별 대표 폰을 인스타 캐러셀처럼 옆으로 넘겨보는 영역.
+ * 슬라이드 데이터는 별도 관리하지 않고 MEMORIES의 연도별 첫 device 카드에서 파생한다
+ * (카드 이미지가 교체되면 캐러셀에도 자동 반영).
+ */
+const PHONE_SLIDES = (() => {
+  const byYear = new Map<
+    number,
+    { year: number; title: string; subtitle?: string; image: string }
+  >();
+  for (const m of MEMORIES) {
+    if (m.category !== "device" || !m.image || byYear.has(m.year)) continue;
+    if (!m.image.startsWith("/images")) continue;
+    byYear.set(m.year, {
+      year: m.year,
+      title: m.title,
+      subtitle: m.subtitle,
+      image: m.image,
+    });
+  }
+  return [...byYear.values()].sort((a, b) => a.year - b.year);
+})();
+
+export default function PhoneCarousel({ born }: { born: number }) {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
+
+  const slideTo = (idx: number) => {
+    const track = trackRef.current;
+    if (!track) return;
+    const clamped = Math.max(0, Math.min(idx, PHONE_SLIDES.length - 1));
+    const slide = track.children[clamped] as HTMLElement | undefined;
+    slide?.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest",
+    });
+  };
+
+  const onScroll = () => {
+    const track = trackRef.current;
+    if (!track) return;
+    const center = track.scrollLeft + track.clientWidth / 2;
+    let best = 0;
+    let bestDist = Infinity;
+    Array.from(track.children).forEach((el, i) => {
+      const c = el as HTMLElement;
+      const mid = c.offsetLeft + c.offsetWidth / 2;
+      const d = Math.abs(mid - center);
+      if (d < bestDist) {
+        bestDist = d;
+        best = i;
+      }
+    });
+    setActive(best);
+  };
+
+  if (PHONE_SLIDES.length === 0) return null;
+
+  return (
+    <Window title="그때그폰.exe" className="pop-in">
+      <div className="flex flex-col gap-3">
+        <div className="text-center">
+          <h2 className="font-pixel text-[20px] leading-snug">
+            📱 너네 어떤 핸드폰 썼어?
+          </h2>
+          <p className="text-[12.5px] text-[#5a6b80] mt-1">
+            옆으로 넘기면서 내 첫 폰을 찾아보세요
+          </p>
+        </div>
+
+        <div
+          ref={trackRef}
+          onScroll={onScroll}
+          className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-1 -mx-1 px-1"
+          style={{ scrollbarWidth: "none" }}
+          aria-label="연도별 휴대폰 캐러셀"
+        >
+          {PHONE_SLIDES.map((s, i) => {
+            const age = ageInYear(born, s.year);
+            return (
+              <Link
+                key={s.year}
+                href={`/year/${s.year}`}
+                className="snap-center shrink-0 w-[78%] flex flex-col gap-2"
+                aria-label={`${s.year}년 ${s.title}`}
+              >
+                <div className="photo-frame">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={s.image}
+                    alt={s.title}
+                    loading={i < 2 ? "eager" : "lazy"}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <span className="datestamp">{s.year}</span>
+                </div>
+                <div className="text-center">
+                  <p className="font-pixel text-[16px] leading-tight">
+                    {s.title}
+                  </p>
+                  <p className="text-[12px] text-[#7a8ba0] mt-0.5 truncate">
+                    {s.subtitle}
+                    {age >= 1 ? ` · 그때 나 ${age}살` : ""}
+                  </p>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+
+        <div className="flex items-center justify-center gap-3">
+          <button
+            type="button"
+            className="pixel-btn secondary !w-auto !px-3 !py-1.5 !text-[13px]"
+            onClick={() => slideTo(active - 1)}
+            aria-label="이전 폰"
+          >
+            ◀
+          </button>
+          <div className="flex gap-1.5" aria-hidden>
+            {PHONE_SLIDES.map((s, i) => (
+              <span
+                key={s.year}
+                className="w-2 h-2 rounded-full border border-[#1d2733]"
+                style={{
+                  background: i === active ? "#1d2733" : "transparent",
+                }}
+              />
+            ))}
+          </div>
+          <button
+            type="button"
+            className="pixel-btn secondary !w-auto !px-3 !py-1.5 !text-[13px]"
+            onClick={() => slideTo(active + 1)}
+            aria-label="다음 폰"
+          >
+            ▶
+          </button>
+        </div>
+      </div>
+    </Window>
+  );
+}

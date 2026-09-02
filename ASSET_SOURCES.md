@@ -216,12 +216,12 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2008-drama-2 | Engagement Ring | Tela Chhe · Flickr · CC BY 2.0 | https://www.flickr.com/photos/21042103@N03/4641589345 |
 | 2008-fashion-1 | Short Red Hair and a Plaid Flannel Shirt | petitepanoply · Flickr · CC BY-SA 2.0 | https://www.flickr.com/photos/63405864@N04/15259659244 |
 | 2008-fashion-2 | Horn-rimmed Rayban glasses.JPG | Piercetheorganist at English · Wikimedia Commons · Public domain | https://commons.wikimedia.org/wiki/File%3AHorn-rimmed_Rayban_glasses.JPG |
-| 2008-food-1 | (이미지 제거 — 적법 실사 없음, 플레이스홀더) | - | - |
+| 2008-food-1 | (대체 소재 채움) | Zakk Forchilli · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Freeze_Pops.jpg |
 | 2008-food-2 | Gimbap (pixabay).jpg | changupn · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3AGimbap_%28pixabay%29.jpg |
 | 2008-game-1 | REUSE(교체대상) | Hachimaki · Wikimedia Commons · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg |
 | 2008-game-2 | LAN party in France in 2003.jpg (아이온=카오스 LAN 재사용) | Syced · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3ALAN_party_in_France_in_2003.jpg |
 | 2008-internet-1 | mixing on the coffee table | DJ Philly GEE · Flickr · CC BY-SA 2.0 | https://www.flickr.com/photos/11403548@N00/3499787511 |
-| 2008-internet-2 | (이미지 제거 — 적법 실사 없음, 플레이스홀더) | - | - |
+| 2008-internet-2 | (대체 소재 채움) | newchaos · Flickr · CC BY 2.0 | https://www.flickr.com/photos/79101044@N00/1436061771 |
 | 2008-music-1 | The school arts festival. | MIKI Yoshihito. (#mikiyoshih · Flickr · CC BY 2.0 | https://www.flickr.com/photos/7940758@N07/8234203575 |
 | 2008-music-2 | Luxury Noraebang | la_minai · Flickr · CC BY 2.0 | https://www.flickr.com/photos/46348337@N02/5029488788 |
 | 2008-music-3 | REUSE(교체대상) | Graham Stanley · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:IRiver_ifp-890.jpg |
@@ -235,13 +235,15 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2009-device-1 | IPhone 3G or 3GS digital render.png | JoBot164 · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3AIPhone_3G_or_3GS_digital_render.png |
 | 2009-drama-1 | Red Velvet Wedding Cake | kimberlykv · Flickr · CC BY 2.0 | https://www.flickr.com/photos/87542849@N00/559281413 |
 | 2009-drama-2 | Royal Tomb of King Seok Talhae.JPG | Abasaa · Wikimedia Commons · Public domain | https://commons.wikimedia.org/wiki/File%3ARoyal_Tomb_of_King_Seok_Talhae.JPG |
-| 2009-fashion-1 | (이미지 제거 — 적법 실사 없음, 플레이스홀더) | - | - |
+| 2009-fashion-1 | (대체 소재 채움) | FeatheredTar · Flickr · CC BY 2.0 | https://www.flickr.com/photos/55915190@N00/2298993649 |
 | 2009-fashion-2 | Tidepools 1976 | catherinetodd2 · Flickr · CC BY-NC 2.0 | https://www.flickr.com/photos/94737677@N00/2650305354 |
 | 2009-food-1 | 2020-03-11 12.23.44 분식집.jpg | MatthieuRicard · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3A2020-03-11_12.23.44_%EB%B6%84%EC%8B%9D%EC%A7%91.jpg |
 | 2009-food-2 | Bubble tea six languages.jpg | Hippietrail · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3ABubble_tea_six_languages.jpg |
 | 2009-game-1 | Razer BlackWidow Ultimate 2014 Elite Mechanic | osman.gucel · Flickr · CC BY 2.0 | https://www.flickr.com/photos/126089327@N04/14714880858 |
 | 2009-game-2 | Putrajaya International Hot Air Balloon Fiest | kevinpoh · Flickr · CC BY 2.0 | https://www.flickr.com/photos/7679455@N03/13693123383 |
-| 2009-internet-1 | (이미지 제거 — 적법 실사 없음, 플레이스홀더) | - | - |
+| 2009-internet-1 | Sneak Preview: The new Yahoo.com (2008 홈) | Yahoo Inc · Flickr · CC BY 2.0 | https://www.flickr.com/photos/yodelanecdotal/2866362153 |
+| 2005-internet-1 | Cyworld 2008 (실제 미니홈피 화면) | Editor B · Flickr · CC BY 2.0 | https://www.flickr.com/photos/11018968@N00/52115637556 |
+| 2005-photo-1 | 얼짱캠 2003 공식 스토어 미리보기 | MAYACREW (제휴 앱 홍보자산) | https://apps.apple.com/kr/app/id6787339271 |
 | 2009-internet-2 | My Home Office (2016) | Ted Mielczarek · Flickr · CC CC0 1.0 | https://www.flickr.com/photos/49243838@N00/27821109783 |
 | 2009-music-1 | Blue Concert Lights | shaire productions · Flickr · CC BY 2.0 | https://www.flickr.com/photos/9822107@N08/4069525639 |
 | 2009-music-2 | DSCN0279 | elyaqim · Flickr · CC BY-SA 2.0 | https://www.flickr.com/photos/19364205@N00/16039471776 |
@@ -267,7 +269,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2011-device-1 | Samsung Galaxy S II - Front.jpg | Beamish4 · Wikimedia Commons · CC BY 4.0 | https://commons.wikimedia.org/wiki/File%3ASamsung_Galaxy_S_II_-_Front.jpg |
 | 2011-drama-1 | Custer County District High School, Miles Cit | dave_mcmt · Flickr · CC BY 2.0 | https://www.flickr.com/photos/30512529@N00/187427874 |
 | 2011-drama-2 | Cyberpunk Seoul View.jpg | Original: mauveine.kimEdited · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3ACyberpunk_Seoul_View.jpg |
-| 2011-fashion-1 | (이미지 제거 — 적법 실사 없음, 플레이스홀더) | - | - |
+| 2011-fashion-1 | (대체 소재 채움) | rawpixel · rawpixel · CC0 | https://www.rawpixel.com/image/5918315/down-jacket-free-public-domain-cc0-photo |
 | 2011-fashion-2 | I am a huge fan of comfortable shoes. After a | Nicole Beauchamp · Flickr · CC BY 2.0 | https://www.flickr.com/photos/48932385@N07/17131566946 |
 | 2011-food-1 | Black Sesame Bun | Hamburger Helper · Flickr · CC BY-NC-ND 2.0 | https://www.flickr.com/photos/52042499@N00/5100102416 |
 | 2011-food-2 | Korean shaved ice-Patbingsu-10B.jpg | by magicinprogress at Flickr · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AKorean_shaved_ice-Patbingsu-10B.jpg |
@@ -322,7 +324,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2000-music-3 | 서태지(SEOTAIJI) - 울트라맨이야(Ultramania) M/V | YouTube · seotaiji | https://www.youtube.com/watch?v=8jtKmWXdhm8 |
 | 2000-photo-1 | Disposable Camera (39521905434).jpg | Stock Catalog · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3ADisposable_Camera_%2839521905434%29.jpg |
 | 2000-photo-2 | August 2007, Purikura post-editing in Osaka.j | Syced · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3AAugust_2007%2C_Purikura_post-editing_in_Osaka.jpg |
-| 2000-school-1 | (이미지 제거 — 적법 실사 없음, 플레이스홀더) | - | - |
+| 2000-school-1 | (대체 소재 채움) | rawpixel (Ake) · rawpixel · CC0 | https://www.rawpixel.com/image/6025434/colorful-pebbles-free-public-domain-cc0-image |
 | 2001-device-1 | Nokia5510.jpg | Remerico at English Wiki · Wikimedia Commons · Public domain | https://commons.wikimedia.org/wiki/File%3ANokia5510.jpg |
 | 2001-drama-1 | [여인천하] 하극상이란 이런 것이다 보여주는 경빈│115화 | YouTube · SBS 옛날 드라마 - 빽드 | https://www.youtube.com/watch?v=gV_31ytcWtA |
 | 2001-drama-2 | 호텔리어 2001year 25년전 현재모습은?hotelier #쇼츠 #kdrama | YouTube · 블루밍 AI [Blooming AI] | https://www.youtube.com/watch?v=V0_Bv0u5kmg |
@@ -429,7 +431,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2016-fashion-1 | MA-1 Jacket in petrol.jpg | The original uploader wa · Wikimedia Commons · CC BY 2.5 | https://commons.wikimedia.org/wiki/File%3AMA-1_Jacket_in_petrol.jpg |
 | 2016-fashion-2 | The Rory is a timeless, 100% organic cotton b | Tradlands · Flickr · CC BY 2.0 | https://www.flickr.com/photos/87743767@N07/30602439082 |
 | 2016-food-1 | Taiwanese Castella.jpg | 御輿大命 · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3ATaiwanese_Castella.jpg |
-| 2016-food-2 | (이미지 제거 — 적법 실사 없음, 플레이스홀더) | - | - |
+| 2016-food-2 | (대체 소재 채움) | Foodie Moodie · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File:A_delicious,_freshly_baked_paneer_pizza_with_an_incredible_cheese_pull.jpg |
 | 2016-food-3 | Halloween treat pudding grave cookie gummy wo | Berries.com · Flickr · CC BY 2.0 | https://www.flickr.com/photos/126560659@N06/30416629530 |
 | 2016-game-1 | 오버워치 2 단편 애니메이션 | "소명" | YouTube · 오버워치 | https://www.youtube.com/watch?v=uatTPOwxWXM |
 | 2016-game-2 | 포켓몬GO 속초 대란 | YouTube · YouTube | https://www.youtube.com/watch?v=GVUu2m3ojEw |
@@ -499,7 +501,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 1999-drama-1 | 드라마 학교(1999) #드라마 #ost #kbs #언타이틀 | YouTube · 시간을 걷는 음악 | https://www.youtube.com/watch?v=rqJ1P6jOPe0 |
 | 1999-drama-2 | ✨시청률 52.7%✨김희선-김석훈 주연! 90년대를 휩쓸었던 레전드 로코 명 | YouTube · SBS 옛날 드라마 - 빽드 | https://www.youtube.com/watch?v=qZY7apwAAFQ |
 | 1999-fashion-1 | DSC09800 compress63.jpg | Lusthunter78 · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3ADSC09800_compress63.jpg |
-| 1999-fashion-2 | (이미지 제거 — 적법 실사 없음, 플레이스홀더) | - | - |
+| 1999-fashion-2 | (대체 소재 채움) | taberandrew · Flickr · CC BY 2.0 | https://www.flickr.com/photos/88442983@N00/1542395608 |
 | 1999-food-2 | (교체) | Sebastiaan ter Burg · Flickr · CC BY 2.0 | https://www.flickr.com/photos/31013861@N00/22397123941 |
 | 1999-game-1 | 20년 전 PC방의 게임 문화 - 스타크래프트 전성기｜크랩 | YouTube · 크랩 KLAB | https://www.youtube.com/watch?v=mTKCJ9SDQDU |
 | 1999-game-2 | 요즘 오락실 대회 | YouTube · 피펨즈FEFEMZ | https://www.youtube.com/watch?v=_Pz_dUkVBcM |

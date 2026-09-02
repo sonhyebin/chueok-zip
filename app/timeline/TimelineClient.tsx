@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import Window from "@/components/Window";
 import OnlineBadge from "@/components/OnlineBadge";
+import PhoneCarousel from "@/components/PhoneCarousel";
 import ShareButton from "@/components/ShareButton";
 import StoryShareButton from "@/components/StoryShareButton";
 import { AVAILABLE_YEARS, FEATURED_YEAR } from "@/data/memories";
@@ -118,6 +119,8 @@ function TimelineInner() {
           ))}
         </div>
       </Window>
+
+      <PhoneCarousel born={born} />
 
       <Link href="/" className="text-center text-[13px] text-[#5a6b80] font-pixel">
         ← 출생연도 다시 입력

@@ -682,8 +682,8 @@ export const MEMORIES: MemoryItem[] = [
     id: "2005-internet-1",
     image: "/images/years/2005/internet/cyworld-room.jpg",
     credit: {
-      label: "Wikimedia Commons · Public Domain (2005)",
-      url: "https://commons.wikimedia.org/wiki/File:Seoul-Cyworld_control_room.jpg",
+      label: "Editor B · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/11018968@N00/52115637556",
     },
     year: 2005,
     category: "internet",
@@ -724,8 +724,8 @@ export const MEMORIES: MemoryItem[] = [
     id: "2005-photo-1",
     image: "/images/years/2005/photo/uljjang-angle.jpg",
     credit: {
-      label: "jpmatth · Flickr · CC BY-NC-ND 2.0",
-      url: "https://www.flickr.com/photos/21893885@N00/5395865",
+      label: "얼짱캠 2003 공식 미리보기 · MAYACREW",
+      url: "https://apps.apple.com/kr/app/id6787339271",
     },
     year: 2005,
     category: "photo",
@@ -1496,6 +1496,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-internet-2",
+    image: "/images/years/2008/internet/2008-internet-2.jpg",
+    credit: {
+      label: "newchaos · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/79101044@N00/1436061771",
+    },
     year: 2008,
     category: "internet",
     title: "네이트 판",
@@ -1589,6 +1594,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-food-1",
+    image: "/images/years/2008/food/2008-food-1.jpg",
+    credit: {
+      label: "Zakk Forchilli · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:Freeze_Pops.jpg",
+    },
     year: 2008,
     category: "food",
     title: "빠삐코",
@@ -1748,6 +1758,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2009-internet-1",
+    image: "/images/years/2009/internet/2009-internet-1.jpg",
+    credit: {
+      label: "Yahoo Inc · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/yodelanecdotal/2866362153",
+    },
     year: 2009,
     category: "internet",
     title: "실시간 검색어",
@@ -1813,6 +1828,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2009-fashion-1",
+    image: "/images/years/2009/fashion/2009-fashion-1.jpg",
+    credit: {
+      label: "FeatheredTar · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/55915190@N00/2298993649",
+    },
     year: 2009,
     category: "fashion",
     title: "컬러 스키니",
@@ -2332,6 +2352,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2011-fashion-1",
+    image: "/images/years/2011/fashion/2011-fashion-1.jpg",
+    credit: {
+      label: "rawpixel · rawpixel · CC0",
+      url: "https://www.rawpixel.com/image/5918315/down-jacket-free-public-domain-cc0-photo",
+    },
     year: 2011,
     category: "fashion",
     title: "노스페이스 패딩 절정",
@@ -2673,6 +2698,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-food-3",
+    image: "/images/years/2004/food/2004-food-3.jpg",
+    credit: {
+      label: "Jennifer Bourn · WordPress Photos · CC0",
+      url: "https://wordpress.org/photos/photo/5256200b6b/",
+    },
     year: 2004,
     category: "food",
     title: "쫀디기",
@@ -3463,6 +3493,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "1999-fashion-2",
+    image: "/images/years/1999/fashion/1999-fashion-2.jpg",
+    credit: {
+      label: "taberandrew · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/88442983@N00/1542395608",
+    },
     year: 1999,
     category: "fashion",
     title: "브릿지 염색",
@@ -3784,6 +3819,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2000-school-1",
+    image: "/images/years/2000/school/2000-school-1.jpg",
+    credit: {
+      label: "rawpixel (Ake) · rawpixel · CC0",
+      url: "https://www.rawpixel.com/image/6025434/colorful-pebbles-free-public-domain-cc0-image",
+    },
     year: 2000,
     category: "school",
     title: "공기놀이",
@@ -5828,6 +5868,11 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2016-food-2",
+    image: "/images/years/2016/food/2016-food-2.jpg",
+    credit: {
+      label: "Foodie Moodie · Wikimedia Commons · CC0",
+      url: "https://commons.wikimedia.org/wiki/File:A_delicious,_freshly_baked_paneer_pizza_with_an_incredible_cheese_pull.jpg",
+    },
     year: 2016,
     category: "food",
     title: "치즈 등갈비",
