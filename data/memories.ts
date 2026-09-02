@@ -3236,12 +3236,13 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "1998-school-1",
+    image: "/images/years/1998/school/arcade.jpg",
     year: 1998,
     category: "school",
     title: "오락실",
     subtitle: "철권과 버추어파이터",
     memoryStrength: 5,
-    prompt: "동전 올려놓으면 다음 판 예약이었죠?",
+    prompt: "1P였어요, 2P였어요? 주 캐릭터는 뭐였어요?",
   },
   {
     id: "1998-meme-1",
