@@ -390,3 +390,11 @@ textarea.pixel-input {
 .partner-cta.wide .partner-cta-tag {
   justify-content: center;
 }
+
+/* ── 카카오톡 공유 버튼 ─────────────────────────── */
+/* 카카오 브랜드 색(노랑 + 갈색 텍스트) — 픽셀 버튼 골격은 그대로 */
+.pixel-btn.kakao {
+  background: linear-gradient(180deg, #ffe94d, #fee500);
+  color: #3a1d1d;
+  text-shadow: none;
+}
