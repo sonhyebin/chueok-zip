@@ -4,6 +4,30 @@ import { list } from "@vercel/blob";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
+// 마케팅 대시보드(다른 도메인)에서 브라우저로 직접 불러올 수 있게 CORS 허용.
+const ALLOWED_ORIGINS = new Set([
+  "https://mayacrew-dashboard.vercel.app",
+  "http://localhost:3000",
+]);
+
+function corsHeaders(origin: string | null): Record<string, string> {
+  if (origin && ALLOWED_ORIGINS.has(origin)) {
+    return {
+      "Access-Control-Allow-Origin": origin,
+      "Access-Control-Allow-Methods": "GET, OPTIONS",
+      "Vary": "Origin",
+    };
+  }
+  return {};
+}
+
+export function OPTIONS(req: NextRequest) {
+  return new NextResponse(null, {
+    status: 204,
+    headers: corsHeaders(req.headers.get("origin")),
+  });
+}
+
 /**
  * 공유 링크 방문 통계.
  *   GET /api/stats?days=7          최근 7일(기본) 방문 집계
@@ -15,9 +39,13 @@ export const dynamic = "force-dynamic";
  * STATS_TOKEN 환경변수가 설정돼 있으면 ?key=<토큰> 이 일치해야 조회 가능.
  */
 export async function GET(req: NextRequest) {
+  const cors = corsHeaders(req.headers.get("origin"));
   const token = process.env.STATS_TOKEN;
   if (token && req.nextUrl.searchParams.get("key") !== token) {
-    return NextResponse.json({ error: "forbidden" }, { status: 403 });
+    return NextResponse.json(
+      { error: "forbidden" },
+      { status: 403, headers: cors },
+    );
   }
 
   const days = Math.min(
@@ -68,11 +96,14 @@ export async function GET(req: NextRequest) {
     .slice(0, 30)
     .map(([card, count]) => ({ card, count }));
 
-  return NextResponse.json({
-    range: { days, from: dates[dates.length - 1], to: dates[0] },
-    total,
-    byChannel,
-    byDay,
-    topCards,
-  });
+  return NextResponse.json(
+    {
+      range: { days, from: dates[dates.length - 1], to: dates[0] },
+      total,
+      byChannel,
+      byDay,
+      topCards,
+    },
+    { headers: cors },
+  );
 }
