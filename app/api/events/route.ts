@@ -15,6 +15,7 @@ const EVENTS = new Set([
   "result_share",
   "chain_start",
   "partner_cta_click",
+  "link_visit",
 ]);
 
 export async function POST(req: NextRequest) {
@@ -43,8 +44,20 @@ export async function POST(req: NextRequest) {
   const now = new Date();
   const date = now.toISOString().slice(0, 10);
   const suffix = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
+
+  // link_visit은 경로에 채널·카드를 넣어, 통계 집계 시 파일 내용을 열지 않고
+  // 목록(list)만으로 카드/채널별 방문 수를 셀 수 있게 한다.
+  const safe = (v: unknown, fallback: string) => {
+    const s = String(v ?? "").replace(/[^a-zA-Z0-9_-]/g, "");
+    return s.slice(0, 40) || fallback;
+  };
+  const key =
+    body.event === "link_visit"
+      ? `events/${date}/link_visit/${safe(properties.src, "direct")}/${safe(properties.card, "none")}/${suffix}.json`
+      : `events/${date}/${body.event}/${suffix}.json`;
+
   await put(
-    `events/${date}/${body.event}/${suffix}.json`,
+    key,
     JSON.stringify({ event: body.event, properties, ts: now.getTime() }),
     {
       access: "public",

@@ -34,14 +34,16 @@ export default function ShareButton({
   // 카드/페이지가 이벤트 속성으로 넘기는 연도를 "과거 시점"으로 활용
   const fromYear = eventProperties?.year ?? eventProperties?.born;
 
-  function resolve() {
-    return url
-      ? new URL(url, window.location.origin).href
-      : window.location.href;
+  // 공유 링크에 채널 태그(s=)를 붙여, 이 링크로 들어온 방문의 유입 경로를 집계한다.
+  // s=k 카카오 / s=s 네이티브·복사. (링크 내 #앵커는 유지)
+  function resolve(channel?: "k" | "s") {
+    const base = new URL(url || window.location.href, window.location.origin);
+    if (channel) base.searchParams.set("s", channel);
+    return base.href;
   }
 
   async function handleShare() {
-    const resolvedUrl = resolve();
+    const resolvedUrl = resolve("s");
     setFailedUrl(resolvedUrl);
     const outcome = await shareOrCopy({ title, text, url: resolvedUrl });
     if ((outcome === "shared" || outcome === "copied") && eventName) {
@@ -58,7 +60,7 @@ export default function ShareButton({
   }
 
   async function handleKakao() {
-    const resolvedUrl = resolve();
+    const resolvedUrl = resolve("k");
     setFailedUrl(resolvedUrl);
     // 카드 이미지는 상대경로(/images/…)일 수 있어 절대 URL로 변환한다.
     // 카카오는 이 imageUrl을 서버에서 스크랩하므로 공개 접근 가능한 절대 URL이어야 한다.

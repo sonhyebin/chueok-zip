@@ -5,6 +5,7 @@ import Link from "next/link";
 import MemoryCard from "@/components/MemoryCard";
 import BgmPlayer from "@/components/BgmPlayer";
 import OnlineBadge from "@/components/OnlineBadge";
+import VisitTracker from "@/components/VisitTracker";
 import { getMemoriesForYear, getYearInfo, AVAILABLE_YEARS } from "@/data/memories";
 import { koreanAgeInYear, loadBornYear } from "@/lib/age";
 import { trackEvent } from "@/lib/analytics";
@@ -79,6 +80,7 @@ export default function YearClient({ year }: { year: number }) {
 
   return (
     <main className="page flex flex-col gap-5">
+      <VisitTracker year={year} />
       <header className="text-center pop-in pt-2">
         <h1 className="font-pixel text-[52px] leading-none">{year}</h1>
         {born ? (
