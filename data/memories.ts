@@ -2728,6 +2728,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-meme-1",
+    image: "https://i.ytimg.com/vi/8AeSbht0EWs/hqdefault.jpg",
+    credit: {
+      label: "YouTube · KBS COMEDY: 크큭티비",
+      url: "https://www.youtube.com/watch?v=8AeSbht0EWs",
+    },
+    song: {
+      title: "솔로천국 커플지옥",
+      artist: "영상",
+      ...ytSong("8AeSbht0EWs"),
+    },
     year: 2005,
     category: "meme",
     title: "솔로천국 커플지옥",
