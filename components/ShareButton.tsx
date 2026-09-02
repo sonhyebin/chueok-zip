@@ -29,7 +29,10 @@ export default function ShareButton({
 }) {
   const [status, setStatus] = useState<"idle" | "copied" | "failed">("idle");
   const [failedUrl, setFailedUrl] = useState(url);
+  const [beaming, setBeaming] = useState(false);
   const kakaoOn = isKakaoConfigured();
+  // 카드/페이지가 이벤트 속성으로 넘기는 연도를 "과거 시점"으로 활용
+  const fromYear = eventProperties?.year ?? eventProperties?.born;
 
   function resolve() {
     return url
@@ -58,7 +61,7 @@ export default function ShareButton({
     const resolvedUrl = resolve();
     setFailedUrl(resolvedUrl);
     const ok = await shareKakao({
-      title: title ?? text,
+      title: title ?? `📼 ${fromYear ?? "과거"}에서 온 메시지`,
       description: text,
       imageUrl:
         imageUrl ?? new URL("/opengraph-image", window.location.origin).href,
@@ -80,11 +83,28 @@ export default function ShareButton({
         <button
           type="button"
           className={`pixel-btn kakao${compact ? " compact" : ""}`}
-          onClick={handleKakao}
+          onClick={() => {
+            // 팝업 차단을 피하려고 공유는 즉시 실행하고, 연출만 병행한다
+            setBeaming(true);
+            setTimeout(() => setBeaming(false), 1800);
+            void handleKakao();
+          }}
+          disabled={beaming}
         >
           {/* 그 시절엔 카톡이 없었다 — 이 추억을 "미래(카카오톡)"로 쏘아 보내는 콘셉트 */}
-          <span aria-hidden>📡</span> 미래로 전송하기
-          <span className="text-[11px] opacity-70 ml-1">via 카카오톡</span>
+          {beaming ? (
+            <>
+              <span aria-hidden className="animate-pulse">
+                📡
+              </span>{" "}
+              {fromYear ?? "과거"} → {new Date().getFullYear()} 전송 중...
+            </>
+          ) : (
+            <>
+              <span aria-hidden>📡</span> 미래로 전송하기
+              <span className="text-[11px] opacity-70 ml-1">via 카카오톡</span>
+            </>
+          )}
         </button>
       )}
       <button
