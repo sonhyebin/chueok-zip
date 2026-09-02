@@ -5933,6 +5933,16 @@ export const MEMORIES: MemoryItem[] = [
     prompt: "필살 뒤집기 기술, 있었죠?",
   },
   {
+    id: "2000-school-3",
+    image: "/images/years/2000/school/typing-practice.jpg",
+    year: 2000,
+    category: "school",
+    title: "타자연습 캐릭터",
+    subtitle: "컴퓨터실 가면 무조건 이것부터",
+    memoryStrength: 5,
+    prompt: "이 캐릭터 이름 아는 사람? 댓글로 달아주세요",
+  },
+  {
     id: "2000-fashion-3",
     image: "/images/years/2000/fashion/2000-fashion-3.jpg",
     credit: {

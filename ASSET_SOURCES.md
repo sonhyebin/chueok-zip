@@ -468,6 +468,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 
 | 카드 | 원제 | 출처 | 원본 |
 |---|---|---|---|
+| 2000-school-3 | 타자연습 캐릭터 선택 화면 재현 (AI 생성, C2PA/OpenAI 서명 확인) | 자체 생성 (generated-original) | - |
 | 2000-fashion-3 | (교체) | ambermb · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File:Boy-in-brown-hoodie-carrying-red-backpack-while-walking-on-207697.jpg |
 | 2001-school-2 | 공포의 쿵쿵따 #1 [강호동 애교에 충격받은 유재석] | YouTube · KBS Entertain: 깔깔티비 | https://www.youtube.com/watch?v=qRbGo23HyNE |
 | 2002-school-2 | 유희왕 듀얼몬스터즈 1기 오프닝 | YouTube · 유희왕 | https://www.youtube.com/watch?v=GM3eisuIEEA |
