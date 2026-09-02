@@ -4943,6 +4943,16 @@ export const MEMORIES: MemoryItem[] = [
     prompt: "고등학생인데 대학 과잠 입고 싶었죠?",
   },
   {
+    id: "2013-fashion-3",
+    image: "/images/years/2013/fashion/color-parka.jpg",
+    year: 2013,
+    category: "fashion",
+    title: "컬러 야상",
+    subtitle: "민트·핑크·레드, 색으로 입던 겨울",
+    memoryStrength: 4,
+    prompt: "무슨 색 야상 입었어요?",
+  },
+  {
     id: "2013-food-1",
     image: "/images/years/2013/food/2013-food-1.jpg",
     credit: {

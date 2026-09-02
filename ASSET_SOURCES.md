@@ -168,6 +168,7 @@
 
 | 카드 | 원제 | 출처 표기 | 원본 |
 |---|---|---|---|
+| 2004-device-1 | 가로본능 재현 렌더 (AI 생성, C2PA/OpenAI 서명 확인) | 자체 생성 (generated-original) | - |
 | 2004-device-2 | Samsung SGH-E720 closed | MGS · Wikimedia Commons · CC BY 2.5 | https://commons.wikimedia.org/wiki/File:Samsung_SGH-E720_closed.JPG |
 | 2004-drama-2 | Peggy's Zen living room makeover, white sofa, | Wonderlane · Flickr · CC BY 2.0 | https://www.flickr.com/photos/71401718@N00/465852851 |
 | 2004-fashion-1 | Trafalgar Square - May 2007 - Candid Couple - | Gareth1953 All Right Now · Flickr · CC BY 2.0 | https://www.flickr.com/photos/40837632@N05/6602334993 |
@@ -514,6 +515,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 1999-photo-2 | Back of Kodak Flash Single Use Camera (433 | Matthew Paul  Argall f · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3ABack_of_Kodak_Flash_Single_Use_Camera_%2843329081655%29.jpg |
 | 1999-school-1 | Multiple Manga Series | Mageos89 · Flickr · CC BY-NC-SA 2.0 | https://www.flickr.com/photos/36622442@N03/3782552355 |
 | 2005-fashion-2 | 울프컷+샤기컷 증명사진 (AI 생성 오리지널 인물) | 자체 생성 (generated-original) | - |
+| 2013-fashion-3 | 컬러 야상 셀카 (AI 생성, C2PA/OpenAI 서명 확인) | 자체 생성 (generated-original) | - |
 | 2006-fashion-3 | 폭탄머리 졸업사진 단체컷 (AI 생성 오리지널 인물) | 자체 생성 (generated-original) | - |
 | 2008-food-3 | (교체) | Industrialerror · Wikimedia Commons · CC0 1.0 | https://commons.wikimedia.org/w/index.php?curid=184101024 |
 | 2009-food-3 | (교체) | DianaMoon · Flickr · CC BY 2.0 | https://www.flickr.com/photos/7752522@N02/16969943115 |
