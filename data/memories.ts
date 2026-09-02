@@ -750,20 +750,6 @@ export const MEMORIES: MemoryItem[] = [
     prompt: "하얗게 날아간 셀카, 폴더 어딘가에 있을걸요",
   },
   {
-    id: "2005-fashion-1",
-    image: "/images/years/2005/fashion/magic-straight.jpg",
-    credit: {
-      label: "Leomedia · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/wiki/File:Hair_straighteners_(3).JPG",
-    },
-    year: 2005,
-    category: "fashion",
-    title: "매직 스트레이트",
-    subtitle: "찰랑찰랑 생머리 열풍",
-    memoryStrength: 3,
-    prompt: "고데기로 앞머리 일자로 폈던 사람?",
-  },
-  {
     id: "2005-fashion-2",
     image: "/images/years/2005/fashion/shaggy-cut.jpg",
     year: 2005,
