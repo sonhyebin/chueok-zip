@@ -355,6 +355,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2002-music-3 | PSY (싸이) - 챔피언 (Champion)  music video | YouTube · PSYVideos | https://www.youtube.com/watch?v=5vVzNrjrx9Q |
 | 2002-photo-1 | Seoul Plaza 2002 FIFA World Cup.jpg | ijs · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3ASeoul_Plaza_2002_FIFA_World_Cup.jpg |
 | 2002-photo-2 | (교체) | In Memoriam: -Tripp- · Flickr · CC BY 2.0 | https://www.flickr.com/photos/9805680@N07/852279249 |
+| 2003-meme-1 | 즐/KIN 버디버디 대화창 재현 (AI 생성, C2PA/OpenAI 서명 확인) | 자체 생성 (generated-original) | - |
 | 2003-device-1 | (교체) | Drummyfish · Wikimedia Commons · CC0 | https://commons.wikimedia.org/w/index.php?curid=77203594 |
 | 2003-drama-1 | 대장금하면 떠오르는 명장면 | YouTube · 기어코 | https://www.youtube.com/watch?v=ief6BpB9-ws |
 | 2003-drama-2 | "넌 빠져어!!!!!!"와 "내가 있쥐!!!!!!!"의 환상적인 조합 #천국의계단 | YouTube · SBS 옛날 드라마 - 빽드 | https://www.youtube.com/watch?v=wdjbIl9PWwI |

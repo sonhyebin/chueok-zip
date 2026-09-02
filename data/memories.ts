@@ -4684,6 +4684,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2003-meme-1",
+    image: "/images/years/2003/misc/jul-kin.jpg",
     year: 2003,
     category: "meme",
     title: "즐",
