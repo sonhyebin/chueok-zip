@@ -513,7 +513,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 1999-photo-1 | Passport | Tracy Hunter · Flickr · CC BY 2.0 | https://www.flickr.com/photos/11121785@N00/114897123 |
 | 1999-photo-2 | Back of Kodak Flash Single Use Camera (433 | Matthew Paul  Argall f · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3ABack_of_Kodak_Flash_Single_Use_Camera_%2843329081655%29.jpg |
 | 1999-school-1 | Multiple Manga Series | Mageos89 · Flickr · CC BY-NC-SA 2.0 | https://www.flickr.com/photos/36622442@N03/3782552355 |
-| 2005-fashion-2 | (교체) | Candace McDaniel · StockSnap · CC0 | https://stocksnap.io/photo/scissors-comb-A5M4RVGZKE |
+| 2005-fashion-2 | 샤기컷 셀카 (AI 생성 오리지널 인물, C2PA/OpenAI 서명 확인) | 자체 생성 (generated-original) | - |
 | 2008-food-3 | (교체) | Industrialerror · Wikimedia Commons · CC0 1.0 | https://commons.wikimedia.org/w/index.php?curid=184101024 |
 | 2009-food-3 | (교체) | DianaMoon · Flickr · CC BY 2.0 | https://www.flickr.com/photos/7752522@N02/16969943115 |
 | 2009-school-1 | (교체) | whatleydude · Flickr · CC BY 2.0 | https://www.flickr.com/photos/85318305@N00/4566021267 |

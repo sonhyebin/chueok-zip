@@ -766,10 +766,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-fashion-2",
     image: "/images/years/2005/fashion/shaggy-cut.jpg",
-    credit: {
-      label: "Candace McDaniel · StockSnap · CC0",
-      url: "https://stocksnap.io/photo/scissors-comb-A5M4RVGZKE",
-    },
     year: 2005,
     category: "fashion",
     title: "샤기컷",
