@@ -266,7 +266,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2010-music-3 | The Cure 01 | simonsmith001 · Flickr · CC BY 2.0 | https://www.flickr.com/photos/25828730@N00/2545054689 |
 | 2010-photo-1 | T◦H◦E - - T◦R◦I◦N◦N◦A◦C◦L◦E - - J◦U◦M◦P | Karl.Chester · Flickr · CC BY-NC-SA 2.0 | https://www.flickr.com/photos/43702833@N03/26845272652 |
 | 2010-photo-2 | (교체) | cogdogblog · Flickr · CC BY 2.0 | https://www.flickr.com/photos/37996646802@N01/12315976844 |
-| 2011-device-1 | Samsung Galaxy S II - Front.jpg | Beamish4 · Wikimedia Commons · CC BY 4.0 | https://commons.wikimedia.org/wiki/File%3ASamsung_Galaxy_S_II_-_Front.jpg |
+| 2011-device-1 | Samsung Galaxy S II - Front (세운 구도 교체) | Beamish4 · Wikimedia Commons · CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S_II_-_Front.jpg |
 | 2011-drama-1 | Custer County District High School, Miles Cit | dave_mcmt · Flickr · CC BY 2.0 | https://www.flickr.com/photos/30512529@N00/187427874 |
 | 2011-drama-2 | Cyberpunk Seoul View.jpg | Original: mauveine.kimEdited · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3ACyberpunk_Seoul_View.jpg |
 | 2011-fashion-1 | (대체 소재 채움) | rawpixel · rawpixel · CC0 | https://www.rawpixel.com/image/5918315/down-jacket-free-public-domain-cc0-photo |
@@ -371,7 +371,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2003-photo-1 | (교체) | dougbelshaw · Flickr · CC BY 2.0 | https://www.flickr.com/photos/94991702@N00/4233168401 |
 | 2003-photo-2 | (교체) | Rich Niewiroski Jr. · Wikimedia Commons · CC BY 2.5 | https://commons.wikimedia.org/wiki/File:SonyEricssonW810i-001.jpg |
 | 2003-school-1 | Panasonic TV-radio-cassette portable, around  | Karl Baron from Malmö, S · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3APanasonic_TV-radio-cassette_portable%2C_around_1982.jpg |
-| 2013-device-1 | Samsung Galaxy S4 (Black Mist) - Front.jpg | Beamish4 · Wikimedia Commons · CC BY 4.0 | https://commons.wikimedia.org/wiki/File%3ASamsung_Galaxy_S4_%28Black_Mist%29_-_Front.jpg |
+| 2013-device-1 | Samsung Galaxy S4 Black Mist - Front (세운 구도 교체) | Beamish4 · Wikimedia Commons · CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S4_(Black_Mist)_-_Front.jpg |
 | 2013-drama-1 | 자 얘들아 씹자. 큰손 일화 어머니 때문에 상 다리가 겨우 버티고 서있는 신촌하숙 | YouTube · tvN D ENT | https://www.youtube.com/watch?v=NzO81uojVh0 |
 | 2013-drama-2 | 혈육의 혀 짧은 애교 직관함 ;; #천송이 #별에서온그대 | YouTube · SBS 옛날 드라마 - 빽드 | https://www.youtube.com/watch?v=Ipjr24RrjVs |
 | 2013-fashion-1 | New Balance 1906R.jpg | LeDroider · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3ANew_Balance_1906R.jpg |

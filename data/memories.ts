@@ -2313,7 +2313,7 @@ export const MEMORIES: MemoryItem[] = [
     image: "/images/years/2011/device/2011-device-1.jpg",
     credit: {
       label: "Beamish4 · Wikimedia Commons · CC BY 4.0",
-      url: "https://commons.wikimedia.org/wiki/File%3ASamsung_Galaxy_S_II_-_Front.jpg",
+      url: "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S_II_-_Front.jpg",
     },
     year: 2011,
     category: "device",
@@ -4875,7 +4875,7 @@ export const MEMORIES: MemoryItem[] = [
     image: "/images/years/2013/device/2013-device-1.jpg",
     credit: {
       label: "Beamish4 · Wikimedia Commons · CC BY 4.0",
-      url: "https://commons.wikimedia.org/wiki/File%3ASamsung_Galaxy_S4_%28Black_Mist%29_-_Front.jpg",
+      url: "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S4_(Black_Mist)_-_Front.jpg",
     },
     year: 2013,
     category: "device",
