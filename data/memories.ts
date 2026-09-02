@@ -2748,10 +2748,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-food-3",
     image: "/images/years/2005/food/2005-food-3.jpg",
-    credit: {
-      label: "Fumikas Sagisavas · Wikimedia Commons · CC CC0 1.0",
-      url: "https://commons.wikimedia.org/w/index.php?curid=157046244",
-    },
     year: 2005,
     category: "food",
     title: "아폴로",
