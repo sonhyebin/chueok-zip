@@ -8,23 +8,28 @@ import { ageInYear } from "@/lib/age";
 
 /**
  * "너네 어떤 핸드폰 썼어?" — 연도별 대표 폰을 인스타 캐러셀처럼 옆으로 넘겨보는 영역.
- * 슬라이드 데이터는 별도 관리하지 않고 MEMORIES의 연도별 첫 device 카드에서 파생한다
+ * 슬라이드 데이터는 별도 관리하지 않고 MEMORIES의 연도별 device 카드에서 파생한다
  * (카드 이미지가 교체되면 캐러셀에도 자동 반영).
+ * 같은 해에 카드가 여럿이면 credit 있는 카드(실물 사진)를 우선한다 —
+ * 실사 사진들 사이에 재현 일러스트가 끼면 이질감이 크기 때문.
  */
 const PHONE_SLIDES = (() => {
   const byYear = new Map<
     number,
-    { year: number; title: string; subtitle?: string; image: string }
+    { year: number; title: string; subtitle?: string; image: string; real: boolean }
   >();
   for (const m of MEMORIES) {
-    if (m.category !== "device" || !m.image || byYear.has(m.year)) continue;
+    if (m.category !== "device" || !m.image) continue;
     if (!m.image.startsWith("/images")) continue;
-    byYear.set(m.year, {
+    const slide = {
       year: m.year,
       title: m.title,
       subtitle: m.subtitle,
       image: m.image,
-    });
+      real: Boolean(m.credit),
+    };
+    const existing = byYear.get(m.year);
+    if (!existing || (!existing.real && slide.real)) byYear.set(m.year, slide);
   }
   return [...byYear.values()].sort((a, b) => a.year - b.year);
 })();
