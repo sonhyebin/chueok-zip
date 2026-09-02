@@ -250,7 +250,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2009-music-3 | Monterrey graffiti | kevin dooley · Flickr · CC BY 2.0 | https://www.flickr.com/photos/12836528@N00/16137275302 |
 | 2009-photo-1 | Loxton Pizza Bar (4097988659).jpg | Dwayne Madden from Berri, Au · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3ALoxton_Pizza_Bar_%284097988659%29.jpg |
 | 2009-photo-2 | Basket of acorns | Guillaume Paumier · Flickr · CC BY 2.0 | https://www.flickr.com/photos/17267678@N00/6155877534 |
-| 2010-device-1 | (교체) | Tark Siala · Flickr · CC BY 2.0 | https://www.flickr.com/photos/27085748@N00/5024825124 |
+| 2010-device-1 | Samsung Galaxy S Captivate (선명한 풀샷 교체) | grahamkennery · Flickr · CC BY 2.0 | https://www.flickr.com/photos/grahamkennery/5597123878 |
 | 2010-drama-1 | Chandelier at Schlosshotel Lerbach | *rboed* · Flickr · CC BY 2.0 | https://www.flickr.com/photos/92082510@N04/15544617113 |
 | 2010-drama-2 | Cabbage loaves pelle Faîs'sie d'Cidre 2007.jp | Man vyi · Wikimedia Commons · Public domain | https://commons.wikimedia.org/wiki/File%3ACabbage_loaves_pelle_Fa%C3%AEs%27sie_d%27Cidre_2007.jpg |
 | 2010-fashion-1 | Melbourne Winter Fashion - four black puffer  | avlxyz · Flickr · CC BY-NC 2.0 | https://www.flickr.com/photos/10559879@N00/48413657847 |

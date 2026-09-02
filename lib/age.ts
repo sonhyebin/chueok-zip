@@ -7,6 +7,15 @@ export function ageInYear(bornYear: number, year: number): number {
 }
 
 /**
+ * 그 시절 감성의 "세는나이" (태어나면 1살, 새해마다 +1).
+ * 2023-06-28 '만 나이 통일법' 시행 전까지 한국에서 일상적으로 쓰던 나이 —
+ * 추억 회상 문맥에서는 당시 본인이 기억하는 나이와 일치하도록 이걸 쓴다.
+ */
+export function koreanAgeInYear(bornYear: number, year: number): number {
+  return year - bornYear + 1;
+}
+
+/**
  * 학창시절 연도 범위: 주로 10대였던 시기 (12세~19세).
  * 예: 1992년생 → 2004~2011 중심이지만 스펙 예시(2003~2010)에 맞춰 11세부터.
  */

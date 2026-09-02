@@ -2050,8 +2050,8 @@ export const MEMORIES: MemoryItem[] = [
     id: "2010-device-1",
     image: "/images/years/2010/device/2010-device-1.jpg",
     credit: {
-      label: "Tark Siala · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/27085748@N00/5024825124",
+      label: "grahamkennery · Flickr · CC BY 2.0",
+      url: "https://www.flickr.com/photos/grahamkennery/5597123878",
     },
     year: 2010,
     category: "device",

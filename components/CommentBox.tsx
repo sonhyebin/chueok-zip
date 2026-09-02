@@ -18,8 +18,16 @@ function fmt(ts: number) {
   return `${String(d.getFullYear()).slice(2)}.${String(d.getMonth() + 1).padStart(2, "0")}.${String(d.getDate()).padStart(2, "0")}`;
 }
 
-/** 미니홈피 방명록 감성의 카드 댓글 */
-export default function CommentBox({ cardId }: { cardId: string }) {
+/** 미니홈피 방명록 감성의 카드 댓글.
+ * prompt(카드의 질문)를 넘기면 입력칸·빈 상태가 그 질문에 바로 답하는 흐름이 된다
+ * — "포지션 뭐였어요?" 같은 구체적 질문이 일반 문구보다 참여를 훨씬 잘 끌어낸다. */
+export default function CommentBox({
+  cardId,
+  prompt,
+}: {
+  cardId: string;
+  prompt?: string;
+}) {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [comments, setComments] = useState<Comment[] | null>(null);
@@ -119,7 +127,8 @@ export default function CommentBox({ cardId }: { cardId: string }) {
         onClick={toggle}
         className="font-pixel text-[13px] text-[#2f6fce] underline decoration-dotted -webkit-tap-highlight-color-transparent"
       >
-        💬 한마디 {count !== null ? `(${count})` : ""} {open ? "▲" : "▼"}
+        💬 {prompt ? "바로 답 남기기" : "한마디"}{" "}
+        {count !== null ? `(${count})` : ""} {open ? "▲" : "▼"}
       </button>
 
       {open && (
@@ -154,7 +163,7 @@ export default function CommentBox({ cardId }: { cardId: string }) {
               </select>
               <input
                 className="pixel-input !py-2 !text-[14px] flex-1 min-w-0"
-                placeholder="이 추억에 한마디..."
+                placeholder={prompt ?? "이 추억에 한마디..."}
                 maxLength={200}
                 value={text}
                 onChange={(e) => setText(e.target.value)}
@@ -218,7 +227,9 @@ export default function CommentBox({ cardId }: { cardId: string }) {
             </ul>
           ) : (
             <p className="font-pixel text-[12px] text-[#7a8ba0] text-center py-1">
-              아직 아무도 안 남겼어요. 첫 한마디의 주인공이 되어보세요!
+              {prompt
+                ? `"${prompt}" — 첫 답의 주인공이 되어보세요!`
+                : "아직 아무도 안 남겼어요. 첫 한마디의 주인공이 되어보세요!"}
             </p>
           )}
         </div>

@@ -6,7 +6,7 @@ import MemoryCard from "@/components/MemoryCard";
 import BgmPlayer from "@/components/BgmPlayer";
 import OnlineBadge from "@/components/OnlineBadge";
 import { getMemoriesForYear, getYearInfo, AVAILABLE_YEARS } from "@/data/memories";
-import { ageInYear, loadBornYear } from "@/lib/age";
+import { koreanAgeInYear, loadBornYear } from "@/lib/age";
 import { trackEvent } from "@/lib/analytics";
 
 function FriendCTA({ year }: { year: number }) {
@@ -82,10 +82,13 @@ export default function YearClient({ year }: { year: number }) {
       <header className="text-center pop-in pt-2">
         <h1 className="font-pixel text-[52px] leading-none">{year}</h1>
         {born ? (
-          ageInYear(born, year) >= 1 ? (
+          koreanAgeInYear(born, year) >= 1 ? (
             <p className="font-pixel text-[17px] mt-2">
-              그때 당신은 <span className="text-[#e84d8a]">{ageInYear(born, year)}살</span>
-              이었어요.
+              그때 당신은{" "}
+              <span className="text-[#e84d8a]">
+                {koreanAgeInYear(born, year)}살
+              </span>
+              이었어요. <span className="text-[12px] text-[#7a8ba0]">(세는나이)</span>
             </p>
           ) : (
             <p className="font-pixel text-[17px] mt-2">

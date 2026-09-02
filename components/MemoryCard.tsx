@@ -204,7 +204,7 @@ export default function MemoryCard({
           eventProperties={{ year: item.year, card: item.id }}
         />
 
-        <CommentBox cardId={item.id} />
+        <CommentBox cardId={item.id} prompt={item.prompt} />
       </div>
     </article>
   );

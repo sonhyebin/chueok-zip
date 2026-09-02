@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import Link from "next/link";
 import Window from "@/components/Window";
 import { MEMORIES } from "@/data/memories";
-import { ageInYear } from "@/lib/age";
+import { koreanAgeInYear } from "@/lib/age";
 
 /**
  * "너네 어떤 핸드폰 썼어?" — 연도별 대표 폰을 인스타 캐러셀처럼 옆으로 넘겨보는 영역.
@@ -90,7 +90,7 @@ export default function PhoneCarousel({ born }: { born: number }) {
           aria-label="연도별 휴대폰 캐러셀"
         >
           {PHONE_SLIDES.map((s, i) => {
-            const age = ageInYear(born, s.year);
+            const age = koreanAgeInYear(born, s.year);
             return (
               <Link
                 key={s.year}
@@ -115,7 +115,7 @@ export default function PhoneCarousel({ born }: { born: number }) {
                   </p>
                   <p className="text-[12px] text-[#7a8ba0] mt-0.5 truncate">
                     {s.subtitle}
-                    {age >= 1 ? ` · 그때 나 ${age}살` : ""}
+                    {age >= 1 ? ` · 그때 나 ${age}살(세는나이)` : ""}
                   </p>
                 </div>
               </Link>
