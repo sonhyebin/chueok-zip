@@ -985,8 +985,8 @@ export const MEMORIES: MemoryItem[] = [
     id: "2006-photo-2",
     image: "/images/years/2006/photo/haduri-webcam.jpg",
     credit: {
-      label: "Dave Pape · Wikimedia Commons · Public Domain",
-      url: "https://commons.wikimedia.org/wiki/File:Logitech_Quickcam_Pro_4000.jpg",
+      label: "얼짱캠 2003 미리보기 화면",
+      url: "https://apps.apple.com/kr/app/id6787339271",
     },
     year: 2006,
     category: "photo",
@@ -4583,8 +4583,8 @@ export const MEMORIES: MemoryItem[] = [
     id: "2003-photo-1",
     image: "/images/years/2003/photo/2003-photo-1.jpg",
     credit: {
-      label: "dougbelshaw · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/94991702@N00/4233168401",
+      label: "얼짱캠 2003 미리보기 화면",
+      url: "https://apps.apple.com/kr/app/id6787339271",
     },
     year: 2003,
     category: "photo",

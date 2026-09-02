@@ -369,7 +369,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2003-music-1 | 이효리 - 10 Minutes | YouTube · YouTube | https://www.youtube.com/watch?v=iKdr44yEBQU |
 | 2003-music-2 | 빅마마 - 체념 Big Mama Chenyum MV | YouTube · modestnumbers | https://www.youtube.com/watch?v=qAlmzxrDHag |
 | 2003-music-3 | Wheesung - With Me | YouTube · fucake | https://www.youtube.com/watch?v=Cn_fknjlkz4 |
-| 2003-photo-1 | (교체) | dougbelshaw · Flickr · CC BY 2.0 | https://www.flickr.com/photos/94991702@N00/4233168401 |
+| 2003-photo-1 | 얼짱캠 2003 미리보기 화면 (웹캠 셀카 컷) | 앱 스토어 공개 홍보자산 | https://apps.apple.com/kr/app/id6787339271 |
 | 2003-photo-2 | (교체) | Rich Niewiroski Jr. · Wikimedia Commons · CC BY 2.5 | https://commons.wikimedia.org/wiki/File:SonyEricssonW810i-001.jpg |
 | 2003-school-1 | Panasonic TV-radio-cassette portable, around  | Karl Baron from Malmö, S · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3APanasonic_TV-radio-cassette_portable%2C_around_1982.jpg |
 | 2013-device-1 | Samsung Galaxy S4 Black Mist - Front (세운 구도 교체) | Beamish4 · Wikimedia Commons · CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S4_(Black_Mist)_-_Front.jpg |
