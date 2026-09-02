@@ -82,7 +82,9 @@ export default function ShareButton({
           className={`pixel-btn kakao${compact ? " compact" : ""}`}
           onClick={handleKakao}
         >
-          카카오톡으로 보내기
+          {/* 그 시절엔 카톡이 없었다 — 이 추억을 "미래(카카오톡)"로 쏘아 보내는 콘셉트 */}
+          <span aria-hidden>📡</span> 미래로 전송하기
+          <span className="text-[11px] opacity-70 ml-1">via 카카오톡</span>
         </button>
       )}
       <button

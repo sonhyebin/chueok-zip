@@ -115,7 +115,7 @@ export default function PhoneCarousel({ born }: { born: number }) {
                   </p>
                   <p className="text-[12px] text-[#7a8ba0] mt-0.5 truncate">
                     {s.subtitle}
-                    {age >= 1 ? ` · 그때 나 ${age}살(세는나이)` : ""}
+                    {age >= 1 ? ` · 그때 나 ${age}살` : ""}
                   </p>
                 </div>
               </Link>
