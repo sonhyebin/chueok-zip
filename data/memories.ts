@@ -4305,10 +4305,10 @@ export const MEMORIES: MemoryItem[] = [
     },
     year: 2002,
     category: "photo",
-    title: "월드컵 단체사진",
-    subtitle: "빨간 티셔츠의 물결",
+    title: "2002 월드컵 거리응원",
+    subtitle: "이건 진짜… 마음이 웅장해진다",
     memoryStrength: 5,
-    prompt: "그날 광장 사진, 아직 있어요?",
+    prompt: "그날 어디서 응원했어요? 광화문? 시청? 아니면 우리 동네 치킨집?",
   },
   {
     id: "2002-photo-2",
