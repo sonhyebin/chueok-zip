@@ -34,7 +34,7 @@ export default function PartnerCta({
   return (
     <div className={`partner-cta${wide ? " wide" : ""}`}>
       <p className="partner-cta-tag">
-        <span aria-hidden>✿</span> 우리가 만든 앱
+        <span aria-hidden>✿</span> 이거 진짜 한번 써봐
       </p>
       <a
         href={href}

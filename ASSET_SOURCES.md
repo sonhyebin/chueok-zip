@@ -242,8 +242,8 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2009-game-1 | Razer BlackWidow Ultimate 2014 Elite Mechanic | osman.gucel · Flickr · CC BY 2.0 | https://www.flickr.com/photos/126089327@N04/14714880858 |
 | 2009-game-2 | Putrajaya International Hot Air Balloon Fiest | kevinpoh · Flickr · CC BY 2.0 | https://www.flickr.com/photos/7679455@N03/13693123383 |
 | 2009-internet-1 | Sneak Preview: The new Yahoo.com (2008 홈) | Yahoo Inc · Flickr · CC BY 2.0 | https://www.flickr.com/photos/yodelanecdotal/2866362153 |
-| 2005-internet-1 | Cyworld 2008 (실제 미니홈피 화면) | Editor B · Flickr · CC BY 2.0 | https://www.flickr.com/photos/11018968@N00/52115637556 |
-| 2005-photo-1 | 얼짱캠 2003 공식 스토어 미리보기 | MAYACREW (제휴 앱 홍보자산) | https://apps.apple.com/kr/app/id6787339271 |
+| 2005-internet-1 | 한국식 미니홈피 재현 제작 (오리지널 일러스트, 로고·원본 그래픽 미사용) | 자체 제작 (recreated) | - |
+| 2005-photo-1 | 얼짱캠 2003 스토어 미리보기 | 앱 스토어 공개 홍보자산 | https://apps.apple.com/kr/app/id6787339271 |
 | 2009-internet-2 | My Home Office (2016) | Ted Mielczarek · Flickr · CC CC0 1.0 | https://www.flickr.com/photos/49243838@N00/27821109783 |
 | 2009-music-1 | Blue Concert Lights | shaire productions · Flickr · CC BY 2.0 | https://www.flickr.com/photos/9822107@N08/4069525639 |
 | 2009-music-2 | DSCN0279 | elyaqim · Flickr · CC BY-SA 2.0 | https://www.flickr.com/photos/19364205@N00/16039471776 |

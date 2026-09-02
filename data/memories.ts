@@ -681,10 +681,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-internet-1",
     image: "/images/years/2005/internet/cyworld-room.jpg",
-    credit: {
-      label: "Editor B · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/11018968@N00/52115637556",
-    },
     year: 2005,
     category: "internet",
     title: "싸이월드 미니홈피",
@@ -724,7 +720,7 @@ export const MEMORIES: MemoryItem[] = [
     id: "2005-photo-1",
     image: "/images/years/2005/photo/uljjang-angle.jpg",
     credit: {
-      label: "얼짱캠 2003 공식 미리보기 · MAYACREW",
+      label: "얼짱캠 2003 미리보기 화면",
       url: "https://apps.apple.com/kr/app/id6787339271",
     },
     year: 2005,
