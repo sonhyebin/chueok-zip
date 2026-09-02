@@ -407,7 +407,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2014-photo-1 | Selfie Stick (15971758381).jpg | Jonathan Chie · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3ASelfie_Stick_%2815971758381%29.jpg |
 | 2014-photo-2 | Time to put the selfie stick away! | shankar s. · Flickr · CC BY 2.0 | https://www.flickr.com/photos/77742560@N06/16284619026 |
 | 2014-school-1 | (교체) | cybrgrl · Flickr · CC BY 2.0 | https://www.flickr.com/photos/84387590@N00/3116868310 |
-| 2015-device-1 | Samsung Galaxy S6 & S6 edge Accessories.jpg | https://www.flickr.com/p · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3ASamsung_Galaxy_S6_%26_S6_edge_Accessories.jpg |
+| 2015-device-1 | Samsung Galaxy S6 and S6 edge (실기기 교체) | Maurizio Pesce · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S6_and_Galaxy_S6_edge_(16950221219).jpg |
 | 2015-drama-1 | Reply1988 'Hye-ri's surprising birthday party | YouTube · tvN DRAMA | https://www.youtube.com/watch?v=VBpv6Tf4om0 |
 | 2015-drama-2 | [#프로듀사] 실망한 mz #아이유 #차태현 #공효진 #김수현 #쇼츠 #short | YouTube · KBS Drama Classic | https://www.youtube.com/watch?v=nJhc0FWNXZQ |
 | 2015-fashion-1 | (교체) | GrafhP - wrbl · Flickr · CC BY 2.0 | https://www.flickr.com/photos/113695508@N03/28708968700 |
@@ -497,7 +497,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 1998-music-3 | S.E.S. 'Dreams Come True' MV | YouTube · SMTOWN | https://www.youtube.com/watch?v=8uiR4SrDGZk |
 | 1998-photo-1 | Vivitar Ultra Compact 35mm camera (1912616 | Matthew Paul  Argall f · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AVivitar_Ultra_Compact_35mm_camera_%2819126164350%29.jpg |
 | 1998-photo-2 | (교체) | BrianAdler · Wikimedia Commons · Public Domain | https://commons.wikimedia.org/wiki/File:Photo_Sticker_Shop_in_Seoul_South_Korea.JPG |
-| 1999-device-1 | Motorola StarTAC 6500 Phone.jpg | rfdigitalwpg · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AMotorola_StarTAC_6500_Phone.jpg |
+| 1999-device-1 | Motorola StarTAC Flip Phone (풀샷 교체) | rfdigitalwpg · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Motorola_StarTAC_Flip_Phone.jpg |
 | 1999-drama-1 | 드라마 학교(1999) #드라마 #ost #kbs #언타이틀 | YouTube · 시간을 걷는 음악 | https://www.youtube.com/watch?v=rqJ1P6jOPe0 |
 | 1999-drama-2 | ✨시청률 52.7%✨김희선-김석훈 주연! 90년대를 휩쓸었던 레전드 로코 명 | YouTube · SBS 옛날 드라마 - 빽드 | https://www.youtube.com/watch?v=qZY7apwAAFQ |
 | 1999-fashion-1 | DSC09800 compress63.jpg | Lusthunter78 · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3ADSC09800_compress63.jpg |

@@ -3440,7 +3440,7 @@ export const MEMORIES: MemoryItem[] = [
     image: "/images/years/1999/device/1999-device-1.jpg",
     credit: {
       label: "rfdigitalwpg · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File%3AMotorola_StarTAC_6500_Phone.jpg",
+      url: "https://commons.wikimedia.org/wiki/File:Motorola_StarTAC_Flip_Phone.jpg",
     },
     year: 1999,
     category: "device",
@@ -5487,8 +5487,8 @@ export const MEMORIES: MemoryItem[] = [
     id: "2015-device-1",
     image: "/images/years/2015/device/2015-device-1.jpg",
     credit: {
-      label: "https://www.flickr.com/p · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File%3ASamsung_Galaxy_S6_%26_S6_edge_Accessories.jpg",
+      label: "Maurizio Pesce · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S6_and_Galaxy_S6_edge_(16950221219).jpg",
     },
     year: 2015,
     category: "device",
