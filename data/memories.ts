@@ -4279,6 +4279,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2002-internet-2",
+    image: "/images/years/2002/internet/sayclub-avatar.jpg",
     year: 2002,
     category: "internet",
     title: "세이클럽 아바타",
