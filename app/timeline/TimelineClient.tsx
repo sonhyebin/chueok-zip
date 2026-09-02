@@ -6,11 +6,11 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Window from "@/components/Window";
 import OnlineBadge from "@/components/OnlineBadge";
 import PhoneCarousel from "@/components/PhoneCarousel";
+import YearPicker from "@/components/YearPicker";
 import ShareButton from "@/components/ShareButton";
 import StoryShareButton from "@/components/StoryShareButton";
-import { AVAILABLE_YEARS, FEATURED_YEAR } from "@/data/memories";
+import { AVAILABLE_YEARS } from "@/data/memories";
 import {
-  ageInYear,
   isValidBirthYear,
   loadBornYear,
   saveBornYear,
@@ -79,11 +79,6 @@ function TimelineInner() {
 
   if (!born) return null;
 
-  const ageLabel = (year: number) => {
-    const age = ageInYear(born, year);
-    return age >= 1 ? `${age}살` : "태어나기 전";
-  };
-
   return (
     <main className="page flex flex-col gap-5">
       <header className="text-center pop-in">
@@ -101,23 +96,7 @@ function TimelineInner() {
       <SchoolYearsShare born={born} />
 
       <Window title="타임라인.exe" className="pop-in">
-        <div className="grid grid-cols-2 gap-3">
-          {AVAILABLE_YEARS.map((year) => (
-            <Link
-              key={year}
-              href={`/year/${year}`}
-              className="pixel-btn blue flex-col !gap-0 py-3 relative"
-            >
-              {year === FEATURED_YEAR ? (
-                <span className="absolute -top-2 -right-2 badge !bg-[#ffd76a] !text-[11px] !px-2">
-                  ★ 추천
-                </span>
-              ) : null}
-              <span className="text-[22px]">{year}</span>
-              <span className="text-[12px] opacity-90">{ageLabel(year)}</span>
-            </Link>
-          ))}
-        </div>
+        <YearPicker born={born} />
       </Window>
 
       <PhoneCarousel born={born} />
