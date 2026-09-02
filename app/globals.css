@@ -346,3 +346,37 @@ textarea.pixel-input {
   min-height: 100vh;
   min-height: 100dvh;
 }
+
+/* ── 제휴 앱 CTA ───────────────────────────────── */
+/* 배너광고처럼 보이지 않게, 그 시절 "관련 프로그램" 안내 창 느낌으로 */
+.partner-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  padding: 11px 13px 10px;
+  border: 2px dashed var(--ink);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fff8fb, #ffeef5);
+}
+
+.partner-cta-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-pixel);
+  font-size: 11.5px;
+  letter-spacing: 0.02em;
+  color: var(--pink-deep);
+}
+
+.partner-cta-note {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #5a6b80;
+}
+
+.partner-cta-name {
+  font-size: 10.5px;
+  color: #8a99ab;
+}

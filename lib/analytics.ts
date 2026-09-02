@@ -7,7 +7,8 @@ export type ViralEvent =
   | "invite_open"
   | "invite_completed"
   | "result_share"
-  | "chain_start";
+  | "chain_start"
+  | "partner_cta_click";
 
 export function trackEvent(
   event: ViralEvent,

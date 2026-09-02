@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { CATEGORY_META, type MemoryItem } from "@/data/memories";
 import CommentBox from "@/components/CommentBox";
 import ShareButton from "@/components/ShareButton";
+import PartnerCta from "@/components/PartnerCta";
 import { announcePlay, onPlay } from "@/lib/playerBus";
 
 const PHOTO_BG: Record<string, string> = {
@@ -69,24 +70,58 @@ export default function MemoryCard({
             이미지 로딩 전·실패 시에는 뒤의 그라데이션+이모지가 그대로 보인다. */}
         <div
           className="photo-frame"
-          style={{ background: PHOTO_BG[item.category] }}
+          style={{ background: playing && embedSrc ? "#000" : PHOTO_BG[item.category] }}
         >
-          <span className="photo-emoji" aria-hidden>
-            {meta.emoji}
-          </span>
-          {item.image && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={item.image}
-              alt={item.title}
-              loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover"
-              onError={(e) => {
-                e.currentTarget.style.display = "none";
-              }}
+          {playing && embedSrc && item.song ? (
+            <iframe
+              src={embedSrc}
+              title={`${item.song.artist} - ${item.song.title}`}
+              className="absolute inset-0 w-full h-full"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowFullScreen
             />
+          ) : (
+            <>
+              <span className="photo-emoji" aria-hidden>
+                {meta.emoji}
+              </span>
+              {item.image && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.style.display = "none";
+                  }}
+                />
+              )}
+              {embedSrc && (
+                <button
+                  type="button"
+                  aria-label={`${item.title} 영상 재생`}
+                  className="absolute inset-0 flex items-center justify-center cursor-pointer"
+                  onClick={() => {
+                    announcePlay(item.id);
+                    setPlaying(true);
+                  }}
+                >
+                  <span
+                    className="flex items-center justify-center w-14 h-14 rounded-full border-2 border-[#1d2733] text-white text-[22px] pl-1"
+                    style={{
+                      background: "rgba(29,39,51,0.65)",
+                      boxShadow: "2px 2px 0 rgba(29,39,51,0.9)",
+                    }}
+                    aria-hidden
+                  >
+                    ▶
+                  </span>
+                </button>
+              )}
+              <span className="datestamp">{stampFor(item)}</span>
+            </>
           )}
-          <span className="datestamp">{stampFor(item)}</span>
         </div>
 
         {item.credit && item.image && (
@@ -148,22 +183,16 @@ export default function MemoryCard({
             </a>
           ))}
 
-        {playing && embedSrc && item.song && (
-          <div
-            className="border-2 border-[#1d2733] rounded-lg overflow-hidden"
-            style={{ aspectRatio: "16 / 9", background: "#000" }}
-          >
-            <iframe
-              src={embedSrc}
-              title={`${item.song.artist} - ${item.song.title}`}
-              className="w-full h-full"
-              allow="autoplay; encrypted-media; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        )}
-
         {item.prompt && <p className="speech">{item.prompt}</p>}
+
+        {item.cta && (
+          <PartnerCta
+            app={item.cta.app}
+            label={item.cta.label}
+            note={item.cta.note}
+            campaign={item.id}
+          />
+        )}
 
         <ShareButton
           label="🔗 이거 기억나?"

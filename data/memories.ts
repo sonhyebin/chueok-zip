@@ -1,3 +1,5 @@
+import type { PartnerAppId } from "@/lib/config";
+
 export type MemoryCategory =
   | "music"
   | "drama"
@@ -53,6 +55,18 @@ export type MemoryItem = {
 
   /** 발매일 — "YYYY.MM.DD" 표기. 카드 부제 아래에 "○○ 발매"로 표시된다. */
   releaseDate?: string;
+
+  /**
+   * 제휴 앱 설치 CTA — 카드의 기억과 앱이 직결되는 카드에만 붙인다.
+   * 연도별 피드 한 화면에 하나만 보이도록 카드를 고르는 것이 원칙.
+   */
+  cta?: {
+    /** lib/config.ts의 PARTNER_APPS 키 */
+    app: PartnerAppId;
+    label: string;
+    /** 버튼 아래 한 줄 설명 */
+    note?: string;
+  };
 
   keywords?: string[];
 };
@@ -719,6 +733,11 @@ export const MEMORIES: MemoryItem[] = [
     subtitle: "위에서 아래로, 턱은 당기고",
     memoryStrength: 5,
     prompt: "지금도 셀카 찍을 때 이 각도죠?",
+    cta: {
+      app: "uljjangcam",
+      label: "📸 그 각도 그대로 다시 찍기",
+      note: "원조 뽀샤시 · 새벽 모니터광 · 노란 형광등 · 흑백캠 — 그때 그 화질 그대로.",
+    },
   },
   {
     id: "2005-photo-2",
@@ -992,6 +1011,11 @@ export const MEMORIES: MemoryItem[] = [
     title: "하두리캠",
     subtitle: "웹캠 셀카의 원조",
     memoryStrength: 4,
+    cta: {
+      app: "uljjangcam",
+      label: "📸 웹캠 화질로 셀카 찍기",
+      note: "그 시절 웹캠 특유의 노이즈와 색번짐까지 재현한 카메라 앱이에요.",
+    },
     prompt: "뽀샤시 효과 최대로 올려본 적 있죠?",
   },
   {
@@ -2568,6 +2592,11 @@ export const MEMORIES: MemoryItem[] = [
     title: "싸이메라",
     subtitle: "보정 셀카의 국민앱",
     memoryStrength: 4,
+    cta: {
+      app: "uljjangcam",
+      label: "📸 더 옛날 감성으로 찍어보기",
+      note: "보정 말고 2003년 웹캠 화질 그대로. 요즘 셀카를 그때로 보내는 앱이에요.",
+    },
     prompt: "잡티 제거 슬라이더, 최대로 올렸죠?",
   },
   {
@@ -4565,6 +4594,11 @@ export const MEMORIES: MemoryItem[] = [
     subtitle: "웹캠 셀카의 원조",
     memoryStrength: 5,
     prompt: "뽀샤시 최대로 올리고 찍었죠?",
+    cta: {
+      app: "uljjangcam",
+      label: "📸 그 화질로 지금 찍어보기",
+      note: "그때 사진 수십 장의 색을 분석해서 만든 필터라, 뽀샤시 흉내가 아니라 진짜 2003년 색이 나와요.",
+    },
   },
   {
     id: "2003-photo-2",

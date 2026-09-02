@@ -14,6 +14,7 @@ const EVENTS = new Set([
   "invite_completed",
   "result_share",
   "chain_start",
+  "partner_cta_click",
 ]);
 
 export async function POST(req: NextRequest) {
