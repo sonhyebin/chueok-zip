@@ -95,16 +95,17 @@ export default function PhoneCarousel({ born }: { born: number }) {
               <Link
                 key={s.year}
                 href={`/year/${s.year}`}
-                className="snap-center shrink-0 w-[78%] flex flex-col gap-2"
+                className="snap-center shrink-0 w-[88%] flex flex-col gap-2"
                 aria-label={`${s.year}년 ${s.title}`}
               >
-                <div className="photo-frame">
+                {/* contain + 흰 배경: 사진 비율과 무관하게 기기 전체가 잘리지 않고 보인다 */}
+                <div className="photo-frame" style={{ background: "#fff" }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={s.image}
                     alt={s.title}
                     loading={i < 2 ? "eager" : "lazy"}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-contain"
                   />
                   <span className="datestamp">{s.year}</span>
                 </div>
