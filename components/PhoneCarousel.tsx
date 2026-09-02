@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 import Window from "@/components/Window";
+import PartnerCta from "@/components/PartnerCta";
 import { MEMORIES } from "@/data/memories";
 import { koreanAgeInYear } from "@/lib/age";
 
@@ -38,10 +39,13 @@ export default function PhoneCarousel({ born }: { born: number }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
 
+  // 폰 슬라이드 + 마지막 얼짱캠 CTA 슬라이드
+  const totalSlides = PHONE_SLIDES.length + 1;
+
   const slideTo = (idx: number) => {
     const track = trackRef.current;
     if (!track) return;
-    const clamped = Math.max(0, Math.min(idx, PHONE_SLIDES.length - 1));
+    const clamped = Math.max(0, Math.min(idx, totalSlides - 1));
     const slide = track.children[clamped] as HTMLElement | undefined;
     slide?.scrollIntoView({
       behavior: "smooth",
@@ -121,6 +125,32 @@ export default function PhoneCarousel({ born }: { born: number }) {
               </Link>
             );
           })}
+
+          {/* 마지막 슬라이드: 얼짱캠 CTA — 폰 추억이 최고조일 때 "그때 화질로 찍기" 제안 */}
+          <div className="snap-center shrink-0 w-[88%] flex flex-col gap-2">
+            <div className="photo-frame" style={{ background: "#fff" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/years/2005/photo/uljjang-angle.jpg"
+                alt="얼짱캠 2003 미리보기"
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <span className="datestamp">지금</span>
+            </div>
+            <div className="text-center">
+              <p className="font-pixel text-[16px] leading-tight">
+                그때 그 폰 화질로, 지금 네 얼굴 찍어볼래?
+              </p>
+            </div>
+            <PartnerCta
+              app="uljjangcam"
+              label="📸 얼짱캠 2003 설치하기"
+              note="원조 뽀샤시 · 흑백캠 · 얼짱각도 45° — 방금 본 그 폰들의 화질 그대로."
+              campaign="phone-carousel"
+              wide
+            />
+          </div>
         </div>
 
         <div className="flex items-center justify-center gap-3">
@@ -142,6 +172,13 @@ export default function PhoneCarousel({ born }: { born: number }) {
                 }}
               />
             ))}
+            {/* 마지막 CTA 슬라이드 도트 — 색을 달리해 "한 장 더" 힌트 */}
+            <span
+              className="w-2 h-2 rounded-full border border-[#1d2733]"
+              style={{
+                background: active === PHONE_SLIDES.length ? "#fee500" : "#fff3b8",
+              }}
+            />
           </div>
           <button
             type="button"
