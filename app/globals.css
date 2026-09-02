@@ -398,3 +398,13 @@ textarea.pixel-input {
   color: #3a1d1d;
   text-shadow: none;
 }
+
+/* ── 그 시절 스티커 (미니홈피 반짝이 문구) ─────────────── */
+@keyframes sticker-sparkle {
+  0%, 100% { filter: brightness(1); }
+  45% { filter: brightness(1.25) saturate(1.2); }
+  55% { filter: brightness(1.05); }
+}
+.sticker-glitter {
+  animation: sticker-sparkle 1.6s ease-in-out infinite;
+}

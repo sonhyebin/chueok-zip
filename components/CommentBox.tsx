@@ -3,12 +3,15 @@
 import { useState } from "react";
 import { loadMyName, saveMyName } from "@/lib/age";
 import { REGIONS } from "@/lib/regions";
+import { STICKERS } from "@/lib/stickers";
+import Sticker from "@/components/Sticker";
 
 type Comment = {
   name: string;
   text: string;
   ts: number;
   region?: string;
+  sticker?: string;
   id?: string;
   hearts?: number;
 };
@@ -35,6 +38,8 @@ export default function CommentBox({
   const [name, setName] = useState("");
   const [region, setRegion] = useState("");
   const [text, setText] = useState("");
+  const [sticker, setSticker] = useState<string | null>(null);
+  const [pickerOpen, setPickerOpen] = useState(false);
   const [sending, setSending] = useState(false);
   const [hearted, setHearted] = useState<Set<string>>(new Set());
 
@@ -98,7 +103,7 @@ export default function CommentBox({
   async function submit() {
     const n = name.trim();
     const t = text.trim();
-    if (!n || !t || sending) return;
+    if (!n || (!t && !sticker) || sending) return;
     setSending(true);
     saveMyName(n);
     try {
@@ -108,13 +113,21 @@ export default function CommentBox({
       const r = await fetch("/api/comments", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ card: cardId, name: n, text: t, region }),
+        body: JSON.stringify({
+          card: cardId,
+          name: n,
+          text: t,
+          region,
+          ...(sticker ? { sticker } : {}),
+        }),
       });
       const d = await r.json();
       if (d.ok && d.comment) {
         setComments((prev) => [d.comment, ...(prev ?? [])]);
         setCount((c) => (c ?? 0) + 1);
         setText("");
+        setSticker(null);
+        setPickerOpen(false);
       }
     } catch {}
     setSending(false);
@@ -169,6 +182,44 @@ export default function CommentBox({
                 onChange={(e) => setText(e.target.value)}
               />
             </div>
+            {/* 그 시절 스티커 픽커 */}
+            <div className="flex items-center gap-2 flex-wrap">
+              <button
+                type="button"
+                className="font-pixel text-[12px] text-[#2f6fce] underline decoration-dotted"
+                onClick={() => setPickerOpen((o) => !o)}
+              >
+                🎟 스티커 {pickerOpen ? "접기" : "붙이기"}
+              </button>
+              {sticker && (
+                <button
+                  type="button"
+                  onClick={() => setSticker(null)}
+                  aria-label="선택한 스티커 제거"
+                  title="눌러서 제거"
+                >
+                  <Sticker id={sticker} size="sm" />
+                </button>
+              )}
+            </div>
+            {pickerOpen && (
+              <div className="flex flex-wrap gap-1.5 p-2 bg-white border border-[#c9d8ec] rounded-lg">
+                {STICKERS.map((st) => (
+                  <button
+                    key={st.id}
+                    type="button"
+                    onClick={() => {
+                      setSticker(st.id);
+                      setPickerOpen(false);
+                    }}
+                    className={sticker === st.id ? "ring-2 ring-[#2f6fce] rounded-md" : ""}
+                    aria-label={`스티커 ${st.label}`}
+                  >
+                    <Sticker id={st.id} size="sm" />
+                  </button>
+                ))}
+              </div>
+            )}
             {/* 허니팟 */}
             <input
               type="text"
@@ -181,7 +232,7 @@ export default function CommentBox({
             <button
               type="submit"
               className="pixel-btn blue !w-auto self-end !px-4 !py-1.5 !text-[13px]"
-              disabled={sending || !name.trim() || !text.trim()}
+              disabled={sending || !name.trim() || (!text.trim() && !sticker)}
             >
               {sending ? "남기는 중..." : "✏️ 남기기"}
             </button>
@@ -207,9 +258,16 @@ export default function CommentBox({
                       <span className="text-[10.5px] text-[#a3b2c4] ml-1.5">
                         {fmt(c.ts)}
                       </span>
-                      <p className="text-[13.5px] leading-snug mt-0.5 break-words">
-                        {c.text}
-                      </p>
+                      {c.text && (
+                        <p className="text-[13.5px] leading-snug mt-0.5 break-words">
+                          {c.text}
+                        </p>
+                      )}
+                      {c.sticker && (
+                        <p className="mt-1">
+                          <Sticker id={c.sticker} size="sm" />
+                        </p>
+                      )}
                     </div>
                     <button
                       type="button"

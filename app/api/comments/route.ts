@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { list, put } from "@vercel/blob";
 import { MEMORIES } from "@/data/memories";
 import { REGIONS } from "@/lib/regions";
+import { STICKER_MAP } from "@/lib/stickers";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -16,6 +17,8 @@ type Comment = {
   text: string;
   ts: number;
   region?: string;
+  /** 그 시절 스티커 id (lib/stickers.ts) */
+  sticker?: string;
   /** 블롭 파일명 기반 id (하트 집계 키) */
   id?: string;
   hearts?: number;
@@ -58,7 +61,7 @@ export async function GET(req: NextRequest) {
         }
       }),
     )
-  ).filter((c): c is Comment => Boolean(c && c.name && c.text));
+  ).filter((c): c is Comment => Boolean(c && c.name && (c.text || c.sticker)));
   // 하트 많은 순 → 같으면 최신순
   comments.sort((a, b) => (b.hearts! - a.hearts!) || (b.ts - a.ts));
   return NextResponse.json(
@@ -73,6 +76,7 @@ export async function POST(req: NextRequest) {
     name?: string;
     text?: string;
     region?: string;
+    sticker?: string;
     website?: string;
   };
   try {
@@ -87,7 +91,9 @@ export async function POST(req: NextRequest) {
   if (body.website) {
     return NextResponse.json({ ok: true });
   }
-  if (!VALID_IDS.has(card) || name.length < 1 || text.length < 1) {
+  const sticker = STICKER_MAP.has(body.sticker ?? "") ? body.sticker : undefined;
+  // 스티커만 있는 댓글도 허용 (텍스트 또는 스티커 중 하나는 필수)
+  if (!VALID_IDS.has(card) || name.length < 1 || (text.length < 1 && !sticker)) {
     return NextResponse.json({ error: "invalid" }, { status: 400 });
   }
   const region = REGION_SET.has((body.region ?? "").trim())
@@ -102,6 +108,7 @@ export async function POST(req: NextRequest) {
     text,
     ts,
     ...(region ? { region } : {}),
+    ...(sticker ? { sticker } : {}),
     id: cid,
     hearts: 0,
   };
