@@ -380,3 +380,13 @@ textarea.pixel-input {
   font-size: 10.5px;
   color: #8a99ab;
 }
+
+/* 결과 페이지처럼 버튼이 전체폭인 화면 */
+.partner-cta.wide {
+  align-items: stretch;
+  text-align: center;
+}
+
+.partner-cta.wide .partner-cta-tag {
+  justify-content: center;
+}

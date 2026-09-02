@@ -14,11 +14,14 @@ export default function PartnerCta({
   label,
   note,
   campaign,
+  wide = false,
 }: {
   app: PartnerAppId;
   label: string;
   note?: string;
   campaign: string;
+  /** 결과 페이지처럼 버튼이 전부 전체폭인 화면에서 사용 */
+  wide?: boolean;
 }) {
   const [href, setHref] = useState(() => partnerStoreLink(app, "ios", campaign));
 
@@ -29,7 +32,7 @@ export default function PartnerCta({
   }, [app, campaign]);
 
   return (
-    <div className="partner-cta">
+    <div className={`partner-cta${wide ? " wide" : ""}`}>
       <p className="partner-cta-tag">
         <span aria-hidden>✿</span> 우리가 만든 앱
       </p>
@@ -37,7 +40,7 @@ export default function PartnerCta({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="pixel-btn primary compact"
+        className={`pixel-btn primary${wide ? "" : " compact"}`}
         onClick={() =>
           trackEvent("partner_cta_click", { app, campaign })
         }

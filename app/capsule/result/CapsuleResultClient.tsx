@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import ShareButton from "@/components/ShareButton";
 import StoryShareButton from "@/components/StoryShareButton";
+import PartnerCta from "@/components/PartnerCta";
 import BgmPlayer from "@/components/BgmPlayer";
 import { getYearInfo } from "@/data/memories";
 import {
@@ -239,6 +240,23 @@ export default function CapsuleResultClient({
           <Link href={`/year/${year}`} className="pixel-btn secondary">
             📼 {year}년 추억 더 보기
           </Link>
+        </div>
+      </div>
+
+      {/* 공유·체인 버튼 뒤에 둔다 — 바이럴 루프가 먼저고, 앱은 그다음 */}
+      <div className="window pop-in">
+        <div className="window-titlebar">
+          <span aria-hidden>📸</span>
+          <span>그때 그 얼굴로</span>
+        </div>
+        <div className="p-4">
+          <PartnerCta
+            app="uljjangcam"
+            label="📸 그 화질로 한 장 찍기"
+            note={`기억만 꺼내고 끝내기 아쉽다면, ${year}년 그 화질로 지금 얼굴을 한 장 남겨보세요.`}
+            campaign={`capsule-result-${year}`}
+            wide
+          />
         </div>
       </div>
     </main>
