@@ -494,7 +494,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 1998-food-2 | (교체) | stevecoutts · Flickr · CC BY 2.0 | https://www.flickr.com/photos/11679961@N05/4625906052 |
 | 1998-food-3 | (교체) | Siqbal · Wikimedia Commons · Public Domain | https://commons.wikimedia.org/wiki/File:Bungeoppang-01.jpg |
 | 1998-game-1 | 스타크래프트(1998)-09-프로토스-첫 공격 불길 속으로 더 높은 곳 | YouTube · EOSMYID | https://www.youtube.com/watch?v=g4OrfRPQEQ0 |
-| 1998-internet-1 | Zenith Z-19 Terminal | ajmexico · Flickr · CC BY 2.0 | https://www.flickr.com/photos/15587432@N02/3281139507 |
+| 1998-internet-1 | 천리안 PC통신 화면 재현 (AI 생성, C2PA/OpenAI 서명 확인) | 자체 생성 (generated-original) | - |
 | 1998-internet-2 | pc통신연결음 | YouTube · parkilk | https://www.youtube.com/watch?v=6FpciCDeMZU |
 | 1998-music-1 | 젝스키스 - 커플 | YouTube · YouTube | https://www.youtube.com/watch?v=42GaJk4YNLQ |
 | 1998-music-2 | [4K] H.O.T - 열 맞춰! 1999 드림콘서트 4K AI Upscal | YouTube · 하늘지기 OLD KPOP | https://www.youtube.com/watch?v=P-_XW0-Og4A |

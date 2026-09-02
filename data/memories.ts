@@ -3115,16 +3115,12 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "1998-internet-1",
     image: "/images/years/1998/internet/1998-internet-1.jpg",
-    credit: {
-      label: "ajmexico · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/15587432@N02/3281139507",
-    },
     year: 1998,
     category: "internet",
     title: "PC통신",
     subtitle: "천리안·하이텔·나우누리",
     memoryStrength: 5,
-    prompt: "파란 화면에 흰 글씨, 기억나요?",
+    prompt: "천리안? 하이텔? 나우누리? 뭐 썼어요?",
   },
   {
     id: "1998-internet-2",
