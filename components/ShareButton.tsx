@@ -60,11 +60,15 @@ export default function ShareButton({
   async function handleKakao() {
     const resolvedUrl = resolve();
     setFailedUrl(resolvedUrl);
+    // 카드 이미지는 상대경로(/images/…)일 수 있어 절대 URL로 변환한다.
+    // 카카오는 이 imageUrl을 서버에서 스크랩하므로 공개 접근 가능한 절대 URL이어야 한다.
+    const resolvedImage = imageUrl
+      ? new URL(imageUrl, window.location.origin).href
+      : new URL("/opengraph-image", window.location.origin).href;
     const ok = await shareKakao({
       title: title ?? `📼 ${fromYear ?? "과거"}에서 온 메시지`,
       description: text,
-      imageUrl:
-        imageUrl ?? new URL("/opengraph-image", window.location.origin).href,
+      imageUrl: resolvedImage,
       url: resolvedUrl,
     });
     if (ok) {

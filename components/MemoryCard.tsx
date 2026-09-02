@@ -196,8 +196,10 @@ export default function MemoryCard({
 
         <ShareButton
           label="🔗 이거 기억나?"
+          title={`${item.year} ${item.title}`}
           text={`야 이거 기억나?\n${item.year}년 ${item.title} 보자마자 너 생각남ㅋㅋ`}
           url={`/year/${item.year}?memory=${item.id}#memory-${item.id}`}
+          imageUrl={item.image}
           variant="secondary"
           compact
           eventName="memory_share"
