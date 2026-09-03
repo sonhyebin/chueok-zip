@@ -3105,12 +3105,22 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "1998-game-2",
+    image: "https://i.ytimg.com/vi/EKBZ6jXFeDM/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 쌈돌이TV",
+      url: "https://www.youtube.com/watch?v=EKBZ6jXFeDM",
+    },
+    song: {
+      title: "리니지",
+      artist: "영상",
+      ...ytSong("EKBZ6jXFeDM"),
+    },
     year: 1998,
     category: "game",
     title: "리니지",
     subtitle: "집행검의 전설이 시작된 곳",
     memoryStrength: 4,
-    prompt: "아데나 모으려고 밤새운 적 있죠?",
+    prompt: "혈맹 이름 뭐였어요? 아데나 얼마까지 모아봤어요?",
   },
   {
     id: "1998-internet-1",
