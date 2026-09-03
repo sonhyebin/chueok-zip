@@ -538,16 +538,13 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2004-food-2",
     image: "/images/years/2004/food/2004-food-2.jpg",
-    credit: {
-      label: "Guilhem Vellut from Paris, F · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File%3APork_cutlet%2C_Tonkatsu_Menu%2C_Tonkatsu_Tombo%2C_Paris_6_December_2016_001.jpg",
-    },
     year: 2004,
     category: "food",
     title: "피카츄 돈까스",
     subtitle: "학교 앞 500원의 행복",
     memoryStrength: 4,
     prompt: "케첩 뿌려서? 그냥?",
+    priceThen: { then: "한 개 500원", now: "3~4천원" },
   },
 
   // ───────────────────────── 2005 ─────────────────────────
