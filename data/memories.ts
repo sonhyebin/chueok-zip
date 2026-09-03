@@ -3996,6 +3996,7 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2001-internet-1",
+    image: "/images/years/2001/internet/2001-internet-1.jpg",
     year: 2001,
     category: "internet",
     title: "버디버디 확산",
