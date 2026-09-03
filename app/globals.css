@@ -408,3 +408,27 @@ textarea.pixel-input {
 .sticker-glitter {
   animation: sticker-sparkle 1.6s ease-in-out infinite;
 }
+
+/* ── 그때 물가 칩 ─────────────────────────────── */
+.price-then {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+  padding: 5px 10px;
+  align-self: flex-start;
+  border: 1.5px dashed var(--cy-orange);
+  border-radius: 8px;
+  background: #fff8ec;
+  font-size: 12.5px;
+  color: #7a5a2a;
+}
+.price-then b {
+  font-family: var(--font-pixel);
+  color: var(--cy-orange);
+  font-weight: normal;
+}
+.price-arrow {
+  color: #c99a4a;
+}

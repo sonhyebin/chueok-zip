@@ -3,6 +3,7 @@
 import { Suspense, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Window from "@/components/Window";
+import VisitTracker from "@/components/VisitTracker";
 import { SERVICE_NAME, SERVICE_TAGLINE } from "@/lib/config";
 import {
   isValidBirthYear,
@@ -42,6 +43,7 @@ function HomeInner() {
 
   return (
     <main className="page flex flex-col justify-center gap-6">
+      <VisitTracker page="home" />
       <div className="text-center pop-in">
         <p className="badge">📼 {SERVICE_TAGLINE}</p>
         <h1 className="font-pixel text-[44px] mt-3 leading-none tracking-tight">

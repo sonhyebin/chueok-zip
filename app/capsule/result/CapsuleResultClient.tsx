@@ -5,6 +5,7 @@ import Link from "next/link";
 import ShareButton from "@/components/ShareButton";
 import StoryShareButton from "@/components/StoryShareButton";
 import PartnerCta from "@/components/PartnerCta";
+import VisitTracker from "@/components/VisitTracker";
 import BgmPlayer from "@/components/BgmPlayer";
 import { getYearInfo } from "@/data/memories";
 import {
@@ -129,6 +130,7 @@ export default function CapsuleResultClient({
 
   return (
     <main className="page flex flex-col gap-5">
+      <VisitTracker page="result" />
       <header className="text-center pop-in pt-4">
         <p className="badge">📦 타임캡슐 개봉</p>
         <h1 className="font-pixel text-[30px] mt-3 leading-snug">

@@ -80,7 +80,7 @@ export default function YearClient({ year }: { year: number }) {
 
   return (
     <main className="page flex flex-col gap-5">
-      <VisitTracker year={year} />
+      <VisitTracker page={`year-${year}`} />
       <header className="text-center pop-in pt-2">
         <h1 className="font-pixel text-[52px] leading-none">{year}</h1>
         {born ? (

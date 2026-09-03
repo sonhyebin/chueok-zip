@@ -152,6 +152,21 @@ export default function MemoryCard({
               💿 {item.releaseDate} 발매
             </p>
           )}
+          {item.priceThen && (
+            <p className="price-then">
+              <span aria-hidden>🏷️</span> 그때{" "}
+              <b>{item.priceThen.then}</b>
+              {item.priceThen.now && (
+                <>
+                  {" "}
+                  <span className="price-arrow" aria-hidden>
+                    →
+                  </span>{" "}
+                  지금 {item.priceThen.now}
+                </>
+              )}
+            </p>
+          )}
         </div>
 
         {item.song &&

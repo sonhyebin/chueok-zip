@@ -9,6 +9,7 @@ import PhoneCarousel from "@/components/PhoneCarousel";
 import YearPicker from "@/components/YearPicker";
 import ShareButton from "@/components/ShareButton";
 import StoryShareButton from "@/components/StoryShareButton";
+import VisitTracker from "@/components/VisitTracker";
 import { AVAILABLE_YEARS } from "@/data/memories";
 import {
   isValidBirthYear,
@@ -81,6 +82,7 @@ function TimelineInner() {
 
   return (
     <main className="page flex flex-col gap-5">
+      <VisitTracker page="timeline" />
       <header className="text-center pop-in">
         <p className="badge">🎒 {born}년생의 학창시절</p>
         <h1 className="font-pixel text-[26px] mt-3 leading-snug">

@@ -57,6 +57,16 @@ export type MemoryItem = {
   releaseDate?: string;
 
   /**
+   * 그때 물가 — 카드에 "🏷️ 그때 <then> → 지금 <now>" 가격표 칩으로 표시된다.
+   * 시대 격차가 재미 포인트인 카드(먹거리·문방구·교통·요금 등)에 붙인다.
+   * now는 생략 가능(그때 가격만 보여줌).
+   */
+  priceThen?: {
+    then: string;
+    now?: string;
+  };
+
+  /**
    * 제휴 앱 설치 CTA — 카드의 기억과 앱이 직결되는 카드에만 붙인다.
    * 연도별 피드 한 화면에 하나만 보이도록 카드를 고르는 것이 원칙.
    */
@@ -3272,10 +3282,11 @@ export const MEMORIES: MemoryItem[] = [
     },
     year: 1998,
     category: "food",
-    title: "붕어빵 3개 천원",
+    title: "붕어빵",
     subtitle: "겨울 하교길의 유혹",
     memoryStrength: 3,
     prompt: "머리부터? 꼬리부터? 영원한 논쟁",
+    priceThen: { then: "천원에 5개", now: "천원에 1~2개" },
   },
   {
     id: "1999-music-1",
