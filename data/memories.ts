@@ -5225,20 +5225,6 @@ export const MEMORIES: MemoryItem[] = [
     prompt: "관광지마다 셀카봉 물결이었죠?",
   },
   {
-    id: "2014-photo-2",
-    image: "/images/years/2014/photo/2014-photo-2.jpg",
-    credit: {
-      label: "shankar s. · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/77742560@N06/16284619026",
-    },
-    year: 2014,
-    category: "photo",
-    title: "단체사진 각도 전쟁",
-    subtitle: "셀카봉 잡는 사람이 권력",
-    memoryStrength: 3,
-    prompt: "항상 팔 아프게 들던 그 친구, 접니다",
-  },
-  {
     id: "2014-fashion-1",
     image: "/images/years/2014/fashion/2014-fashion-1.jpg",
     credit: {
@@ -5293,20 +5279,6 @@ export const MEMORIES: MemoryItem[] = [
     subtitle: "혼밥의 시작",
     memoryStrength: 3,
     prompt: "학원 저녁, 편의점 도시락이었죠?",
-  },
-  {
-    id: "2014-school-1",
-    image: "/images/years/2014/school/2014-school-1.jpg",
-    credit: {
-      label: "cybrgrl · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/84387590@N00/3116868310",
-    },
-    year: 2014,
-    category: "school",
-    title: "조별과제 지옥",
-    subtitle: "수행평가의 시대",
-    memoryStrength: 4,
-    prompt: "조별과제 잠수 탄 친구, 아직 기억하죠?",
   },
   {
     id: "2014-meme-1",

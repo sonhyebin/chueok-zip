@@ -408,8 +408,6 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2014-music-2 | TAEYANG - 눈,코,입 (EYES, NOSE, LIPS) M/V | YouTube · BIGBANG | https://www.youtube.com/watch?v=UwuAPyOImoI |
 | 2014-music-3 | Akdong Musician(AKMU) - 200% M/V | YouTube · AKMU | https://www.youtube.com/watch?v=0Oi8jDMvd_w |
 | 2014-photo-1 | Selfie Stick (15971758381).jpg | Jonathan Chie · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3ASelfie_Stick_%2815971758381%29.jpg |
-| 2014-photo-2 | Time to put the selfie stick away! | shankar s. · Flickr · CC BY 2.0 | https://www.flickr.com/photos/77742560@N06/16284619026 |
-| 2014-school-1 | (교체) | cybrgrl · Flickr · CC BY 2.0 | https://www.flickr.com/photos/84387590@N00/3116868310 |
 | 2015-device-1 | Samsung Galaxy S6 and S6 edge (실기기 교체) | Maurizio Pesce · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S6_and_Galaxy_S6_edge_(16950221219).jpg |
 | 2015-drama-1 | Reply1988 'Hye-ri's surprising birthday party | YouTube · tvN DRAMA | https://www.youtube.com/watch?v=VBpv6Tf4om0 |
 | 2015-drama-2 | [#프로듀사] 실망한 mz #아이유 #차태현 #공효진 #김수현 #쇼츠 #short | YouTube · KBS Drama Classic | https://www.youtube.com/watch?v=nJhc0FWNXZQ |
