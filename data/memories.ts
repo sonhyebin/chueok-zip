@@ -2684,6 +2684,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-meme-1",
+    image: "https://i.ytimg.com/vi/as0z4bj9WaQ/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 팬앤스타",
+      url: "https://www.youtube.com/watch?v=as0z4bj9WaQ",
+    },
+    song: {
+      title: "아햏햏",
+      artist: "영상",
+      ...ytSong("as0z4bj9WaQ"),
+    },
     year: 2004,
     category: "meme",
     title: "아햏햏",
@@ -2750,6 +2760,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-school-1",
+    image: "https://i.ytimg.com/vi/2FDyKOZJ0iE/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 원더로그 WONDER LOG",
+      url: "https://www.youtube.com/watch?v=2FDyKOZJ0iE",
+    },
+    song: {
+      title: "액체괴물",
+      artist: "영상",
+      ...ytSong("2FDyKOZJ0iE"),
+    },
     year: 2006,
     category: "school",
     title: "액체괴물",
@@ -2759,6 +2779,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-meme-1",
+    image: "https://i.ytimg.com/vi/vN_SxNDJTd0/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 옛드",
+      url: "https://www.youtube.com/watch?v=vN_SxNDJTd0",
+    },
+    song: {
+      title: "~하삼 말투",
+      artist: "영상",
+      ...ytSong("vN_SxNDJTd0"),
+    },
     year: 2006,
     category: "meme",
     title: "~하삼 말투",
@@ -2782,6 +2812,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-school-1",
+    image: "https://i.ytimg.com/vi/0F0Ms45VeGA/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 솔방울스토리",
+      url: "https://www.youtube.com/watch?v=0F0Ms45VeGA",
+    },
+    song: {
+      title: "트레이딩 카드 배틀",
+      artist: "영상",
+      ...ytSong("0F0Ms45VeGA"),
+    },
     year: 2007,
     category: "school",
     title: "트레이딩 카드 배틀",
@@ -2833,6 +2873,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-meme-1",
+    image: "https://i.ytimg.com/vi/AXQWSnvglfw/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 동네친구 강나미",
+      url: "https://www.youtube.com/watch?v=AXQWSnvglfw",
+    },
+    song: {
+      title: "지못미",
+      artist: "영상",
+      ...ytSong("AXQWSnvglfw"),
+    },
     year: 2008,
     category: "meme",
     title: "지못미",
@@ -2898,6 +2948,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2010-school-1",
+    image: "https://i.ytimg.com/vi/5jc1XXcw_-M/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 아롱다롱TV",
+      url: "https://www.youtube.com/watch?v=5jc1XXcw_-M",
+    },
+    song: {
+      title: "반티 맞추기",
+      artist: "영상",
+      ...ytSong("5jc1XXcw_-M"),
+    },
     year: 2010,
     category: "school",
     title: "반티 맞추기",
@@ -2907,6 +2967,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2010-meme-1",
+    image: "https://i.ytimg.com/vi/wfLQe_DkefQ/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 지컨",
+      url: "https://www.youtube.com/watch?v=wfLQe_DkefQ",
+    },
+    song: {
+      title: "레알",
+      artist: "영상",
+      ...ytSong("wfLQe_DkefQ"),
+    },
     year: 2010,
     category: "meme",
     title: "레알",
@@ -2944,6 +3014,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2011-meme-1",
+    image: "https://i.ytimg.com/vi/AAQ_FzM_0OI/hqdefault.jpg",
+    credit: {
+      label: "YouTube · Talk To Me In Korean",
+      url: "https://www.youtube.com/watch?v=AAQ_FzM_0OI",
+    },
+    song: {
+      title: "멘붕",
+      artist: "영상",
+      ...ytSong("AAQ_FzM_0OI"),
+    },
     year: 2011,
     category: "meme",
     title: "멘붕",
@@ -2953,6 +3033,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2011-food-3",
+    image: "https://i.ytimg.com/vi/u9PAti5cPx4/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 마시즘",
+      url: "https://www.youtube.com/watch?v=u9PAti5cPx4",
+    },
+    song: {
+      title: "매점 커피우유",
+      artist: "영상",
+      ...ytSong("u9PAti5cPx4"),
+    },
     year: 2011,
     category: "food",
     title: "매점 커피우유",
@@ -2962,6 +3052,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2012-school-1",
+    image: "https://i.ytimg.com/vi/Aq-M_hxf-n0/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 발오공",
+      url: "https://www.youtube.com/watch?v=Aq-M_hxf-n0",
+    },
+    song: {
+      title: "수학여행 장기자랑",
+      artist: "영상",
+      ...ytSong("Aq-M_hxf-n0"),
+    },
     year: 2012,
     category: "school",
     title: "수학여행 장기자랑",
@@ -2971,10 +3071,20 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2012-meme-1",
+    image: "https://i.ytimg.com/vi/1gZu0cXJ-IY/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 게임특공대",
+      url: "https://www.youtube.com/watch?v=1gZu0cXJ-IY",
+    },
+    song: {
+      title: "안될 거야 아마",
+      artist: "영상",
+      ...ytSong("1gZu0cXJ-IY"),
+    },
     year: 2012,
     category: "meme",
     title: "안될 거야 아마",
-    subtitle: "무도가 남긴 명언",
+    subtitle: "타바코쥬스가 남긴 명언",
     memoryStrength: 4,
     prompt: "이 말 아직도 쓰는 사람?",
   },
@@ -3230,6 +3340,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "1998-food-1",
+    image: "https://i.ytimg.com/vi/Y0TY4E49fts/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 밥상한잔",
+      url: "https://www.youtube.com/watch?v=Y0TY4E49fts",
+    },
+    song: {
+      title: "학교 앞 컵떡볶이 노점",
+      artist: "영상",
+      ...ytSong("Y0TY4E49fts"),
+    },
     year: 1998,
     category: "food",
     title: "학교 앞 컵떡볶이 노점",
@@ -3263,6 +3383,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "1998-meme-1",
+    image: "https://i.ytimg.com/vi/1yyMtbBoOWM/hqdefault.jpg",
+    credit: {
+      label: "YouTube · Release - Topic",
+      url: "https://www.youtube.com/watch?v=1yyMtbBoOWM",
+    },
+    song: {
+      title: "왕자병·공주병",
+      artist: "영상",
+      ...ytSong("1yyMtbBoOWM"),
+    },
     year: 1998,
     category: "meme",
     title: "왕자병·공주병",
@@ -3437,6 +3567,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "1999-internet-2",
+    image: "https://i.ytimg.com/vi/652QiCCgG-M/hqdefault.jpg",
+    credit: {
+      label: "YouTube · KBS 다큐",
+      url: "https://www.youtube.com/watch?v=652QiCCgG-M",
+    },
+    song: {
+      title: "배틀넷",
+      artist: "영상",
+      ...ytSong("652QiCCgG-M"),
+    },
     year: 1999,
     category: "internet",
     title: "배틀넷",
@@ -3516,6 +3656,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "1999-food-1",
+    image: "https://i.ytimg.com/vi/EByfkfJw9t8/hqdefault.jpg",
+    credit: {
+      label: "YouTube · EMNcompany",
+      url: "https://www.youtube.com/watch?v=EByfkfJw9t8",
+    },
+    song: {
+      title: "포켓몬빵 1차 출시",
+      artist: "영상",
+      ...ytSong("EByfkfJw9t8"),
+    },
     year: 1999,
     category: "food",
     title: "포켓몬빵 1차 출시",
@@ -3572,6 +3722,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "1999-food-3",
+    image: "https://i.ytimg.com/vi/uWhw322SvkE/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 빙그레(Binggrae)",
+      url: "https://www.youtube.com/watch?v=uWhw322SvkE",
+    },
+    song: {
+      title: "캔디바",
+      artist: "영상",
+      ...ytSong("uWhw322SvkE"),
+    },
     year: 1999,
     category: "food",
     title: "캔디바",
@@ -3731,6 +3891,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2000-internet-2",
+    image: "https://i.ytimg.com/vi/5S76IVOM_38/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 크랩 KLAB",
+      url: "https://www.youtube.com/watch?v=5S76IVOM_38",
+    },
+    song: {
+      title: "세이클럽",
+      artist: "영상",
+      ...ytSong("5S76IVOM_38"),
+    },
     year: 2000,
     category: "internet",
     title: "세이클럽",
@@ -3740,6 +3910,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2000-device-1",
+    image: "https://i.ytimg.com/vi/5i_k2ts-dnY/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 휴대폰 판매왕 폰킴",
+      url: "https://www.youtube.com/watch?v=5i_k2ts-dnY",
+    },
+    song: {
+      title: "폴더폰의 등장",
+      artist: "영상",
+      ...ytSong("5i_k2ts-dnY"),
+    },
     year: 2000,
     category: "device",
     title: "폴더폰의 등장",
@@ -3777,6 +3957,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2000-fashion-1",
+    image: "https://i.ytimg.com/vi/hGOfP6OUDy0/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 소비더머니",
+      url: "https://www.youtube.com/watch?v=hGOfP6OUDy0",
+    },
+    song: {
+      title: "힙합 통바지",
+      artist: "영상",
+      ...ytSong("hGOfP6OUDy0"),
+    },
     year: 2000,
     category: "fashion",
     title: "힙합 통바지",
@@ -3842,6 +4032,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2000-meme-1",
+    image: "https://i.ytimg.com/vi/la3CrDHBS7o/hqdefault.jpg",
+    credit: {
+      label: "YouTube · EBS 경청",
+      url: "https://www.youtube.com/watch?v=la3CrDHBS7o",
+    },
+    song: {
+      title: "방가방가",
+      artist: "영상",
+      ...ytSong("la3CrDHBS7o"),
+    },
     year: 2000,
     category: "meme",
     title: "방가방가",
@@ -3851,6 +4051,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2000-food-3",
+    image: "https://i.ytimg.com/vi/-jPCFSHooY0/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 탐사매니아",
+      url: "https://www.youtube.com/watch?v=-jPCFSHooY0",
+    },
+    song: {
+      title: "눈깔사탕",
+      artist: "영상",
+      ...ytSong("-jPCFSHooY0"),
+    },
     year: 2000,
     category: "food",
     title: "눈깔사탕",
@@ -4006,6 +4216,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2001-internet-2",
+    image: "https://i.ytimg.com/vi/QEans2vmFuA/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 소비더머니",
+      url: "https://www.youtube.com/watch?v=QEans2vmFuA",
+    },
+    song: {
+      title: "프리챌 커뮤니티",
+      artist: "영상",
+      ...ytSong("QEans2vmFuA"),
+    },
     year: 2001,
     category: "internet",
     title: "프리챌 커뮤니티",
@@ -4127,6 +4347,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2001-meme-1",
+    image: "https://i.ytimg.com/vi/Q-sNGztvUxY/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 줌인센타",
+      url: "https://www.youtube.com/watch?v=Q-sNGztvUxY",
+    },
+    song: {
+      title: "엽기 열풍",
+      artist: "영상",
+      ...ytSong("Q-sNGztvUxY"),
+    },
     year: 2001,
     category: "meme",
     title: "엽기 열풍",
@@ -4136,6 +4366,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2001-food-3",
+    image: "https://i.ytimg.com/vi/5vJ2fK0_OPA/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 천뚱TV",
+      url: "https://www.youtube.com/watch?v=5vJ2fK0_OPA",
+    },
+    song: {
+      title: "죠리퐁",
+      artist: "영상",
+      ...ytSong("5vJ2fK0_OPA"),
+    },
     year: 2001,
     category: "food",
     title: "죠리퐁",
@@ -4305,6 +4545,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2002-device-1",
+    image: "https://i.ytimg.com/vi/gmn-SiZpTWc/hqdefault.jpg",
+    credit: {
+      label: "YouTube · posttrendis",
+      url: "https://www.youtube.com/watch?v=gmn-SiZpTWc",
+    },
+    song: {
+      title: "듀얼폴더 컬러폰",
+      artist: "영상",
+      ...ytSong("gmn-SiZpTWc"),
+    },
     year: 2002,
     category: "device",
     title: "듀얼폴더 컬러폰",
@@ -4398,6 +4648,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2002-school-1",
+    image: "https://i.ytimg.com/vi/HliB9VSxU28/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 실버크리스",
+      url: "https://www.youtube.com/watch?v=HliB9VSxU28",
+    },
+    song: {
+      title: "단체 길거리 응원",
+      artist: "영상",
+      ...ytSong("HliB9VSxU28"),
+    },
     year: 2002,
     category: "school",
     title: "단체 길거리 응원",
@@ -4407,6 +4667,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2002-meme-1",
+    image: "https://i.ytimg.com/vi/GUqWTbmDKEM/hqdefault.jpg",
+    credit: {
+      label: "YouTube · SBS 뉴스",
+      url: "https://www.youtube.com/watch?v=GUqWTbmDKEM",
+    },
+    song: {
+      title: "대~한민국 (짝짝짝 짝짝)",
+      artist: "영상",
+      ...ytSong("GUqWTbmDKEM"),
+    },
     year: 2002,
     category: "meme",
     title: "대~한민국 (짝짝짝 짝짝)",
@@ -4416,6 +4686,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2002-food-3",
+    image: "https://i.ytimg.com/vi/eAGi7OH-X28/hqdefault.jpg",
+    credit: {
+      label: "YouTube · EMNcompany",
+      url: "https://www.youtube.com/watch?v=eAGi7OH-X28",
+    },
+    song: {
+      title: "국진이빵",
+      artist: "영상",
+      ...ytSong("eAGi7OH-X28"),
+    },
     year: 2002,
     category: "food",
     title: "국진이빵",
@@ -4561,6 +4841,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2003-internet-1",
+    image: "https://i.ytimg.com/vi/F6tK3yOSrIQ/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 엠브이픽",
+      url: "https://www.youtube.com/watch?v=F6tK3yOSrIQ",
+    },
+    song: {
+      title: "싸이월드 미니홈피 오픈",
+      artist: "영상",
+      ...ytSong("F6tK3yOSrIQ"),
+    },
     year: 2003,
     category: "internet",
     title: "싸이월드 미니홈피 오픈",
@@ -4861,6 +5151,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2013-internet-1",
+    image: "https://i.ytimg.com/vi/jN32cenVGJc/hqdefault.jpg",
+    credit: {
+      label: "YouTube · SBS 뉴스",
+      url: "https://www.youtube.com/watch?v=jN32cenVGJc",
+    },
+    song: {
+      title: "카톡 단톡방",
+      artist: "영상",
+      ...ytSong("jN32cenVGJc"),
+    },
     year: 2013,
     category: "internet",
     title: "카톡 단톡방",
@@ -5189,6 +5489,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2014-internet-2",
+    image: "https://i.ytimg.com/vi/1jJ2w29XFbY/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 슈기님",
+      url: "https://www.youtube.com/watch?v=1jJ2w29XFbY",
+    },
+    song: {
+      title: "먹방의 시작",
+      artist: "영상",
+      ...ytSong("1jJ2w29XFbY"),
+    },
     year: 2014,
     category: "internet",
     title: "먹방의 시작",
@@ -5493,6 +5803,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2015-photo-1",
+    image: "https://i.ytimg.com/vi/UDJP057j4RM/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 진아컴",
+      url: "https://www.youtube.com/watch?v=UDJP057j4RM",
+    },
+    song: {
+      title: "B612",
+      artist: "영상",
+      ...ytSong("UDJP057j4RM"),
+    },
     year: 2015,
     category: "photo",
     title: "B612",
@@ -5797,6 +6117,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2016-photo-1",
+    image: "https://i.ytimg.com/vi/vJ7V-5Pb7gk/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 스노우 카메라 (SNOW Camera)",
+      url: "https://www.youtube.com/watch?v=vJ7V-5Pb7gk",
+    },
+    song: {
+      title: "스노우",
+      artist: "영상",
+      ...ytSong("vJ7V-5Pb7gk"),
+    },
     year: 2016,
     category: "photo",
     title: "스노우",
@@ -5890,6 +6220,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2016-meme-1",
+    image: "https://i.ytimg.com/vi/itnv6LLtS78/hqdefault.jpg",
+    credit: {
+      label: "YouTube · YTN",
+      url: "https://www.youtube.com/watch?v=itnv6LLtS78",
+    },
+    song: {
+      title: "인정? 어 인정",
+      artist: "영상",
+      ...ytSong("itnv6LLtS78"),
+    },
     year: 2016,
     category: "meme",
     title: "인정? 어 인정",
@@ -5913,6 +6253,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2000-school-2",
+    image: "https://i.ytimg.com/vi/CX_M5hrbxwI/hqdefault.jpg",
+    credit: {
+      label: "YouTube · SBS STORY",
+      url: "https://www.youtube.com/watch?v=CX_M5hrbxwI",
+    },
+    song: {
+      title: "딱지치기",
+      artist: "영상",
+      ...ytSong("CX_M5hrbxwI"),
+    },
     year: 2000,
     category: "school",
     title: "딱지치기",
@@ -5965,6 +6315,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2001-school-3",
+    image: "https://i.ytimg.com/vi/91h64THQfEs/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 추억음악",
+      url: "https://www.youtube.com/watch?v=91h64THQfEs",
+    },
+    song: {
+      title: "탑블레이드 팽이",
+      artist: "영상",
+      ...ytSong("91h64THQfEs"),
+    },
     year: 2001,
     category: "school",
     title: "탑블레이드 팽이",
@@ -5993,6 +6353,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2003-school-2",
+    image: "https://i.ytimg.com/vi/dJgsySA_XtQ/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 유니하니 프로개발러",
+      url: "https://www.youtube.com/watch?v=dJgsySA_XtQ",
+    },
+    song: {
+      title: "포켓몬빵 띠부씰",
+      artist: "영상",
+      ...ytSong("dJgsySA_XtQ"),
+    },
     year: 2003,
     category: "school",
     title: "포켓몬빵 띠부씰",
@@ -6002,6 +6372,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2004-school-2",
+    image: "https://i.ytimg.com/vi/XXgNDkUmBuc/hqdefault.jpg",
+    credit: {
+      label: "YouTube · SBS STORY",
+      url: "https://www.youtube.com/watch?v=XXgNDkUmBuc",
+    },
+    song: {
+      title: "지우개 따먹기",
+      artist: "영상",
+      ...ytSong("XXgNDkUmBuc"),
+    },
     year: 2004,
     category: "school",
     title: "지우개 따먹기",
@@ -6011,6 +6391,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2005-school-2",
+    image: "https://i.ytimg.com/vi/dfVmL83r2aY/hqdefault.jpg",
+    credit: {
+      label: "YouTube · KBS",
+      url: "https://www.youtube.com/watch?v=dfVmL83r2aY",
+    },
+    song: {
+      title: "훈민정음 게임",
+      artist: "영상",
+      ...ytSong("dfVmL83r2aY"),
+    },
     year: 2005,
     category: "school",
     title: "훈민정음 게임",
@@ -6039,6 +6429,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2006-school-2",
+    image: "https://i.ytimg.com/vi/u_Vu22Vl_LE/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 채널A 도시어부",
+      url: "https://www.youtube.com/watch?v=u_Vu22Vl_LE",
+    },
+    song: {
+      title: "눈치게임",
+      artist: "영상",
+      ...ytSong("u_Vu22Vl_LE"),
+    },
     year: 2006,
     category: "school",
     title: "눈치게임",
@@ -6067,6 +6467,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2007-school-2",
+    image: "https://i.ytimg.com/vi/UPDojGC926Y/hqdefault.jpg",
+    credit: {
+      label: "YouTube · MBCkpop",
+      url: "https://www.youtube.com/watch?v=UPDojGC926Y",
+    },
+    song: {
+      title: "아이엠그라운드",
+      artist: "영상",
+      ...ytSong("UPDojGC926Y"),
+    },
     year: 2007,
     category: "school",
     title: "아이엠그라운드",
@@ -6090,6 +6500,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2009-school-2",
+    image: "https://i.ytimg.com/vi/NlQE_8Uq_fs/hqdefault.jpg",
+    credit: {
+      label: "YouTube · KBS",
+      url: "https://www.youtube.com/watch?v=NlQE_8Uq_fs",
+    },
+    song: {
+      title: "손병호 게임",
+      artist: "영상",
+      ...ytSong("NlQE_8Uq_fs"),
+    },
     year: 2009,
     category: "school",
     title: "손병호 게임",
@@ -6118,6 +6538,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2010-school-2",
+    image: "https://i.ytimg.com/vi/oS4cowlQyEo/hqdefault.jpg",
+    credit: {
+      label: "YouTube · tvN 샾잉",
+      url: "https://www.youtube.com/watch?v=oS4cowlQyEo",
+    },
+    song: {
+      title: "바니바니 게임",
+      artist: "영상",
+      ...ytSong("oS4cowlQyEo"),
+    },
     year: 2010,
     category: "school",
     title: "바니바니 게임",
@@ -6146,6 +6576,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2011-school-2",
+    image: "https://i.ytimg.com/vi/8xY8iZiXr90/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 술게임 강의 채널",
+      url: "https://www.youtube.com/watch?v=8xY8iZiXr90",
+    },
+    song: {
+      title: "딸기가 좋아 게임",
+      artist: "영상",
+      ...ytSong("8xY8iZiXr90"),
+    },
     year: 2011,
     category: "school",
     title: "딸기가 좋아 게임",
@@ -6174,6 +6614,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2012-school-2",
+    image: "https://i.ytimg.com/vi/FfCNNjmdlQg/hqdefault.jpg",
+    credit: {
+      label: "YouTube · ALL THE K-POP",
+      url: "https://www.youtube.com/watch?v=FfCNNjmdlQg",
+    },
+    song: {
+      title: "공공칠빵",
+      artist: "영상",
+      ...ytSong("FfCNNjmdlQg"),
+    },
     year: 2012,
     category: "school",
     title: "공공칠빵",
@@ -6183,6 +6633,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2013-school-2",
+    image: "https://i.ytimg.com/vi/-y2nBBhdIKE/hqdefault.jpg",
+    credit: {
+      label: "YouTube · DRIPPIN 공식 채널",
+      url: "https://www.youtube.com/watch?v=-y2nBBhdIKE",
+    },
+    song: {
+      title: "베스킨라빈스 31",
+      artist: "영상",
+      ...ytSong("-y2nBBhdIKE"),
+    },
     year: 2013,
     category: "school",
     title: "베스킨라빈스 31",
@@ -6211,6 +6671,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2014-school-2",
+    image: "https://i.ytimg.com/vi/JenjEKZvWKk/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 크-TV",
+      url: "https://www.youtube.com/watch?v=JenjEKZvWKk",
+    },
+    song: {
+      title: "더 게임 오브 데스",
+      artist: "영상",
+      ...ytSong("JenjEKZvWKk"),
+    },
     year: 2014,
     category: "school",
     title: "더 게임 오브 데스",
@@ -6239,6 +6709,16 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2015-school-2",
+    image: "https://i.ytimg.com/vi/2WdqDZLdvJk/hqdefault.jpg",
+    credit: {
+      label: "YouTube · 서울시교육청TV",
+      url: "https://www.youtube.com/watch?v=2WdqDZLdvJk",
+    },
+    song: {
+      title: "급식 먹고 매점 뛰기",
+      artist: "영상",
+      ...ytSong("2WdqDZLdvJk"),
+    },
     year: 2015,
     category: "school",
     title: "급식 먹고 매점 뛰기",
