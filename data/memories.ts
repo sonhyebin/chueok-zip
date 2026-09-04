@@ -1763,17 +1763,22 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2009-internet-1",
-    image: "/images/years/2009/internet/2009-internet-1.jpg",
+    image: "https://i.ytimg.com/vi/huxOrwuryLo/hqdefault.jpg",
     credit: {
-      label: "Yahoo Inc · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/yodelanecdotal/2866362153",
+      label: "YouTube · YTN",
+      url: "https://www.youtube.com/watch?v=huxOrwuryLo",
+    },
+    song: {
+      title: "실시간 검색어",
+      artist: "영상",
+      ...ytSong("huxOrwuryLo"),
     },
     year: 2009,
     category: "internet",
     title: "실시간 검색어",
-    subtitle: "1위 보고 등교하기",
+    subtitle: "1위 보고 등교하던 그 시절",
     memoryStrength: 4,
-    prompt: "아침마다 실검 확인하던 사람?",
+    prompt: "실검에 올라와서 찾아본 거 뭐 있어요?",
   },
   {
     id: "2009-internet-2",
