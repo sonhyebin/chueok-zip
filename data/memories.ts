@@ -1838,17 +1838,22 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2009-fashion-1",
-    image: "/images/years/2009/fashion/2009-fashion-1.jpg",
+    image: "https://i.ytimg.com/vi/Fdtio61B9B4/hqdefault.jpg",
     credit: {
-      label: "FeatheredTar · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/55915190@N00/2298993649",
+      label: "YouTube · tvN Joy",
+      url: "https://www.youtube.com/watch?v=Fdtio61B9B4",
+    },
+    song: {
+      title: "컬러 스키니진",
+      artist: "영상",
+      ...ytSong("Fdtio61B9B4"),
     },
     year: 2009,
     category: "fashion",
-    title: "컬러 스키니",
-    subtitle: "빨강 파랑 보라까지",
+    title: "컬러 스키니진",
+    subtitle: "소녀시대 Gee가 만든 그 유행",
     memoryStrength: 4,
-    prompt: "형광색 스키니 입어본 적... 있죠?",
+    prompt: "무슨 색 스키니 입었어요? 노랑? 분홍?",
   },
   {
     id: "2009-fashion-2",

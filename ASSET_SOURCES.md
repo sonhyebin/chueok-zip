@@ -236,7 +236,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2009-device-1 | IPhone 3G or 3GS digital render.png | JoBot164 · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3AIPhone_3G_or_3GS_digital_render.png |
 | 2009-drama-1 | Red Velvet Wedding Cake | kimberlykv · Flickr · CC BY 2.0 | https://www.flickr.com/photos/87542849@N00/559281413 |
 | 2009-drama-2 | Royal Tomb of King Seok Talhae.JPG | Abasaa · Wikimedia Commons · Public domain | https://commons.wikimedia.org/wiki/File%3ARoyal_Tomb_of_King_Seok_Talhae.JPG |
-| 2009-fashion-1 | (대체 소재 채움) | FeatheredTar · Flickr · CC BY 2.0 | https://www.flickr.com/photos/55915190@N00/2298993649 |
+| 2009-fashion-1 | 소녀시대 Gee 컬러 스키니진을 만든 민희진 (유퀴즈) | YouTube · tvN Joy | https://www.youtube.com/watch?v=Fdtio61B9B4 |
 | 2009-fashion-2 | Tidepools 1976 | catherinetodd2 · Flickr · CC BY-NC 2.0 | https://www.flickr.com/photos/94737677@N00/2650305354 |
 | 2009-food-1 | 2020-03-11 12.23.44 분식집.jpg | MatthieuRicard · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3A2020-03-11_12.23.44_%EB%B6%84%EC%8B%9D%EC%A7%91.jpg |
 | 2009-food-2 | Bubble tea six languages.jpg | Hippietrail · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3ABubble_tea_six_languages.jpg |
