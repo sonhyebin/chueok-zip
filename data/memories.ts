@@ -1477,10 +1477,15 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-internet-1",
-    image: "/images/years/2008/internet/2008-internet-1.jpg",
+    image: "https://i.ytimg.com/vi/J38u2e8MoNo/hqdefault.jpg",
     credit: {
-      label: "DJ Philly GEE · Flickr · CC BY-SA 2.0",
-      url: "https://www.flickr.com/photos/11403548@N00/3499787511",
+      label: "YouTube · 무난한 이야기",
+      url: "https://www.youtube.com/watch?v=J38u2e8MoNo",
+    },
+    song: {
+      title: "빠삐놈 리믹스",
+      artist: "영상",
+      ...ytSong("J38u2e8MoNo"),
     },
     year: 2008,
     category: "internet",
@@ -1589,17 +1594,22 @@ export const MEMORIES: MemoryItem[] = [
   },
   {
     id: "2008-food-1",
-    image: "/images/years/2008/food/2008-food-1.jpg",
+    image: "https://i.ytimg.com/vi/T6Ua34lPh_0/hqdefault.jpg",
     credit: {
-      label: "Zakk Forchilli · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:Freeze_Pops.jpg",
+      label: "YouTube · EMNcompany",
+      url: "https://www.youtube.com/watch?v=T6Ua34lPh_0",
+    },
+    song: {
+      title: "빠삐코 CF",
+      artist: "영상",
+      ...ytSong("T6Ua34lPh_0"),
     },
     year: 2008,
     category: "food",
     title: "빠삐코",
-    subtitle: "빠삐놈 덕에 품절 대란",
+    subtitle: "빠바라빠바라 빠 삐삐리 빠삐코~",
     memoryStrength: 4,
-    prompt: "끝까지 쭉 짜서 먹는 그 마지막 한 입",
+    prompt: "이 광고 노래, 지금도 부를 수 있죠?",
   },
   {
     id: "2008-food-2",

@@ -217,11 +217,11 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2008-drama-2 | Engagement Ring | Tela Chhe · Flickr · CC BY 2.0 | https://www.flickr.com/photos/21042103@N03/4641589345 |
 | 2008-fashion-1 | Short Red Hair and a Plaid Flannel Shirt | petitepanoply · Flickr · CC BY-SA 2.0 | https://www.flickr.com/photos/63405864@N04/15259659244 |
 | 2008-fashion-2 | Horn-rimmed Rayban glasses.JPG | Piercetheorganist at English · Wikimedia Commons · Public domain | https://commons.wikimedia.org/wiki/File%3AHorn-rimmed_Rayban_glasses.JPG |
-| 2008-food-1 | (대체 소재 채움) | Zakk Forchilli · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Freeze_Pops.jpg |
+| 2008-food-1 | 빠삐코 원조 CF 고인돌편 (1988) | YouTube · EMNcompany | https://www.youtube.com/watch?v=T6Ua34lPh_0 |
 | 2008-food-2 | Gimbap (pixabay).jpg | changupn · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3AGimbap_%28pixabay%29.jpg |
 | 2008-game-1 | REUSE(교체대상) | Hachimaki · Wikimedia Commons · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Korean.culture-PC.bang-01.jpg |
 | 2008-game-2 | LAN party in France in 2003.jpg (아이온=카오스 LAN 재사용) | Syced · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3ALAN_party_in_France_in_2003.jpg |
-| 2008-internet-1 | mixing on the coffee table | DJ Philly GEE · Flickr · CC BY-SA 2.0 | https://www.flickr.com/photos/11403548@N00/3499787511 |
+| 2008-internet-1 | 빠삐놈 리믹스 (2008 원본) | YouTube · 무난한 이야기 | https://www.youtube.com/watch?v=J38u2e8MoNo |
 | 2008-internet-2 | (대체 소재 채움) | newchaos · Flickr · CC BY 2.0 | https://www.flickr.com/photos/79101044@N00/1436061771 |
 | 2008-music-1 | The school arts festival. | MIKI Yoshihito. (#mikiyoshih · Flickr · CC BY 2.0 | https://www.flickr.com/photos/7940758@N07/8234203575 |
 | 2008-music-2 | Luxury Noraebang | la_minai · Flickr · CC BY 2.0 | https://www.flickr.com/photos/46348337@N02/5029488788 |
