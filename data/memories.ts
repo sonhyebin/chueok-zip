@@ -3391,10 +3391,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "1998-food-3",
     image: "/images/years/1998/food/1998-food-3.jpg",
-    credit: {
-      label: "Siqbal · Wikimedia Commons · Public Domain",
-      url: "https://commons.wikimedia.org/wiki/File:Bungeoppang-01.jpg",
-    },
     year: 1998,
     category: "food",
     title: "붕어빵",
