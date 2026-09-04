@@ -4004,8 +4004,8 @@ export const MEMORIES: MemoryItem[] = [
     id: "2000-school-1",
     image: "/images/years/2000/school/2000-school-1.jpg",
     credit: {
-      label: "rawpixel (Ake) · rawpixel · CC0",
-      url: "https://www.rawpixel.com/image/6025434/colorful-pebbles-free-public-domain-cc0-image",
+      label: "국립국어원 · Wikimedia Commons · CC BY-SA 2.0 KR",
+      url: "https://commons.wikimedia.org/wiki/File:Gonggi_pebbles.jpg",
     },
     year: 2000,
     category: "school",
@@ -4856,8 +4856,8 @@ export const MEMORIES: MemoryItem[] = [
     id: "2003-device-1",
     image: "/images/years/2003/device/2003-device-1.jpg",
     credit: {
-      label: "Drummyfish · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/w/index.php?curid=77203594",
+      label: "Carlos Rosas · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:Motorola_V300.jpg",
     },
     year: 2003,
     category: "device",
@@ -4959,8 +4959,8 @@ export const MEMORIES: MemoryItem[] = [
     id: "2003-school-1",
     image: "/images/years/2003/school/2003-school-1.jpg",
     credit: {
-      label: "Karl Baron from Malmö, S · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File%3APanasonic_TV-radio-cassette_portable%2C_around_1982.jpg",
+      label: "Wikimedia Commons · Public Domain",
+      url: "https://commons.wikimedia.org/wiki/File:Sony-wm-fx421-walkman.jpg",
     },
     year: 2003,
     category: "school",
@@ -4983,8 +4983,8 @@ export const MEMORIES: MemoryItem[] = [
     id: "2003-food-3",
     image: "/images/years/2003/food/2003-food-3.jpg",
     credit: {
-      label: "Uri Tours · Wikimedia Commons · CC BY-SA 2.0",
-      url: "https://commons.wikimedia.org/wiki/File%3ATypical_North_Korean_snack_%28%EC%95%88%EC%A3%BC%29_at_the_Rakwon_Paradise_Microbrewery_%2811416187434%29.jpg",
+      label: "Lisa Risager · Wikimedia Commons · CC BY-SA 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:Jwipo-gui.jpg",
     },
     year: 2003,
     category: "food",
