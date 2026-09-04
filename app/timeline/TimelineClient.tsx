@@ -103,6 +103,21 @@ function TimelineInner() {
 
       <PhoneCarousel born={born} />
 
+      {/* 제보함 — 사용자가 가진 그 시절 사진을 받아 카드로 만드는 통로 */}
+      <Window title="추억 제보함.exe" className="pop-in">
+        <div className="flex flex-col gap-2 text-center">
+          <p className="font-pixel text-[17px] leading-snug">
+            📮 서랍 속에 그때 사진 있어요?
+          </p>
+          <p className="text-[12.5px] text-[#5a6b80] leading-relaxed">
+            알려주시면 확인하고 카드로 만들어 올려드릴게요.
+          </p>
+          <Link href="/jebo" className="pixel-btn secondary !py-2.5 !text-[14px]">
+            제보하러 가기
+          </Link>
+        </div>
+      </Window>
+
       <Link href="/" className="text-center text-[13px] text-[#5a6b80] font-pixel">
         ← 출생연도 다시 입력
       </Link>
