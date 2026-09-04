@@ -434,10 +434,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2004-internet-2",
     image: "/images/years/2004/internet/dotori-acorns.jpg",
-    credit: {
-      label: "David Hill · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:Acorns_small_to_large.jpg",
-    },
     year: 2004,
     category: "internet",
     title: "싸이월드 도토리",
