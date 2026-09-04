@@ -366,7 +366,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2003-food-3 | Typical North Korean snack (안주) at the Rakwon | Uri Tours · Wikimedia Commons · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File%3ATypical_North_Korean_snack_%28%EC%95%88%EC%A3%BC%29_at_the_Rakwon_Paradise_Microbrewery_%2811416187434%29.jpg |
 | 2003-game-1 | [메이플 몰아보기] 모아보는 빅뱅 전 2003년 메이플 월드 | YouTube · 냉이킴 | https://www.youtube.com/watch?v=bwr4NxUnA60 |
 | 2003-game-2 | [플영]절권도 - 마인 | YouTube · 극신 | https://www.youtube.com/watch?v=6Oz-h9VDR_U |
-| 2003-internet-2 | (교체) | blmurch · Flickr · CC BY 2.0 | https://www.flickr.com/photos/82439748@N00/127341654 |
+| 2003-internet-2 | 귀여니 인터넷소설 감성 재현 (AI 생성, C2PA/OpenAI 서명 확인) | 자체 생성 (generated-original) | - |
 | 2003-music-1 | 이효리 - 10 Minutes | YouTube · YouTube | https://www.youtube.com/watch?v=iKdr44yEBQU |
 | 2003-music-2 | 빅마마 - 체념 Big Mama Chenyum MV | YouTube · modestnumbers | https://www.youtube.com/watch?v=qAlmzxrDHag |
 | 2003-music-3 | Wheesung - With Me | YouTube · fucake | https://www.youtube.com/watch?v=Cn_fknjlkz4 |

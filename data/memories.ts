@@ -4849,14 +4849,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2003-internet-2",
     image: "/images/years/2003/internet/2003-internet-2.jpg",
-    credit: {
-      label: "blmurch · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/82439748@N00/127341654",
-    },
     year: 2003,
     category: "internet",
     title: "귀여니 소설",
-    subtitle: "그놈은 멋있었다",
+    subtitle: "그놈은 멋있었다 · 아웃사이더",
     memoryStrength: 4,
     prompt: "이모티콘 섞인 소설, 밤새 읽었죠?",
   },
