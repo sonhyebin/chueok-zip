@@ -6,6 +6,7 @@ import MemoryCard from "@/components/MemoryCard";
 import BgmPlayer from "@/components/BgmPlayer";
 import OnlineBadge from "@/components/OnlineBadge";
 import VisitTracker from "@/components/VisitTracker";
+import PartnerCta from "@/components/PartnerCta";
 import { getMemoriesForYear, getYearInfo, AVAILABLE_YEARS } from "@/data/memories";
 import { koreanAgeInYear, loadBornYear } from "@/lib/age";
 import { trackEvent } from "@/lib/analytics";
@@ -33,6 +34,31 @@ function FriendCTA({ year }: { year: number }) {
         >
           💌 그 친구에게 보내기
         </Link>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * 연도 피드마다 하나씩 들어가는 얼짱캠 유도 창.
+ * "그때 사진" 카드들 바로 뒤에 놓여 "그 화질로 지금 찍기"로 감정이 이어진다.
+ * 카드 자체에 cta가 있는 연도는 중복되지 않게 이 창을 생략한다.
+ */
+function UljjangCamCTA({ year }: { year: number }) {
+  return (
+    <div className="window pop-in">
+      <div className="window-titlebar">
+        <span aria-hidden>📸</span>
+        <span>그때 그 얼굴로</span>
+      </div>
+      <div className="p-4">
+        <PartnerCta
+          app="uljjangcam"
+          label={`📸 ${year}년 화질로 찍어보기`}
+          note="그 시절 사진 수십 장의 색을 분석해 만든 필터라, 뽀샤시 흉내가 아니라 진짜 그때 색이 나와요."
+          campaign={`year-${year}`}
+          wide
+        />
       </div>
     </div>
   );
@@ -70,11 +96,22 @@ export default function YearClient({ year }: { year: number }) {
   const info = getYearInfo(year);
   const firstCtaAfter = Math.min(5, Math.ceil(memories.length / 2));
 
+  // 얼짱캠 창 위치: 마지막 "그때 사진" 카드 뒤 (photo 카드가 없으면 피드 끝)
+  const hasCardCta = memories.some((item) => item.cta);
+  const lastPhotoIndex = memories.reduce(
+    (found, item, i) => (item.category === "photo" ? i : found),
+    -1,
+  );
+  const uljjangAfter = lastPhotoIndex === -1 ? memories.length - 1 : lastPhotoIndex;
+
   const feed: ReactNode[] = [];
   memories.forEach((item, index) => {
     feed.push(<MemoryCard key={item.id} item={item} index={index} />);
     if (index === firstCtaAfter - 1) {
       feed.push(<FriendCTA key="mid-cta" year={year} />);
+    }
+    if (!hasCardCta && index === uljjangAfter) {
+      feed.push(<UljjangCamCTA key="uljjang-cta" year={year} />);
     }
   });
 

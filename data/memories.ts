@@ -1880,20 +1880,6 @@ export const MEMORIES: MemoryItem[] = [
     prompt: "죠스? 아딸? 어느 파였어요?",
   },
   {
-    id: "2009-food-2",
-    image: "/images/years/2009/food/2009-food-2.jpg",
-    credit: {
-      label: "Hippietrail · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/wiki/File%3ABubble_tea_six_languages.jpg",
-    },
-    year: 2009,
-    category: "food",
-    title: "버블티 1차 유행",
-    subtitle: "타피오카 펄의 충격",
-    memoryStrength: 3,
-    prompt: "펄 씹는 식감, 처음엔 낯설었죠?",
-  },
-  {
     id: "2010-music-1",
     image: "https://i.ytimg.com/vi/TGbwL8kSpEk/hqdefault.jpg",
     credit: {
@@ -2947,20 +2933,6 @@ export const MEMORIES: MemoryItem[] = [
     subtitle: "해리의 그 한마디",
     memoryStrength: 5,
     prompt: "이 말 따라하다 혼난 적 있죠?",
-  },
-  {
-    id: "2009-food-3",
-    image: "/images/years/2009/food/2009-food-3.jpg",
-    credit: {
-      label: "DianaMoon · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/7752522@N02/16969943115",
-    },
-    year: 2009,
-    category: "food",
-    title: "옥수수콘컵",
-    subtitle: "버터 향 가득 길거리 간식",
-    memoryStrength: 3,
-    prompt: "마요네즈 추가는 필수였죠?",
   },
   {
     id: "2010-school-1",

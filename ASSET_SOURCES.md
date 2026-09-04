@@ -239,7 +239,6 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2009-fashion-1 | 소녀시대 Gee 컬러 스키니진을 만든 민희진 (유퀴즈) | YouTube · tvN Joy | https://www.youtube.com/watch?v=Fdtio61B9B4 |
 | 2009-fashion-2 | Tidepools 1976 | catherinetodd2 · Flickr · CC BY-NC 2.0 | https://www.flickr.com/photos/94737677@N00/2650305354 |
 | 2009-food-1 | 2020-03-11 12.23.44 분식집.jpg | MatthieuRicard · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3A2020-03-11_12.23.44_%EB%B6%84%EC%8B%9D%EC%A7%91.jpg |
-| 2009-food-2 | Bubble tea six languages.jpg | Hippietrail · Wikimedia Commons · CC0 | https://commons.wikimedia.org/wiki/File%3ABubble_tea_six_languages.jpg |
 | 2009-game-1 | Razer BlackWidow Ultimate 2014 Elite Mechanic | osman.gucel · Flickr · CC BY 2.0 | https://www.flickr.com/photos/126089327@N04/14714880858 |
 | 2009-game-2 | Putrajaya International Hot Air Balloon Fiest | kevinpoh · Flickr · CC BY 2.0 | https://www.flickr.com/photos/7679455@N03/13693123383 |
 | 2009-internet-1 | 네이버 실시간 검색 16년 만에 폐지 (한국 실검 뉴스) | YouTube · YTN | https://www.youtube.com/watch?v=huxOrwuryLo |
@@ -521,5 +520,4 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2013-fashion-3 | 컬러 야상 셀카 (AI 생성, C2PA/OpenAI 서명 확인) | 자체 생성 (generated-original) | - |
 | 2006-fashion-3 | 폭탄머리 졸업사진 단체컷 (AI 생성 오리지널 인물) | 자체 생성 (generated-original) | - |
 | 2008-food-3 | (교체) | Industrialerror · Wikimedia Commons · CC0 1.0 | https://commons.wikimedia.org/w/index.php?curid=184101024 |
-| 2009-food-3 | (교체) | DianaMoon · Flickr · CC BY 2.0 | https://www.flickr.com/photos/7752522@N02/16969943115 |
 | 2009-school-1 | (교체) | whatleydude · Flickr · CC BY 2.0 | https://www.flickr.com/photos/85318305@N00/4566021267 |
