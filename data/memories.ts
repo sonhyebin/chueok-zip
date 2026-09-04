@@ -518,20 +518,6 @@ export const MEMORIES: MemoryItem[] = [
     prompt: "교복 치마/바지에 어그, 해봤어요?",
   },
   {
-    id: "2004-food-1",
-    image: "/images/years/2004/food/2004-food-1.jpg",
-    credit: {
-      label: "Ninosan · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/wiki/File:Typical_instant_noodles_(1).jpg",
-    },
-    year: 2004,
-    category: "food",
-    title: "뿌셔뿌셔",
-    subtitle: "부숴서 스프 뿌려 흔들기",
-    memoryStrength: 4,
-    prompt: "수업시간에 몰래 부숴 먹다 걸린 적 있죠?",
-  },
-  {
     id: "2004-food-2",
     image: "/images/years/2004/food/2004-food-2.jpg",
     year: 2004,
@@ -1054,20 +1040,6 @@ export const MEMORIES: MemoryItem[] = [
     subtitle: "한 개만 달라는 친구들",
     memoryStrength: 4,
     prompt: "딸기맛 vs 포도맛, 어느 쪽이에요?",
-  },
-  {
-    id: "2006-food-2",
-    image: "/images/years/2006/food/2006-food-2.jpg",
-    credit: {
-      label: "Adam Wood · Wikimedia Commons · CC BY-SA 2.0",
-      url: "https://commons.wikimedia.org/wiki/File%3AComfits.jpg",
-    },
-    year: 2006,
-    category: "food",
-    title: "아이셔",
-    subtitle: "눈 찡그리기 대결",
-    memoryStrength: 3,
-    prompt: "안 시다고 허세 부리다가 표정 무너진 적 있죠?",
   },
 
   // ───────────────────────── 2007 ─────────────────────────
@@ -1803,20 +1775,6 @@ export const MEMORIES: MemoryItem[] = [
     subtitle: "스마트폰 시대의 시작",
     memoryStrength: 5,
     prompt: "주변에 제일 먼저 아이폰 산 사람, 누구였어요?",
-  },
-  {
-    id: "2009-photo-1",
-    image: "/images/years/2009/photo/2009-photo-1.jpg",
-    credit: {
-      label: "Dwayne Madden from Berri, Au · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File%3ALoxton_Pizza_Bar_%284097988659%29.jpg",
-    },
-    year: 2009,
-    category: "photo",
-    title: "폰카 화질의 진화",
-    subtitle: "500만 화소의 감동",
-    memoryStrength: 3,
-    prompt: "폴더폰 카메라로 찍던 마지막 시절이었죠",
   },
   {
     id: "2009-photo-2",
@@ -2702,20 +2660,6 @@ export const MEMORIES: MemoryItem[] = [
     subtitle: "하오체 쓰던 시절",
     memoryStrength: 4,
     prompt: "~하오, ~했소 말투 써본 적 있소?",
-  },
-  {
-    id: "2004-food-3",
-    image: "/images/years/2004/food/2004-food-3.jpg",
-    credit: {
-      label: "Jennifer Bourn · WordPress Photos · CC0",
-      url: "https://wordpress.org/photos/photo/5256200b6b/",
-    },
-    year: 2004,
-    category: "food",
-    title: "쫀디기",
-    subtitle: "문방구 100원의 행복",
-    memoryStrength: 5,
-    prompt: "불에 구워 먹는 게 국룰이었죠?",
   },
   {
     id: "2005-school-1",
@@ -3926,20 +3870,6 @@ export const MEMORIES: MemoryItem[] = [
     prompt: "수학여행에 일회용 카메라 들고 갔죠?",
   },
   {
-    id: "2000-photo-2",
-    image: "/images/years/2000/photo/2000-photo-2.jpg",
-    credit: {
-      label: "Syced · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/wiki/File%3AAugust_2007%2C_Purikura_post-editing_in_Osaka.jpg",
-    },
-    year: 2000,
-    category: "photo",
-    title: "스티커사진 부스",
-    subtitle: "오락실 앞 필수 코스",
-    memoryStrength: 4,
-    prompt: "머리 위 하트 프레임, 국룰이었죠?",
-  },
-  {
     id: "2000-fashion-1",
     image: "https://i.ytimg.com/vi/hGOfP6OUDy0/hqdefault.jpg",
     credit: {
@@ -4316,20 +4246,6 @@ export const MEMORIES: MemoryItem[] = [
     prompt: "쭈쭈바파? 스크류바파?",
   },
   {
-    id: "2001-school-1",
-    image: "/images/years/2001/school/2001-school-1.jpg",
-    credit: {
-      label: "Ewien van Bergeijk-Kwant · Wikimedia Commons · CC BY-SA 4.0",
-      url: "https://commons.wikimedia.org/wiki/File%3AGift_of_Music.jpg",
-    },
-    year: 2001,
-    category: "school",
-    title: "리코더 검사",
-    subtitle: "전날 밤의 벼락 연습",
-    memoryStrength: 4,
-    prompt: "손가락 구멍 못 막아서 삑사리 났죠?",
-  },
-  {
     id: "2001-meme-1",
     image: "https://i.ytimg.com/vi/Q-sNGztvUxY/hqdefault.jpg",
     credit: {
@@ -4587,20 +4503,6 @@ export const MEMORIES: MemoryItem[] = [
     subtitle: "전 국민 유니폼",
     memoryStrength: 5,
     prompt: "그 빨간 티, 아직 옷장에 있어요?",
-  },
-  {
-    id: "2002-fashion-2",
-    image: "/images/years/2002/fashion/2002-fashion-2.jpg",
-    credit: {
-      label: "Yam B Chhetri · WordPress Photos · CC0",
-      url: "https://wordpress.org/photos/photo/976681626a/",
-    },
-    year: 2002,
-    category: "fashion",
-    title: "태극기 패션",
-    subtitle: "얼굴에 태극기 페인팅",
-    memoryStrength: 4,
-    prompt: "볼에 태극기 그리고 응원 갔죠?",
   },
   {
     id: "2002-food-1",
@@ -6169,20 +6071,6 @@ export const MEMORIES: MemoryItem[] = [
     subtitle: "한 집 건너 한 집",
     memoryStrength: 5,
     prompt: "그 많던 가게, 다 어디 갔을까요?",
-  },
-  {
-    id: "2016-food-2",
-    image: "/images/years/2016/food/2016-food-2.jpg",
-    credit: {
-      label: "Foodie Moodie · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/wiki/File:A_delicious,_freshly_baked_paneer_pizza_with_an_incredible_cheese_pull.jpg",
-    },
-    year: 2016,
-    category: "food",
-    title: "치즈 등갈비",
-    subtitle: "치즈 시대의 개막",
-    memoryStrength: 4,
-    prompt: "치즈에 찍어 먹는 게 아니라 치즈가 주인공",
   },
   {
     id: "2016-school-1",
