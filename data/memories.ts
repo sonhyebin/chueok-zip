@@ -37,6 +37,11 @@ export type MemoryItem = {
    * 예: image: "/images/years/2005/2005-music-1.jpg"
    */
   image?: string;
+  /**
+   * 카드 프레임(4:3) 안에서 이미지를 맞추는 방식. 기본 cover.
+   * 세로로 긴 기기 제품샷처럼 잘리면 안 되는 이미지는 "contain".
+   */
+  imageFit?: "cover" | "contain";
 
   /**
    * 실제 자료(licensed-actual) 이미지에만 설정 — 카드 하단에 "자료: …"로 표시되고 원본으로 링크.
@@ -686,9 +691,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-device-1",
     image: "/images/years/2005/device/slide-phone.jpg",
+    imageFit: "contain",
     credit: {
-      label: "Wikimedia Commons · Public Domain",
-      url: "https://commons.wikimedia.org/wiki/File:LG_Chocolate_Phone_Open.jpg",
+      label: "Mahahahaneapneap · Wikimedia Commons · CC BY-SA 3.0",
+      url: "https://commons.wikimedia.org/wiki/File:Samsung_SGH-D500.jpg",
     },
     year: 2005,
     category: "device",
@@ -1192,7 +1198,7 @@ export const MEMORIES: MemoryItem[] = [
     image: "/images/years/2007/device/2007-device-1.jpg",
     credit: {
       label: "Horst · Wikimedia Commons · CC BY 3.0",
-      url: "https://commons.wikimedia.org/wiki/File%3ALG_KE970_1.jpg",
+      url: "https://commons.wikimedia.org/wiki/File:LG_KE970_2.jpg",
     },
     year: 2007,
     category: "device",
@@ -1725,6 +1731,7 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2009-device-1",
     image: "/images/years/2009/device/2009-device-1.jpg",
+    imageFit: "contain",
     credit: {
       label: "JoBot164 · Wikimedia Commons · CC0",
       url: "https://commons.wikimedia.org/wiki/File%3AIPhone_3G_or_3GS_digital_render.png",
@@ -1960,9 +1967,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2010-device-1",
     image: "/images/years/2010/device/2010-device-1.jpg",
+    imageFit: "contain",
     credit: {
-      label: "grahamkennery · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/grahamkennery/5597123878",
+      label: "Paul Kocialkowski · Wikimedia Commons · CC BY-SA 3.0",
+      url: "https://commons.wikimedia.org/wiki/File:GalaxyS_Replicant_homescreen.jpg",
     },
     year: 2010,
     category: "device",
@@ -2206,9 +2214,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2011-device-1",
     image: "/images/years/2011/device/2011-device-1.jpg",
+    imageFit: "contain",
     credit: {
-      label: "Beamish4 · Wikimedia Commons · CC BY 4.0",
-      url: "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S_II_-_Front.jpg",
+      label: "GalaxyOptimus · Wikimedia Commons · CC BY-SA 3.0",
+      url: "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S_II.png",
     },
     year: 2011,
     category: "device",
@@ -2460,6 +2469,7 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2012-device-1",
     image: "/images/years/2012/device/2012-device-1.jpg",
+    imageFit: "contain",
     credit: {
       label: "GadgetsGuy · Wikimedia Commons · CC BY 3.0",
       url: "https://commons.wikimedia.org/wiki/File%3ASamsung_Galaxy_S_III.png",
@@ -2893,6 +2903,7 @@ export const MEMORIES: MemoryItem[] = [
       title: "수학여행 장기자랑",
       artist: "영상",
       ...ytSong("Aq-M_hxf-n0"),
+      startSec: 137,
     },
     year: 2012,
     category: "school",
@@ -4019,8 +4030,8 @@ export const MEMORIES: MemoryItem[] = [
     id: "2001-device-1",
     image: "/images/years/2001/device/2001-device-1.jpg",
     credit: {
-      label: "Remerico at English Wiki · Wikimedia Commons · Public domain",
-      url: "https://commons.wikimedia.org/wiki/File%3ANokia5510.jpg",
+      label: "clik! · Wikimedia Commons · Public domain",
+      url: "https://commons.wikimedia.org/wiki/File:Nokia_5510_mit_blauem_Frontcover.jpg",
     },
     year: 2001,
     category: "device",
@@ -4609,9 +4620,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2003-device-1",
     image: "/images/years/2003/device/2003-device-1.jpg",
+    imageFit: "contain",
     credit: {
-      label: "Carlos Rosas · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:Motorola_V300.jpg",
+      label: "Episteme · Wikimedia Commons · Public domain",
+      url: "https://commons.wikimedia.org/wiki/File:SonyEricsson_T610_AluminumHaze_front.jpg",
     },
     year: 2003,
     category: "device",
@@ -4908,8 +4920,8 @@ export const MEMORIES: MemoryItem[] = [
     id: "2013-device-1",
     image: "/images/years/2013/device/2013-device-1.jpg",
     credit: {
-      label: "Beamish4 · Wikimedia Commons · CC BY 4.0",
-      url: "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S4_(Black_Mist)_-_Front.jpg",
+      label: "Kārlis Dambrāns · Wikimedia Commons · CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S4.jpg",
     },
     year: 2013,
     category: "device",
@@ -4935,10 +4947,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2013-photo-2",
     image: "/images/years/2013/photo/2013-photo-2.jpg",
-    credit: {
-      label: "Kanta · WordPress Photos · CC0 1.0",
-      url: "https://wordpress.org/photos/photo/1736245746/",
-    },
     year: 2013,
     category: "photo",
     title: "우유빛깔 보정",
@@ -5216,8 +5224,8 @@ export const MEMORIES: MemoryItem[] = [
     id: "2014-device-1",
     image: "/images/years/2014/device/2014-device-1.jpg",
     credit: {
-      label: "Beamish4 · Wikimedia Commons · CC BY-SA 4.0",
-      url: "https://commons.wikimedia.org/wiki/File%3AApple_iPhone_6_%28Gold%29_-_Back.jpg",
+      label: "Pangkakit · Wikimedia Commons · CC BY 2.5",
+      url: "https://commons.wikimedia.org/wiki/File:Apple_iPhone.jpg",
     },
     year: 2014,
     category: "device",
@@ -5790,9 +5798,10 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2016-device-1",
     image: "/images/years/2016/device/2016-device-1.jpg",
+    imageFit: "contain",
     credit: {
-      label: "Pang Kakit · Wikimedia Commons · CC BY 2.5",
-      url: "https://commons.wikimedia.org/wiki/File%3ASamsung_Galaxy_Note_5%2C_S6_edge%2B_and_Note_7_20161010b.jpg",
+      label: "Pang Kakit · Wikimedia Commons · CC BY-SA 4.0",
+      url: "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Note_7_face_20161010.jpg",
     },
     year: 2016,
     category: "device",

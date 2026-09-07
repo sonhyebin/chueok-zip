@@ -555,7 +555,7 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2012-fashion-1 | 스냅백 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/7a/8e/91/7a8e91e423d7fbfa6d263d9169123e9f.jpg) · [img](https://i.pinimg.com/736x/74/47/bd/7447bd5bb8cfce0a0e02a29e4605f671.jpg) |
 | 2012-fashion-2 | 야상 점퍼 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/d6/9f/64/d69f6430b2a1bedfe277050e08988056.jpg) · [img](https://i.pinimg.com/736x/70/7c/98/707c98f2dbf230df69a25cf4c66db80e.jpg) |
 | 2013-fashion-1 | 뉴발란스 운동화 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/9c/7f/35/9c7f3580907348115f7cb0693563e84b.jpg) · [img](https://i.pinimg.com/736x/f4/15/9b/f4159ba60aecef40997ee58fa17302cf.jpg) |
-| 2013-fashion-2 | 과잠(야구잠바) | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/85/45/70/85457033ea1a6916bdf60f229c2d25b3.jpg) · [img](https://i.pinimg.com/736x/3a/9b/11/3a9b116f217383d7f9216911b16ad469.jpg) |
+| 2013-fashion-2 | 과잠(야구잠바) — 가상 대학 "HANGANG UNIV." 엠블럼+경영학과 자수 (2026-09-07 재생성, 실제 학교 로고 미사용) | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/14/a3/e3/14a3e34973ea578bb4183023275840c9.jpg) · [img](https://i.pinimg.com/736x/30/f2/7f/30f27f04c37ec7d213ad92818dc3f116.jpg) |
 | 2014-fashion-1 | 맨투맨 열풍 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/55/f1/cf/55f1cfe43e0690cbc007d1667cbc2e8c.jpg) · [img](https://i.pinimg.com/736x/e4/f6/38/e4f63839be806c29f60c8c3f8367ddb0.jpg) |
 | 2014-fashion-2 | 조거팬츠 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/53/84/84/538484e70a04b6f74ba72b4f70eb30a4.jpg) · [img](https://i.pinimg.com/736x/3a/d4/3e/3ad43e5b0449d857403eac03d653b383.jpg) |
 | 2015-fashion-1 | 슬립온 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/0a/ac/79/0aac79168122854d01f9baff97884afe.jpg) · [img](https://i.pinimg.com/736x/b2/d9/d0/b2d9d07754871bb5de8f18d2b402587a.jpg) |
@@ -589,3 +589,28 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2013-school-1 | 수련회 캠프파이어 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/d6/4b/90/d64b90d25637323eb70c7cacd4adae30.jpg) · [img](https://i.pinimg.com/736x/a9/87/86/a98786d984bea9c532df1e53b0965f2e.jpg) |
 | 2015-school-1 | 레크리에이션 수련회 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/8d/64/51/8d6451d8afa9fc001922cda28cfa1f50.jpg) · [img](https://i.pinimg.com/736x/fc/14/5d/fc145d0beb74a2381089994cef2b08e7.jpg) |
 | 2016-school-1 | 스터디카페의 등장 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/2d/14/af/2d14afd9c09ea869ef560f07bda458a5.jpg) · [img](https://i.pinimg.com/736x/92/11/13/921113f2126aedc9d83189d9f8e9f59c.jpg) |
+
+
+## 2026-09-07 메인 폰 캐러셀 이미지 정리 (device 카드 10장)
+
+메인 `그때그폰.exe` 캐러셀은 연도별 첫 device 카드 이미지를 그대로 쓰므로, 배경이 지저분하거나 흐린 사진을 Wikimedia Commons의 깔끔한 정면/제품샷으로 교체. 세로 사진은 800×600 캔버스에 여백을 두고 contain, 가로 사진은 4:3 크롭.
+
+| 카드 | 파일 | 출처 | 링크 |
+|---|---|---|---|
+| 2001-device-1 | Nokia 5510 mit blauem Frontcover.jpg (선명한 풀샷 교체) | clik! · Wikimedia Commons · Public domain | https://commons.wikimedia.org/wiki/File:Nokia_5510_mit_blauem_Frontcover.jpg |
+| 2003-device-1 | SonyEricsson T610 AluminumHaze front.jpg (정면 제품샷 교체) | Episteme · Wikimedia Commons · Public domain | https://commons.wikimedia.org/wiki/File:SonyEricsson_T610_AluminumHaze_front.jpg |
+| 2005-device-1 | Samsung SGH-D500.jpg (2005 슬라이드폰 실기기 교체) | Mahahahaneapneap · Wikimedia Commons · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Samsung_SGH-D500.jpg |
+| 2007-device-1 | LG KE970 2.jpg (밝은 배경 교체) | Horst · Wikimedia Commons · CC BY 3.0 | https://commons.wikimedia.org/wiki/File:LG_KE970_2.jpg |
+| 2008-device-1 | Anycall Yuna's Haptic (동일 원본, 기기 중심 크롭) | Ha98574 · Wikimedia Commons · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Anycall_Yuna%27s_Haptic.jpg |
+| 2010-device-1 | GalaxyS Replicant homescreen.jpg (정면 교체) | Paul Kocialkowski · Wikimedia Commons · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:GalaxyS_Replicant_homescreen.jpg |
+| 2011-device-1 | Samsung Galaxy S II.png (흰 배경 정면 교체) | GalaxyOptimus · Wikimedia Commons · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S_II.png |
+| 2013-device-1 | Samsung Galaxy S4.jpg (깔끔한 배경 교체) | Kārlis Dambrāns · Wikimedia Commons · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S4.jpg |
+| 2014-device-1 | Apple iPhone.jpg (아이폰6 3색 정면 교체) | Pangkakit · Wikimedia Commons · CC BY 2.5 | https://commons.wikimedia.org/wiki/File:Apple_iPhone.jpg |
+| 2016-device-1 | Samsung Galaxy Note 7 face 20161010.jpg (단일 기기 정면 교체) | Pang Kakit · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Note_7_face_20161010.jpg |
+
+## 개별 재생성 (2026-09-07)
+
+| 카드 | 소재 | 방식 | 참고 (reference-only) |
+|---|---|---|---|
+| 2013-food-3 | 콜팝 — 콜라컵 위 치킨컵, 빨대 관통 구조로 재생성 | 자체 생성 (generated-original) | [img](https://i.pinimg.com/736x/23/95/88/2395885755bfda503eed2381ae62b3a9.jpg) · [img](https://i.pinimg.com/736x/4e/6f/39/4e6f39d642789d55ed5d280c443890bc.jpg) |
+| 2013-photo-2 | 우유빛깔 보정 셀카 (기존 벚꽃 사진 교체) | 자체 생성 (generated-original, 가상 인물) | 자체 보유 얼짱캠 레퍼런스 `ref_img/14.png`, `ref_img/6.png` |
