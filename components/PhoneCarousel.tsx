@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, type CSSProperties } from "react";
 import Link from "next/link";
 import Window from "@/components/Window";
 import PartnerCta from "@/components/PartnerCta";
@@ -98,14 +98,13 @@ export default function PhoneCarousel({ born }: { born: number }) {
                 className="snap-center shrink-0 w-[88%] flex flex-col gap-2"
                 aria-label={`${s.year}년 ${s.title}`}
               >
-                {/* contain + 흰 배경: 사진 비율과 무관하게 기기 전체가 잘리지 않고 보인다 */}
-                <div className="photo-frame" style={{ background: "#fff" }}>
+                {/* 프레임이 이미지 폭만큼만 잡힌다 (세로 제품샷은 좁게, 가로 사진은 넓게) */}
+                <div className="photo-frame fit" style={{ background: "#fff" }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={s.image}
                     alt={s.title}
                     loading={i < 2 ? "eager" : "lazy"}
-                    className="absolute inset-0 w-full h-full object-contain"
                   />
                   <span className="datestamp">{s.year}</span>
                 </div>
@@ -123,26 +122,26 @@ export default function PhoneCarousel({ born }: { born: number }) {
           })}
 
           {/* 마지막 슬라이드: 얼짱캠 CTA — 폰 추억이 최고조일 때 "그때 화질로 찍기" 제안 */}
+          {/* 폰 슬라이드와 높이를 맞추기 위해 사진 프레임 높이를 줄이고 부가 문구는 뺐다 */}
           <div className="snap-center shrink-0 w-[88%] flex flex-col gap-2">
-            <div className="photo-frame" style={{ background: "#fff" }}>
+            <div
+              className="photo-frame fit"
+              style={{ background: "#fff", "--fit-h": "150px" } as CSSProperties}
+            >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/years/2005/photo/uljjang-angle.jpg"
                 alt="얼짱캠 2003 미리보기"
                 loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover"
               />
               <span className="datestamp">지금</span>
             </div>
-            <div className="text-center">
-              <p className="font-pixel text-[16px] leading-tight">
-                그때 그 폰 화질로, 지금 네 얼굴 찍어볼래?
-              </p>
-            </div>
+            <p className="font-pixel text-[15px] leading-tight text-center">
+              그때 그 폰 화질로, 지금 네 얼굴 찍어볼래?
+            </p>
             <PartnerCta
               app="uljjangcam"
               label="📸 얼짱캠 2003 설치하기"
-              note="원조 뽀샤시 · 흑백캠 · 얼짱각도 45° — 방금 본 그 폰들의 화질 그대로."
               campaign="phone-carousel"
               wide
             />

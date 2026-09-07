@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import type { YearSong } from "@/data/memories";
 import { announcePlay, onPlay } from "@/lib/playerBus";
+import { formatSec } from "@/lib/age";
 
 /**
  * 미니홈피 BGM / 2000년대 MP3 플레이어 감성의 작은 음악 영역.
@@ -62,7 +63,11 @@ export default function BgmPlayer({ song }: { song: YearSong }) {
             className="font-pixel text-[11px] text-[#7a8ba0] mt-1 overflow-hidden whitespace-nowrap"
             aria-hidden
           >
-            {playing ? "♪ 재생 중 ━━━●━━━━━━" : "━○━━━━━━━━━━ 0:00"}
+            {playing
+              ? "♪ 재생 중 ━━━●━━━━━━"
+              : song.startSec
+                ? `━━━━○━━━━━━━ ${formatSec(song.startSec)}부터`
+                : "━○━━━━━━━━━━ 0:00"}
           </p>
         </div>
 

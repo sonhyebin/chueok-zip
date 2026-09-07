@@ -6,7 +6,7 @@ import CommentBox from "@/components/CommentBox";
 import ShareButton from "@/components/ShareButton";
 import PartnerCta from "@/components/PartnerCta";
 import { announcePlay, onPlay } from "@/lib/playerBus";
-import { loadBornYear } from "@/lib/age";
+import { formatSec, loadBornYear } from "@/lib/age";
 
 const PHOTO_BG: Record<string, string> = {
   music: "linear-gradient(135deg, #ffd6e8, #c9b6ff)",
@@ -97,7 +97,7 @@ export default function MemoryCard({
                   src={item.image}
                   alt={item.title}
                   loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className={`absolute inset-0 w-full h-full ${item.imageFit === "contain" ? "object-contain" : "object-cover"}`}
                   onError={(e) => {
                     e.currentTarget.style.display = "none";
                   }}
@@ -125,6 +125,12 @@ export default function MemoryCard({
                   </span>
                 </button>
               )}
+              {/* 하이라이트 시작 지점 — 어디서부터 트는지 미리 보여준다 */}
+              {embedSrc && item.song?.startSec ? (
+                <span className="highlight-stamp">
+                  ▶ {formatSec(item.song.startSec)}부터
+                </span>
+              ) : null}
               <span className="datestamp">{stampFor(item)}</span>
             </>
           )}

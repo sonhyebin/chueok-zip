@@ -68,3 +68,10 @@ export function loadMyName(): string {
     return "";
   }
 }
+
+/** 초 → "m:ss" (영상 하이라이트 시작 지점 표시용) */
+export function formatSec(sec: number): string {
+  const m = Math.floor(sec / 60);
+  const s = Math.floor(sec % 60);
+  return `${m}:${String(s).padStart(2, "0")}`;
+}
