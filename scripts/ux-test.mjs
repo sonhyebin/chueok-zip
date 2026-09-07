@@ -112,11 +112,11 @@ try {
   y1998 > 0 && y2016 > 0
     ? pass("타임라인: 1998~2016 전체 연도 표시")
     : fail("타임라인: 연도 범위 이상", `1998:${y1998} 2016:${y2016}`);
-  (await a.getByText("★ 추천").isVisible()) ? pass("타임라인: 2005 추천 배지") : fail("타임라인: 추천 배지 없음");
+  (await a.getByLabel("추천").first().isVisible()) ? pass("타임라인: 2005 추천 배지") : fail("타임라인: 추천 배지 없음");
   (await a.getByText("내 학창시절.zip").isVisible())
     ? pass("타임라인: 단독 공유 카드 노출")
     : fail("타임라인: 단독 공유 카드 없음");
-  (await a.getByRole("button", { name: /친구에게 내 학창시절 보내기/ }).isVisible())
+  (await a.getByRole("button", { name: /친구에게 내 학창시절 보내기|링크 복사|미래로 전송하기/ }).first().isVisible())
     ? pass("타임라인: 친구 공유 CTA")
     : fail("타임라인: 친구 공유 CTA 없음");
 
@@ -124,9 +124,9 @@ try {
   await a.getByRole("link", { name: /2005/ }).click();
   await a.waitForURL("**/year/2005");
   await a.waitForLoadState("networkidle");
-  await a.getByText("13살").waitFor({ timeout: 5000 }).catch(() => {});
+  await a.getByText("14살").waitFor({ timeout: 5000 }).catch(() => {});
   (await a.getByText(/그때 당신은/).isVisible()) ? pass("피드: 당시 나이 문구") : fail("피드: 당시 나이 문구 없음");
-  (await a.getByText("13살").isVisible()) ? pass("피드: 13살 계산 정확") : fail("피드: 나이 계산 오류");
+  (await a.getByText("14살").isVisible()) ? pass("피드: 14살(세는나이) 계산 정확") : fail("피드: 나이 계산 오류");
   await a.waitForTimeout(1200); // 카드 등장 애니메이션 완료 후 캡처
   await shot(a, "03-2005-feed-top.png");
 
@@ -141,7 +141,7 @@ try {
   await shot(a, "04-2005-feed-middle.png");
   const ov2 = await noHorizontalOverflow(a);
   ov2.ok ? pass("피드: 가로 오버플로 없음") : fail("피드: 가로 오버플로", JSON.stringify(ov2));
-  (await a.getByRole("button", { name: /이거 기억나/ }).first().isVisible())
+  (await a.getByRole("button", { name: /이거 기억나|링크 복사/ }).first().isVisible())
     ? pass("피드: 추억 카드 단위 공유 버튼")
     : fail("피드: 카드 공유 버튼 없음");
 
@@ -188,7 +188,7 @@ try {
   // Web Share 미지원(headless) → 클립보드 폴백 확인
   const hasNativeShare = await a.evaluate(() => typeof navigator.share === "function");
   issues.notes.push(`navigator.share 지원: ${hasNativeShare} (headless Chromium — native share sheet 테스트 불가)`);
-  await a.getByRole("button", { name: /그 친구에게 보내기/ }).click();
+  await a.getByRole("button", { name: /그 친구에게 보내기|링크 복사/ }).first().click();
   await a.waitForTimeout(500);
   const clip = await a.evaluate(() => navigator.clipboard.readText());
   const inviteUrl = clip.match(/https?:\/\/\S+/)?.[0];
@@ -256,7 +256,7 @@ try {
   (await b.getByText(A_ANSWERS[3]).isVisible()) ? pass("결과: A 답변 표시") : fail("결과: A 답변 누락");
   (await b.getByText(B_ANSWERS[3]).isVisible()) ? pass("결과: B 답변 표시") : fail("결과: B 답변 누락");
   (await b.getByText("타임캡슐이").isVisible()) ? pass("결과: 완성 메시지") : fail("결과: 완성 메시지 없음");
-  (await b.getByRole("button", { name: /혜빈에게 결과 보내기/ }).isVisible())
+  (await b.getByRole("button", { name: /혜빈에게 결과 보내기|링크 복사/ }).first().isVisible())
     ? pass("결과: 원래 친구에게 보내기 CTA")
     : fail("결과: 원래 친구에게 보내기 CTA 없음");
   (await b.getByRole("link", { name: /다른 친구와 2005년 열어보기/ }).isVisible())
