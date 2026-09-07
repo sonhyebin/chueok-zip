@@ -1,11 +1,22 @@
 import { NextRequest } from "next/server";
-import { renderOgImage } from "@/lib/og";
+import { renderOgImage, renderOgPhoto, loadImageDataUrl } from "@/lib/og";
+import { MEMORIES } from "@/data/memories";
+import { koreanAgeInYear, isValidBirthYear } from "@/lib/age";
 
 export const runtime = "nodejs";
 
 function clean(value: string | null, fallback: string, max = 40): string {
   const text = (value ?? "").trim().slice(0, max);
   return text || fallback;
+}
+
+/** MemoryCard.stampFor 와 같은 규칙 — 카드에 찍힌 날짜와 OG 날짜가 일치하도록 */
+function stampFor(id: string, year: number): string {
+  let h = 0;
+  for (const c of id) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+  const month = (h % 12) + 1;
+  const day = (Math.floor(h / 12) % 28) + 1;
+  return `${year}.${String(month).padStart(2, "0")}.${String(day).padStart(2, "0")}`;
 }
 
 function fitTitle(value: string, preferred: number): number {
@@ -58,9 +69,29 @@ export async function GET(req: NextRequest) {
   }
 
   const year = clean(query.get("year"), "그 시절", 4);
-  const memory = clean(query.get("memory"), "그때 기억나?", 34);
+  const memoryParam = query.get("memory") ?? "";
+  const born = Number(query.get("born"));
+  const age = isValidBirthYear(born) && /^\d{4}$/.test(year) ? koreanAgeInYear(born, Number(year)) : null;
+  const badge = age ? `${year}년, 우리 ${age}살 때` : `${year}년의 추억`;
+
+  // memory 가 카드 id면 카드 사진으로 렌더 (예: 2006-fashion-1)
+  const card = MEMORIES.find((m) => m.id === memoryParam);
+  if (card?.image) {
+    const photo = await loadImageDataUrl(card.image);
+    if (photo) {
+      return renderOgPhoto({
+        photo,
+        badge,
+        title: card.title,
+        subtitle: card.subtitle ? `${card.subtitle} · 야 이거 기억나?` : "야 이거 기억나?",
+        stamp: stampFor(card.id, card.year),
+      });
+    }
+  }
+
+  const memory = clean(card?.title ?? memoryParam, "그때 기억나?", 34);
   return renderOgImage({
-    windowTitle: `${year}년의 추억`,
+    windowTitle: badge,
     title: year,
     subtitle: memory,
     footer: "야 이거 기억나?",

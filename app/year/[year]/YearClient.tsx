@@ -8,7 +8,7 @@ import OnlineBadge from "@/components/OnlineBadge";
 import VisitTracker from "@/components/VisitTracker";
 import PartnerCta from "@/components/PartnerCta";
 import { getMemoriesForYear, getYearInfo, AVAILABLE_YEARS } from "@/data/memories";
-import { koreanAgeInYear, loadBornYear } from "@/lib/age";
+import { koreanAgeInYear, loadBornYear, saveBornYear, isValidBirthYear } from "@/lib/age";
 import { trackEvent } from "@/lib/analytics";
 
 function FriendCTA({ year }: { year: number }) {
@@ -68,8 +68,13 @@ export default function YearClient({ year }: { year: number }) {
   const [born, setBorn] = useState<number | null>(null);
 
   useEffect(() => {
-    setBorn(loadBornYear());
-    const memoryId = new URLSearchParams(window.location.search).get("memory");
+    const params = new URLSearchParams(window.location.search);
+    const saved = loadBornYear();
+    const linked = Number(params.get("born"));
+    // 친구가 보낸 링크로 처음 들어온 사람: 같은 시절 친구라는 전제로 보낸 사람의 출생연도를 임시 채택
+    if (!saved && isValidBirthYear(linked)) saveBornYear(linked);
+    setBorn(saved ?? (isValidBirthYear(linked) ? linked : null));
+    const memoryId = params.get("memory");
     if (!memoryId) return;
     const timer = window.setTimeout(() => {
       document

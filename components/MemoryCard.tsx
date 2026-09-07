@@ -6,6 +6,7 @@ import CommentBox from "@/components/CommentBox";
 import ShareButton from "@/components/ShareButton";
 import PartnerCta from "@/components/PartnerCta";
 import { announcePlay, onPlay } from "@/lib/playerBus";
+import { loadBornYear } from "@/lib/age";
 
 const PHOTO_BG: Record<string, string> = {
   music: "linear-gradient(135deg, #ffd6e8, #c9b6ff)",
@@ -41,6 +42,11 @@ export default function MemoryCard({
 }) {
   const meta = CATEGORY_META[item.category];
   const [playing, setPlaying] = useState(false);
+  // 공유 링크에 내 출생연도를 실어 미리보기에 "우리 N살 때"가 뜨게 한다 (hydration 불일치 방지로 effect에서)
+  const [born, setBorn] = useState<number | null>(null);
+  useEffect(() => {
+    setBorn(loadBornYear());
+  }, []);
 
   // 다른 플레이어가 재생을 시작하면 이 카드는 정지 (오디오 겹침 방지)
   useEffect(() => {
@@ -213,7 +219,7 @@ export default function MemoryCard({
           label="🔗 이거 기억나?"
           title={`${item.year} ${item.title}`}
           text={`야 이거 기억나?\n${item.year}년 ${item.title} 보자마자 너 생각남ㅋㅋ`}
-          url={`/year/${item.year}?memory=${item.id}#memory-${item.id}`}
+          url={`/year/${item.year}?memory=${item.id}${born ? `&born=${born}` : ""}#memory-${item.id}`}
           imageUrl={item.image}
           variant="secondary"
           compact
