@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { list } from "@vercel/blob";
+import { CHANNEL_LABELS } from "@/lib/channels";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -101,6 +102,10 @@ export async function GET(req: NextRequest) {
       range: { days, from: dates[dates.length - 1], to: dates[0] },
       total,
       byChannel,
+      // 채널 키 → 한글 표시명 (대시보드 표기용, 추가 필드 — 기존 계약은 그대로)
+      channelLabels: Object.fromEntries(
+        Object.keys(byChannel).map((k) => [k, CHANNEL_LABELS[k] ?? k]),
+      ),
       byDay,
       topCards,
     },
