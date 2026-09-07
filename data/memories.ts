@@ -492,10 +492,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2004-fashion-1",
     image: "/images/years/2004/fashion/2004-fashion-1.jpg",
-    credit: {
-      label: "Gareth1953 All Right Now · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/40837632@N05/6602334993",
-    },
     year: 2004,
     category: "fashion",
     title: "트레이닝복 등교",
@@ -506,10 +502,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2004-fashion-2",
     image: "/images/years/2004/fashion/2004-fashion-2.jpg",
-    credit: {
-      label: "Annie Mole · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/21309047@N00/120408248",
-    },
     year: 2004,
     category: "fashion",
     title: "어그부츠",
@@ -992,10 +984,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2006-fashion-1",
     image: "/images/years/2006/fashion/2006-fashion-1.jpg",
-    credit: {
-      label: "Jamie · Wikimedia Commons · CC BY-SA 2.0",
-      url: "https://commons.wikimedia.org/wiki/File%3AFox_Print_Ruffle_Sleeve_Top%2C_High_Waisted_Skinny_Jeans%2C_and_Brown_Clogs_%2817880335784%29.jpg",
-    },
     year: 2006,
     category: "fashion",
     title: "스키니진",
@@ -1006,10 +994,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2006-fashion-2",
     image: "/images/years/2006/fashion/2006-fashion-2.jpg",
-    credit: {
-      label: "FashionbyHe · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/49795400@N08/6432658785",
-    },
     year: 2006,
     category: "fashion",
     title: "롱티 + 레깅스",
@@ -1252,10 +1236,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2007-fashion-1",
     image: "/images/years/2007/fashion/2007-fashion-1.jpg",
-    credit: {
-      label: "Lesekreis · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/wiki/File%3AConverse_red.JPG",
-    },
     year: 2007,
     category: "fashion",
     title: "하이탑 운동화",
@@ -1266,10 +1246,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2007-fashion-2",
     image: "/images/years/2007/fashion/2007-fashion-2.jpg",
-    credit: {
-      label: "ben pollard · Flickr · CC BY-SA 2.0",
-      url: "https://www.flickr.com/photos/13023474@N06/2375909368",
-    },
     year: 2007,
     category: "fashion",
     title: "커플 후드티",
@@ -1535,10 +1511,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2008-fashion-1",
     image: "/images/years/2008/fashion/2008-fashion-1.jpg",
-    credit: {
-      label: "petitepanoply · Flickr · CC BY-SA 2.0",
-      url: "https://www.flickr.com/photos/63405864@N04/15259659244",
-    },
     year: 2008,
     category: "fashion",
     title: "체크셔츠",
@@ -1549,10 +1521,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2008-fashion-2",
     image: "/images/years/2008/fashion/2008-fashion-2.jpg",
-    credit: {
-      label: "Piercetheorganist at English · Wikimedia Commons · Public domain",
-      url: "https://commons.wikimedia.org/wiki/File%3AHorn-rimmed_Rayban_glasses.JPG",
-    },
     year: 2008,
     category: "fashion",
     title: "뿔테안경",
@@ -1812,10 +1780,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2009-fashion-2",
     image: "/images/years/2009/fashion/2009-fashion-2.jpg",
-    credit: {
-      label: "catherinetodd2 · Flickr · CC BY-NC 2.0",
-      url: "https://www.flickr.com/photos/94737677@N00/2650305354",
-    },
     year: 2009,
     category: "fashion",
     title: "체크남방 전성기 지속",
@@ -2046,10 +2010,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2010-fashion-1",
     image: "/images/years/2010/fashion/2010-fashion-1.jpg",
-    credit: {
-      label: "avlxyz · Flickr · CC BY-NC 2.0",
-      url: "https://www.flickr.com/photos/10559879@N00/48413657847",
-    },
     year: 2010,
     category: "fashion",
     title: "노스페이스 패딩 시작",
@@ -2060,10 +2020,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2010-fashion-2",
     image: "/images/years/2010/fashion/2010-fashion-2.jpg",
-    credit: {
-      label: "Menswear Market · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/85546319@N04/9164966607",
-    },
     year: 2010,
     category: "fashion",
     title: "스키니진 국민바지",
@@ -2308,10 +2264,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2011-fashion-1",
     image: "/images/years/2011/fashion/2011-fashion-1.jpg",
-    credit: {
-      label: "rawpixel · rawpixel · CC0",
-      url: "https://www.rawpixel.com/image/5918315/down-jacket-free-public-domain-cc0-photo",
-    },
     year: 2011,
     category: "fashion",
     title: "노스페이스 패딩 절정",
@@ -2322,10 +2274,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2011-fashion-2",
     image: "/images/years/2011/fashion/2011-fashion-2.jpg",
-    credit: {
-      label: "Nicole Beauchamp · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/48932385@N07/17131566946",
-    },
     year: 2011,
     category: "fashion",
     title: "플랫슈즈+스키니",
@@ -2575,10 +2523,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2012-fashion-1",
     image: "/images/years/2012/fashion/2012-fashion-1.jpg",
-    credit: {
-      label: "Menswear Market · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/85546319@N04/8442851109",
-    },
     year: 2012,
     category: "fashion",
     title: "스냅백",
@@ -2589,10 +2533,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2012-fashion-2",
     image: "/images/years/2012/fashion/2012-fashion-2.jpg",
-    credit: {
-      label: "apairandaspare · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/66755335@N05/15289354718",
-    },
     year: 2012,
     category: "fashion",
     title: "야상 점퍼",
@@ -3245,10 +3185,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "1998-fashion-1",
     image: "/images/years/1998/fashion/1998-fashion-1.jpg",
-    credit: {
-      label: "andronicusmax · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/24258698@N04/3946294052",
-    },
     year: 1998,
     category: "fashion",
     title: "힙합 통바지",
@@ -3259,10 +3195,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "1998-fashion-2",
     image: "/images/years/1998/fashion/1998-fashion-2.jpg",
-    credit: {
-      label: "Nami-ja · Wikimedia Commons · Public Domain",
-      url: "https://commons.wikimedia.org/wiki/File:Chouchou.jpg",
-    },
     year: 1998,
     category: "fashion",
     title: "곱창 머리끈",
@@ -3557,10 +3489,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "1999-fashion-1",
     image: "/images/years/1999/fashion/1999-fashion-1.jpg",
-    credit: {
-      label: "Lusthunter78 · Wikimedia Commons · CC BY-SA 4.0",
-      url: "https://commons.wikimedia.org/wiki/File%3ADSC09800_compress63.jpg",
-    },
     year: 1999,
     category: "fashion",
     title: "힙색",
@@ -3571,10 +3499,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "1999-fashion-2",
     image: "/images/years/1999/fashion/1999-fashion-2.jpg",
-    credit: {
-      label: "taberandrew · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/88442983@N00/1542395608",
-    },
     year: 1999,
     category: "fashion",
     title: "브릿지 염색",
@@ -3891,10 +3815,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2000-fashion-2",
     image: "/images/years/2000/fashion/2000-fashion-2.jpg",
-    credit: {
-      label: "juhanson · Flickr · CC BY-NC 2.0",
-      url: "https://www.flickr.com/photos/37188766@N00/6031495421",
-    },
     year: 2000,
     category: "fashion",
     title: "은목걸이·은반지",
@@ -4192,10 +4112,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2001-fashion-1",
     image: "/images/years/2001/fashion/2001-fashion-1.jpg",
-    credit: {
-      label: "Menswear Market · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File:Polo_Bucket_Hat.jpg",
-    },
     year: 2001,
     category: "fashion",
     title: "버킷햇",
@@ -4206,10 +4122,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2001-fashion-2",
     image: "/images/years/2001/fashion/2001-fashion-2.jpg",
-    credit: {
-      label: "Ocdp · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/w/index.php?curid=25549559",
-    },
     year: 2001,
     category: "fashion",
     title: "카고 힙합바지",
@@ -4493,10 +4405,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2002-fashion-1",
     image: "/images/years/2002/fashion/2002-fashion-1.jpg",
-    credit: {
-      label: "ijs · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/wiki/File:Seoul_Plaza_2002_FIFA_World_Cup.jpg",
-    },
     year: 2002,
     category: "fashion",
     title: "Be The Reds 티셔츠",
@@ -4804,10 +4712,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2003-fashion-1",
     image: "/images/years/2003/fashion/2003-fashion-1.jpg",
-    credit: {
-      label: "freestocks.org · Flickr · CC CC0 1.0",
-      url: "https://www.flickr.com/photos/135396164@N05/30660098422",
-    },
     year: 2003,
     category: "fashion",
     title: "이효리 스타일",
@@ -4818,10 +4722,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2003-fashion-2",
     image: "/images/years/2003/fashion/2003-fashion-2.jpg",
-    credit: {
-      label: "chokola · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/22671579@N00/1229395813",
-    },
     year: 2003,
     category: "fashion",
     title: "트레이닝복 셋업",
@@ -5109,10 +5009,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2013-fashion-1",
     image: "/images/years/2013/fashion/2013-fashion-1.jpg",
-    credit: {
-      label: "LeDroider · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/wiki/File%3ANew_Balance_1906R.jpg",
-    },
     year: 2013,
     category: "fashion",
     title: "뉴발란스 운동화",
@@ -5123,10 +5019,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2013-fashion-2",
     image: "/images/years/2013/fashion/2013-fashion-2.jpg",
-    credit: {
-      label: "Menswear Market · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/85546319@N04/14981568370",
-    },
     year: 2013,
     category: "fashion",
     title: "과잠(야구잠바)",
@@ -5419,10 +5311,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2014-fashion-1",
     image: "/images/years/2014/fashion/2014-fashion-1.jpg",
-    credit: {
-      label: "daveynin · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/44124370018@N01/2834258923",
-    },
     year: 2014,
     category: "fashion",
     title: "맨투맨 열풍",
@@ -5433,10 +5321,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2014-fashion-2",
     image: "/images/years/2014/fashion/2014-fashion-2.jpg",
-    credit: {
-      label: "Verisurma · Wikimedia Commons · CC BY 4.0",
-      url: "https://commons.wikimedia.org/w/index.php?curid=187578257",
-    },
     year: 2014,
     category: "fashion",
     title: "조거팬츠",
@@ -5719,10 +5603,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2015-fashion-1",
     image: "/images/years/2015/fashion/2015-fashion-1.jpg",
-    credit: {
-      label: "GrafhP - wrbl · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/113695508@N03/28708968700",
-    },
     year: 2015,
     category: "fashion",
     title: "슬립온",
@@ -5733,10 +5613,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2015-fashion-2",
     image: "/images/years/2015/fashion/2015-fashion-2.jpg",
-    credit: {
-      label: "wfyurasko · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/55676959@N00/2763343672",
-    },
     year: 2015,
     category: "fashion",
     title: "MLB 모자",
@@ -6033,10 +5909,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2016-fashion-1",
     image: "/images/years/2016/fashion/2016-fashion-1.jpg",
-    credit: {
-      label: "The original uploader wa · Wikimedia Commons · CC BY 2.5",
-      url: "https://commons.wikimedia.org/wiki/File%3AMA-1_Jacket_in_petrol.jpg",
-    },
     year: 2016,
     category: "fashion",
     title: "MA-1 항공점퍼",
@@ -6047,10 +5919,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2016-fashion-2",
     image: "/images/years/2016/fashion/2016-fashion-2.jpg",
-    credit: {
-      label: "Tradlands · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/87743767@N07/30602439082",
-    },
     year: 2016,
     category: "fashion",
     title: "검정 스키니 지속",
@@ -6151,10 +6019,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2000-fashion-3",
     image: "/images/years/2000/fashion/2000-fashion-3.jpg",
-    credit: {
-      label: "ambermb · Wikimedia Commons · CC0",
-      url: "https://commons.wikimedia.org/wiki/File:Boy-in-brown-hoodie-carrying-red-backpack-while-walking-on-207697.jpg",
-    },
     year: 2000,
     category: "fashion",
     title: "이스트팩 책가방",

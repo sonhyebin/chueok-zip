@@ -521,3 +521,44 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2006-fashion-3 | 폭탄머리 졸업사진 단체컷 (AI 생성 오리지널 인물) | 자체 생성 (generated-original) | - |
 | 2008-food-3 | (교체) | Industrialerror · Wikimedia Commons · CC0 1.0 | https://commons.wikimedia.org/w/index.php?curid=184101024 |
 | 2009-school-1 | (교체) | whatleydude · Flickr · CC BY 2.0 | https://www.flickr.com/photos/85318305@N00/4566021267 |
+
+## 패션 카드 오리지널 생성 일괄 교체 (2026-09-04) — Pinterest 참고 · GPT 이미지 생성
+
+서구권 Flickr/Commons 사진이 쓰이던 패션 카드를 **한국 그 시절 감성의 오리지널 생성 이미지**로 교체. Pinterest 검색 결과는 **reference-only**(의상 실루엣·색감·사진 질감 참고)로만 사용했고 서비스에는 핀 이미지를 넣지 않았다. 생성은 Codex CLI `image_gen`(GPT 이미지 모델)으로, 프롬프트에 '실존 인물 얼굴·포즈·구도·잡지 레이아웃 복제 금지, 완전 가상 인물, 텍스트·로고 금지'를 명시했다. 생성 원본 PNG는 `assets-src/<연도>/<id>-generated-original.png`, 웹 적용본은 `public/images/years/<연도>/fashion/<id>.jpg`(800×600).
+
+| 카드 | 소재 | 방식 | 참고한 핀 (reference-only) |
+|---|---|---|---|
+| 1998-fashion-1 | 힙합 통바지 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/60/01/f5/6001f5459377a44c4d62b4d1c0a579c3.jpg) · [img](https://i.pinimg.com/736x/92/3b/ae/923baeda367dd63a6890d230f3629090.jpg) · [img](https://i.pinimg.com/736x/93/53/74/935374bc0c39e43d3cb5461cfaf10bb1.jpg) |
+| 1998-fashion-2 | 곱창 머리끈 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/57/26/f8/5726f83c27906e7619b7a8f00da206b0.jpg) · [img](https://i.pinimg.com/736x/22/81/29/228129189c5249fba68f567a8174cdf2.jpg) |
+| 1999-fashion-1 | 힙색 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/6a/46/fa/6a46fa82cedf33efae34a9b54bc9bfc0.jpg) · [img](https://i.pinimg.com/736x/6a/61/4f/6a614f8777e014e9c38b29347d5ce50a.jpg) |
+| 1999-fashion-2 | 브릿지 염색 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/a2/62/77/a26277aeb900a3b08271cb57dae8708e.jpg) · [img](https://i.pinimg.com/736x/8f/1d/5b/8f1d5b54e85059a27364a9183e248338.jpg) |
+| 2000-fashion-2 | 은목걸이·은반지 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/78/59/41/785941df9bf07eacb915b9315b6b10e9.jpg) · [img](https://i.pinimg.com/736x/61/a3/8d/61a38dd2da6e7f629d22ce1a7391390c.jpg) |
+| 2000-fashion-3 | 이스트팩 책가방 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/8f/4c/ad/8f4cadb8aa11fdf6e1d6216a54aa391d.jpg) · [img](https://i.pinimg.com/736x/d1/fd/a5/d1fda586335400b6791504597e155bb2.jpg) |
+| 2001-fashion-1 | 버킷햇 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/18/10/63/1810638570dbb32eae2dc6176e75f354.jpg) · [img](https://i.pinimg.com/736x/2d/65/fa/2d65fadbd673940d4bba14ebaea94546.jpg) |
+| 2001-fashion-2 | 카고 힙합바지 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/07/d5/10/07d5103464de36add9385d71ca7de308.jpg) · [img](https://i.pinimg.com/736x/52/35/f8/5235f8b640852b49111bb72de0f61534.jpg) |
+| 2002-fashion-1 | Be The Reds 티셔츠 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/31/96/67/319667eb58829ea305162bb9b608b491.jpg) · [img](https://i.pinimg.com/736x/7d/72/0b/7d720b59901944c53b9a61a8cf7d9d23.jpg) |
+| 2003-fashion-1 | 이효리 스타일 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/a2/62/77/a26277aeb900a3b08271cb57dae8708e.jpg) · [img](https://i.pinimg.com/736x/fc/7f/fb/fc7ffbdbbda58570c2e283c6901998b8.jpg) |
+| 2003-fashion-2 | 트레이닝복 셋업 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/93/53/74/935374bc0c39e43d3cb5461cfaf10bb1.jpg) · [img](https://i.pinimg.com/736x/a2/62/77/a26277aeb900a3b08271cb57dae8708e.jpg) |
+| 2004-fashion-1 | 트레이닝복 등교 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/93/53/74/935374bc0c39e43d3cb5461cfaf10bb1.jpg) · [img](https://i.pinimg.com/736x/d0/4a/dd/d04addf4c762203e563587c3cc5f6f71.jpg) |
+| 2004-fashion-2 | 어그부츠 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/b0/ff/4b/b0ff4b5d9484a89984ed321cf5f547ec.jpg) · [img](https://i.pinimg.com/736x/c8/77/e9/c877e9229bda62c6befe1630bd8bec5e.jpg) |
+| 2006-fashion-1 | 스키니진 | 자체 생성 (generated-original, 가상 인물) | - |
+| 2006-fashion-2 | 롱티 + 레깅스 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/7c/0a/54/7c0a54b5dad3f3fe461d8d7066f2e939.jpg) · [img](https://i.pinimg.com/736x/b0/ff/4b/b0ff4b5d9484a89984ed321cf5f547ec.jpg) |
+| 2007-fashion-1 | 하이탑 운동화 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/d2/0e/b3/d20eb382b590f3f68a1b096426799006.jpg) · [img](https://i.pinimg.com/736x/5a/0b/b7/5a0bb7b3a280e45c3e5f8293dfc7a7c1.jpg) |
+| 2007-fashion-2 | 커플 후드티 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/ed/c7/b1/edc7b128b685cfbfd5e92d2d1a9a4b01.jpg) · [img](https://i.pinimg.com/736x/07/d5/10/07d5103464de36add9385d71ca7de308.jpg) |
+| 2008-fashion-1 | 체크셔츠 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/8f/41/52/8f41525f6e5f579841b3c0bfe98779f6.jpg) · [img](https://i.pinimg.com/736x/23/00/fe/2300fee9033520312ea7ce227b3dc2f8.jpg) |
+| 2008-fashion-2 | 뿔테안경 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/e5/f2/a4/e5f2a41e0702377538c14e28a1d12cf5.jpg) · [img](https://i.pinimg.com/736x/8f/41/52/8f41525f6e5f579841b3c0bfe98779f6.jpg) |
+| 2009-fashion-2 | 체크남방 전성기 지속 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/8f/41/52/8f41525f6e5f579841b3c0bfe98779f6.jpg) · [img](https://i.pinimg.com/736x/d2/e5/e4/d2e5e4b236da814ac157788d9360d4a0.jpg) |
+| 2010-fashion-1 | 노스페이스 패딩 시작 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/a4/15/10/a4151038b34127b8f4a2b773247be83e.jpg) · [img](https://i.pinimg.com/736x/bf/09/d2/bf09d2ca1aad34690bacd10d1dc95441.jpg) |
+| 2010-fashion-2 | 스키니진 국민바지 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/fb/af/bb/fbafbb8bcd39a932557578a9dc79dce5.jpg) · [img](https://i.pinimg.com/736x/4f/d2/c4/4fd2c410d6f1d8042625bf0f56c1299d.jpg) |
+| 2011-fashion-1 | 노스페이스 패딩 절정 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/a4/15/10/a4151038b34127b8f4a2b773247be83e.jpg) · [img](https://i.pinimg.com/736x/cd/51/e9/cd51e93954de0eaefd1cb2885601dd1d.jpg) |
+| 2011-fashion-2 | 플랫슈즈+스키니 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/9c/7f/35/9c7f3580907348115f7cb0693563e84b.jpg) · [img](https://i.pinimg.com/736x/f6/ba/50/f6ba504c0acd79e1a0d75144794e22f4.jpg) |
+| 2012-fashion-1 | 스냅백 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/7a/8e/91/7a8e91e423d7fbfa6d263d9169123e9f.jpg) · [img](https://i.pinimg.com/736x/74/47/bd/7447bd5bb8cfce0a0e02a29e4605f671.jpg) |
+| 2012-fashion-2 | 야상 점퍼 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/d6/9f/64/d69f6430b2a1bedfe277050e08988056.jpg) · [img](https://i.pinimg.com/736x/70/7c/98/707c98f2dbf230df69a25cf4c66db80e.jpg) |
+| 2013-fashion-1 | 뉴발란스 운동화 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/9c/7f/35/9c7f3580907348115f7cb0693563e84b.jpg) · [img](https://i.pinimg.com/736x/f4/15/9b/f4159ba60aecef40997ee58fa17302cf.jpg) |
+| 2013-fashion-2 | 과잠(야구잠바) | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/85/45/70/85457033ea1a6916bdf60f229c2d25b3.jpg) · [img](https://i.pinimg.com/736x/3a/9b/11/3a9b116f217383d7f9216911b16ad469.jpg) |
+| 2014-fashion-1 | 맨투맨 열풍 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/55/f1/cf/55f1cfe43e0690cbc007d1667cbc2e8c.jpg) · [img](https://i.pinimg.com/736x/e4/f6/38/e4f63839be806c29f60c8c3f8367ddb0.jpg) |
+| 2014-fashion-2 | 조거팬츠 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/53/84/84/538484e70a04b6f74ba72b4f70eb30a4.jpg) · [img](https://i.pinimg.com/736x/3a/d4/3e/3ad43e5b0449d857403eac03d653b383.jpg) |
+| 2015-fashion-1 | 슬립온 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/0a/ac/79/0aac79168122854d01f9baff97884afe.jpg) · [img](https://i.pinimg.com/736x/b2/d9/d0/b2d9d07754871bb5de8f18d2b402587a.jpg) |
+| 2015-fashion-2 | MLB 모자 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/b2/d9/d0/b2d9d07754871bb5de8f18d2b402587a.jpg) · [img](https://i.pinimg.com/736x/e7/e2/ad/e7e2adc352f24892ee44030d5465e768.jpg) |
+| 2016-fashion-1 | MA-1 항공점퍼 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/2a/48/14/2a48145a219397304d7d1cd42f0380db.jpg) · [img](https://i.pinimg.com/736x/db/5a/a6/db5aa6218051912568027fa788969040.jpg) |
+| 2016-fashion-2 | 검정 스키니 지속 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/9c/7f/35/9c7f3580907348115f7cb0693563e84b.jpg) · [img](https://i.pinimg.com/736x/85/45/70/85457033ea1a6916bdf60f229c2d25b3.jpg) |
