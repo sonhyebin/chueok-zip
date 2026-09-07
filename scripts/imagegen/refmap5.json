@@ -1,0 +1,46 @@
+{
+ "1999-food-2": [
+  "f_samanco/5da47036b6ee3304e69333c18b9f4c89",
+  "f_samanco/10aef40b88d6f05b92ca05843238a60f"
+ ],
+ "2001-food-2": [
+  "f_screwbar/fce9349d5f84083bb529da52451ac5d3",
+  "f_screwbar/de4bb72bb5caa2d45bd620c149b6ba7e"
+ ],
+ "2003-food-1": [
+  "f_podo/dd22c8dd31d4a9f297b1fd536077fd52",
+  "f_podo/d0970d28dc226cec2cd558b9956ec083"
+ ],
+ "2006-food-1": [
+  "f_mychew/6934bfa63a130a5d4d7f416c4c7d2bf5",
+  "f_mychew/d9eb32754ff2649e33f523fa17311fa0"
+ ],
+ "2007-food-1": [
+  "f_pizzaschool/ca2bd6f4817ed054d58777b51da967af",
+  "f_pizzaschool/c939b1bf6d828329cd1038418c58829c"
+ ],
+ "2010-food-1": [
+  "f_caffebene/c5444581abae1f07192c6c774e24b2fd",
+  "f_caffebene/f349b13caac342999447cbb0762698de"
+ ],
+ "2010-food-2": [
+  "f_waffle/276c0412393ed8ef1dae1a06d251d0ac",
+  "f_waffle/9d0d88efe67cd0624852624cbc0d4a78"
+ ],
+ "1999-school-1": [
+  "s_manhwabang/e57b317ea5fc54800a1cb8e8446bccb9",
+  "s_manhwabang/ce01db293e2d20b07e7f86b586ff509e"
+ ],
+ "2004-school-1": [
+  "s_diskette/1b5ee949b23f41ec269777a447a73d3a",
+  "s_diskette/417b942f13c2f83b1850946c2d4a326d"
+ ],
+ "2005-school-1": [
+  "s_note/5f4cc6b6801102ccce580e93d774de45",
+  "s_note/d335cebf27712075254c87288013f714"
+ ],
+ "2008-school-1": [
+  "s_panchigi/a75bcc6ec78838109f7359c61349995a",
+  "s_panchigi/22355f563d0916fbbfcd216f82fe29d1"
+ ]
+}

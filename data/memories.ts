@@ -1014,10 +1014,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2006-food-1",
     image: "/images/years/2006/food/2006-food-1.jpg",
-    credit: {
-      label: "terren in Virginia · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/8136496@N05/2098283991",
-    },
     year: 2006,
     category: "food",
     title: "마이쮸",
@@ -1256,10 +1252,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2007-food-1",
     image: "/images/years/2007/food/2007-food-1.jpg",
-    credit: {
-      label: "apasciuto · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/9462200@N08/6786317825",
-    },
     year: 2007,
     category: "food",
     title: "피자스쿨",
@@ -2030,10 +2022,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2010-food-1",
     image: "/images/years/2010/food/2010-food-1.jpg",
-    credit: {
-      label: "Manjil Aryal · Flickr · CC CC0 1.0",
-      url: "https://wordpress.org/photos/photo/2636a11d70/",
-    },
     year: 2010,
     category: "food",
     title: "카페베네 전성기",
@@ -2044,10 +2032,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2010-food-2",
     image: "/images/years/2010/food/2010-food-2.jpg",
-    credit: {
-      label: "rawpixel · rawpixel · CC0 1.0",
-      url: "https://www.rawpixel.com/image/3289134/free-photo-image-508-moss-breakfast-cc0",
-    },
     year: 2010,
     category: "food",
     title: "길거리 와플",
@@ -2543,10 +2527,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2012-food-1",
     image: "/images/years/2012/food/2012-food-1.jpg",
-    credit: {
-      label: "Mobius6 · Wikimedia Commons · CC BY-SA 4.0",
-      url: "https://commons.wikimedia.org/wiki/File%3ABuldak_Ramen_20210114_001.jpg",
-    },
     year: 2012,
     category: "food",
     title: "불닭볶음면 출시",
@@ -2571,10 +2551,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2004-school-1",
     image: "/images/years/2004/school/2004-school-1.jpg",
-    credit: {
-      label: "Swtpc6800 en:User:Swtpc680 · Wikimedia Commons · Public domain",
-      url: "https://commons.wikimedia.org/wiki/File%3AFloppy_Disk_Drives_8_5_3.jpg",
-    },
     year: 2004,
     category: "school",
     title: "3.5인치 디스켓",
@@ -2604,10 +2580,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2005-school-1",
     image: "/images/years/2005/school/2005-school-1.jpg",
-    credit: {
-      label: "Robynlou8 · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/38389614@N07/4805538101",
-    },
     year: 2005,
     category: "school",
     title: "하트 쪽지 접기",
@@ -2746,10 +2718,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2008-school-1",
     image: "/images/years/2008/school/2008-school-1.jpg",
-    credit: {
-      label: "Photo: Knowledgekid87500 W · Wikimedia Commons · Public domain",
-      url: "https://commons.wikimedia.org/wiki/File%3A500_yen_next_to_500_South_Korean_won_coin.jpg",
-    },
     year: 2008,
     category: "school",
     title: "판치기",
@@ -2793,10 +2761,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2009-school-1",
     image: "/images/years/2009/school/2009-school-1.jpg",
-    credit: {
-      label: "whatleydude · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/85318305@N00/4566021267",
-    },
     year: 2009,
     category: "school",
     title: "야자 몰래 폰게임",
@@ -2873,10 +2837,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2011-school-1",
     image: "/images/years/2011/school/2011-school-1.jpg",
-    credit: {
-      label: "rubicon · Flickr · CC BY-NC-ND 2.0",
-      url: "https://www.flickr.com/photos/97666235@N00/8174103",
-    },
     year: 2011,
     category: "school",
     title: "이어폰 한쪽 나눠 끼기",
@@ -2963,10 +2923,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2012-food-3",
     image: "/images/years/2012/food/2012-food-3.jpg",
-    credit: {
-      label: "andrewarchy · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/22292214@N00/6652242149",
-    },
     year: 2012,
     category: "food",
     title: "학교 앞 컵밥",
@@ -3528,10 +3484,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "1999-food-2",
     image: "/images/years/1999/food/1999-food-2.jpg",
-    credit: {
-      label: "Sebastiaan ter Burg · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/31013861@N00/22397123941",
-    },
     year: 1999,
     category: "food",
     title: "붕어싸만코",
@@ -3542,10 +3494,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "1999-school-1",
     image: "/images/years/1999/school/1999-school-1.jpg",
-    credit: {
-      label: "Mageos89 · Flickr · CC BY-NC-SA 2.0",
-      url: "https://www.flickr.com/photos/36622442@N03/3782552355",
-    },
     year: 1999,
     category: "school",
     title: "만화방",
@@ -4146,10 +4094,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2001-food-2",
     image: "/images/years/2001/food/2001-food-2.jpg",
-    credit: {
-      label: "Auntie K · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/10129828@N00/3671322447",
-    },
     year: 2001,
     category: "food",
     title: "스크류바",
@@ -4732,10 +4676,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2003-food-1",
     image: "/images/years/2003/food/2003-food-1.jpg",
-    credit: {
-      label: "Noël Zia Lee · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/36899742@N00/1985892783",
-    },
     year: 2003,
     category: "food",
     title: "포도봉봉",
@@ -5067,10 +5007,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2013-school-1",
     image: "/images/years/2013/school/2013-school-1.jpg",
-    credit: {
-      label: "Joshua Tree National Par · Flickr · CC PDM 1.0",
-      url: "https://www.flickr.com/photos/115357548@N08/30758001671",
-    },
     year: 2013,
     category: "school",
     title: "수련회 캠프파이어",
@@ -5100,10 +5036,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2013-food-3",
     image: "/images/years/2013/food/2013-food-3.jpg",
-    credit: {
-      label: "elsie.hui · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/91188380@N05/9071196321",
-    },
     year: 2013,
     category: "food",
     title: "콜팝",
@@ -5651,10 +5583,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2015-school-1",
     image: "/images/years/2015/school/2015-school-1.jpg",
-    credit: {
-      label: "L.C.Nøttaasen · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/35166455@N00/3984413077",
-    },
     year: 2015,
     category: "school",
     title: "레크리에이션 수련회",
@@ -5943,10 +5871,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2016-school-1",
     image: "/images/years/2016/school/2016-school-1.jpg",
-    credit: {
-      label: "John Beans · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/147592390@N06/32681768187",
-    },
     year: 2016,
     category: "school",
     title: "스터디카페의 등장",
@@ -5976,10 +5900,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2016-food-3",
     image: "/images/years/2016/food/2016-food-3.jpg",
-    credit: {
-      label: "Berries.com · Flickr · CC BY 2.0",
-      url: "https://www.flickr.com/photos/126560659@N06/30416629530",
-    },
     year: 2016,
     category: "food",
     title: "왕꿈틀이",

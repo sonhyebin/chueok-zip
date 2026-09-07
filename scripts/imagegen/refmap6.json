@@ -1,0 +1,24 @@
+{
+ "2012-food-1": [
+  "f_buldak/675bdf81f221855ad55be7b6371c199a",
+  "f_buldak/08f312e0b9493c1b74370f77a1f70150"
+ ],
+ "2013-food-3": [],
+ "2016-food-3": [],
+ "2011-school-1": [
+  "s_earphone/315c188c8518c2aaff73733af6e7c658",
+  "s_earphone/36e17f46a0dc2fe227bbbc7e7e01e240"
+ ],
+ "2013-school-1": [
+  "s_campfire/d64b90d25637323eb70c7cacd4adae30",
+  "s_campfire/a98786d984bea9c532df1e53b0965f2e"
+ ],
+ "2015-school-1": [
+  "s_campfire/8d6451d8afa9fc001922cda28cfa1f50",
+  "s_campfire/fc145d0beb74a2381089994cef2b08e7"
+ ],
+ "2016-school-1": [
+  "s_studycafe/2d14afd9c09ea869ef560f07bda458a5",
+  "s_studycafe/921113f2126aedc9d83189d9f8e9f59c"
+ ]
+}

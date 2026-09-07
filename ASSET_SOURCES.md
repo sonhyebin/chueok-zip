@@ -562,3 +562,30 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 | 2015-fashion-2 | MLB 모자 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/b2/d9/d0/b2d9d07754871bb5de8f18d2b402587a.jpg) · [img](https://i.pinimg.com/736x/e7/e2/ad/e7e2adc352f24892ee44030d5465e768.jpg) |
 | 2016-fashion-1 | MA-1 항공점퍼 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/2a/48/14/2a48145a219397304d7d1cd42f0380db.jpg) · [img](https://i.pinimg.com/736x/db/5a/a6/db5aa6218051912568027fa788969040.jpg) |
 | 2016-fashion-2 | 검정 스키니 지속 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/9c/7f/35/9c7f3580907348115f7cb0693563e84b.jpg) · [img](https://i.pinimg.com/736x/85/45/70/85457033ea1a6916bdf60f229c2d25b3.jpg) |
+
+## 음식·학교 카드 오리지널 생성 교체 (2026-09-07) — Pinterest 참고 · GPT 이미지 생성
+
+서구권 대체 사진이거나 소재가 틀렸던 음식·학교 카드 20장을 **한국 그 시절 감성의 오리지널 생성 이미지**로 교체. Pinterest 검색 결과는 **reference-only**(의상 실루엣·색감·사진 질감 참고)로만 사용했고 서비스에는 핀 이미지를 넣지 않았다. 생성은 Codex CLI `image_gen`(GPT 이미지 모델)으로, 프롬프트에 '실존 인물 얼굴·포즈·구도·잡지 레이아웃 복제 금지, 완전 가상 인물, 텍스트·로고 금지'를 명시했다. 생성 원본 PNG는 `assets-src/<연도>/<id>-generated-original.png`, 웹 적용본은 `public/images/years/<연도>/fashion/<id>.jpg`(800×600).
+
+| 카드 | 소재 | 방식 | 참고한 핀 (reference-only) |
+|---|---|---|---|
+| 1999-food-2 | 붕어싸만코 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/5d/a4/70/5da47036b6ee3304e69333c18b9f4c89.jpg) |
+| 2001-food-2 | 스크류바 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/fc/e9/34/fce9349d5f84083bb529da52451ac5d3.jpg) · [img](https://i.pinimg.com/736x/de/4b/b7/de4bb72bb5caa2d45bd620c149b6ba7e.jpg) |
+| 2003-food-1 | 포도봉봉 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/dd/22/c8/dd22c8dd31d4a9f297b1fd536077fd52.jpg) · [img](https://i.pinimg.com/736x/d0/97/0d/d0970d28dc226cec2cd558b9956ec083.jpg) |
+| 2006-food-1 | 마이쮸 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/69/34/bf/6934bfa63a130a5d4d7f416c4c7d2bf5.jpg) · [img](https://i.pinimg.com/736x/d9/eb/32/d9eb32754ff2649e33f523fa17311fa0.jpg) |
+| 2007-food-1 | 피자스쿨 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/ca/2b/d6/ca2bd6f4817ed054d58777b51da967af.jpg) · [img](https://i.pinimg.com/736x/c9/39/b1/c939b1bf6d828329cd1038418c58829c.jpg) |
+| 2010-food-1 | 카페베네 전성기 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/c5/44/45/c5444581abae1f07192c6c774e24b2fd.jpg) · [img](https://i.pinimg.com/736x/f3/49/b1/f349b13caac342999447cbb0762698de.jpg) |
+| 2010-food-2 | 길거리 와플 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/27/6c/04/276c0412393ed8ef1dae1a06d251d0ac.jpg) · [img](https://i.pinimg.com/736x/9d/0d/88/9d0d88efe67cd0624852624cbc0d4a78.jpg) |
+| 2012-food-1 | 불닭볶음면 출시 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/67/5b/df/675bdf81f221855ad55be7b6371c199a.jpg) · [img](https://i.pinimg.com/736x/08/f3/12/08f312e0b9493c1b74370f77a1f70150.jpg) |
+| 2012-food-3 | 학교 앞 컵밥 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/2c/b8/d8/2cb8d851d6ec1a83479faf8d82b6d218.jpg) · [img](https://i.pinimg.com/736x/2c/6e/4c/2c6e4c0b73001c58df1757db159d2085.jpg) |
+| 2013-food-3 | 콜팝 | 자체 생성 (generated-original, 가상 인물) | - |
+| 2016-food-3 | 왕꿈틀이 | 자체 생성 (generated-original, 가상 인물) | - |
+| 1999-school-1 | 만화방 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/e5/7b/31/e57b317ea5fc54800a1cb8e8446bccb9.jpg) · [img](https://i.pinimg.com/736x/ce/01/db/ce01db293e2d20b07e7f86b586ff509e.jpg) |
+| 2004-school-1 | 3.5인치 디스켓 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/1b/5e/e9/1b5ee949b23f41ec269777a447a73d3a.jpg) · [img](https://i.pinimg.com/736x/41/7b/94/417b942f13c2f83b1850946c2d4a326d.jpg) |
+| 2005-school-1 | 하트 쪽지 접기 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/5f/4c/c6/5f4cc6b6801102ccce580e93d774de45.jpg) · [img](https://i.pinimg.com/736x/d3/35/ce/d335cebf27712075254c87288013f714.jpg) |
+| 2008-school-1 | 판치기 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/a7/5b/cc/a75bcc6ec78838109f7359c61349995a.jpg) · [img](https://i.pinimg.com/736x/22/35/5f/22355f563d0916fbbfcd216f82fe29d1.jpg) |
+| 2009-school-1 | 야자 몰래 폰게임 | 자체 생성 (generated-original, 가상 인물) | - |
+| 2011-school-1 | 이어폰 한쪽 나눠 끼기 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/31/5c/18/315c188c8518c2aaff73733af6e7c658.jpg) · [img](https://i.pinimg.com/736x/36/e1/7f/36e17f46a0dc2fe227bbbc7e7e01e240.jpg) |
+| 2013-school-1 | 수련회 캠프파이어 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/d6/4b/90/d64b90d25637323eb70c7cacd4adae30.jpg) · [img](https://i.pinimg.com/736x/a9/87/86/a98786d984bea9c532df1e53b0965f2e.jpg) |
+| 2015-school-1 | 레크리에이션 수련회 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/8d/64/51/8d6451d8afa9fc001922cda28cfa1f50.jpg) · [img](https://i.pinimg.com/736x/fc/14/5d/fc145d0beb74a2381089994cef2b08e7.jpg) |
+| 2016-school-1 | 스터디카페의 등장 | 자체 생성 (generated-original, 가상 인물) | [img](https://i.pinimg.com/736x/2d/14/af/2d14afd9c09ea869ef560f07bda458a5.jpg) · [img](https://i.pinimg.com/736x/92/11/13/921113f2126aedc9d83189d9f8e9f59c.jpg) |

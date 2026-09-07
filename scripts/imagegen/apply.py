@@ -9,14 +9,14 @@ ids = sys.argv[1:]
 src = (ROOT / 'data/memories.ts').read_text()
 
 for sid in ids:
-    year = sid.split('-')[0]
+    year, cat = sid.split('-')[0], sid.split('-')[1]
     png = GEN / f'{sid}.png'
     assert png.exists(), sid
     im = Image.open(png).convert('RGB')
     w, h = im.size
     tw, th = (w, int(w * 3 / 4)) if w / h >= 4 / 3 else (int(h * 4 / 3), h)
     im = im.crop(((w - tw) // 2, (h - th) // 2, (w - tw) // 2 + tw, (h - th) // 2 + th)).resize((800, 600), Image.LANCZOS)
-    out = ROOT / f'public/images/years/{year}/fashion/{sid}.jpg'
+    out = ROOT / f'public/images/years/{year}/{cat}/{sid}.jpg'
     out.parent.mkdir(parents=True, exist_ok=True)
     q = 82
     while True:
@@ -33,7 +33,7 @@ for sid in ids:
     assert m, sid
     block = m.group(1)
     nb = re.sub(r'\n    credit:\s*\{[^}]*\},', '', block)
-    nb = re.sub(r'image:\s*"[^"]*"', f'image: "/images/years/{year}/fashion/{sid}.jpg"', nb, count=1)
+    nb = re.sub(r'image:\s*"[^"]*"', f'image: "/images/years/{year}/{cat}/{sid}.jpg"', nb, count=1)
     src = src.replace(block, nb)
     print(f'{sid}: {out.stat().st_size//1024}KB q{q} credit_removed={"credit" not in nb}')
 
