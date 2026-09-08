@@ -15,3 +15,25 @@ export function nameIga(name: string): string {
 export function fillLabel(label: string, name: string): string {
   return label.replaceAll("{name}이(가)", nameIga(name)).replaceAll("{name}", name);
 }
+
+/** 이름 + 을/를 (받침 유무로 선택). 예: 혜빈 → 혜빈을, 수지 → 수지를 */
+export function nameEulReul(name: string): string {
+  const last = name.trim().slice(-1);
+  const code = last.charCodeAt(0);
+  const hangul = code >= 0xac00 && code <= 0xd7a3;
+  const hasBatchim = hangul ? (code - 0xac00) % 28 !== 0 : false;
+  return `${name.trim()}${hasBatchim ? "을" : "를"}`;
+}
+
+/**
+ * 질문 문장의 {friend} 를 상대 이름(을/를 포함)으로 치환.
+ * 상대 이름을 아직 모르면(보내는 쪽) "그 친구를".
+ */
+export function fillQuestion(
+  text: string,
+  friendName?: string,
+  fallback = "그 친구를",
+): string {
+  const who = friendName && friendName.trim() ? nameEulReul(friendName) : fallback;
+  return text.replaceAll("{friend}", who);
+}

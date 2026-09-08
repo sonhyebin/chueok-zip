@@ -89,7 +89,14 @@ export const CAPSULE_QUESTIONS_V2: CapsuleQuestion[] = [
  * 문항을 바꾸면 반드시 새 버전(v4)으로 추가하고, 기존 배열은 지우지 않는다 (저장된 캡슐이 참조).
  */
 export const CAPSULE_QUESTIONS: CapsuleQuestion[] = [
-  CAPSULE_QUESTIONS_V2[0], // 처음 봤을 때 솔직히 무슨 생각했어?
+  {
+    // {friend} 는 화면에서 상대 이름(+을/를)으로 치환된다 — 보내는 쪽은 "그 친구를", 받는 쪽은 "혜빈을"
+    id: "first-impression",
+    emoji: "👀",
+    text: "{friend} 처음 봤을 때, 솔직히 무슨 생각했어?",
+    placeholder: "예: 무서워 보였는데 먼저 말 걸어줘서 의외였어",
+    resultLabel: "{name}의 솔직한 첫인상",
+  },
   CAPSULE_QUESTIONS_V2[3], // 지금 생각해도 웃긴 우리 사건 하나만 꼽는다면?
   CAPSULE_QUESTIONS_V2[4], // 딱 하루 그때로 돌아간다면, 우리 뭐부터 할까?
 ];

@@ -166,7 +166,7 @@ try {
   // STEP 6: A가 타임캡슐 작성
   await a.getByRole("link", { name: /그 친구에게 보내기/ }).first().click();
   await a.waitForURL("**/capsule/new**");
-  (await a.getByText("처음 봤을 때 솔직히 무슨 생각했어?").isVisible())
+  (await a.getByText(/그 친구를 처음 봤을 때/).isVisible())
     ? pass("캡슐(A): 새 첫인상 질문 노출")
     : fail("캡슐(A): 새 첫인상 질문 미노출");
   (await a.getByText("딱 하루 그때로 돌아간다면, 우리 뭐부터 할까?").isVisible())

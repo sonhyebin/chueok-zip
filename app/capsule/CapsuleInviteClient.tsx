@@ -226,6 +226,7 @@ export default function CapsuleInviteClient({
           nameLabel="친구가 알아볼 내 이름"
           submitLabel="🔓 타임캡슐 열기"
           questions={questions}
+          friendName={invite.from}
           onSubmit={handleSubmit}
         />
         {error ? (

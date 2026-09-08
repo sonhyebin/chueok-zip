@@ -15,7 +15,7 @@ import {
   type CapsuleResult,
 } from "@/lib/capsule";
 import { decryptCapsule, getCapsuleKeyFromHash } from "@/lib/capsuleCrypto";
-import { fillLabel } from "@/lib/josa";
+import { fillLabel, fillQuestion } from "@/lib/josa";
 import { trackEvent } from "@/lib/analytics";
 
 function AnswerBlock({ label, answer }: { label: string; answer: string }) {
@@ -182,7 +182,7 @@ export default function CapsuleResultClient({
           <div className="window-titlebar">
             <span aria-hidden>{question.emoji}</span>
             <span>
-              Q{index + 1}. {question.text}
+              Q{index + 1}. {fillQuestion(question.text, undefined, "서로를")}
             </span>
           </div>
           <div className="p-4 flex flex-col gap-4">

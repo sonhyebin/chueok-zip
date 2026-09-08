@@ -5,18 +5,22 @@ import {
   CAPSULE_QUESTIONS,
   type CapsuleQuestion,
 } from "@/data/capsuleQuestions";
+import { fillQuestion } from "@/lib/josa";
 
 export default function CapsuleForm({
   initialName,
   nameLabel,
   submitLabel,
   questions = CAPSULE_QUESTIONS,
+  friendName,
   onSubmit,
 }: {
   initialName: string;
   nameLabel: string;
   submitLabel: string;
   questions?: CapsuleQuestion[];
+  /** 상대 친구 이름 — 질문의 {friend} 치환용. 모르면 "그 친구" */
+  friendName?: string;
   onSubmit: (name: string, answers: string[]) => void | Promise<void>;
 }) {
   const [name, setName] = useState(initialName);
@@ -61,7 +65,7 @@ export default function CapsuleForm({
       {questions.map((q, i) => (
         <label key={q.id} className="flex flex-col gap-1.5">
           <span className="font-pixel text-[15px]">
-            {q.emoji} Q{i + 1}. {q.text}
+            {q.emoji} Q{i + 1}. {fillQuestion(q.text, friendName)}
           </span>
           <textarea
             className="pixel-input"
