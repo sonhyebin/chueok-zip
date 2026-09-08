@@ -90,3 +90,7 @@ SHOTS += [
     ("2013-food-3", 2013, "Close-up of a Korean teenager's hand holding the 'colpop' snack exactly as sold at Korean chicken shops: ONE tall white-and-red striped paper cola cup, and sitting INTO its top a shallow smaller paper cup filled with bite-size golden fried chicken pieces, a single long red-and-white straw passing THROUGH a hole in the chicken cup down into the cola below, a small wooden pick stuck in one chicken piece. Chicken shop counter and warm light in the background, plain cups without logos or text."),
     ("2013-photo-2", 2013, "A Korean teenage girl's (fictional face) selfie taken with a 2013 beauty-camera phone app: the skin retouched to an unnaturally milky white and perfectly smooth, over-brightened highlights, soft glow blur, enlarged eyes, faint pink blush, phone held high at a 45-degree angle looking down, side-swept bangs, a plain bedroom with a wardrobe behind, slight vignette. Looks like a real 2013 app-filtered selfie, not an editorial."),
 ]
+
+SHOTS += [
+    ("2013-food-1", 2013, "Korean franchise dessert cafe table in 2013: a big shallow bowl of finely shaved milk-snow bingsu (snowflake-fine, powdery white ice) completely dusted with golden roasted soybean powder (injeolmi kongaru), topped with soft cubes of injeolmi rice cake and sliced almonds, a small jug of condensed milk and two spoons beside, two friends' hands reaching in with spoons, warm wood table, cafe interior blurred. No logos or text."),
+]

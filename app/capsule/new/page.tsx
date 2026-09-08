@@ -45,7 +45,7 @@ function CapsuleNewInner() {
     setError("");
     try {
       const invite: CapsuleInvite = {
-        v: 2,
+        v: 3,
         kind: "invite",
         year,
         from: name,

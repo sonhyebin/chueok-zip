@@ -8,10 +8,7 @@ import PartnerCta from "@/components/PartnerCta";
 import VisitTracker from "@/components/VisitTracker";
 import BgmPlayer from "@/components/BgmPlayer";
 import { getYearInfo } from "@/data/memories";
-import {
-  CAPSULE_QUESTIONS,
-  LEGACY_CAPSULE_QUESTIONS,
-} from "@/data/capsuleQuestions";
+import { questionsForVersion } from "@/data/capsuleQuestions";
 import {
   isCapsuleRecord,
   type CapsuleRecord,
@@ -121,8 +118,7 @@ export default function CapsuleResultClient({
 
   const { year, a, b } = result;
   const info = getYearInfo(year);
-  const questions =
-    result.v === 1 ? LEGACY_CAPSULE_QUESTIONS : CAPSULE_QUESTIONS;
+  const questions = questionsForVersion(result.v);
   const shareText = `${a.name} × ${b.name}의 ${year} 타임캡슐 완성ㅋㅋ\n첫인상부터 웃긴 사건까지 답이 나란히 열렸어. 이거 봐봐`;
   const storyEndpoint = capsuleId
     ? `/api/story?c=${capsuleId}`

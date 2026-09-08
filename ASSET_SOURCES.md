@@ -614,3 +614,4 @@ I'd apprec · Wikimedia Commons · CC BY-SA 4.0 | https://commons.wikimedia.org/
 |---|---|---|---|
 | 2013-food-3 | 콜팝 — 콜라컵 위 치킨컵, 빨대 관통 구조로 재생성 | 자체 생성 (generated-original) | [img](https://i.pinimg.com/736x/23/95/88/2395885755bfda503eed2381ae62b3a9.jpg) · [img](https://i.pinimg.com/736x/4e/6f/39/4e6f39d642789d55ed5d280c443890bc.jpg) |
 | 2013-photo-2 | 우유빛깔 보정 셀카 (기존 벚꽃 사진 교체) | 자체 생성 (generated-original, 가상 인물) | 자체 보유 얼짱캠 레퍼런스 `ref_img/14.png`, `ref_img/6.png` |
+| 2013-food-1 | 설빙 인절미 눈꽃빙수 (기존 오레오 빙수 사진 교체, 2026-09-08) | 자체 생성 (generated-original) | [img](https://i.pinimg.com/736x/b5/4c/8a/b54c8a9327952870893ad3336ec5affe.jpg) · [img](https://i.pinimg.com/736x/70/8f/d3/708fd39b9dbee8a9201f5a0821b683d3.jpg) |

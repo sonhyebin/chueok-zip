@@ -5,10 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Window from "@/components/Window";
 import CapsuleForm from "@/components/CapsuleForm";
-import {
-  CAPSULE_QUESTIONS,
-  LEGACY_CAPSULE_QUESTIONS,
-} from "@/data/capsuleQuestions";
+import { questionsForVersion } from "@/data/capsuleQuestions";
 import {
   encodeCapsule,
   isCapsuleRecord,
@@ -209,8 +206,7 @@ export default function CapsuleInviteClient({
     );
   }
 
-  const questions =
-    invite.v === 1 ? LEGACY_CAPSULE_QUESTIONS : CAPSULE_QUESTIONS;
+  const questions = questionsForVersion(invite.v);
 
   return (
     <main className="page flex flex-col gap-5">

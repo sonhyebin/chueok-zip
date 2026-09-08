@@ -4,7 +4,8 @@
  * API 호출(생성 → id 반환)로 교체하면 된다.
  */
 
-export type CapsuleVersion = 1 | 2;
+/** 1: 초기 5문항 · 2: 2026-08 5문항 · 3: 2026-09 3문항 */
+export type CapsuleVersion = 1 | 2 | 3;
 
 export type CapsuleInvite = {
   v: CapsuleVersion;
@@ -50,10 +51,15 @@ function isName(value: unknown): value is string {
   return typeof value === "string" && value.trim().length > 0 && value.length <= 12;
 }
 
-function isAnswers(value: unknown): value is string[] {
+/** 버전별 답변 수 — v3 부터 3문항 (data/capsuleQuestions.ts 와 일치) */
+export function answerCountFor(v: unknown): number {
+  return v === 3 ? 3 : 5;
+}
+
+function isAnswers(value: unknown, count = 5): value is string[] {
   return (
     Array.isArray(value) &&
-    value.length === 5 &&
+    value.length === count &&
     value.every(
       (answer) =>
         typeof answer === "string" &&
@@ -67,11 +73,11 @@ export function isCapsuleInvite(value: unknown): value is CapsuleInvite {
   if (!value || typeof value !== "object") return false;
   const invite = value as Partial<CapsuleInvite>;
   return (
-    (invite.v === 1 || invite.v === 2) &&
+    (invite.v === 1 || invite.v === 2 || invite.v === 3) &&
     invite.kind === "invite" &&
     Number.isInteger(invite.year) &&
     isName(invite.from) &&
-    isAnswers(invite.answers)
+    isAnswers(invite.answers, answerCountFor(invite.v))
   );
 }
 
@@ -79,15 +85,15 @@ export function isCapsuleResult(value: unknown): value is CapsuleResult {
   if (!value || typeof value !== "object") return false;
   const result = value as Partial<CapsuleResult>;
   return (
-    (result.v === 1 || result.v === 2) &&
+    (result.v === 1 || result.v === 2 || result.v === 3) &&
     result.kind === "result" &&
     Number.isInteger(result.year) &&
     Boolean(result.a) &&
     Boolean(result.b) &&
     isName(result.a?.name) &&
-    isAnswers(result.a?.answers) &&
+    isAnswers(result.a?.answers, answerCountFor(result.v)) &&
     isName(result.b?.name) &&
-    isAnswers(result.b?.answers)
+    isAnswers(result.b?.answers, answerCountFor(result.v))
   );
 }
 

@@ -57,15 +57,11 @@ async function noHorizontalOverflow(page) {
 
 const A_ANSWERS = [
   "말이 별로 없는 애인 줄 알았음",
-  "조용한 줄 알았는데 완전 반대였음",
-  "쉬는 시간마다 매점까지 전력 질주하기",
   "수업 시간에 웃음 참다가 같이 쫓겨난 날",
   "하교하자마자 학교 앞 떡볶이집 가기",
 ];
 const B_ANSWERS = [
   "처음엔 좀 무서워 보였음",
-  "알고 보니 제일 웃긴 애였음",
-  "문방구 앞 오락기에서 기록 깨기",
   "체육대회 날 둘이 반대로 뛰었던 사건",
   "문방구부터 들러서 오락 한 판 하기",
 ];
@@ -253,8 +249,8 @@ try {
   (await b.getByText("수진이가").count()) > 0 && (await b.getByText("혜빈이가").count()) > 0
     ? pass("결과: 조사(이가) 자연스러움", "혜빈이가/수진이가")
     : fail("결과: 조사 처리 이상");
-  (await b.getByText(A_ANSWERS[3]).isVisible()) ? pass("결과: A 답변 표시") : fail("결과: A 답변 누락");
-  (await b.getByText(B_ANSWERS[3]).isVisible()) ? pass("결과: B 답변 표시") : fail("결과: B 답변 누락");
+  (await b.getByText(A_ANSWERS[1]).isVisible()) ? pass("결과: A 답변 표시") : fail("결과: A 답변 누락");
+  (await b.getByText(B_ANSWERS[1]).isVisible()) ? pass("결과: B 답변 표시") : fail("결과: B 답변 누락");
   (await b.getByText("타임캡슐이").isVisible()) ? pass("결과: 완성 메시지") : fail("결과: 완성 메시지 없음");
   (await b.getByRole("button", { name: /혜빈에게 결과 보내기|링크 복사/ }).first().isVisible())
     ? pass("결과: 원래 친구에게 보내기 CTA")

@@ -4987,10 +4987,6 @@ export const MEMORIES: MemoryItem[] = [
   {
     id: "2013-food-1",
     image: "/images/years/2013/food/2013-food-1.jpg",
-    credit: {
-      label: "Debbie Tingzon · Wikimedia Commons · CC BY 2.0",
-      url: "https://commons.wikimedia.org/wiki/File%3AOreo-bingsu_and_ttalgi-bingsu.jpg",
-    },
     year: 2013,
     category: "food",
     title: "설빙 눈꽃빙수",

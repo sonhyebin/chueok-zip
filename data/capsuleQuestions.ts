@@ -45,7 +45,8 @@ export const LEGACY_CAPSULE_QUESTIONS: CapsuleQuestion[] = [
   },
 ];
 
-export const CAPSULE_QUESTIONS: CapsuleQuestion[] = [
+/** v2 (2026-08) — 5문항. 이미 만들어진 v2 캡슐을 그대로 보여주기 위해 유지 */
+export const CAPSULE_QUESTIONS_V2: CapsuleQuestion[] = [
   {
     id: "first-impression",
     emoji: "👀",
@@ -82,3 +83,20 @@ export const CAPSULE_QUESTIONS: CapsuleQuestion[] = [
     resultLabel: "{name}이(가) 돌아가면 제일 먼저 할 일",
   },
 ];
+
+/**
+ * v3 (2026-09) — 3문항. 회신율을 높이려고 첫인상 → 제일 웃긴 사건 → 하루 돌아간다면 의 감정선만 남겼다.
+ * 문항을 바꾸면 반드시 새 버전(v4)으로 추가하고, 기존 배열은 지우지 않는다 (저장된 캡슐이 참조).
+ */
+export const CAPSULE_QUESTIONS: CapsuleQuestion[] = [
+  CAPSULE_QUESTIONS_V2[0], // 처음 봤을 때 솔직히 무슨 생각했어?
+  CAPSULE_QUESTIONS_V2[3], // 지금 생각해도 웃긴 우리 사건 하나만 꼽는다면?
+  CAPSULE_QUESTIONS_V2[4], // 딱 하루 그때로 돌아간다면, 우리 뭐부터 할까?
+];
+
+/** 캡슐 버전별 질문 세트 */
+export function questionsForVersion(v: number): CapsuleQuestion[] {
+  if (v === 1) return LEGACY_CAPSULE_QUESTIONS;
+  if (v === 2) return CAPSULE_QUESTIONS_V2;
+  return CAPSULE_QUESTIONS;
+}
